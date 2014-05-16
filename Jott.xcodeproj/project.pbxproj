@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45049FDA19266F7C00994960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FD919266F7C00994960 /* Foundation.framework */; };
+		45049FDC19266F7C00994960 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDB19266F7C00994960 /* CoreGraphics.framework */; };
+		45049FDE19266F7C00994960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDD19266F7C00994960 /* UIKit.framework */; };
+		45049FE419266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45049FE219266F7C00994960 /* InfoPlist.strings */; };
+		45049FE619266F7C00994960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE519266F7C00994960 /* main.m */; };
+		45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE919266F7C00994960 /* MFAppDelegate.m */; };
+		45049FED19266F7C00994960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45049FEB19266F7C00994960 /* Main.storyboard */; };
+		45049FF019266F7C00994960 /* MFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FEF19266F7C00994960 /* MFViewController.m */; };
+		45049FF219266F7C00994960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45049FF119266F7C00994960 /* Images.xcassets */; };
+		45049FF919266F7C00994960 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FF819266F7C00994960 /* XCTest.framework */; };
+		45049FFA19266F7C00994960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FD919266F7C00994960 /* Foundation.framework */; };
+		45049FFB19266F7C00994960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDD19266F7C00994960 /* UIKit.framework */; };
+		4504A00319266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4504A00119266F7C00994960 /* InfoPlist.strings */; };
+		4504A00519266F7C00994960 /* JottTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A00419266F7C00994960 /* JottTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45049FFC19266F7C00994960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45049FCE19266F7C00994960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45049FD519266F7C00994960;
+			remoteInfo = Jott;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45049FD619266F7C00994960 /* Jott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jott.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45049FD919266F7C00994960 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45049FDB19266F7C00994960 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45049FDD19266F7C00994960 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		45049FE119266F7C00994960 /* Jott-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jott-Info.plist"; sourceTree = "<group>"; };
+		45049FE319266F7C00994960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		45049FE519266F7C00994960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45049FE719266F7C00994960 /* Jott-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jott-Prefix.pch"; sourceTree = "<group>"; };
+		45049FE819266F7C00994960 /* MFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFAppDelegate.h; sourceTree = "<group>"; };
+		45049FE919266F7C00994960 /* MFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFAppDelegate.m; sourceTree = "<group>"; };
+		45049FEC19266F7C00994960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45049FEE19266F7C00994960 /* MFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFViewController.h; sourceTree = "<group>"; };
+		45049FEF19266F7C00994960 /* MFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFViewController.m; sourceTree = "<group>"; };
+		45049FF119266F7C00994960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45049FF719266F7C00994960 /* JottTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JottTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45049FF819266F7C00994960 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4504A00019266F7C00994960 /* JottTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JottTests-Info.plist"; sourceTree = "<group>"; };
+		4504A00219266F7C00994960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4504A00419266F7C00994960 /* JottTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JottTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45049FD319266F7C00994960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45049FDC19266F7C00994960 /* CoreGraphics.framework in Frameworks */,
+				45049FDE19266F7C00994960 /* UIKit.framework in Frameworks */,
+				45049FDA19266F7C00994960 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45049FF419266F7C00994960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45049FF919266F7C00994960 /* XCTest.framework in Frameworks */,
+				45049FFB19266F7C00994960 /* UIKit.framework in Frameworks */,
+				45049FFA19266F7C00994960 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45049FCD19266F7C00994960 = {
+			isa = PBXGroup;
+			children = (
+				45049FDF19266F7C00994960 /* Jott */,
+				45049FFE19266F7C00994960 /* JottTests */,
+				45049FD819266F7C00994960 /* Frameworks */,
+				45049FD719266F7C00994960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45049FD719266F7C00994960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45049FD619266F7C00994960 /* Jott.app */,
+				45049FF719266F7C00994960 /* JottTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45049FD819266F7C00994960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45049FD919266F7C00994960 /* Foundation.framework */,
+				45049FDB19266F7C00994960 /* CoreGraphics.framework */,
+				45049FDD19266F7C00994960 /* UIKit.framework */,
+				45049FF819266F7C00994960 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45049FDF19266F7C00994960 /* Jott */ = {
+			isa = PBXGroup;
+			children = (
+				45049FE819266F7C00994960 /* MFAppDelegate.h */,
+				45049FE919266F7C00994960 /* MFAppDelegate.m */,
+				45049FEB19266F7C00994960 /* Main.storyboard */,
+				45049FEE19266F7C00994960 /* MFViewController.h */,
+				45049FEF19266F7C00994960 /* MFViewController.m */,
+				45049FF119266F7C00994960 /* Images.xcassets */,
+				45049FE019266F7C00994960 /* Supporting Files */,
+			);
+			path = Jott;
+			sourceTree = "<group>";
+		};
+		45049FE019266F7C00994960 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45049FE119266F7C00994960 /* Jott-Info.plist */,
+				45049FE219266F7C00994960 /* InfoPlist.strings */,
+				45049FE519266F7C00994960 /* main.m */,
+				45049FE719266F7C00994960 /* Jott-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45049FFE19266F7C00994960 /* JottTests */ = {
+			isa = PBXGroup;
+			children = (
+				4504A00419266F7C00994960 /* JottTests.m */,
+				45049FFF19266F7C00994960 /* Supporting Files */,
+			);
+			path = JottTests;
+			sourceTree = "<group>";
+		};
+		45049FFF19266F7C00994960 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4504A00019266F7C00994960 /* JottTests-Info.plist */,
+				4504A00119266F7C00994960 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45049FD519266F7C00994960 /* Jott */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4504A00819266F7C00994960 /* Build configuration list for PBXNativeTarget "Jott" */;
+			buildPhases = (
+				45049FD219266F7C00994960 /* Sources */,
+				45049FD319266F7C00994960 /* Frameworks */,
+				45049FD419266F7C00994960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jott;
+			productName = Jott;
+			productReference = 45049FD619266F7C00994960 /* Jott.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45049FF619266F7C00994960 /* JottTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4504A00B19266F7C00994960 /* Build configuration list for PBXNativeTarget "JottTests" */;
+			buildPhases = (
+				45049FF319266F7C00994960 /* Sources */,
+				45049FF419266F7C00994960 /* Frameworks */,
+				45049FF519266F7C00994960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45049FFD19266F7C00994960 /* PBXTargetDependency */,
+			);
+			name = JottTests;
+			productName = JottTests;
+			productReference = 45049FF719266F7C00994960 /* JottTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45049FCE19266F7C00994960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MF;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					45049FF619266F7C00994960 = {
+						TestTargetID = 45049FD519266F7C00994960;
+					};
+				};
+			};
+			buildConfigurationList = 45049FD119266F7C00994960 /* Build configuration list for PBXProject "Jott" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45049FCD19266F7C00994960;
+			productRefGroup = 45049FD719266F7C00994960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45049FD519266F7C00994960 /* Jott */,
+				45049FF619266F7C00994960 /* JottTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45049FD419266F7C00994960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45049FF219266F7C00994960 /* Images.xcassets in Resources */,
+				45049FE419266F7C00994960 /* InfoPlist.strings in Resources */,
+				45049FED19266F7C00994960 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45049FF519266F7C00994960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4504A00319266F7C00994960 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45049FD219266F7C00994960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45049FE619266F7C00994960 /* main.m in Sources */,
+				45049FF019266F7C00994960 /* MFViewController.m in Sources */,
+				45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45049FF319266F7C00994960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4504A00519266F7C00994960 /* JottTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45049FFD19266F7C00994960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45049FD519266F7C00994960 /* Jott */;
+			targetProxy = 45049FFC19266F7C00994960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45049FE219266F7C00994960 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45049FE319266F7C00994960 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		45049FEB19266F7C00994960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45049FEC19266F7C00994960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4504A00119266F7C00994960 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4504A00219266F7C00994960 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4504A00619266F7C00994960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4504A00719266F7C00994960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4504A00919266F7C00994960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
+				INFOPLIST_FILE = "Jott/Jott-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4504A00A19266F7C00994960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
+				INFOPLIST_FILE = "Jott/Jott-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4504A00C19266F7C00994960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jott.app/Jott";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JottTests/JottTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4504A00D19266F7C00994960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Jott.app/Jott";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
+				INFOPLIST_FILE = "JottTests/JottTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45049FD119266F7C00994960 /* Build configuration list for PBXProject "Jott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4504A00619266F7C00994960 /* Debug */,
+				4504A00719266F7C00994960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4504A00819266F7C00994960 /* Build configuration list for PBXNativeTarget "Jott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4504A00919266F7C00994960 /* Debug */,
+				4504A00A19266F7C00994960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4504A00B19266F7C00994960 /* Build configuration list for PBXNativeTarget "JottTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4504A00C19266F7C00994960 /* Debug */,
+				4504A00D19266F7C00994960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45049FCE19266F7C00994960 /* Project object */;
+}
