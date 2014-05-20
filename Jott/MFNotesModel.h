@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MFNote.h"
 
-@interface MFNotesModel : NSObject <UITableViewDataSource>
+@interface MFNotesModel : NSObject
 
 @property (nonatomic, strong) NSMutableArray *notesList;
 

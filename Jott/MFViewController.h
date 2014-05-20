@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MFMainView.h"
 
-@interface MFViewController : UIViewController <UITableViewDelegate>
+@interface MFViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) MFMainView *mainView;
+@property (nonatomic, strong) UIButton *addButton;
+@property (nonatomic, strong) UITableView *tableView;
 
 - (void)addNote;
 - (void)reloadTableView;

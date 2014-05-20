@@ -7,7 +7,6 @@
 //
 
 #import "MFAddNoteViewController.h"
-#import "MFAddNoteView.h"
 #import "MFViewController.h"
 #import "MFNotesModel.h"
 #import "MFNote.h"
@@ -19,7 +18,6 @@
 @implementation MFAddNoteViewController {
     UITextField *titleField;
     UITextField *noteField;
-    MFAddNoteView *view;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -34,18 +32,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    view = [[MFAddNoteView alloc] initWithFrame:self.view.bounds];
+    [self initialSetup];
+}
+
+- (void)initialSetup {
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
-
     
-    [view.cancelButton addTarget:self action:@selector(cancelNote) forControlEvents:UIControlEventTouchUpInside];
-    [view.saveButton addTarget:self action:@selector(saveNote) forControlEvents:UIControlEventTouchUpInside];
+    titleField = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
+    titleField.delegate = self;
+    titleField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
+    titleField.borderStyle = UITextBorderStyleBezel;
+    [titleField becomeFirstResponder];
     
-    [self.view addSubview:view];
+    noteField = [[UITextField alloc] initWithFrame:CGRectMake(10, 125, self.view.frame.size.width - 20, 400)];
+    noteField.delegate = self;
+    noteField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
+    noteField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
+    noteField.borderStyle = UITextBorderStyleBezel;
+    
+    
     self.navigationItem.leftBarButtonItem = cancel;
     self.navigationItem.rightBarButtonItem = save;
-    
+    [self.view addSubview:titleField];
+    [self.view addSubview:noteField];
 }
 
 - (void) cancelNote {

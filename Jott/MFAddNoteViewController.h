@@ -10,4 +10,7 @@
 
 @interface MFAddNoteViewController : UIViewController <UITextFieldDelegate>
 
+@property (nonatomic, weak) UIButton *cancelButton;
+@property (nonatomic, weak) UIButton *saveButton;
+
 @end
