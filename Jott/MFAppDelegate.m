@@ -7,11 +7,18 @@
 //
 
 #import "MFAppDelegate.h"
+#import "MFViewController.h"
 
 @implementation MFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    MFViewController *root = [[MFViewController alloc] init];
+    [self.window setRootViewController:root];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

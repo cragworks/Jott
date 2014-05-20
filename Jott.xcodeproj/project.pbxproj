@@ -13,7 +13,6 @@
 		45049FE419266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45049FE219266F7C00994960 /* InfoPlist.strings */; };
 		45049FE619266F7C00994960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE519266F7C00994960 /* main.m */; };
 		45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE919266F7C00994960 /* MFAppDelegate.m */; };
-		45049FED19266F7C00994960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45049FEB19266F7C00994960 /* Main.storyboard */; };
 		45049FF019266F7C00994960 /* MFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FEF19266F7C00994960 /* MFViewController.m */; };
 		45049FF219266F7C00994960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45049FF119266F7C00994960 /* Images.xcassets */; };
 		45049FF919266F7C00994960 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FF819266F7C00994960 /* XCTest.framework */; };
@@ -21,6 +20,12 @@
 		45049FFB19266F7C00994960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDD19266F7C00994960 /* UIKit.framework */; };
 		4504A00319266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4504A00119266F7C00994960 /* InfoPlist.strings */; };
 		4504A00519266F7C00994960 /* JottTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A00419266F7C00994960 /* JottTests.m */; };
+		4504A014192670CB00994960 /* MFMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A013192670CB00994960 /* MFMainView.m */; };
+		4504A017192673D200994960 /* plus-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4504A016192673D200994960 /* plus-50.png */; };
+		4504A01E19269D2600994960 /* MFNotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A01D19269D2600994960 /* MFNotesModel.m */; };
+		4504A02119269D5400994960 /* MFNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A02019269D5400994960 /* MFNote.m */; };
+		4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A0231928F02300994960 /* MFAddNoteViewController.m */; };
+		458F5DCC192BB53800E905A1 /* MFAddNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F5DCB192BB53800E905A1 /* MFAddNoteView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,6 @@
 		45049FE719266F7C00994960 /* Jott-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jott-Prefix.pch"; sourceTree = "<group>"; };
 		45049FE819266F7C00994960 /* MFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFAppDelegate.h; sourceTree = "<group>"; };
 		45049FE919266F7C00994960 /* MFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFAppDelegate.m; sourceTree = "<group>"; };
-		45049FEC19266F7C00994960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45049FEE19266F7C00994960 /* MFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFViewController.h; sourceTree = "<group>"; };
 		45049FEF19266F7C00994960 /* MFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFViewController.m; sourceTree = "<group>"; };
 		45049FF119266F7C00994960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,17 @@
 		4504A00019266F7C00994960 /* JottTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JottTests-Info.plist"; sourceTree = "<group>"; };
 		4504A00219266F7C00994960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4504A00419266F7C00994960 /* JottTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JottTests.m; sourceTree = "<group>"; };
+		4504A012192670CB00994960 /* MFMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMainView.h; sourceTree = "<group>"; };
+		4504A013192670CB00994960 /* MFMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMainView.m; sourceTree = "<group>"; };
+		4504A016192673D200994960 /* plus-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-50.png"; sourceTree = "<group>"; };
+		4504A01C19269D2600994960 /* MFNotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotesModel.h; sourceTree = "<group>"; };
+		4504A01D19269D2600994960 /* MFNotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotesModel.m; sourceTree = "<group>"; };
+		4504A01F19269D5400994960 /* MFNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNote.h; sourceTree = "<group>"; };
+		4504A02019269D5400994960 /* MFNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNote.m; sourceTree = "<group>"; };
+		4504A0221928F02300994960 /* MFAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAddNoteViewController.h; sourceTree = "<group>"; };
+		4504A0231928F02300994960 /* MFAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAddNoteViewController.m; sourceTree = "<group>"; };
+		458F5DCA192BB53800E905A1 /* MFAddNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAddNoteView.h; sourceTree = "<group>"; };
+		458F5DCB192BB53800E905A1 /* MFAddNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAddNoteView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +129,8 @@
 			children = (
 				45049FE819266F7C00994960 /* MFAppDelegate.h */,
 				45049FE919266F7C00994960 /* MFAppDelegate.m */,
-				45049FEB19266F7C00994960 /* Main.storyboard */,
-				45049FEE19266F7C00994960 /* MFViewController.h */,
-				45049FEF19266F7C00994960 /* MFViewController.m */,
+				4504A0181926761800994960 /* Add Note */,
+				4504A0111926701500994960 /* Main */,
 				45049FF119266F7C00994960 /* Images.xcassets */,
 				45049FE019266F7C00994960 /* Supporting Files */,
 			);
@@ -126,6 +140,7 @@
 		45049FE019266F7C00994960 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4504A015192673D200994960 /* Resources */,
 				45049FE119266F7C00994960 /* Jott-Info.plist */,
 				45049FE219266F7C00994960 /* InfoPlist.strings */,
 				45049FE519266F7C00994960 /* main.m */,
@@ -150,6 +165,80 @@
 				4504A00119266F7C00994960 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4504A00E19266FB400994960 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4504A01C19269D2600994960 /* MFNotesModel.h */,
+				4504A01D19269D2600994960 /* MFNotesModel.m */,
+				4504A01F19269D5400994960 /* MFNote.h */,
+				4504A02019269D5400994960 /* MFNote.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4504A00F19266FBB00994960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4504A012192670CB00994960 /* MFMainView.h */,
+				4504A013192670CB00994960 /* MFMainView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4504A01019266FC200994960 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45049FEE19266F7C00994960 /* MFViewController.h */,
+				45049FEF19266F7C00994960 /* MFViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4504A0111926701500994960 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4504A00E19266FB400994960 /* Model */,
+				4504A00F19266FBB00994960 /* View */,
+				4504A01019266FC200994960 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		4504A015192673D200994960 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4504A016192673D200994960 /* plus-50.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4504A0181926761800994960 /* Add Note */ = {
+			isa = PBXGroup;
+			children = (
+				458F5DC9192BB52000E905A1 /* View */,
+				458F5DCD192BB6F300E905A1 /* Controller */,
+			);
+			name = "Add Note";
+			sourceTree = "<group>";
+		};
+		458F5DC9192BB52000E905A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				458F5DCA192BB53800E905A1 /* MFAddNoteView.h */,
+				458F5DCB192BB53800E905A1 /* MFAddNoteView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		458F5DCD192BB6F300E905A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4504A0221928F02300994960 /* MFAddNoteViewController.h */,
+				4504A0231928F02300994960 /* MFAddNoteViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4504A017192673D200994960 /* plus-50.png in Resources */,
 				45049FF219266F7C00994960 /* Images.xcassets in Resources */,
 				45049FE419266F7C00994960 /* InfoPlist.strings in Resources */,
-				45049FED19266F7C00994960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,9 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */,
 				45049FE619266F7C00994960 /* main.m in Sources */,
 				45049FF019266F7C00994960 /* MFViewController.m in Sources */,
+				4504A02119269D5400994960 /* MFNote.m in Sources */,
+				4504A014192670CB00994960 /* MFMainView.m in Sources */,
 				45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */,
+				4504A01E19269D2600994960 /* MFNotesModel.m in Sources */,
+				458F5DCC192BB53800E905A1 /* MFAddNoteView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +374,6 @@
 				45049FE319266F7C00994960 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		45049FEB19266F7C00994960 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45049FEC19266F7C00994960 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		4504A00119266F7C00994960 /* InfoPlist.strings */ = {
@@ -456,6 +542,7 @@
 				4504A00A19266F7C00994960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4504A00B19266F7C00994960 /* Build configuration list for PBXNativeTarget "JottTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +551,7 @@
 				4504A00D19266F7C00994960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
