@@ -63,7 +63,7 @@
 - (void)saveNote {
 
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
-    //[self.tableView reloadData];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,10 +92,11 @@
     NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:(NSUInteger)indexPath] description];
+    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
+    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
     
     return cell;
 }
