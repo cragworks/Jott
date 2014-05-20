@@ -14,7 +14,9 @@
 @property (nonatomic, strong) UITableView *tableView;
 
 - (void)addNote;
-- (void)reloadTableView;
-+ (MFViewController *)sharedController;
+- (void)saveNote;
+- (void)cancelNote;
+
+//+ (MFViewController *)sharedController;
 
 @end

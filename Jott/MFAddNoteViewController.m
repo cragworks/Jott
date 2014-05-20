@@ -59,7 +59,7 @@
 }
 
 - (void) cancelNote {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [(MFViewController *)self.presentingViewController saveNote];
 }
 
 - (void) saveNote {
@@ -68,11 +68,8 @@
     note.text = noteField.text;
     
     [[MFNotesModel sharedModel] addNote:note];
-    [[MFViewController sharedController] reloadTableView];
+    [(MFViewController *)self.presentingViewController saveNote];
     
-//    [self dismissViewControllerAnimated:YES completion:^{
-//        [[MFViewController sharedController] reloadTableView];
-//    }];
 }
 
 - (void)didReceiveMemoryWarning

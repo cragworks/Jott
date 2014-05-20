@@ -201,18 +201,10 @@
 		4504A0181926761800994960 /* Add Note */ = {
 			isa = PBXGroup;
 			children = (
-				458F5DCD192BB6F300E905A1 /* Controller */,
-			);
-			name = "Add Note";
-			sourceTree = "<group>";
-		};
-		458F5DCD192BB6F300E905A1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 				4504A0221928F02300994960 /* MFAddNoteViewController.h */,
 				4504A0231928F02300994960 /* MFAddNoteViewController.m */,
 			);
-			name = Controller;
+			name = "Add Note";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
