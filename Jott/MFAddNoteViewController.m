@@ -36,6 +36,8 @@
 }
 
 - (void)initialSetup {
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
     
@@ -59,17 +61,19 @@
 }
 
 - (void) cancelNote {
-    [(MFViewController *)self.presentingViewController saveNote];
+    [(MFViewController *)self.presentingViewController dismissAddNoteViewController];
 }
 
 - (void) saveNote {
-    MFNote *note = [[MFNote alloc] init];
-    note.title = titleField.text;
-    note.text = noteField.text;
+    MFViewController *presentingViewController = (MFViewController *)self.presentingViewController;
+    MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
+    mfnote.title = titleField.text;
+    mfnote.text = noteField.text;
+    NSError *error = nil;
+    [presentingViewController.managedObjectContext save:&error];
     
-    [[MFNotesModel sharedModel] addNote:note];
-    [(MFViewController *)self.presentingViewController saveNote];
-    
+    [[MFNotesModel sharedModel] addNote:mfnote];
+    [presentingViewController dismissAddNoteViewController];
 }
 
 - (void)didReceiveMemoryWarning

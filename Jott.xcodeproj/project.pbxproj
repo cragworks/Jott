@@ -24,6 +24,8 @@
 		4504A01E19269D2600994960 /* MFNotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A01D19269D2600994960 /* MFNotesModel.m */; };
 		4504A02119269D5400994960 /* MFNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A02019269D5400994960 /* MFNote.m */; };
 		4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A0231928F02300994960 /* MFAddNoteViewController.m */; };
+		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
+		458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		4504A02019269D5400994960 /* MFNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNote.m; sourceTree = "<group>"; };
 		4504A0221928F02300994960 /* MFAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAddNoteViewController.h; sourceTree = "<group>"; };
 		4504A0231928F02300994960 /* MFAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAddNoteViewController.m; sourceTree = "<group>"; };
+		458F5DCE192CF9E600E905A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		458F5DD1192CFAB600E905A1 /* Jott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jott.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */,
 				45049FDC19266F7C00994960 /* CoreGraphics.framework in Frameworks */,
 				45049FDE19266F7C00994960 /* UIKit.framework in Frameworks */,
 				45049FDA19266F7C00994960 /* Foundation.framework in Frameworks */,
@@ -110,6 +115,7 @@
 		45049FD819266F7C00994960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				458F5DCE192CF9E600E905A1 /* CoreData.framework */,
 				45049FD919266F7C00994960 /* Foundation.framework */,
 				45049FDB19266F7C00994960 /* CoreGraphics.framework */,
 				45049FDD19266F7C00994960 /* UIKit.framework */,
@@ -126,6 +132,7 @@
 				4504A0181926761800994960 /* Add Note */,
 				4504A0111926701500994960 /* Main */,
 				45049FF119266F7C00994960 /* Images.xcassets */,
+				458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */,
 				45049FE019266F7C00994960 /* Supporting Files */,
 			);
 			path = Jott;
@@ -307,6 +314,7 @@
 				4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */,
 				45049FE619266F7C00994960 /* main.m in Sources */,
 				45049FF019266F7C00994960 /* MFViewController.m in Sources */,
+				458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */,
 				4504A02119269D5400994960 /* MFNote.m in Sources */,
 				45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */,
 				4504A01E19269D2600994960 /* MFNotesModel.m in Sources */,
@@ -518,6 +526,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				458F5DD1192CFAB600E905A1 /* Jott.xcdatamodel */,
+			);
+			currentVersion = 458F5DD1192CFAB600E905A1 /* Jott.xcdatamodel */;
+			path = Jott.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45049FCE19266F7C00994960 /* Project object */;
 }

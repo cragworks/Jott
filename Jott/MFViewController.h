@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "MFNote.h"
 
 @interface MFViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic, strong) UIButton *addButton;
 @property (nonatomic, strong) UITableView *tableView;
 
 - (void)addNote;
-- (void)saveNote;
-- (void)cancelNote;
-
-//+ (MFViewController *)sharedController;
+- (void)dismissAddNoteViewController;
 
 @end

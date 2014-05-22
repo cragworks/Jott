@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface MFNote : NSObject
+@interface MFNote : NSManagedObject
 
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSString *title;

@@ -8,11 +8,32 @@
 
 #import "MFAppDelegate.h"
 #import "MFViewController.h"
+#import "MFNote.h"
+#import <CoreData/CoreData.h>
 
 @implementation MFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSManagedObjectContext *context = [self managedObjectContext];
+//    MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:context];
+//    mfnote.title = @"Test 1";
+//    mfnote.text = @"Some text...";
+    
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+//    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+//    for (NSManagedObject *note in fetchedObjects) {
+//        NSLog(@"Title: %@",[note valueForKey:@"title"]);
+//        NSLog(@"Text: %@",[note valueForKey:@"text"]);
+//    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MFViewController *root = [[MFViewController alloc] init];
     [self.window setRootViewController:root];
@@ -48,6 +69,69 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)saveContext
+{
+    NSError *error = nil;
+    NSManagedObjectContext *managedObjectContext1 = self.managedObjectContext;
+    if (managedObjectContext1 != nil) {
+        if ([managedObjectContext1 hasChanges] && ![managedObjectContext save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
+    }
+}
+
+#pragma mark - Core Data stack
+
+- (NSManagedObjectContext *) managedObjectContext {
+    if (managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+    }
+    
+    return managedObjectContext;
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    
+    return managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory]
+                                               stringByAppendingPathComponent: @"<Project Name>.sqlite"]];
+    NSError *error = nil;
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
+                                  initWithManagedObjectModel:[self managedObjectModel]];
+    if(![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                 configuration:nil URL:storeUrl options:nil error:&error]) {
+        /*Error for store creation should be handled in here*/
+    }
+    
+    return persistentStoreCoordinator;
+}
+
+
+#pragma mark - Application's Documents directory
+
+- (NSString *)applicationDocumentsDirectory {
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
 @end

@@ -8,6 +8,11 @@
 
 #import "MFNote.h"
 
-@implementation MFNote
+@implementation MFNote : NSManagedObject
+
+@dynamic title;
+@dynamic text;
+@dynamic canView;
+@dynamic isEncrypted;
 
 @end
