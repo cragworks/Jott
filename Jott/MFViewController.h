@@ -14,11 +14,11 @@
 
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
-
+@property (nonatomic, strong) MFNote *currentNote;
 @property (nonatomic, strong) UIButton *addButton;
 @property (nonatomic, strong) UITableView *tableView;
 
 - (void)addNote;
-- (void)dismissAddNoteViewController;
+- (void)dismissPresentedViewController;
 
 @end

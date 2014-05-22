@@ -10,6 +10,8 @@
 #import "MFViewController.h"
 #import "MFNotesModel.h"
 #import "MFNote.h"
+#import "NSString+AESCrypt.h"
+#import "NSData+AESCrypt.h"
 
 @interface MFAddNoteViewController ()
 
@@ -37,6 +39,7 @@
 
 - (void)initialSetup {
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
@@ -61,7 +64,7 @@
 }
 
 - (void) cancelNote {
-    [(MFViewController *)self.presentingViewController dismissAddNoteViewController];
+    [(MFViewController *)self.presentingViewController dismissPresentedViewController];
 }
 
 - (void) saveNote {
@@ -69,11 +72,21 @@
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
     mfnote.title = titleField.text;
     mfnote.text = noteField.text;
+    mfnote.encryptedTitle = [self encryptText:titleField.text];
+    mfnote.encryptedText = [self encryptText:noteField.text];
+    mfnote.isEncrypted = YES;
+
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
     
     [[MFNotesModel sharedModel] addNote:mfnote];
-    [presentingViewController dismissAddNoteViewController];
+    [presentingViewController dismissPresentedViewController];
+}
+
+- (NSString *)encryptText:(NSString *)text {
+    NSString *encryptedText = [text AES256EncryptWithKey:@"Mohssen"];
+    
+    return encryptedText;
 }
 
 - (void)didReceiveMemoryWarning

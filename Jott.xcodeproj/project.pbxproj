@@ -26,6 +26,9 @@
 		4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A0231928F02300994960 /* MFAddNoteViewController.m */; };
 		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
 		458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */; };
+		45E4A470192D9BFB00988E35 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A46D192D9BFB00988E35 /* NSData+AESCrypt.m */; };
+		45E4A471192D9BFB00988E35 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A46F192D9BFB00988E35 /* NSString+AESCrypt.m */; };
+		45E4A477192D9CAE00988E35 /* MFViewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		4504A0231928F02300994960 /* MFAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAddNoteViewController.m; sourceTree = "<group>"; };
 		458F5DCE192CF9E600E905A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		458F5DD1192CFAB600E905A1 /* Jott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jott.xcdatamodel; sourceTree = "<group>"; };
+		45E4A46C192D9BFB00988E35 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AESCrypt.h"; path = "../../Notes/Notes/NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		45E4A46D192D9BFB00988E35 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AESCrypt.m"; path = "../../Notes/Notes/NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		45E4A46E192D9BFB00988E35 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+AESCrypt.h"; path = "../../Notes/Notes/NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		45E4A46F192D9BFB00988E35 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+AESCrypt.m"; path = "../../Notes/Notes/NSString+AESCrypt.m"; sourceTree = "<group>"; };
+		45E4A475192D9CAE00988E35 /* MFViewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFViewNoteViewController.h; sourceTree = "<group>"; };
+		45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFViewNoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +138,10 @@
 			children = (
 				45049FE819266F7C00994960 /* MFAppDelegate.h */,
 				45049FE919266F7C00994960 /* MFAppDelegate.m */,
+				45E4A474192D9C7800988E35 /* View Note */,
 				4504A0181926761800994960 /* Add Note */,
 				4504A0111926701500994960 /* Main */,
+				45E4A472192D9C0900988E35 /* Encryption */,
 				45049FF119266F7C00994960 /* Images.xcassets */,
 				458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */,
 				45049FE019266F7C00994960 /* Supporting Files */,
@@ -212,6 +223,26 @@
 				4504A0231928F02300994960 /* MFAddNoteViewController.m */,
 			);
 			name = "Add Note";
+			sourceTree = "<group>";
+		};
+		45E4A472192D9C0900988E35 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				45E4A46C192D9BFB00988E35 /* NSData+AESCrypt.h */,
+				45E4A46D192D9BFB00988E35 /* NSData+AESCrypt.m */,
+				45E4A46E192D9BFB00988E35 /* NSString+AESCrypt.h */,
+				45E4A46F192D9BFB00988E35 /* NSString+AESCrypt.m */,
+			);
+			name = Encryption;
+			sourceTree = "<group>";
+		};
+		45E4A474192D9C7800988E35 /* View Note */ = {
+			isa = PBXGroup;
+			children = (
+				45E4A475192D9CAE00988E35 /* MFViewNoteViewController.h */,
+				45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */,
+			);
+			name = "View Note";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,8 +345,11 @@
 				4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */,
 				45049FE619266F7C00994960 /* main.m in Sources */,
 				45049FF019266F7C00994960 /* MFViewController.m in Sources */,
+				45E4A471192D9BFB00988E35 /* NSString+AESCrypt.m in Sources */,
+				45E4A477192D9CAE00988E35 /* MFViewNoteViewController.m in Sources */,
 				458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */,
 				4504A02119269D5400994960 /* MFNote.m in Sources */,
+				45E4A470192D9BFB00988E35 /* NSData+AESCrypt.m in Sources */,
 				45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */,
 				4504A01E19269D2600994960 /* MFNotesModel.m in Sources */,
 			);

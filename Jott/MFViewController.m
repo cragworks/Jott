@@ -10,6 +10,7 @@
 #import "MFNotesModel.h"
 #import "MFAddNoteViewController.h"
 #import "MFAppDelegate.h"
+#import "MFViewNoteViewController.h"
 
 @interface MFViewController ()
 
@@ -60,7 +61,7 @@
     [self presentViewController:navController animated:YES completion:nil];
 }
 
-- (void)dismissAddNoteViewController {
+- (void)dismissPresentedViewController {
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
     [self.tableView reloadData];
 }
@@ -86,6 +87,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row];
+    MFViewNoteViewController *viewNoteController = [[MFViewNoteViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
+    
+    [self presentViewController:navController animated:YES completion:nil];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -111,8 +117,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
-    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
+    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] encryptedTitle];
+    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] encryptedText];
     
     return cell;
 }

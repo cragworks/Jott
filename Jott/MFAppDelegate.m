@@ -16,24 +16,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSManagedObjectContext *context = [self managedObjectContext];
-//    MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:context];
-//    mfnote.title = @"Test 1";
-//    mfnote.text = @"Some text...";
-    
+
     NSError *error;
     if (![context save:&error]) {
-        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        NSLog(@"Couldn't save: %@", [error localizedDescription]);
     }
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
-//    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-//    for (NSManagedObject *note in fetchedObjects) {
-//        NSLog(@"Title: %@",[note valueForKey:@"title"]);
-//        NSLog(@"Text: %@",[note valueForKey:@"text"]);
-//    }
-    
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MFViewController *root = [[MFViewController alloc] init];
     [self.window setRootViewController:root];
