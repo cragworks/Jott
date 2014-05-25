@@ -72,8 +72,8 @@
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
     mfnote.title = titleField.text;
     mfnote.text = noteField.text;
-    mfnote.encryptedTitle = [self encryptText:titleField.text];
-    mfnote.encryptedText = [self encryptText:noteField.text];
+    mfnote.title = [self encryptText:titleField.text];
+    mfnote.text = [self encryptText:noteField.text];
     mfnote.isEncrypted = YES;
 
     NSError *error = nil;

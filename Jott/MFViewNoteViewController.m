@@ -11,6 +11,8 @@
 #import "MFNotesModel.h"
 #import "MFNote.h"
 #import "MFViewController.h"
+#import "MFAppDelegate.h"
+#import "NSString+AESCrypt.h"
 
 @interface MFViewNoteViewController () {
     BOOL isBeingEdited;
@@ -20,7 +22,6 @@
     UIButton *cryptButton;
     MFViewController *presentingViewController;
 }
-
 @end
 
 @implementation MFViewNoteViewController
@@ -41,24 +42,31 @@
 }
 
 - (void)initialSetup {
+    
+    //
+    //  Remove password storage later
+    //
+    
+    MFAppDelegate *appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
+    _password = appDelegate.password;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     presentingViewController = (MFViewController *)self.presentingViewController;
     isEncrypted = presentingViewController.currentNote.isEncrypted;
     
-    back = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+    back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(edit)];
     UIView *cryptView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     cryptButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     cryptButton.frame = CGRectMake(0, 0, 100, 50);
     [cryptButton setTitle:@"Decrypt" forState:UIControlStateNormal];
-    [cryptButton addTarget:self action:@selector(changeTextEncryption) forControlEvents:UIControlEventTouchUpInside];
+    [cryptButton addTarget:self action:@selector(decryptButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [cryptView addSubview:cryptButton];
     
     _titleField = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
     _titleField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
     _titleField.userInteractionEnabled = NO;
-    _titleField.text = presentingViewController.currentNote.encryptedTitle;
+    _titleField.text = presentingViewController.currentNote.title;
 
     [_titleField becomeFirstResponder];
     
@@ -66,7 +74,7 @@
     _noteField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
     _noteField.userInteractionEnabled = NO;
     _noteField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
-    _noteField.text = presentingViewController.currentNote.encryptedText;
+    _noteField.text = presentingViewController.currentNote.text;
     
     self.navigationItem.leftBarButtonItem = back;
     self.navigationItem.rightBarButtonItem = edit;
@@ -75,42 +83,91 @@
     [self.view addSubview:_noteField];
 }
 
-- (void)changeTextEncryption {
-    if (isEncrypted) {
-        [cryptButton setTitle:@"Encrypt" forState:UIControlStateNormal];
-        _titleField.text = presentingViewController.currentNote.title;
-        _noteField.text = presentingViewController.currentNote.text;
-        isEncrypted = NO;
-        presentingViewController.currentNote.isEncrypted = NO;
-    }
-    else {
-        [cryptButton setTitle:@"Decrypt" forState:UIControlStateNormal];
-        _titleField.text = presentingViewController.currentNote.encryptedTitle;
-        _noteField.text = presentingViewController.currentNote.encryptedText;
-        isEncrypted = YES;
-        presentingViewController.currentNote.isEncrypted = YES;
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if ([[alertView textFieldAtIndex:0].text isEqualToString:_password]) {
+        [self changeTextEncryption];
     }
 }
 
-- (void)back {
+- (void)decryptButtonTapped {
+    if (!isEncrypted) {
+        [self changeTextEncryption];
+    }
+    else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Enter Password"
+                                                            message:@"Enter the key to decrypt text:"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"Enter", nil];
+        alertView.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        [alertView show];
+    }
+}
+
+- (void)changeTextEncryption {
+    
+    if (!isBeingEdited) {
+        if (isEncrypted) {
+            [cryptButton setTitle:@"Encrypt" forState:UIControlStateNormal];
+            
+            [self decryptText];
+            
+            isEncrypted = NO;
+            presentingViewController.currentNote.isEncrypted = NO;
+        }
+        else {
+            [cryptButton setTitle:@"Decrypt" forState:UIControlStateNormal];
+            
+            [self encryptText];
+            
+            isEncrypted = YES;
+            presentingViewController.currentNote.isEncrypted = YES;
+        }
+    }
+}
+
+- (void)decryptText {
+    presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256DecryptWithKey:_password];
+    presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256DecryptWithKey:_password];
+    _titleField.text = presentingViewController.currentNote.title;
+    _noteField.text = presentingViewController.currentNote.text;
+    
+}
+
+- (void)encryptText {
+    presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256EncryptWithKey:_password];
+    presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256EncryptWithKey:_password];
+    _titleField.text = presentingViewController.currentNote.title;
+    _noteField.text = presentingViewController.currentNote.text;
+}
+
+- (void)cancel {
+    isEncrypted = YES;
+    [self encryptText];
+    presentingViewController.currentNote.isEncrypted = YES;
     [(MFViewController *)self.presentingViewController dismissPresentedViewController];
 }
 
 - (void)edit {
-    if (isBeingEdited) {
-        edit.title = @"Edit";
-        _titleField.userInteractionEnabled = NO;
-        _noteField.userInteractionEnabled = NO;
-        isBeingEdited = NO;
-       // [self save];
-    }
-    else {
-        edit.title = @"Done";
-        _titleField.userInteractionEnabled = YES;
-        _noteField.userInteractionEnabled = YES;
-        [_titleField becomeFirstResponder];
-        isBeingEdited = YES;
-        
+    if (!isEncrypted) {
+        if (isBeingEdited) {
+            edit.title = @"Edit";
+            back.title = @"Done";
+            _titleField.userInteractionEnabled = NO;
+            _noteField.userInteractionEnabled = NO;
+            isBeingEdited = NO;
+            
+            presentingViewController.currentNote.title = _titleField.text;
+            presentingViewController.currentNote.text = _noteField.text;
+        }
+        else {
+            edit.title = @"Save";
+            back.title = @"Cancel";
+            _titleField.userInteractionEnabled = YES;
+            _noteField.userInteractionEnabled = YES;
+            [_titleField becomeFirstResponder];
+            isBeingEdited = YES;
+        }
     }
 }
 

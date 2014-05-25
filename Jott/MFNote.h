@@ -13,8 +13,8 @@
 
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *encryptedText;
-@property (nonatomic, strong) NSString *encryptedTitle;
+//@property (nonatomic, strong) NSString *encryptedText;
+//@property (nonatomic, strong) NSString *encryptedTitle;
 
 @property (nonatomic, strong) NSMutableArray *canView;
 @property (nonatomic, assign) BOOL isEncrypted;

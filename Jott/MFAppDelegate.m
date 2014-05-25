@@ -9,12 +9,26 @@
 #import "MFAppDelegate.h"
 #import "MFViewController.h"
 #import "MFNote.h"
+#import "MFKeychainWrapper.h"
+#import "MFSettingsViewController.h"
+#import "MFViewNoteViewController.h"
 #import <CoreData/CoreData.h>
 
 @implementation MFAppDelegate
 
+@synthesize passwordItem, accountNumberItem, settingsViewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    _wrapper = [[MFKeychainWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
+	self.passwordItem = _wrapper;
+    
+    settingsViewController = [[MFSettingsViewController alloc] init];
+    settingsViewController.passwordItem = _wrapper;
+    
+    _password = [_wrapper objectForKey:(__bridge id)kSecValueData];
+    
+
     NSManagedObjectContext *context = [self managedObjectContext];
 
     NSError *error;
@@ -107,7 +121,7 @@
         return persistentStoreCoordinator;
     }
     NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory]
-                                               stringByAppendingPathComponent: @"<Project Name>.sqlite"]];
+                                               stringByAppendingPathComponent: @"Jott.sqlite"]];
     NSError *error = nil;
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc]
                                   initWithManagedObjectModel:[self managedObjectModel]];

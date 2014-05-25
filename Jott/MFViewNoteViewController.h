@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MFNote.h"
+#import "MFKeychainWrapper.h"
 
-@interface MFViewNoteViewController : UIViewController // <UITextFieldDelegate>
+@interface MFViewNoteViewController : UIViewController <UIAlertViewDelegate>
 
 @property (nonatomic, strong) UITextField *titleField;
 @property (nonatomic, strong) UITextField *noteField;
+@property (nonatomic, retain) NSString *password;
 
 - (void)changeTextEncryption;
 

@@ -11,6 +11,7 @@
 #import "MFAddNoteViewController.h"
 #import "MFAppDelegate.h"
 #import "MFViewNoteViewController.h"
+#import "MFSettingsViewController.h"
 
 @interface MFViewController ()
 
@@ -18,6 +19,7 @@
 
 @implementation MFViewController {
     MFAddNoteViewController *anvc;
+    MFAppDelegate *delegate;
 }
 
 - (void)viewDidLoad
@@ -27,7 +29,7 @@
 }
 
 - (void)initialSetup {
-    MFAppDelegate *delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
 
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -40,16 +42,23 @@
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height*0.15, self.view.frame.size.width - 20, self.view.frame.size.height*0.7) style:UITableViewStylePlain];
     _tableView.rowHeight = 75.0;
+    
+    _settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _settingsButton.frame = CGRectMake(20, 45, 25, 25);
+    [_settingsButton setImage:[UIImage imageNamed:@"settings-50.png"] forState:UIControlStateNormal];
+    
     _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _addButton.frame = CGRectMake(self.view.frame.size.width - 45, 40, 30, 30);
     [_addButton setImage:[UIImage imageNamed:@"plus-50.png"] forState:UIControlStateNormal];
     
+    [self.view addSubview:_settingsButton];
     [self.view addSubview:_addButton];
     [self.view addSubview:_tableView];
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
+    [_settingsButton addTarget:self action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
     [_addButton addTarget:self action:@selector(addNote) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -57,7 +66,21 @@
     
     anvc = [[MFAddNoteViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:anvc];
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)presentSettingsViewController {
+    MFSettingsViewController *svc = [delegate settingsViewController];
+    [svc.tableView setScrollEnabled:NO];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:svc];
     
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)presentViewNoteViewController {
+    MFViewNoteViewController *viewNoteController = [[MFViewNoteViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
+    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
     [self presentViewController:navController animated:YES completion:nil];
 }
 
@@ -88,10 +111,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row];
-    MFViewNoteViewController *viewNoteController = [[MFViewNoteViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
-    
-    [self presentViewController:navController animated:YES completion:nil];
+    [self presentViewNoteViewController];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -117,8 +137,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] encryptedTitle];
-    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] encryptedText];
+    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
+    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
     
     return cell;
 }
