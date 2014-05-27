@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/src/array.cpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/src/precomp.hpp \
+  /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp \
+  /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/core_c.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types_c.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opengl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp

@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/video/src/optflowgf.cpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/video/src/precomp.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include/opencv2/video.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include/opencv2/video/tracking.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include/opencv2/video/background_segm.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp \
+  /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp \
+  /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/video/opencl_kernels.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp \
+  /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp

@@ -1,0 +1,797 @@
+Topencv_softcascade
+v6
+r1
+cCheck dependencies
+cSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a normal arm64
+cStripping /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+cSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+cSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053487867000000000000036B
+t1397258343
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053487867000000000000019E
+t1397258343
+s414
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+c000000005383E85D0000000000000E1D
+t1401153629
+s3613
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a
+t1401153656
+s130272
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o
+t1401153655
+s32076
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o
+t1401153655
+s8352
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o
+t1401153655
+s29932
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o
+t1401153655
+s42508
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/opencv_softcascade.LinkFileList
+c000000005383E8760000000000000354
+t1401153654
+s852
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o
+t1401153655
+s10276
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+t1401153707
+s130272
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+c000000005383E43C000000000000CB04
+t1401152572
+s51972
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+c000000005383E43C0000000000005484
+t1401152572
+s21636
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+c000000005383E43C00000000000002BA
+t1401152572
+s698
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/core_c.h
+c000000005383E43C00000000000163EB
+t1401152572
+s91115
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+c000000005383E43C00000000000058E4
+t1401152572
+s22756
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+c000000005383E43C00000000000032EC
+t1401152572
+s13036
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+c000000005383E43C000000000000147B
+t1401152572
+s5243
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+c000000005383E43C0000000000003C8F
+t1401152572
+s15503
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+c000000005383E43C0000000000006376
+t1401152572
+s25462
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+c000000005383E43C0000000000001B43
+t1401152572
+s6979
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+c000000005383E43C0000000000016C7F
+t1401152572
+s93311
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+c000000005383E43C0000000000014618
+t1401152572
+s83480
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+c000000005383E43C000000000000A573
+t1401152572
+s42355
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+c000000005383E43C0000000000004752
+t1401152572
+s18258
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+c000000005383E43C00000000000077C3
+t1401152572
+s30659
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+c000000005383E43C00000000000017EE
+t1401152572
+s6126
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+c000000005383E43C0000000000003187
+t1401152572
+s12679
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+c000000005383E43C000000000000208C
+t1401152572
+s8332
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+c000000005383E43C0000000000001F49
+t1401152572
+s8009
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+c000000005383E43C000000000000CCD2
+t1401152572
+s52434
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types_c.h
+c000000005383E43C000000000000D731
+t1401152572
+s55089
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+c000000005383E43C0000000000003CD5
+t1401152572
+s15573
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+c000000005383E43C0000000000000B67
+t1401152572
+s2919
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+c000000005383E43C000000000000FED4
+t1401152572
+s65236
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp
+c000000005383E43C0000000000013693
+t1401152572
+s79507
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+c000000005383E43C0000000000002D04
+t1401152572
+s11524
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp
+c000000005383E43C0000000000004AC3
+t1401152572
+s19139
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp
+c000000005383E43C000000000000539A
+t1401152572
+s21402
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp
+c000000005383E43C0000000000002000
+t1401152572
+s8192
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp
+c000000005383E43C000000000000398D
+t1401152572
+s14733
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+c000000005383E43C0000000000000C5A
+t1401152572
+s3162
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp
+c000000005383E43C0000000000000BE8
+t1401152572
+s3048
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies2941572b2034b941^a852572b2034b941^---0#1#1#--18"Check dependencies36"33CEE346-96F5-420B-B4D1-FD494C31029E-
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846454.184624
+e422846455.797534
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 3)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, String name) const = 0;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 2)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:129:28: [0m[0;1;35mwarning: [0m[1munused
+o      variable 'SC_OCT_SHRINKAGE' [-Wunused-const-variable][0m
+oconst char *const SOctave::SC_OCT_SHRINKAGE  = "shrinkingFactor";
+o[0;1;32m                           ^
+o[0m3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp287"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o [1mmodules/softcascade/src/detector.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler815f2ff61f34b941^0531ccf71f34b941^-2822"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 3)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, String name) const = 0;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 2)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:129:28: [0m[0;1;35mwarning: [0m[1munused      variable 'SC_OCT_SHRINKAGE' [-Wunused-const-variable][0mconst char *const SOctave::SC_OCT_SHRINKAGE  = "shrinkingFactor";[0;1;32m                           ^[0m3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@102"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^214#17#214#17#8284#0#14"Semantic Issue--2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@102"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^215#17#215#17#8388#0#14"Semantic Issue--2@34"Unused variable 'SC_OCT_SHRINKAGE'-422846455#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp0000000000000000^128#27#128#27#4249#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp0000000000000000^3479"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o [1mmodules/softcascade/src/detector.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector.o36"9CC340AF-0394-4048-B677-5D8C01EAE268-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846454.185853
+e422846455.121519
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 3)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, String name) const = 0;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 2)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp297"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o [1mmodules/softcascade/src/detector_cuda.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerb11530f61f34b941^f67e1ff71f34b941^-2544"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 3)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, String name) const = 0;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 2)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@107"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@88"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp0000000000000000^42#9#42#9#2171#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^214#17#214#17#8284#0#14"Semantic Issue--2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@107"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp0000000000000000^42#9#42#9#2171#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^215#17#215#17#8388#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@88"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp0000000000000000^3509"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o [1mmodules/softcascade/src/detector_cuda.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/detector_cuda.o36"16FAACCA-2898-4092-AAB8-5FF8A3EB9D81-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846454.186175
+e422846455.488526
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 3)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, String name) const = 0;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 2)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:121:1: [0m[0;1;35mwarning: [0m[1m
+o      unused function 'createHOG6MagLuv_ptr_hidden' [-Wunused-function][0m
+oCV_INIT_ALGORITHM(HOG6MagLuv,  "ChannelFeatureBuilder.HOG6MagLuv", )
+o[0;1;32m^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:51:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp:136:47: [0m[0;1;30mnote: [0m
+o      expanded from macro 'CV_INIT_ALGORITHM'[0m
+o    static inline ::cv::Ptr< ::cv::Algorithm> create##classname##_ptr_hidden() \
+o[0;1;32m                                              ^
+o[0m[1m<scratch space>:16:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+ocreateHOG6MagLuv_ptr_hidden
+o[0;1;32m^
+o[0m3 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp319"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o [1mmodules/softcascade/src/integral_channel_builder.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerd6c72ff61f34b941^f6b27df71f34b941^-3533"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 3)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, String name) const = 0;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 2)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:121:1: [0m[0;1;35mwarning: [0m[1m      unused function 'createHOG6MagLuv_ptr_hidden' [-Wunused-function][0mCV_INIT_ALGORITHM(HOG6MagLuv,  "ChannelFeatureBuilder.HOG6MagLuv", )[0;1;32m^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:51:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp:136:47: [0m[0;1;30mnote: [0m      expanded from macro 'CV_INIT_ALGORITHM'[0m    static inline ::cv::Ptr< ::cv::Algorithm> create##classname##_ptr_hidden() \[0;1;32m                                              ^[0m[1m<scratch space>:16:1: [0m[0;1;30mnote: [0mexpanded from here[0mcreateHOG6MagLuv_ptr_hidden[0;1;32m^[0m3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@118"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@99"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^214#17#214#17#8284#0#14"Semantic Issue--2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@118"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@99"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^215#17#215#17#8388#0#14"Semantic Issue--2@45"Unused function 'createHOG6MagLuv_ptr_hidden'-422846455#18446744073709551615#0#2(2@39"Expanded from macro 'CV_INIT_ALGORITHM'-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp0000000000000000^135#46#135#46#4532#0#21"Apple LLVM 5.1 Notice--2@18"Expanded from here-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/%3Cscratch%20space%3E0000000000000000^15#0#15#0#566#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@99"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp0000000000000000^120#0#120#0#4414#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@99"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp0000000000000000^3575"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o [1mmodules/softcascade/src/integral_channel_builder.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/integral_channel_builder.o36"79953359-E463-4EEB-A618-92DB0A1B8BA1-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846454.240437
+e422846455.799310
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 3)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, String name) const = 0;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 2)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m
+o      'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvDTree::train' declared here: different number of parameters
+o      (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvDTree::train' declared here: different number of parameters
+o      (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m
+o      'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m
+o    virtual bool train( CvDTreeTrainData* trainData,
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvDTree::train' declared here: different number of parameters
+o      (2 vs 3)[0m
+o    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvDTree::train' declared here: different number of parameters
+o      (8 vs 3)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:69:18: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions
+o      [-Woverloaded-virtual][0m
+o    virtual bool train(const Dataset* dataset, const FeaturePool* pool, int weaks, int treeDepth);
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1220:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (9 vs 4)[0m
+o    virtual bool train( const CvMat* trainData, int tflag,
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1227:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (3 vs 4)[0m
+o    virtual bool train( CvMLData* data,
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1241:26: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (9 vs 4)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:71:18: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function
+o      [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1258:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::write' declared here: different number of parameters
+o      (2 vs 3)[0m
+o    virtual void write( CvFileStorage* storage, const char* name ) const;
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:72:18: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function
+o      [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, cv::String name) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1258:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::write' declared here: type mismatch at 2nd parameter
+o      ('const char *' vs 'cv::String')[0m
+o    virtual void write( CvFileStorage* storage, const char* name ) const;
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:74:19: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions
+o      [-Woverloaded-virtual][0m
+o    virtual float predict( InputArray _sample, InputArray _votes, bool raw_mode, bool return_...
+o[0;1;32m                  ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1231:19: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters
+o      (6 vs 4)[0m
+o    virtual float predict( const CvMat* sample, const CvMat* missing=0,
+o[0;1;32m                  ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1248:27: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters
+o      (5 vs 4)[0m
+o    CV_WRAP virtual float predict( const cv::Mat& sample, const cv::Mat& missing=cv::Mat(),
+o[0;1;32m                          ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:75:18: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions
+o      [-Woverloaded-virtual][0m
+o    virtual bool train( const cv::Mat& trainData, const cv::Mat& responses, const cv::Mat& va...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1220:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (9 vs 6)[0m
+o    virtual bool train( const CvMat* trainData, int tflag,
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1227:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (3 vs 6)[0m
+o    virtual bool train( CvMLData* data,
+o[0;1;32m                 ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1241:26: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::train' declared here: different number of parameters
+o      (9 vs 6)[0m
+o    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,
+o[0;1;32m                         ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:81:11: [0m[0;1;35mwarning: [0m[1m
+o      '<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions
+o      [-Woverloaded-virtual][0m
+o    float predict( const Mat& _sample, const cv::Range range) const;
+o[0;1;32m          ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1231:19: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters
+o      (6 vs 2)[0m
+o    virtual float predict( const CvMat* sample, const CvMat* missing=0,
+o[0;1;32m                  ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1248:27: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters
+o      (5 vs 2)[0m
+o    CV_WRAP virtual float predict( const cv::Mat& sample, const cv::Mat& missing=cv::Mat(),
+o[0;1;32m                          ^
+o[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:448:1: [0m[0;1;35mwarning: [0m[1munused
+o      function 'createBoostedSoftCascadeOctave_ptr_hidden' [-Wunused-function][0m
+oCV_INIT_ALGORITHM(BoostedSoftCascadeOctave, "Octave.BoostedSoftCascadeOctave", )
+o[0;1;32m^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:51:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp:136:47: [0m[0;1;30mnote: [0m
+o      expanded from macro 'CV_INIT_ALGORITHM'[0m
+o    static inline ::cv::Ptr< ::cv::Algorithm> create##classname##_ptr_hidden() \
+o[0;1;32m                                              ^
+o[0m[1m<scratch space>:263:1: [0m[0;1;30mnote: [0mexpanded from here[0m
+ocreateBoostedSoftCascadeOctave_ptr_hidden
+o[0;1;32m^
+o[0m11 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp283"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o [1mmodules/softcascade/src/octave.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler25ea3df61f34b941^a1bbccf71f34b941^-12451"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 3)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, String name) const = 0;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 2)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:971:18: [0m[0;1;35mwarning: [0m[1m      'CvForestTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData, const CvMat* _subsample_idx, CvRTrees* forest );[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvDTree::train' declared here: different number of parameters      (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvDTree::train' declared here: different number of parameters      (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1161:18: [0m[0;1;35mwarning: [0m[1m      'CvBoostTree::train' hides overloaded virtual functions [-Woverloaded-virtual][0m    virtual bool train( CvDTreeTrainData* trainData,[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:875:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvDTree::train' declared here: different number of parameters      (2 vs 3)[0m    virtual bool train( CvMLData* trainData, CvDTreeParams params=CvDTreeParams() );[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:885:26: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvDTree::train' declared here: different number of parameters      (8 vs 3)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:69:18: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions      [-Woverloaded-virtual][0m    virtual bool train(const Dataset* dataset, const FeaturePool* pool, int weaks, int treeDepth);[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1220:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (9 vs 4)[0m    virtual bool train( const CvMat* trainData, int tflag,[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1227:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (3 vs 4)[0m    virtual bool train( CvMLData* data,[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1241:26: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (9 vs 4)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:71:18: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function      [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1258:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::write' declared here: different number of parameters      (2 vs 3)[0m    virtual void write( CvFileStorage* storage, const char* name ) const;[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:72:18: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function      [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, cv::String name) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1258:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::write' declared here: type mismatch at 2nd parameter      ('const char *' vs 'cv::String')[0m    virtual void write( CvFileStorage* storage, const char* name ) const;[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:74:19: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions      [-Woverloaded-virtual][0m    virtual float predict( InputArray _sample, InputArray _votes, bool raw_mode, bool return_...[0;1;32m                  ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1231:19: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters      (6 vs 4)[0m    virtual float predict( const CvMat* sample, const CvMat* missing=0,[0;1;32m                  ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1248:27: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters      (5 vs 4)[0m    CV_WRAP virtual float predict( const cv::Mat& sample, const cv::Mat& missing=cv::Mat(),[0;1;32m                          ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:75:18: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions      [-Woverloaded-virtual][0m    virtual bool train( const cv::Mat& trainData, const cv::Mat& responses, const cv::Mat& va...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1220:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (9 vs 6)[0m    virtual bool train( const CvMat* trainData, int tflag,[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1227:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (3 vs 6)[0m    virtual bool train( CvMLData* data,[0;1;32m                 ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1241:26: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::train' declared here: different number of parameters      (9 vs 6)[0m    CV_WRAP virtual bool train( const cv::Mat& trainData, int tflag,[0;1;32m                         ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:81:11: [0m[0;1;35mwarning: [0m[1m      '<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions      [-Woverloaded-virtual][0m    float predict( const Mat& _sample, const cv::Range range) const;[0;1;32m          ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1231:19: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters      (6 vs 2)[0m    virtual float predict( const CvMat* sample, const CvMat* missing=0,[0;1;32m                  ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp:1248:27: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'CvBoost::predict' declared here: different number of parameters      (5 vs 2)[0m    CV_WRAP virtual float predict( const cv::Mat& sample, const cv::Mat& missing=cv::Mat(),[0;1;32m                          ^[0m[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:448:1: [0m[0;1;35mwarning: [0m[1munused      function 'createBoostedSoftCascadeOctave_ptr_hidden' [-Wunused-function][0mCV_INIT_ALGORITHM(BoostedSoftCascadeOctave, "Octave.BoostedSoftCascadeOctave", )[0;1;32m^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:51:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp:136:47: [0m[0;1;30mnote: [0m      expanded from macro 'CV_INIT_ALGORITHM'[0m    static inline ::cv::Ptr< ::cv::Algorithm> create##classname##_ptr_hidden() \[0;1;32m                                              ^[0m[1m<scratch space>:263:1: [0m[0;1;30mnote: [0mexpanded from here[0mcreateBoostedSoftCascadeOctave_ptr_hidden[0;1;32m^[0m11 warnings generated.11(36%IDEClangDiagnosticActivityLogMessage2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@100"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^214#17#214#17#8284#0#14"Semantic Issue--2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@100"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^215#17#215#17#8388#0#14"Semantic Issue--2@56"'CvForestTree::train' hides overloaded virtual functions-422846455#18446744073709551615#0#3(2@100"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^43#9#43#9#2196#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^970#17#970#17#35762#0#14"Semantic Issue--2@55"'CvBoostTree::train' hides overloaded virtual functions-422846455#18446744073709551615#0#3(2@100"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp:44:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^43#9#43#9#2196#0#21"Apple LLVM 5.1 Notice--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (2 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^874#17#874#17#31381#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvDTree::train' declared here: different number of parameters (8 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^884#25#884#25#31859#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1160#17#1160#17#43942#0#14"Semantic Issue--2@91"'<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions-422846455#18446744073709551615#0#3(2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (9 vs 4)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1219#17#1219#17#46464#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (3 vs 4)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1226#17#1226#17#46777#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (9 vs 4)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1240#25#1240#25#47461#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^68#17#68#17#2919#0#14"Semantic Issue--2@90"'<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function-422846455#18446744073709551615#0#1(2@106"Hidden overloaded virtual function 'CvBoost::write' declared here: different number of parameters (2 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1257#17#1257#17#48341#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^70#17#70#17#3080#0#14"Semantic Issue--2@90"'<anonymous namespace>::BoostedSoftCascadeOctave::write' hides overloaded virtual function-422846455#18446744073709551615#0#1(2@130"Hidden overloaded virtual function 'CvBoost::write' declared here: type mismatch at 2nd parameter ('const char *' vs 'cv::String')-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1257#17#1257#17#48341#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^71#17#71#17#3180#0#14"Semantic Issue--2@93"'<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions-422846455#18446744073709551615#0#2(2@108"Hidden overloaded virtual function 'CvBoost::predict' declared here: different number of parameters (6 vs 4)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1230#18#1230#18#46904#0#14"Semantic Issue--2@108"Hidden overloaded virtual function 'CvBoost::predict' declared here: different number of parameters (5 vs 4)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1247#26#1247#26#47877#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^73#18#73#18#3259#0#14"Semantic Issue--2@91"'<anonymous namespace>::BoostedSoftCascadeOctave::train' hides overloaded virtual functions-422846455#18446744073709551615#0#3(2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (9 vs 6)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1219#17#1219#17#46464#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (3 vs 6)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1226#17#1226#17#46777#0#14"Semantic Issue--2@106"Hidden overloaded virtual function 'CvBoost::train' declared here: different number of parameters (9 vs 6)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1240#25#1240#25#47461#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^74#17#74#17#3364#0#14"Semantic Issue--2@93"'<anonymous namespace>::BoostedSoftCascadeOctave::predict' hides overloaded virtual functions-422846455#18446744073709551615#0#2(2@108"Hidden overloaded virtual function 'CvBoost::predict' declared here: different number of parameters (6 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1230#18#1230#18#46904#0#14"Semantic Issue--2@108"Hidden overloaded virtual function 'CvBoost::predict' declared here: different number of parameters (5 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include/opencv2/ml.hpp0000000000000000^1247#26#1247#26#47877#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^80#10#80#10#3691#0#14"Semantic Issue--2@59"Unused function 'createBoostedSoftCascadeOctave_ptr_hidden'-422846455#18446744073709551615#0#2(2@39"Expanded from macro 'CV_INIT_ALGORITHM'-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@92"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp0000000000000000^135#46#135#46#4532#0#21"Apple LLVM 5.1 Notice--2@18"Expanded from here-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/%3Cscratch%20space%3E0000000000000000^262#0#262#0#2466#0#21"Apple LLVM 5.1 Notice--1#27"com.apple.dt.IDE.diagnostic3@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^447#0#447#0#14311#0#19"Unused Entity Issue--0#0#1#-19%DVTDocumentLocation4@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp0000000000000000^3467"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o [1mmodules/softcascade/src/octave.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/octave.o36"D0F96B7F-7F55-403C-A8B4-6A9CB7B4D62C-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846455.005107
+e422846455.914538
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 3)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m
+o      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m
+o    virtual void write( CvFileStorage* fs, String name) const = 0;
+o[0;1;32m                 ^
+o[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:
+oIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:
+o[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden
+o      overloaded virtual function 'cv::Algorithm::write' declared here: different number of
+o      parameters (1 vs 2)[0m
+o    virtual void write(FileStorage& fs) const;
+o[0;1;32m                 ^
+o[0m2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp303"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o [1mmodules/softcascade/src/softcascade_init.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler906901f71f34b941^9c18eaf71f34b941^-2556"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:215:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( cv::FileStorage &fs, const FeaturePool* pool, InputArray thresholds) ...[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 3)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:216:18: [0m[0;1;35mwarning: [0m[1m      'cv::softcascade::Octave::write' hides overloaded virtual function [-Woverloaded-virtual][0m    virtual void write( CvFileStorage* fs, String name) const = 0;[0;1;32m                 ^[0mIn file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp:48:[1m/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp:1049:18: [0m[0;1;30mnote: [0mhidden      overloaded virtual function 'cv::Algorithm::write' declared here: different number of      parameters (1 vs 2)[0m    virtual void write(FileStorage& fs) const;[0;1;32m                 ^[0m2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@110"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@91"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 3)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^214#17#214#17#8284#0#14"Semantic Issue--2@66"'cv::softcascade::Octave::write' hides overloaded virtual function-422846455#18446744073709551615#0#3(2@110"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp:43:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@91"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp0000000000000000^42#9#42#9#2173#0#21"Apple LLVM 5.1 Notice--2@101"In file included from /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp:48:-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp0000000000000000^47#9#47#9#2253#0#21"Apple LLVM 5.1 Notice--2@112"Hidden overloaded virtual function 'cv::Algorithm::write' declared here: different number of parameters (1 vs 2)-422846455#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@84"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp0000000000000000^1048#17#1048#17#44717#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@98"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp0000000000000000^215#17#215#17#8388#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@91"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp0000000000000000^3527"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o [1mmodules/softcascade/src/softcascade_init.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/softcascade_init.o36"6813CD51-3A04-4666-8060-88A81ACE10C4-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a normal arm64
+s422846456.945456
+e422846456.952425
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a
+xnormal
+xarm64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a normal arm64122"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a normal arm64da1df2f81f34b941^d8d2f3f81f34b941^---0#0#1#--1082"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a normal arm64    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/opencv_softcascade.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a36"596B9FE2-CEB7-4343-BB68-71939A770153-
+bF6071616-46A5-4C3A-AA08-8ADBB4F19B39
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a normal arm64
+s422846507.345466
+e422846507.349957
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+xnormal
+xarm64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a normal arm64150"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a normal arm64dd7b582b2034b941^7097592b2034b941^---0#0#1#--1138"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a normal arm64    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/OpenCV.build/Release-iphoneos/opencv_softcascade.build/Objects-normal/arm64/opencv_softcascade.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a36"5418157E-DF0D-4AF0-9D2C-FD47A974CD66-
+bA066BECC-93A2-41EA-AE76-756C36EF9C95
+
+CSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+s422846507.376784
+e422846507.379491
+r1
+xSetMode
+xu+w,go-w,a+rX
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m159"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0mcc7f602b2034b941^9127612b2034b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a0000000000000000^629"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/chmod -RH u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a36"78ED94E3-6CC0-4F21-BCF7-69D0D0286B7D-
+bA066BECC-93A2-41EA-AE76-756C36EF9C95
+
+CSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+s422846507.372905
+e422846507.376594
+r1
+xSetOwnerAndGroup
+xmfathi:staff
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection167"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m167"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m27835f2b2034b941^ec68602b2034b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a0000000000000000^641"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /usr/sbin/chown -RH mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a36"CC5E98EA-8272-4DE2-B305-844B3BFADF84-
+bA066BECC-93A2-41EA-AE76-756C36EF9C95
+
+CStripping /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+s422846507.350225
+e422846507.372675
+r1
+xStripping
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"[1mStripping[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m147"[1mStripping[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0mafb3592b2034b941^49685f2b2034b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a0000000000000000^684"[1mStripping[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a36"0034E099-82F6-4F9F-B033-3416BC0A7A1C-
+bA066BECC-93A2-41EA-AE76-756C36EF9C95
+
+CSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+s422846507.341308
+e422846507.344151
+r1
+xSymLink
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Process /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a231"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a836a572b2034b941^a81b582b2034b941^---0#0#1#--778"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/ln -sf /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/softcascade/UninstalledProducts/libopencv_softcascade.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_softcascade.a36"C1E1EE79-F1F7-48A5-A8D7-413D5D48BA23-
+bA066BECC-93A2-41EA-AE76-756C36EF9C95
+

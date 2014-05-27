@@ -1,0 +1,480 @@
+Tzlib
+v6
+r1
+cCheck dependencies
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a normal armv7s
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053487867000000000000036B
+t1397258343
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053487867000000000000019E
+t1397258343
+s414
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a
+t2
+s0
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o
+t1401153531
+s1572
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o
+t1401153531
+s1092
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o
+t1401153531
+s10388
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o
+t1401153532
+s14432
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o
+t1401153531
+s708
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o
+t1401153532
+s3336
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o
+t1401153532
+s5104
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o
+t1401153532
+s4140
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o
+t1401153532
+s7612
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o
+t1401153532
+s2924
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o
+t1401153532
+s12648
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o
+t1401153532
+s2416
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o
+t1401153532
+s10580
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o
+t1401153532
+s876
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zlib.LinkFileList
+c000000005383E7FB0000000000000887
+t1401153531
+s2183
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o
+t1401153532
+s1220
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c
+c000000005383E43C0000000000001368
+t1401152572
+s4968
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c
+c000000005383E43C00000000000009E1
+t1401152572
+s2529
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c
+c000000005383E43C0000000000003376
+t1401152572
+s13174
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c
+c000000005383E43C0000000000011734
+t1401152572
+s71476
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c
+c000000005383E43C00000000000002A6
+t1401152572
+s678
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c
+c000000005383E43C000000000000401F
+t1401152572
+s16415
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c
+c000000005383E43C0000000000004906
+t1401152572
+s18694
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c
+c000000005383E43C0000000000003F47
+t1401152572
+s16199
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c
+c000000005383E43C00000000000058B5
+t1401152572
+s22709
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c
+c000000005383E43C000000000000348F
+t1401152572
+s13455
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c
+c000000005383E43C000000000000D108
+t1401152572
+s53512
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c
+c000000005383E43C00000000000032E4
+t1401152572
+s13028
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c
+c000000005383E43C000000000000ACDF
+t1401152572
+s44255
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c
+c000000005383E43C00000000000007D3
+t1401152572
+s2003
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c
+c000000005383E43C0000000000001CF6
+t1401152572
+s7414
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa585df7b1f34b941^4fe9e47b1f34b941^---0#1#1#--18"Check dependencies36"9B27D9D0-3B9A-403D-ACE7-5AD6CB195535-
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.880062
+e422846331.951743
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o [1m3rdparty/zlib/adler32.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler658ee17b1f34b941^65a7f37b1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o [1m3rdparty/zlib/adler32.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/adler32.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/adler32.o36"88582340-DF49-4A3D-95F3-421917D75B22-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.880618
+e422846331.923489
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c256"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o [1m3rdparty/zlib/compress.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler6f9fe17b1f34b941^6d72ec7b1f34b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c0000000000000000^2888"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o [1m3rdparty/zlib/compress.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/compress.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/compress.o36"82898768-8A32-412E-8D38-A1F1A1D3E327-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.881527
+e422846331.973154
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c250"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o [1m3rdparty/zlib/crc32.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler6809e27b1f34b941^fa2af97b1f34b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c0000000000000000^2870"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o [1m3rdparty/zlib/crc32.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/crc32.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/crc32.o36"29A37BD3-B344-4B49-A53A-2BB10B71BE94-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.882557
+e422846332.287872
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o [1m3rdparty/zlib/deflate.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler6c23e27b1f34b941^23c0497c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o [1m3rdparty/zlib/deflate.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/deflate.o36"339FE9AE-A8F1-49B8-AC48-624E9165BF57-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.926175
+e422846331.971397
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzguts.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o [1m3rdparty/zlib/gzclose.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler1e32ed7b1f34b941^1728f97b1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o [1m3rdparty/zlib/gzclose.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzclose.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzclose.o36"29C8AA67-6B70-4BBE-B017-5A54D7A46964-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.932281
+e422846332.033011
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzguts.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c250"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o [1m3rdparty/zlib/gzlib.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler3cc1ee7b1f34b941^c575087c1f34b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c0000000000000000^2870"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o [1m3rdparty/zlib/gzlib.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzlib.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzlib.o36"39157B79-A3D3-4F9D-8BBE-AB0C8894EDB0-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846331.972612
+e422846332.111795
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzguts.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c252"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o [1m3rdparty/zlib/gzread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler7b15f97b1f34b941^87a61c7c1f34b941^---0#0#1#-19%DVTDocumentLocation2@69"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c0000000000000000^2876"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o [1m3rdparty/zlib/gzread.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzread.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzread.o36"5596E74F-697E-43F3-AF44-41B6E9997B4B-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.028637
+e422846332.127191
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzguts.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o [1m3rdparty/zlib/gzwrite.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler7f6b077c1f34b941^15ad207c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o [1m3rdparty/zlib/gzwrite.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzwrite.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/gzwrite.o36"4CB32CC2-CEF1-4477-8932-DD0564061C5F-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.051854
+e422846332.227323
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffixed.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o [1m3rdparty/zlib/infback.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerc45d0d7c1f34b941^05333a7c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o [1m3rdparty/zlib/infback.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/infback.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/infback.o36"616608F2-FFEF-47DA-A375-028E9F7F2095-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.077698
+e422846332.197498
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o [1m3rdparty/zlib/inffast.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler9cfb137c1f34b941^53b0327c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o [1m3rdparty/zlib/inffast.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inffast.o36"AB6C648C-10BB-4C85-B7D1-AED863474EF7-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.113152
+e422846332.584340
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffast.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inffixed.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o [1m3rdparty/zlib/inflate.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler020e1d7c1f34b941^6ada957c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o [1m3rdparty/zlib/inflate.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inflate.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inflate.o36"92FCBAEB-BCAD-4882-B732-1055AA60368A-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.126236
+e422846332.194643
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c256"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o [1m3rdparty/zlib/inftrees.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler2c66207c1f34b941^2de8317c1f34b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c0000000000000000^2888"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o [1m3rdparty/zlib/inftrees.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/inftrees.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/inftrees.o36"14584EFA-E43C-44BD-B18D-A93681699A11-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.165088
+e422846332.382135
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/deflate.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c250"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o [1m3rdparty/zlib/trees.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler105b2a7c1f34b941^0bd5617c1f34b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c0000000000000000^2870"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o [1m3rdparty/zlib/trees.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/trees.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/trees.o36"E9785D23-1B77-4A46-BA1A-434A04EC9CFA-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.198757
+e422846332.229060
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c254"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o [1m3rdparty/zlib/uncompr.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilercff8327c1f34b941^dc663a7c1f34b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c0000000000000000^2882"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o [1m3rdparty/zlib/uncompr.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/uncompr.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/uncompr.o36"BEBE0101-BD12-44BF-90CA-17EA88D8B330-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler
+s422846332.229297
+e422846332.268852
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c
+xnormal
+xarmv7s
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/zconf.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/gzguts.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c250"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o [1m3rdparty/zlib/zutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compilerf3c93a7c1f34b941^6eda447c1f34b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c0000000000000000^2870"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o [1m3rdparty/zlib/zutil.c[0m normal armv7s c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7s -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphoneos\" -DNO_FSEEKO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources/armv7s -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zutil.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zutil.o36"743E918E-B994-4E08-A0B4-3478D45DCD80-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a normal armv7s
+s422846332.642770
+e422846332.649584
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a
+xnormal
+xarmv7s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a normal armv7s119"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a normal armv7s2ca0a47c1f34b941^ac8ca67c1f34b941^---0#0#1#--1054"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a normal armv7s    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/zlib/OpenCV.build/Release-iphoneos/zlib.build/Objects-normal/armv7s/zlib.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/3rdparty/lib/Release/libzlib.a36"B35B95E6-9D4D-47C7-9865-F31E3D38340F-
+bA453B2BD-1E8A-4335-A795-D1A8BE8A14C3
+

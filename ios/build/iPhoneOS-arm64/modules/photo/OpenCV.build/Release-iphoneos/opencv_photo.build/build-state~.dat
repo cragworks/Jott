@@ -1,0 +1,668 @@
+Topencv_photo
+v6
+r1
+cCheck dependencies
+cPhaseScriptExecution CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a normal arm64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053487867000000000000036B
+t1397258343
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053487867000000000000019E
+t1397258343
+s414
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a
+t2
+s0
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o
+t1401153656
+s31880
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o
+t1401153656
+s33076
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o
+t1401153657
+s44860
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o
+t1401153657
+s3020
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o
+t1401153658
+s74972
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o
+t1401153658
+s7624
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o
+t1401153659
+s25888
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o
+t1401153659
+s53700
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o
+t1401153660
+s66168
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o
+t1401153655
+s10368
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencv_photo.LinkFileList
+c000000005383E8760000000000000740
+t1401153654
+s1856
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o
+t1401153660
+s90364
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o
+t1401153660
+s82508
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh
+c000000005383E8760000000000000108
+t1401153654
+s264
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp
+c000000005383E8760000000000002703
+t1401153654
+s9987
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp
+c000000005383E43C0000000000002333
+t1401152572
+s9011
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp
+c000000005383E43C00000000000025EC
+t1401152572
+s9708
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp
+c000000005383E43C0000000000001799
+t1401152572
+s6041
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp
+c000000005383E43C00000000000026CF
+t1401152572
+s9935
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp
+c000000005383E43C0000000000001B92
+t1401152572
+s7058
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp
+c000000005383E43C0000000000000E3D
+t1401152572
+s3645
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp
+c000000005383E43C00000000000082EB
+t1401152572
+s33515
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp
+c000000005383E43C0000000000002C5C
+t1401152572
+s11356
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp
+c000000005383E43C000000000000149A
+t1401152572
+s5274
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp
+c000000005383E43C00000000000016B9
+t1401152572
+s5817
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp
+c000000005383E43C0000000000003F16
+t1401152572
+s16150
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9fae2ef61f34b941^83302ff61f34b941^---0#1#1#--18"Check dependencies36"4F5CF95A-E65F-46A6-AA3D-6672B0E32F0A-
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846455.590930
+e422846456.656464
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp263"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o [1mmodules/photo/src/align.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler636297f71f34b941^cb0fa8f81f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@74"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp0000000000000000^3298"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o [1mmodules/photo/src/align.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/align.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/align.o36"CD8E2267-CCB8-4674-A3B5-F3E8A8B5C965-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846455.736722
+e422846456.770507
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp271"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o [1mmodules/photo/src/calibrate.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler24b5bcf71f34b941^bf7dc5f81f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@78"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp0000000000000000^3322"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o [1mmodules/photo/src/calibrate.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/calibrate.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/calibrate.o36"76350480-BC0C-44DA-AFD8-A73197246A4A-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846455.914839
+e422846457.339641
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp287"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o [1mmodules/photo/src/contrast_preserve.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerd34deaf71f34b941^653757f91f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@86"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp0000000000000000^3370"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o [1mmodules/photo/src/contrast_preserve.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/contrast_preserve.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/contrast_preserve.o36"E11A5D1C-8A2B-41CB-B030-FCD01F2F23CC-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846456.994557
+e422846457.628856
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp281"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o [1mmodules/photo/src/denoising.cuda.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerf2b6fef81f34b941^5802a1f91f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp0000000000000000^3352"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o [1mmodules/photo/src/denoising.cuda.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cuda.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.cuda.o36"EC3741D4-77DE-4DF0-90B5-354F33787343-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846456.664644
+e422846458.445339
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/fast_nlmeans_denoising_invoker.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/fast_nlmeans_denoising_invoker_commons.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/arrays.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/fast_nlmeans_multi_denoising_invoker.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/fast_nlmeans_denoising_opencl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp271"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o [1mmodules/photo/src/denoising.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler683faaf81f34b941^bb0972fa1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@78"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp0000000000000000^3322"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o [1mmodules/photo/src/denoising.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/denoising.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/denoising.o36"017ACD55-A303-4996-8719-DF1409232238-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846457.354239
+e422846458.058775
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp273"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o [1mmodules/photo/src/hdr_common.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler93c85af91f34b941^2cf30efa1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@79"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp0000000000000000^3328"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o [1mmodules/photo/src/hdr_common.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/hdr_common.o36"514E8C5F-9508-4E62-B31C-AF9880515239-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846457.753211
+e422846459.063356
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/core_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types_c.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo/photo_c.h
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp267"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o [1mmodules/photo/src/inpaint.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler81edc0f91f34b941^b03810fb1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@76"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp0000000000000000^3310"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o [1mmodules/photo/src/inpaint.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/inpaint.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/inpaint.o36"B17B8973-5F8B-48A1-BF24-177A2E5C76CC-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846458.059114
+e422846459.424309
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp263"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o [1mmodules/photo/src/merge.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler793e0ffa1f34b941^4da06cfb1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@74"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp0000000000000000^3298"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o [1mmodules/photo/src/merge.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/merge.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/merge.o36"CC2DA76A-52E9-47AE-96B0-65496FE48755-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846458.371758
+e422846460.163982
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp259"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o [1mmodules/photo/src/npr.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler99465ffa1f34b941^c0042afc1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@72"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp0000000000000000^3286"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o [1mmodules/photo/src/npr.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/npr.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/npr.o36"FE22DE59-0888-4BCB-B3A0-F09E519C4BD9-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846454.997134
+e422846455.613831
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp335"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerc6a4fff61f34b941^76359df71f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@97"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp0000000000000000^3420"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.dia -c /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencl_kernels.o36"60E54FC9-256C-46B4-9E89-34C603171DC8-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846458.815865
+e422846460.711674
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp285"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o [1mmodules/photo/src/seamless_cloning.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler16f6d0fa1f34b941^d95bb6fc1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@85"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp0000000000000000^3364"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o [1mmodules/photo/src/seamless_cloning.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/seamless_cloning.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/seamless_cloning.o36"FEE42B49-C9BC-4B67-ABFC-FD57CB084FEF-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846459.177078
+e422846460.633322
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp
+xnormal
+xarm64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include/opencv2/photo.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/hdr_common.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp267"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o [1mmodules/photo/src/tonemap.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler43732dfb1f34b941^d526a2fc1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@76"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp0000000000000000^3310"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o [1mmodules/photo/src/tonemap.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/tonemap.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/tonemap.o36"48BC1AF5-4DC3-4E63-BF04-67C12F67D69C-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a normal arm64
+s422846461.439287
+e422846461.447840
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a
+xnormal
+xarm64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a normal arm64116"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a normal arm648b8a70fd1f34b941^f8a572fd1f34b941^---0#0#1#--1052"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a normal arm64    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Objects-normal/arm64/opencv_photo.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_photo.a36"0685FA02-505A-4FE3-8D1A-0265387E880F-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+
+CPhaseScriptExecution CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh
+s422846454.186158
+e422846454.232396
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh
+o/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -DMODULE_NAME="photo" -DCL_DIR="/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/opencl" -DOUTPUT="/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp" -P /Users/mfathi/Developer/iOS/Jott/opencv/cmake/cl2cpp.cmake
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'197"[1mPhaseScriptExecution[0m CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh184030f61f34b941^5a7f3bf61f34b941^-305"/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -DMODULE_NAME="photo" -DCL_DIR="/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/opencl" -DOUTPUT="/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp" -P /Users/mfathi/Developer/iOS/Jott/opencv/cmake/cl2cpp.cmake1(21%IDEActivityLogMessage2@305"/usr/local/Cellar/cmake/2.8.12.2/bin/cmake -DMODULE_NAME="photo" -DCL_DIR="/Users/mfathi/Developer/iOS/Jott/opencv/modules/photo/src/opencl" -DOUTPUT="/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/opencl_kernels.cpp" -P /Users/mfathi/Developer/iOS/Jott/opencv/cmake/cl2cpp.cmake-422846454#0#305#-0#-----0#0#1#--416"[1mPhaseScriptExecution[0m CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh    cd /Users/mfathi/Developer/iOS/Jott/opencv    /bin/sh -c /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/photo/OpenCV.build/Release-iphoneos/opencv_photo.build/Script-5E1147968EE3451DA3C2F19F.sh36"BA17FB9F-EB83-41D9-8127-5C9BBF0B8EBD-
+b0B02A8A2-1A62-47CB-AF14-34A57FC024DA
+

@@ -1,0 +1,1134 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              536A665F368F4B68909C5510 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = EB89EAE7E9924406ADE4EB99 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            23F76DE98900495B8E8BEE9E /* CMake Rules */,
+                     );
+                     dependencies = (
+                            3AA869C2DDC14C0E80C9040A /* PBXTargetDependency */,
+                            57DF504390404B1FB29B543E /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              C325B88C35CB468B8317D50B /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 968D581FA6774745A1C675F5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            D6F2A3EF299E4C679F011E93 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              0C685EF297B84F09912A8C9A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = BDE35AAE2E7C4AD9877DC36E /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            78C62AED9CDA46BBA6EB95F6 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            CDA4E0FC6E0245649DF6B388 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              208F97B8C47942599D6C25D1 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = BBD6C3FF2ACA4803B1573C49 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            C1AEFB988BF141FA8A3744BD /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            6D17FCC264D44C1299421B2F /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+A72487645A86441FA1892C4D /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 4328055E86AD463F986B92AF /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+F2F20B44B86247ED8EA5293E /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = 74AE442ACB0445B3B42DEE10 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3F8DEF80F31841C38B84FDB4 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 2D711698F7294EE980810D86 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+63360EE01B624CD1BF909AB9 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = 75B7553A9C35488DAF4295A6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+404DC20B32714254B826E82A /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = CD27AB2C168B4C8584D7C7FC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+682AF3F856B146CE9BFB2AEC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6A72F18F91EA41BCAAB61837 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+CA24AB77C25D4733A23E4537 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp */ = {isa = PBXBuildFile; fileRef = 0ED633DB785A4FC381D87732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+BB36FB619A624CF6B36AF577 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp */ = {isa = PBXBuildFile; fileRef = 0296B1D25C104E6587728993 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+C0FFE9E828EB4CEFBA6E8CDF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h */ = {isa = PBXBuildFile; fileRef = AD22F154FDEC4DA1AAD5A2D2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+10D770CC822F48889D20EAD1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h */ = {isa = PBXBuildFile; fileRef = DFAE6E4AC86447A189777760 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+12EACBD1A88E42EDA00A6697 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/_geom.h */ = {isa = PBXBuildFile; fileRef = 2820AB8CD1DC4A889A3DB7EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/_geom.h */; settings = { COMPILER_FLAGS = ""; }; };
+1760CB8F373B45619EA4DBE4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/accum.cpp */ = {isa = PBXBuildFile; fileRef = CE481B9E4C81486DA7692039 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/accum.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+86ADDCDF1D6F4C70BE8BB782 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/approx.cpp */ = {isa = PBXBuildFile; fileRef = B532E01F5C5A41F495177F3B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/approx.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A0136F6C902B4EEBAD8E73F3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/blend.cpp */ = {isa = PBXBuildFile; fileRef = 58EF071233CF44EEA3E00922 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/blend.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+32152FEDAE184E20A801DA5F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/canny.cpp */ = {isa = PBXBuildFile; fileRef = 20FDD29595B34EA0BA0E2C1D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/canny.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7F4D1C3523824BF1A7256366 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/clahe.cpp */ = {isa = PBXBuildFile; fileRef = 08C2FA407A0B475C90BE5D01 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/clahe.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D4E857D805C745CEAA5BCC89 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/color.cpp */ = {isa = PBXBuildFile; fileRef = 9D55E11C31114C2E893611B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/color.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+830D748C60134B64B685EBF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/connectedcomponents.cpp */ = {isa = PBXBuildFile; fileRef = A65D794FD5EC418FAD06CF29 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/connectedcomponents.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3A8F540AC423483B90C362F7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/contours.cpp */ = {isa = PBXBuildFile; fileRef = D541B8305BCA42DCAE7FBF21 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/contours.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BCA566D84B6E44549425D764 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/convhull.cpp */ = {isa = PBXBuildFile; fileRef = 80F06DB6D5E543528C164687 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/convhull.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+015E5BC3C260444FB8A4EB7F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/corner.cpp */ = {isa = PBXBuildFile; fileRef = FA8F62FBD52840E68EDF72AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/corner.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4292B25620B34F2E944BF698 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/cornersubpix.cpp */ = {isa = PBXBuildFile; fileRef = 06260FA3FCC1467A931439F7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/cornersubpix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+829109BF6C1A45F1BF286411 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/demosaicing.cpp */ = {isa = PBXBuildFile; fileRef = CEF0550742B84F5C837F876F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/demosaicing.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+AFB4576DB7AC4B8DBC328474 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/deriv.cpp */ = {isa = PBXBuildFile; fileRef = F90C3E2D9EB84C3F8F00374B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/deriv.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E046C146247C495AB1A95C99 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/distransform.cpp */ = {isa = PBXBuildFile; fileRef = 17F0092B974241FCB09CB478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/distransform.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+0F33A4ED33214A48AB1EC479 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/emd.cpp */ = {isa = PBXBuildFile; fileRef = F8F0672D476041FF87062909 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/emd.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1F22C65E090443C087049CEB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/featureselect.cpp */ = {isa = PBXBuildFile; fileRef = BCEFF38EAF1B466EB84E1AF8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/featureselect.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E3C4322A962A4C0C9988D7C3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/filter.cpp */ = {isa = PBXBuildFile; fileRef = 3CCD9EA9B94F48BE92594FC7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/filter.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4AA1667AD4824620BF04E697 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/floodfill.cpp */ = {isa = PBXBuildFile; fileRef = 5B8CAEBCB72C42268EAEEE6D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/floodfill.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+111B41C17EDE4D0D978E8E8D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gabor.cpp */ = {isa = PBXBuildFile; fileRef = 8466B1A89E0040C48D6C0D10 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gabor.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+32FC1C00DE4F4D7F8063BFC2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gcgraph.hpp */ = {isa = PBXBuildFile; fileRef = 2578D352CAF34242955A820D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gcgraph.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+FCB06DD8A4974A5C8DD9259B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/generalized_hough.cpp */ = {isa = PBXBuildFile; fileRef = AA8091F99C304D9DB3A544F1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/generalized_hough.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A842B7503F0B44B4ABD39005 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/geometry.cpp */ = {isa = PBXBuildFile; fileRef = 06065807AB604ACAA38EA21E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/geometry.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3BF38D56720145859F0B3411 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/grabcut.cpp */ = {isa = PBXBuildFile; fileRef = 3D48E9F24ED44A4198FAEC2A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/grabcut.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9950BB63B23F43D4967BEA0B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/histogram.cpp */ = {isa = PBXBuildFile; fileRef = A35322CBA7064C398E8B01C8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/histogram.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E5C62CBBFF884FFA9A07947E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/hough.cpp */ = {isa = PBXBuildFile; fileRef = 1E40DEE73C5A43B38E47FDB0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/hough.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D739ECFE6D0645A9A159344E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/imgwarp.cpp */ = {isa = PBXBuildFile; fileRef = A6DEB1F5E6AD40ECB64C6682 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/imgwarp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F88D5BA87F7B4D72853F54D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/intersection.cpp */ = {isa = PBXBuildFile; fileRef = F29EFC7DE2F349C588926B35 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/intersection.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5E6EC4FBF646496FA9948630 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/linefit.cpp */ = {isa = PBXBuildFile; fileRef = BDA0DA39B4F64EC2BE69D1B6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/linefit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B06EC8B81E354227B1B9B084 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/lsd.cpp */ = {isa = PBXBuildFile; fileRef = B55DDB47D35144FDB15BF3BE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/lsd.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C2C125F0D87B4B28B5E6FCE0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/matchcontours.cpp */ = {isa = PBXBuildFile; fileRef = 12B0970B877643229501224B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/matchcontours.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3244DEFB1C0A412584BEAE1B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/min_enclosing_triangle.cpp */ = {isa = PBXBuildFile; fileRef = 92E5ECAC064C4144B2908AEC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/min_enclosing_triangle.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+80F0ADB3847E4CDC860A7FDB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/moments.cpp */ = {isa = PBXBuildFile; fileRef = 2A54F3659D26499881BE4946 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/moments.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+51B85AC2424E45D18101358F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/morph.cpp */ = {isa = PBXBuildFile; fileRef = 3CE0A43299064515A913D26F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/morph.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+77CEAF9AA6554447B0EFC9B7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/accumulate.cl */ = {isa = PBXBuildFile; fileRef = 828EC67D450A4152A9F922E2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/accumulate.cl */; settings = { COMPILER_FLAGS = ""; }; };
+40299BE639F046EAAA07EFAB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/bilateral.cl */ = {isa = PBXBuildFile; fileRef = 4D1B04D8DA084BB0B21FA77F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/bilateral.cl */; settings = { COMPILER_FLAGS = ""; }; };
+CEB85C8F65DB4A9795DF39FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/blend_linear.cl */ = {isa = PBXBuildFile; fileRef = B57D3845492248B3A1CA8467 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/blend_linear.cl */; settings = { COMPILER_FLAGS = ""; }; };
+8A7FD97F529E40BBA1B98FCE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/boxFilter.cl */ = {isa = PBXBuildFile; fileRef = 38BE21F52E0A4199BCC58D5B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/boxFilter.cl */; settings = { COMPILER_FLAGS = ""; }; };
+5B94075BE8A045F58B0C23C3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/calc_back_project.cl */ = {isa = PBXBuildFile; fileRef = FB8ABD11C8C9440797953BA8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/calc_back_project.cl */; settings = { COMPILER_FLAGS = ""; }; };
+7911D6E9DEAC4F7C8F3FF63B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/canny.cl */ = {isa = PBXBuildFile; fileRef = 34C92DED3E874BC3B2B36DDD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/canny.cl */; settings = { COMPILER_FLAGS = ""; }; };
+C0C617E5DABE45539C37CD48 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/clahe.cl */ = {isa = PBXBuildFile; fileRef = B3404F8A18F041ECB8A6EDDB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/clahe.cl */; settings = { COMPILER_FLAGS = ""; }; };
+7375F6B5DA38458392DD4140 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/corner.cl */ = {isa = PBXBuildFile; fileRef = F0DF32FE96D849A4A1164561 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/corner.cl */; settings = { COMPILER_FLAGS = ""; }; };
+199BABF6B14949F2B08E9774 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/covardata.cl */ = {isa = PBXBuildFile; fileRef = 5AEE4DFB1F3245F2A2AF8D06 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/covardata.cl */; settings = { COMPILER_FLAGS = ""; }; };
+C424FA26EC414566A5A8FAD8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/cvtcolor.cl */ = {isa = PBXBuildFile; fileRef = 620D0CB2E4644EC298A6F6AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/cvtcolor.cl */; settings = { COMPILER_FLAGS = ""; }; };
+8DF9AE89A6E840DA9EE97C9B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2D.cl */ = {isa = PBXBuildFile; fileRef = 1A5A4097D32441A5950E7B95 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2D.cl */; settings = { COMPILER_FLAGS = ""; }; };
+E7462569252D4A658291162D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2DSmall.cl */ = {isa = PBXBuildFile; fileRef = 8F861F50696B4871A6E5CCC3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2DSmall.cl */; settings = { COMPILER_FLAGS = ""; }; };
+C2F71AED34064AE1A4333430 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepCol.cl */ = {isa = PBXBuildFile; fileRef = 8565695C6058456C9B183676 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepCol.cl */; settings = { COMPILER_FLAGS = ""; }; };
+F5520B2496184EE780574011 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepRow.cl */ = {isa = PBXBuildFile; fileRef = 72C9A472983E4DDAA257C7AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepRow.cl */; settings = { COMPILER_FLAGS = ""; }; };
+5CF112048F9740BE81F7E1FE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl */ = {isa = PBXBuildFile; fileRef = 1BA71C7FBF0B41A78B83B292 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl */; settings = { COMPILER_FLAGS = ""; }; };
+D2E43D9844364857B4C1951C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/gftt.cl */ = {isa = PBXBuildFile; fileRef = F8EC5341C74C4880BC5D1162 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/gftt.cl */; settings = { COMPILER_FLAGS = ""; }; };
+628A0907FFD143CF9C4752A4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/histogram.cl */ = {isa = PBXBuildFile; fileRef = 30129B93EB0B46DAB1293853 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/histogram.cl */; settings = { COMPILER_FLAGS = ""; }; };
+D651A56A10B1433AA0A2565E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sqrsum.cl */ = {isa = PBXBuildFile; fileRef = 1537C4E2D25D4ADD8E028BAD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sqrsum.cl */; settings = { COMPILER_FLAGS = ""; }; };
+3873A5FAD1F646AC9C55463E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sum.cl */ = {isa = PBXBuildFile; fileRef = D78527F32ED647F79C4C8775 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sum.cl */; settings = { COMPILER_FLAGS = ""; }; };
+1D75A07BA26244D083210480 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/laplacian5.cl */ = {isa = PBXBuildFile; fileRef = 8DFB332B363E4DCBA86611EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/laplacian5.cl */; settings = { COMPILER_FLAGS = ""; }; };
+AF27887848124462BA98A29B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/match_template.cl */ = {isa = PBXBuildFile; fileRef = C4670EEADD5441A0B7FDE640 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/match_template.cl */; settings = { COMPILER_FLAGS = ""; }; };
+2A60459183A24F16A3C8F35E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/medianFilter.cl */ = {isa = PBXBuildFile; fileRef = C76C89726E2E45599DDAE844 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/medianFilter.cl */; settings = { COMPILER_FLAGS = ""; }; };
+D3CE731A02724AF1A8ACF2FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/moments.cl */ = {isa = PBXBuildFile; fileRef = C6A85D034C4D4941BCAA5BB9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/moments.cl */; settings = { COMPILER_FLAGS = ""; }; };
+79E88DADD52243F4923CAD54 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/morph.cl */ = {isa = PBXBuildFile; fileRef = F124479AC6EF43E09713607E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/morph.cl */; settings = { COMPILER_FLAGS = ""; }; };
+79188D09AD3A4BAF9B2F46AE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/precornerdetect.cl */ = {isa = PBXBuildFile; fileRef = 13F8E5A4F96E44F0BF5FAD57 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/precornerdetect.cl */; settings = { COMPILER_FLAGS = ""; }; };
+2B30443E18BD4D2D80E50CB9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_down.cl */ = {isa = PBXBuildFile; fileRef = B815BB72757C418296B22633 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_down.cl */; settings = { COMPILER_FLAGS = ""; }; };
+69B248DF76A1495FAC0BFEEC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_up.cl */ = {isa = PBXBuildFile; fileRef = 38126B904B3946C69A0A0114 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_up.cl */; settings = { COMPILER_FLAGS = ""; }; };
+2CD9321D3235467ABE668D69 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/remap.cl */ = {isa = PBXBuildFile; fileRef = E2249B8D4C844DAA98675DE9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/remap.cl */; settings = { COMPILER_FLAGS = ""; }; };
+0E8A3799F27D4100827CBA44 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/resize.cl */ = {isa = PBXBuildFile; fileRef = BAED484E1B1A47179AFD1F04 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/resize.cl */; settings = { COMPILER_FLAGS = ""; }; };
+C9A960EB0A7C4040A91BA3E1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/threshold.cl */ = {isa = PBXBuildFile; fileRef = B765FE7468F447F085A8823E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/threshold.cl */; settings = { COMPILER_FLAGS = ""; }; };
+8FB86D7CD8FB493EA5253F65 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_affine.cl */ = {isa = PBXBuildFile; fileRef = 7F63861598814404AC59864C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_affine.cl */; settings = { COMPILER_FLAGS = ""; }; };
+07E9D85C55A741A7B6A06D4B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_perspective.cl */ = {isa = PBXBuildFile; fileRef = 408D9647611647908F67A586 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_perspective.cl */; settings = { COMPILER_FLAGS = ""; }; };
+0177735238514E219EDD85E7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/phasecorr.cpp */ = {isa = PBXBuildFile; fileRef = 41898936B9C14CE28AEE8B38 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/phasecorr.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A338E9A55F2C4FBAAED3EF77 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 42EF583551E94B85972A8DD2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+2283AE9C38AE4B94BCBC13FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/pyramids.cpp */ = {isa = PBXBuildFile; fileRef = AF520BE74D0741F5AD0A974D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/pyramids.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6F08F51C7E044AC2A2A46603 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/rotcalipers.cpp */ = {isa = PBXBuildFile; fileRef = 0EDF79E21A5245318234A128 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/rotcalipers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+13E79B7320644A4698142B5E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/samplers.cpp */ = {isa = PBXBuildFile; fileRef = 4253A393AB4C44A6ACD4ECDA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/samplers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+991C77B460F74715B8BB6FE9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/segmentation.cpp */ = {isa = PBXBuildFile; fileRef = F6B6E7DC47004F78BDEAC94D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/segmentation.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+8EF63290FD9347F2832C2927 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/shapedescr.cpp */ = {isa = PBXBuildFile; fileRef = 2B5FF6BDC9F4461DA855CFF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/shapedescr.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FDBC6EA3DB43471CA35094E8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/smooth.cpp */ = {isa = PBXBuildFile; fileRef = D5171762F89B47F2A8094759 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/smooth.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+30D4AB22A0B04AA899809CE1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/subdivision2d.cpp */ = {isa = PBXBuildFile; fileRef = 6E3591FA648743C48182AD68 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/subdivision2d.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+215A3D69A26442199E6248EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/sumpixels.cpp */ = {isa = PBXBuildFile; fileRef = 4A3270796FFB4E0AA3690A1C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/sumpixels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E9A16B627E2345CBAA03321E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/tables.cpp */ = {isa = PBXBuildFile; fileRef = 42D412A9625743DB965457DA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/tables.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C4B1E4D7020B4DF98CD7C0C9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/templmatch.cpp */ = {isa = PBXBuildFile; fileRef = 8FB56EF90F4D4C8D8454A5F6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/templmatch.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C02F2FA436A44FB0BDAF9D16 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/thresh.cpp */ = {isa = PBXBuildFile; fileRef = 9378AB98F8E940DBAD01EED4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/thresh.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6DBAF32EDB284658A60D8DBC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/undistort.cpp */ = {isa = PBXBuildFile; fileRef = C90850967A6B4C96909D116D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/undistort.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3008AE0FDCB64C16B778A591 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/utils.cpp */ = {isa = PBXBuildFile; fileRef = 354733652FD74A79A92BEDF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/utils.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              237AF0824D3246A688A6D327 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              5662D3C115B34B6D85A635EE /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              14C78F0E000844719681281D /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              93311CD6B9AE4CAB8DFC3BDB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 208BB2CFD49C454CA45CAC92 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C325B88C35CB468B8317D50B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              E0FF29BEAC864B2BB6891336 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 208BB2CFD49C454CA45CAC92 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D91F9FC83FE54D89AE1F1935;
+                     remoteInfo = opencv_imgproc;
+              };
+              DE3209B635EB4D40BEC406F7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 208BB2CFD49C454CA45CAC92 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 536A665F368F4B68909C5510;
+                     remoteInfo = ALL_BUILD;
+              };
+              30D1661B0F504F1C9DF62031 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 208BB2CFD49C454CA45CAC92 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C325B88C35CB468B8317D50B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              F0A9FE3B074B4926852983B8 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 208BB2CFD49C454CA45CAC92 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 536A665F368F4B68909C5510;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+6A72F18F91EA41BCAAB61837 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+4328055E86AD463F986B92AF /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+74AE442ACB0445B3B42DEE10 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../../ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+2D711698F7294EE980810D86 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../../ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+75B7553A9C35488DAF4295A6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../../ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+CD27AB2C168B4C8584D7C7FC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+0ED633DB785A4FC381D87732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "imgproc.hpp"; path = "include/opencv2/imgproc.hpp"; sourceTree = SOURCE_ROOT; };
+0296B1D25C104E6587728993 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "imgproc.hpp"; path = "include/opencv2/imgproc/imgproc.hpp"; sourceTree = SOURCE_ROOT; };
+AD22F154FDEC4DA1AAD5A2D2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "imgproc_c.h"; path = "include/opencv2/imgproc/imgproc_c.h"; sourceTree = SOURCE_ROOT; };
+DFAE6E4AC86447A189777760 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "types_c.h"; path = "include/opencv2/imgproc/types_c.h"; sourceTree = SOURCE_ROOT; };
+2820AB8CD1DC4A889A3DB7EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/_geom.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "_geom.h"; path = "src/_geom.h"; sourceTree = SOURCE_ROOT; };
+CE481B9E4C81486DA7692039 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/accum.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "accum.cpp"; path = "src/accum.cpp"; sourceTree = SOURCE_ROOT; };
+B532E01F5C5A41F495177F3B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/approx.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "approx.cpp"; path = "src/approx.cpp"; sourceTree = SOURCE_ROOT; };
+58EF071233CF44EEA3E00922 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/blend.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "blend.cpp"; path = "src/blend.cpp"; sourceTree = SOURCE_ROOT; };
+20FDD29595B34EA0BA0E2C1D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/canny.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "canny.cpp"; path = "src/canny.cpp"; sourceTree = SOURCE_ROOT; };
+08C2FA407A0B475C90BE5D01 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/clahe.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "clahe.cpp"; path = "src/clahe.cpp"; sourceTree = SOURCE_ROOT; };
+9D55E11C31114C2E893611B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/color.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "color.cpp"; path = "src/color.cpp"; sourceTree = SOURCE_ROOT; };
+A65D794FD5EC418FAD06CF29 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/connectedcomponents.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "connectedcomponents.cpp"; path = "src/connectedcomponents.cpp"; sourceTree = SOURCE_ROOT; };
+D541B8305BCA42DCAE7FBF21 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/contours.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "contours.cpp"; path = "src/contours.cpp"; sourceTree = SOURCE_ROOT; };
+80F06DB6D5E543528C164687 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/convhull.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "convhull.cpp"; path = "src/convhull.cpp"; sourceTree = SOURCE_ROOT; };
+FA8F62FBD52840E68EDF72AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/corner.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "corner.cpp"; path = "src/corner.cpp"; sourceTree = SOURCE_ROOT; };
+06260FA3FCC1467A931439F7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/cornersubpix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "cornersubpix.cpp"; path = "src/cornersubpix.cpp"; sourceTree = SOURCE_ROOT; };
+CEF0550742B84F5C837F876F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/demosaicing.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "demosaicing.cpp"; path = "src/demosaicing.cpp"; sourceTree = SOURCE_ROOT; };
+F90C3E2D9EB84C3F8F00374B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/deriv.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "deriv.cpp"; path = "src/deriv.cpp"; sourceTree = SOURCE_ROOT; };
+17F0092B974241FCB09CB478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/distransform.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "distransform.cpp"; path = "src/distransform.cpp"; sourceTree = SOURCE_ROOT; };
+F8F0672D476041FF87062909 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/emd.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "emd.cpp"; path = "src/emd.cpp"; sourceTree = SOURCE_ROOT; };
+BCEFF38EAF1B466EB84E1AF8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/featureselect.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "featureselect.cpp"; path = "src/featureselect.cpp"; sourceTree = SOURCE_ROOT; };
+3CCD9EA9B94F48BE92594FC7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/filter.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "filter.cpp"; path = "src/filter.cpp"; sourceTree = SOURCE_ROOT; };
+5B8CAEBCB72C42268EAEEE6D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/floodfill.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "floodfill.cpp"; path = "src/floodfill.cpp"; sourceTree = SOURCE_ROOT; };
+8466B1A89E0040C48D6C0D10 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gabor.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "gabor.cpp"; path = "src/gabor.cpp"; sourceTree = SOURCE_ROOT; };
+2578D352CAF34242955A820D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gcgraph.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "gcgraph.hpp"; path = "src/gcgraph.hpp"; sourceTree = SOURCE_ROOT; };
+AA8091F99C304D9DB3A544F1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/generalized_hough.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "generalized_hough.cpp"; path = "src/generalized_hough.cpp"; sourceTree = SOURCE_ROOT; };
+06065807AB604ACAA38EA21E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/geometry.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "geometry.cpp"; path = "src/geometry.cpp"; sourceTree = SOURCE_ROOT; };
+3D48E9F24ED44A4198FAEC2A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/grabcut.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "grabcut.cpp"; path = "src/grabcut.cpp"; sourceTree = SOURCE_ROOT; };
+A35322CBA7064C398E8B01C8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/histogram.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "histogram.cpp"; path = "src/histogram.cpp"; sourceTree = SOURCE_ROOT; };
+1E40DEE73C5A43B38E47FDB0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/hough.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "hough.cpp"; path = "src/hough.cpp"; sourceTree = SOURCE_ROOT; };
+A6DEB1F5E6AD40ECB64C6682 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/imgwarp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "imgwarp.cpp"; path = "src/imgwarp.cpp"; sourceTree = SOURCE_ROOT; };
+F29EFC7DE2F349C588926B35 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/intersection.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "intersection.cpp"; path = "src/intersection.cpp"; sourceTree = SOURCE_ROOT; };
+BDA0DA39B4F64EC2BE69D1B6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/linefit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "linefit.cpp"; path = "src/linefit.cpp"; sourceTree = SOURCE_ROOT; };
+B55DDB47D35144FDB15BF3BE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/lsd.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lsd.cpp"; path = "src/lsd.cpp"; sourceTree = SOURCE_ROOT; };
+12B0970B877643229501224B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/matchcontours.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "matchcontours.cpp"; path = "src/matchcontours.cpp"; sourceTree = SOURCE_ROOT; };
+92E5ECAC064C4144B2908AEC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/min_enclosing_triangle.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "min_enclosing_triangle.cpp"; path = "src/min_enclosing_triangle.cpp"; sourceTree = SOURCE_ROOT; };
+2A54F3659D26499881BE4946 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/moments.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "moments.cpp"; path = "src/moments.cpp"; sourceTree = SOURCE_ROOT; };
+3CE0A43299064515A913D26F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/morph.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "morph.cpp"; path = "src/morph.cpp"; sourceTree = SOURCE_ROOT; };
+828EC67D450A4152A9F922E2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/accumulate.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "accumulate.cl"; path = "src/opencl/accumulate.cl"; sourceTree = SOURCE_ROOT; };
+4D1B04D8DA084BB0B21FA77F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/bilateral.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "bilateral.cl"; path = "src/opencl/bilateral.cl"; sourceTree = SOURCE_ROOT; };
+B57D3845492248B3A1CA8467 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/blend_linear.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "blend_linear.cl"; path = "src/opencl/blend_linear.cl"; sourceTree = SOURCE_ROOT; };
+38BE21F52E0A4199BCC58D5B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/boxFilter.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "boxFilter.cl"; path = "src/opencl/boxFilter.cl"; sourceTree = SOURCE_ROOT; };
+FB8ABD11C8C9440797953BA8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/calc_back_project.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "calc_back_project.cl"; path = "src/opencl/calc_back_project.cl"; sourceTree = SOURCE_ROOT; };
+34C92DED3E874BC3B2B36DDD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/canny.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "canny.cl"; path = "src/opencl/canny.cl"; sourceTree = SOURCE_ROOT; };
+B3404F8A18F041ECB8A6EDDB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/clahe.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "clahe.cl"; path = "src/opencl/clahe.cl"; sourceTree = SOURCE_ROOT; };
+F0DF32FE96D849A4A1164561 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/corner.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "corner.cl"; path = "src/opencl/corner.cl"; sourceTree = SOURCE_ROOT; };
+5AEE4DFB1F3245F2A2AF8D06 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/covardata.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "covardata.cl"; path = "src/opencl/covardata.cl"; sourceTree = SOURCE_ROOT; };
+620D0CB2E4644EC298A6F6AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/cvtcolor.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "cvtcolor.cl"; path = "src/opencl/cvtcolor.cl"; sourceTree = SOURCE_ROOT; };
+1A5A4097D32441A5950E7B95 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2D.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "filter2D.cl"; path = "src/opencl/filter2D.cl"; sourceTree = SOURCE_ROOT; };
+8F861F50696B4871A6E5CCC3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2DSmall.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "filter2DSmall.cl"; path = "src/opencl/filter2DSmall.cl"; sourceTree = SOURCE_ROOT; };
+8565695C6058456C9B183676 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepCol.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "filterSepCol.cl"; path = "src/opencl/filterSepCol.cl"; sourceTree = SOURCE_ROOT; };
+72C9A472983E4DDAA257C7AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepRow.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "filterSepRow.cl"; path = "src/opencl/filterSepRow.cl"; sourceTree = SOURCE_ROOT; };
+1BA71C7FBF0B41A78B83B292 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "filterSep_singlePass.cl"; path = "src/opencl/filterSep_singlePass.cl"; sourceTree = SOURCE_ROOT; };
+F8EC5341C74C4880BC5D1162 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/gftt.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "gftt.cl"; path = "src/opencl/gftt.cl"; sourceTree = SOURCE_ROOT; };
+30129B93EB0B46DAB1293853 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/histogram.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "histogram.cl"; path = "src/opencl/histogram.cl"; sourceTree = SOURCE_ROOT; };
+1537C4E2D25D4ADD8E028BAD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sqrsum.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "integral_sqrsum.cl"; path = "src/opencl/integral_sqrsum.cl"; sourceTree = SOURCE_ROOT; };
+D78527F32ED647F79C4C8775 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sum.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "integral_sum.cl"; path = "src/opencl/integral_sum.cl"; sourceTree = SOURCE_ROOT; };
+8DFB332B363E4DCBA86611EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/laplacian5.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "laplacian5.cl"; path = "src/opencl/laplacian5.cl"; sourceTree = SOURCE_ROOT; };
+C4670EEADD5441A0B7FDE640 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/match_template.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "match_template.cl"; path = "src/opencl/match_template.cl"; sourceTree = SOURCE_ROOT; };
+C76C89726E2E45599DDAE844 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/medianFilter.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "medianFilter.cl"; path = "src/opencl/medianFilter.cl"; sourceTree = SOURCE_ROOT; };
+C6A85D034C4D4941BCAA5BB9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/moments.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "moments.cl"; path = "src/opencl/moments.cl"; sourceTree = SOURCE_ROOT; };
+F124479AC6EF43E09713607E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/morph.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "morph.cl"; path = "src/opencl/morph.cl"; sourceTree = SOURCE_ROOT; };
+13F8E5A4F96E44F0BF5FAD57 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/precornerdetect.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "precornerdetect.cl"; path = "src/opencl/precornerdetect.cl"; sourceTree = SOURCE_ROOT; };
+B815BB72757C418296B22633 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_down.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "pyr_down.cl"; path = "src/opencl/pyr_down.cl"; sourceTree = SOURCE_ROOT; };
+38126B904B3946C69A0A0114 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_up.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "pyr_up.cl"; path = "src/opencl/pyr_up.cl"; sourceTree = SOURCE_ROOT; };
+E2249B8D4C844DAA98675DE9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/remap.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "remap.cl"; path = "src/opencl/remap.cl"; sourceTree = SOURCE_ROOT; };
+BAED484E1B1A47179AFD1F04 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/resize.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "resize.cl"; path = "src/opencl/resize.cl"; sourceTree = SOURCE_ROOT; };
+B765FE7468F447F085A8823E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/threshold.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "threshold.cl"; path = "src/opencl/threshold.cl"; sourceTree = SOURCE_ROOT; };
+7F63861598814404AC59864C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_affine.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "warp_affine.cl"; path = "src/opencl/warp_affine.cl"; sourceTree = SOURCE_ROOT; };
+408D9647611647908F67A586 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_perspective.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "warp_perspective.cl"; path = "src/opencl/warp_perspective.cl"; sourceTree = SOURCE_ROOT; };
+41898936B9C14CE28AEE8B38 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/phasecorr.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "phasecorr.cpp"; path = "src/phasecorr.cpp"; sourceTree = SOURCE_ROOT; };
+42EF583551E94B85972A8DD2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+AF520BE74D0741F5AD0A974D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/pyramids.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "pyramids.cpp"; path = "src/pyramids.cpp"; sourceTree = SOURCE_ROOT; };
+0EDF79E21A5245318234A128 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/rotcalipers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "rotcalipers.cpp"; path = "src/rotcalipers.cpp"; sourceTree = SOURCE_ROOT; };
+4253A393AB4C44A6ACD4ECDA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/samplers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "samplers.cpp"; path = "src/samplers.cpp"; sourceTree = SOURCE_ROOT; };
+F6B6E7DC47004F78BDEAC94D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/segmentation.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "segmentation.cpp"; path = "src/segmentation.cpp"; sourceTree = SOURCE_ROOT; };
+2B5FF6BDC9F4461DA855CFF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/shapedescr.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "shapedescr.cpp"; path = "src/shapedescr.cpp"; sourceTree = SOURCE_ROOT; };
+D5171762F89B47F2A8094759 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/smooth.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "smooth.cpp"; path = "src/smooth.cpp"; sourceTree = SOURCE_ROOT; };
+6E3591FA648743C48182AD68 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/subdivision2d.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "subdivision2d.cpp"; path = "src/subdivision2d.cpp"; sourceTree = SOURCE_ROOT; };
+4A3270796FFB4E0AA3690A1C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/sumpixels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "sumpixels.cpp"; path = "src/sumpixels.cpp"; sourceTree = SOURCE_ROOT; };
+42D412A9625743DB965457DA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/tables.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tables.cpp"; path = "src/tables.cpp"; sourceTree = SOURCE_ROOT; };
+8FB56EF90F4D4C8D8454A5F6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/templmatch.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "templmatch.cpp"; path = "src/templmatch.cpp"; sourceTree = SOURCE_ROOT; };
+9378AB98F8E940DBAD01EED4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/thresh.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "thresh.cpp"; path = "src/thresh.cpp"; sourceTree = SOURCE_ROOT; };
+C90850967A6B4C96909D116D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/undistort.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "undistort.cpp"; path = "src/undistort.cpp"; sourceTree = SOURCE_ROOT; };
+354733652FD74A79A92BEDF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/utils.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "utils.cpp"; path = "src/utils.cpp"; sourceTree = SOURCE_ROOT; };
+C38465CFA6BB4B39992887A7 /* opencv_imgproc */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_imgproc.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              6F63C11E814841929514AD84  = {
+                     isa = PBXGroup;
+                     children = (
+                            C79CC3C253D042EB96765244 /* Sources */,
+                            F6D09E8A9B3F4E61A965E4FC /* Resources */,
+                            AC2F5390FC9E4F05BB39A6C0 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              C79CC3C253D042EB96765244 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            550CC248F6314E1283C63AC0 /* ALL_BUILD */,
+                            332B4B142D634A8BAFBF8A94 /* ZERO_CHECK */,
+                            EBE111E24116454B9914AF8F /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              F6D09E8A9B3F4E61A965E4FC /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              550CC248F6314E1283C63AC0 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6AF4DC1A70F2463EB35204E3 /* CMake Rules */,
+                            6A72F18F91EA41BCAAB61837 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              6AF4DC1A70F2463EB35204E3 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              332B4B142D634A8BAFBF8A94 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AD9FD1AFF94A4BD296EF6D7C /* CMake Rules */,
+                            6A72F18F91EA41BCAAB61837 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              AD9FD1AFF94A4BD296EF6D7C /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              EBE111E24116454B9914AF8F /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            805A2D4BD66A4778A7F8B036 /* opencv_imgproc */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              805A2D4BD66A4778A7F8B036 /* opencv_imgproc */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9223F0E1DA1240B09C8A5CBE /* Include */,
+                            BF25E17A05094AECAD9AF029 /* Src */,
+                            AE35497079AA42DAAB6C2C47 /* Header Files */,
+                            A7FE598D11B04E5192C0BEBB /* CMake Rules */,
+                            6A72F18F91EA41BCAAB61837 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/CMakeLists.txt */,
+                     );
+                     name = opencv_imgproc;
+                     sourceTree = "<group>";
+              };
+              9223F0E1DA1240B09C8A5CBE /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            31415926F8054240A23E1AED /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              31415926F8054240A23E1AED /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            813A476BAA2C4D87BFDF5701 /* imgproc */,
+                            0ED633DB785A4FC381D87732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              813A476BAA2C4D87BFDF5701 /* imgproc */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0296B1D25C104E6587728993 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp */,
+                            AD22F154FDEC4DA1AAD5A2D2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h */,
+                            DFAE6E4AC86447A189777760 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h */,
+                     );
+                     name = imgproc;
+                     sourceTree = "<group>";
+              };
+              BF25E17A05094AECAD9AF029 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E844A17037B2436DBD07C828 /* opencl */,
+                            2820AB8CD1DC4A889A3DB7EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/_geom.h */,
+                            CE481B9E4C81486DA7692039 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/accum.cpp */,
+                            B532E01F5C5A41F495177F3B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/approx.cpp */,
+                            58EF071233CF44EEA3E00922 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/blend.cpp */,
+                            20FDD29595B34EA0BA0E2C1D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/canny.cpp */,
+                            08C2FA407A0B475C90BE5D01 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/clahe.cpp */,
+                            9D55E11C31114C2E893611B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/color.cpp */,
+                            A65D794FD5EC418FAD06CF29 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/connectedcomponents.cpp */,
+                            D541B8305BCA42DCAE7FBF21 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/contours.cpp */,
+                            80F06DB6D5E543528C164687 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/convhull.cpp */,
+                            FA8F62FBD52840E68EDF72AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/corner.cpp */,
+                            06260FA3FCC1467A931439F7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/cornersubpix.cpp */,
+                            CEF0550742B84F5C837F876F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/demosaicing.cpp */,
+                            F90C3E2D9EB84C3F8F00374B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/deriv.cpp */,
+                            17F0092B974241FCB09CB478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/distransform.cpp */,
+                            F8F0672D476041FF87062909 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/emd.cpp */,
+                            BCEFF38EAF1B466EB84E1AF8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/featureselect.cpp */,
+                            3CCD9EA9B94F48BE92594FC7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/filter.cpp */,
+                            5B8CAEBCB72C42268EAEEE6D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/floodfill.cpp */,
+                            8466B1A89E0040C48D6C0D10 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gabor.cpp */,
+                            2578D352CAF34242955A820D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gcgraph.hpp */,
+                            AA8091F99C304D9DB3A544F1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/generalized_hough.cpp */,
+                            06065807AB604ACAA38EA21E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/geometry.cpp */,
+                            3D48E9F24ED44A4198FAEC2A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/grabcut.cpp */,
+                            A35322CBA7064C398E8B01C8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/histogram.cpp */,
+                            1E40DEE73C5A43B38E47FDB0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/hough.cpp */,
+                            A6DEB1F5E6AD40ECB64C6682 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/imgwarp.cpp */,
+                            F29EFC7DE2F349C588926B35 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/intersection.cpp */,
+                            BDA0DA39B4F64EC2BE69D1B6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/linefit.cpp */,
+                            B55DDB47D35144FDB15BF3BE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/lsd.cpp */,
+                            12B0970B877643229501224B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/matchcontours.cpp */,
+                            92E5ECAC064C4144B2908AEC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/min_enclosing_triangle.cpp */,
+                            2A54F3659D26499881BE4946 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/moments.cpp */,
+                            3CE0A43299064515A913D26F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/morph.cpp */,
+                            41898936B9C14CE28AEE8B38 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/phasecorr.cpp */,
+                            42EF583551E94B85972A8DD2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/precomp.hpp */,
+                            AF520BE74D0741F5AD0A974D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/pyramids.cpp */,
+                            0EDF79E21A5245318234A128 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/rotcalipers.cpp */,
+                            4253A393AB4C44A6ACD4ECDA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/samplers.cpp */,
+                            F6B6E7DC47004F78BDEAC94D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/segmentation.cpp */,
+                            2B5FF6BDC9F4461DA855CFF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/shapedescr.cpp */,
+                            D5171762F89B47F2A8094759 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/smooth.cpp */,
+                            6E3591FA648743C48182AD68 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/subdivision2d.cpp */,
+                            4A3270796FFB4E0AA3690A1C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/sumpixels.cpp */,
+                            42D412A9625743DB965457DA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/tables.cpp */,
+                            8FB56EF90F4D4C8D8454A5F6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/templmatch.cpp */,
+                            9378AB98F8E940DBAD01EED4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/thresh.cpp */,
+                            C90850967A6B4C96909D116D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/undistort.cpp */,
+                            354733652FD74A79A92BEDF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/utils.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              E844A17037B2436DBD07C828 /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C564E151F5984592816A94C5 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              C564E151F5984592816A94C5 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            68E6701FBEB84317B8482FE8 /* autogenerated */,
+                            828EC67D450A4152A9F922E2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/accumulate.cl */,
+                            4D1B04D8DA084BB0B21FA77F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/bilateral.cl */,
+                            B57D3845492248B3A1CA8467 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/blend_linear.cl */,
+                            38BE21F52E0A4199BCC58D5B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/boxFilter.cl */,
+                            FB8ABD11C8C9440797953BA8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/calc_back_project.cl */,
+                            34C92DED3E874BC3B2B36DDD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/canny.cl */,
+                            B3404F8A18F041ECB8A6EDDB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/clahe.cl */,
+                            F0DF32FE96D849A4A1164561 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/corner.cl */,
+                            5AEE4DFB1F3245F2A2AF8D06 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/covardata.cl */,
+                            620D0CB2E4644EC298A6F6AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/cvtcolor.cl */,
+                            1A5A4097D32441A5950E7B95 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2D.cl */,
+                            8F861F50696B4871A6E5CCC3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filter2DSmall.cl */,
+                            8565695C6058456C9B183676 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepCol.cl */,
+                            72C9A472983E4DDAA257C7AF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSepRow.cl */,
+                            1BA71C7FBF0B41A78B83B292 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl */,
+                            F8EC5341C74C4880BC5D1162 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/gftt.cl */,
+                            30129B93EB0B46DAB1293853 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/histogram.cl */,
+                            1537C4E2D25D4ADD8E028BAD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sqrsum.cl */,
+                            D78527F32ED647F79C4C8775 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/integral_sum.cl */,
+                            8DFB332B363E4DCBA86611EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/laplacian5.cl */,
+                            C4670EEADD5441A0B7FDE640 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/match_template.cl */,
+                            C76C89726E2E45599DDAE844 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/medianFilter.cl */,
+                            C6A85D034C4D4941BCAA5BB9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/moments.cl */,
+                            F124479AC6EF43E09713607E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/morph.cl */,
+                            13F8E5A4F96E44F0BF5FAD57 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/precornerdetect.cl */,
+                            B815BB72757C418296B22633 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_down.cl */,
+                            38126B904B3946C69A0A0114 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/pyr_up.cl */,
+                            E2249B8D4C844DAA98675DE9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/remap.cl */,
+                            BAED484E1B1A47179AFD1F04 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/resize.cl */,
+                            B765FE7468F447F085A8823E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/threshold.cl */,
+                            7F63861598814404AC59864C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_affine.cl */,
+                            408D9647611647908F67A586 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/opencl/warp_perspective.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              68E6701FBEB84317B8482FE8 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            74AE442ACB0445B3B42DEE10 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp */,
+                            75B7553A9C35488DAF4295A6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              AE35497079AA42DAAB6C2C47 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4328055E86AD463F986B92AF /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            CD27AB2C168B4C8584D7C7FC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              A7FE598D11B04E5192C0BEBB /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2D711698F7294EE980810D86 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              AC2F5390FC9E4F05BB39A6C0 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C38465CFA6BB4B39992887A7 /* opencv_imgproc */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              D91F9FC83FE54D89AE1F1935 /* opencv_imgproc */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 7778C7326BDA436A9E298171 /* Build configuration list for PBXNativeTarget "opencv_imgproc" */;
+                     buildPhases = (
+                            29E521A942C849A192201342 /* CMake Rules */,
+                            BD55A34E31D64268B0DFE08C /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            5F3BA72B2938492C80575C72 /* PBXTargetDependency */,
+                     );
+                     name = opencv_imgproc;
+                     productName = opencv_imgproc;
+                     productReference = C38465CFA6BB4B39992887A7 /* opencv_imgproc */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              208BB2CFD49C454CA45CAC92 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = B79524E8742246F0AF096954 /* Build configuration list for PBXProject  "opencv_imgproc" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            5662D3C115B34B6D85A635EE /* Debug */,
+                            14C78F0E000844719681281D /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 6F63C11E814841929514AD84;
+                     projectDirPath = /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc;
+                     projectRoot = "";
+                     targets = (
+                            536A665F368F4B68909C5510 /* ALL_BUILD */,
+                            C325B88C35CB468B8317D50B /* ZERO_CHECK */,
+                            0C685EF297B84F09912A8C9A /* install */,
+                            D91F9FC83FE54D89AE1F1935 /* opencv_imgproc */,
+                            208F97B8C47942599D6C25D1 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              2D1A756D01224E94804BCCC6 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              23F76DE98900495B8E8BEE9E /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              6B4B01B26AA542279642F0AB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D6F2A3EF299E4C679F011E93 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              A630164D092F413A82EF4FBB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              78C62AED9CDA46BBA6EB95F6 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              29E521A942C849A192201342 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/CMakeScripts/opencv_imgproc_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              666F1E8BE45C4AE9878FEB9F /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C1AEFB988BF141FA8A3744BD /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              BD55A34E31D64268B0DFE08C /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            F2F20B44B86247ED8EA5293E /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/opencl_kernels.cpp */,
+                            1760CB8F373B45619EA4DBE4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/accum.cpp */,
+                            86ADDCDF1D6F4C70BE8BB782 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/approx.cpp */,
+                            A0136F6C902B4EEBAD8E73F3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/blend.cpp */,
+                            32152FEDAE184E20A801DA5F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/canny.cpp */,
+                            7F4D1C3523824BF1A7256366 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/clahe.cpp */,
+                            D4E857D805C745CEAA5BCC89 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/color.cpp */,
+                            830D748C60134B64B685EBF2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/connectedcomponents.cpp */,
+                            3A8F540AC423483B90C362F7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/contours.cpp */,
+                            BCA566D84B6E44549425D764 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/convhull.cpp */,
+                            015E5BC3C260444FB8A4EB7F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/corner.cpp */,
+                            4292B25620B34F2E944BF698 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/cornersubpix.cpp */,
+                            829109BF6C1A45F1BF286411 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/demosaicing.cpp */,
+                            AFB4576DB7AC4B8DBC328474 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/deriv.cpp */,
+                            E046C146247C495AB1A95C99 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/distransform.cpp */,
+                            0F33A4ED33214A48AB1EC479 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/emd.cpp */,
+                            1F22C65E090443C087049CEB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/featureselect.cpp */,
+                            E3C4322A962A4C0C9988D7C3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/filter.cpp */,
+                            4AA1667AD4824620BF04E697 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/floodfill.cpp */,
+                            111B41C17EDE4D0D978E8E8D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/gabor.cpp */,
+                            FCB06DD8A4974A5C8DD9259B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/generalized_hough.cpp */,
+                            A842B7503F0B44B4ABD39005 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/geometry.cpp */,
+                            3BF38D56720145859F0B3411 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/grabcut.cpp */,
+                            9950BB63B23F43D4967BEA0B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/histogram.cpp */,
+                            E5C62CBBFF884FFA9A07947E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/hough.cpp */,
+                            D739ECFE6D0645A9A159344E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/imgwarp.cpp */,
+                            F88D5BA87F7B4D72853F54D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/intersection.cpp */,
+                            5E6EC4FBF646496FA9948630 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/linefit.cpp */,
+                            B06EC8B81E354227B1B9B084 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/lsd.cpp */,
+                            C2C125F0D87B4B28B5E6FCE0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/matchcontours.cpp */,
+                            3244DEFB1C0A412584BEAE1B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/min_enclosing_triangle.cpp */,
+                            80F0ADB3847E4CDC860A7FDB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/moments.cpp */,
+                            51B85AC2424E45D18101358F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/morph.cpp */,
+                            0177735238514E219EDD85E7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/phasecorr.cpp */,
+                            2283AE9C38AE4B94BCBC13FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/pyramids.cpp */,
+                            6F08F51C7E044AC2A2A46603 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/rotcalipers.cpp */,
+                            13E79B7320644A4698142B5E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/samplers.cpp */,
+                            991C77B460F74715B8BB6FE9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/segmentation.cpp */,
+                            8EF63290FD9347F2832C2927 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/shapedescr.cpp */,
+                            FDBC6EA3DB43471CA35094E8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/smooth.cpp */,
+                            30D4AB22A0B04AA899809CE1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/subdivision2d.cpp */,
+                            215A3D69A26442199E6248EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/sumpixels.cpp */,
+                            E9A16B627E2345CBAA03321E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/tables.cpp */,
+                            C4B1E4D7020B4DF98CD7C0C9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/templmatch.cpp */,
+                            C02F2FA436A44FB0BDAF9D16 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/thresh.cpp */,
+                            6DBAF32EDB284658A60D8DBC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/undistort.cpp */,
+                            3008AE0FDCB64C16B778A591 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src/utils.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              3AA869C2DDC14C0E80C9040A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C325B88C35CB468B8317D50B /* ZERO_CHECK */;
+                     targetProxy = 93311CD6B9AE4CAB8DFC3BDB /* PBXContainerItemProxy */;
+              };
+              57DF504390404B1FB29B543E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D91F9FC83FE54D89AE1F1935 /* opencv_imgproc */;
+                     targetProxy = E0FF29BEAC864B2BB6891336 /* PBXContainerItemProxy */;
+              };
+              CDA4E0FC6E0245649DF6B388 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 536A665F368F4B68909C5510 /* ALL_BUILD */;
+                     targetProxy = DE3209B635EB4D40BEC406F7 /* PBXContainerItemProxy */;
+              };
+              5F3BA72B2938492C80575C72 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C325B88C35CB468B8317D50B /* ZERO_CHECK */;
+                     targetProxy = 30D1661B0F504F1C9DF62031 /* PBXContainerItemProxy */;
+              };
+              6D17FCC264D44C1299421B2F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 536A665F368F4B68909C5510 /* ALL_BUILD */;
+                     targetProxy = F0A9FE3B074B4926852983B8 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              D709265089CF4EDA99615561 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/build";
+                     };
+                     name = Debug;
+              };
+              E18B3A0916E249E9B0C446BF /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc/build";
+                     };
+                     name = Release;
+              };
+              A8B37804C4634752B129C446 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D8AB182ECD174245BC12952B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              F38D0620887243FA81C95D5C /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              81BE9703DDDC49899A503492 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              37208C84AFEC4EE997DAEB5D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              81D1FDF4849B4DB59EE6543F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1864EB8F5B934EC68ADDDB8C /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_imgproc;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              86EB1EB92F784AC293985737 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_imgproc;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B445E6095B6F4F4BAB73DDF2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5BA8772CE88C41F185729684 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc", /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/imgproc";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              B79524E8742246F0AF096954 /* Build configuration list for PBXProject  "opencv_imgproc" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D709265089CF4EDA99615561 /* Debug */,
+                            E18B3A0916E249E9B0C446BF /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              EB89EAE7E9924406ADE4EB99 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A8B37804C4634752B129C446 /* Debug */,
+                            D8AB182ECD174245BC12952B /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              968D581FA6774745A1C675F5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F38D0620887243FA81C95D5C /* Debug */,
+                            81BE9703DDDC49899A503492 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              BDE35AAE2E7C4AD9877DC36E /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            37208C84AFEC4EE997DAEB5D /* Debug */,
+                            81D1FDF4849B4DB59EE6543F /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7778C7326BDA436A9E298171 /* Build configuration list for PBXNativeTarget "opencv_imgproc" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1864EB8F5B934EC68ADDDB8C /* Debug */,
+                            86EB1EB92F784AC293985737 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              BBD6C3FF2ACA4803B1573C49 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B445E6095B6F4F4BAB73DDF2 /* Debug */,
+                            5BA8772CE88C41F185729684 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 208BB2CFD49C454CA45CAC92;
+}

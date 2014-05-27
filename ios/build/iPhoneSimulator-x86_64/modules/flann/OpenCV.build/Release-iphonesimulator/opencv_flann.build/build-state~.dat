@@ -1,0 +1,200 @@
+Topencv_flann
+v6
+r1
+cCheck dependencies
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c000000005348787000000000000003B4
+t1397258352
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053487873000000000000019E
+t1397258355
+s414
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a
+t2
+s0
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o
+t1401153841
+s38368
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o
+t1401153848
+s575108
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/opencv_flann.LinkFileList
+c000000005383E9300000000000000150
+t1401153840
+s336
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp
+c000000005383E43C0000000000000A4E
+t1401152572
+s2638
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp
+c000000005383E43C00000000000065FA
+t1401152572
+s26106
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies89ebacb02034b941^fb77adb02034b941^---0#1#1#--18"Check dependencies36"468C1896-D406-4C73-9639-C512747CDCD8-
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846640.678183
+e422846641.908694
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dist.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/index_testing.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/matrix.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/general.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/nn_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/result_set.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/params.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/any.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/logger.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/timer.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/saving.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dummy.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/all_indices.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kdtree_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/heap.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/allocator.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/random.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kmeans_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/composite_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/linear_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/lsh_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/lsh_table.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/autotuned_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/ground_truth.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/sampling.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/flann_base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp280"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o [1mmodules/flann/src/flann.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compilerf5d5adb02034b941^a75de8b12034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@74"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp0000000000000000^3420"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o [1mmodules/flann/src/flann.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/DerivedSources/x86_64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/flann.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/flann.o36"693FFAC7-2DFE-4EEE-B2AF-D54EC1D635AA-
+bD5DFED8C-DDC0-4C56-BFA6-303EB7BB5274
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846640.679050
+e422846648.707302
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dist.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/index_testing.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/matrix.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/general.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/nn_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/result_set.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/params.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/any.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/logger.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/timer.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/saving.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dummy.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/all_indices.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kdtree_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/heap.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/allocator.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/random.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/kmeans_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/composite_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/linear_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/lsh_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/lsh_table.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/autotuned_index.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/ground_truth.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/sampling.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/flann_base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp288"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o [1mmodules/flann/src/miniflann.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler62f3adb02034b941^a916b5b82034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@78"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp0000000000000000^3444"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o [1mmodules/flann/src/miniflann.cpp[0m normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/DerivedSources/x86_64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/src/miniflann.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/miniflann.o36"BF75C9D7-B970-4CB1-8CC5-967C64A01613-
+bD5DFED8C-DDC0-4C56-BFA6-303EB7BB5274
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a normal x86_64
+s422846648.986750
+e422846648.994865
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a normal x86_64125"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a normal x86_645bb0fcb82034b941^10b0feb82034b941^---0#0#1#--1115"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a normal x86_64    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/flann/OpenCV.build/Release-iphonesimulator/opencv_flann.build/Objects-normal/x86_64/opencv_flann.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release/libopencv_flann.a36"D637E19F-E27E-49D7-AA88-C7391B539C43-
+bD5DFED8C-DDC0-4C56-BFA6-303EB7BB5274
+

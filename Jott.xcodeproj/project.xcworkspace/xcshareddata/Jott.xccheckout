@@ -10,6 +10,8 @@
 	<string>Jott</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>246FB38B-AF77-4CB0-9192-378288B79BF2</key>
+		<string>https://github.com/mjp/FaceRecognition.git</string>
 		<key>2F2AE724-4456-4471-A111-A89F04E4101E</key>
 		<string>https://github.com/mohssenfathi/Jott.git</string>
 	</dict>
@@ -17,12 +19,18 @@
 	<string>Jott.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>246FB38B-AF77-4CB0-9192-378288B79BF2</key>
+		<string>../../../../../Desktop/FaceRecognition</string>
 		<key>2F2AE724-4456-4471-A111-A89F04E4101E</key>
 		<string>../..</string>
 		<key>40217874-2EF2-4580-8DAA-AC446EB2E008</key>
 		<string>../../Jott/FaceRecognition/Vendor/ELCImagePickerController</string>
+		<key>453E43D8-A3E8-4A58-9CB1-921B331A4B89</key>
+		<string>../../Jott/Vendor/ELCImagePickerController</string>
 		<key>DE2A2095-F728-40F5-8CD9-D04310D543D1</key>
 		<string>../../../Notes</string>
+		<key>EA10A1E7-0232-46AA-8296-811F1B8C572B</key>
+		<string>../../Jott/Facial Recognition/Vendor/ELCImagePickerController</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mohssenfathi/Jott.git</string>
@@ -36,9 +44,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>40217874-2EF2-4580-8DAA-AC446EB2E008</string>
+			<string>EA10A1E7-0232-46AA-8296-811F1B8C572B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ELCImagePickerController</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>246FB38B-AF77-4CB0-9192-378288B79BF2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FaceRecognition</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

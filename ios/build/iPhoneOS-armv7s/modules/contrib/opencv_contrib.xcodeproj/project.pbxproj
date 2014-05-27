@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              536A665F368F4B68909C5510 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 2710C0A6EA9646FEB4010BBB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            065E891ABD0E4448940CFA90 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            1C7F133373BD4B7CB634F6C7 /* PBXTargetDependency */,
+                            B6BCC4898DAC4713AF79699B /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              C325B88C35CB468B8317D50B /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7C67B0E2B8F2411D8B8EBCC7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            6CFAE9B2C6744ABB8A86DEBC /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              0C685EF297B84F09912A8C9A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 0993DA6CC320411EB33EBCA2 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            B9C93B1C5A0744AFBAA36081 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            94864424B6F6444880A37ADC /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              208F97B8C47942599D6C25D1 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 800F402703FA4A33A2D720CF /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            0151917EA0C84C4992F2950F /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            1863D011DFEB4752BF7FED03 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+E960E83CE5754E7EA5E670C7 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 8062C7F9E57E4123B3663CFC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+AA9E92DAFDFF4238A1AA5451 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 2A2F166924A84EECBE3A94C6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+18509669C143452E90A30AD1 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 0DDC9EF9FFC64D77AE7613D5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+75E6830899144CC78EDE31AA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib.hpp */ = {isa = PBXBuildFile; fileRef = 4CDF97813F00404595E63BC8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F27D612988504CC8AC64BEC5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/compat.hpp */ = {isa = PBXBuildFile; fileRef = 07BE065C4C5A47CC8F03F56B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/compat.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+CADAEA2D94DD48ADB9B8D825 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp */ = {isa = PBXBuildFile; fileRef = C2A08E9881544821B4DEA31E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+25799082808448A0B8931CE7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp */ = {isa = PBXBuildFile; fileRef = EF4BECFE39CE467AA5D5D440 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F41BE2B8981B4C5781DE75DD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp */ = {isa = PBXBuildFile; fileRef = 556BD0FE14E84419B5A02C4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+3F7728AD8BAA4EEC8AF63561 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp */ = {isa = PBXBuildFile; fileRef = 563ED05E84594FA38202C0EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+E3984DBE06494C2DA6C1DCB2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/adaptiveskindetector.cpp */ = {isa = PBXBuildFile; fileRef = 2855EDD3BDB8461B9585146C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/adaptiveskindetector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+56E605CD09DC459BA8CFD5E5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/ba.cpp */ = {isa = PBXBuildFile; fileRef = AF371BB1D56E4D3F8D66FF0D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/ba.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+EB8FC574CBFF45A7947D0089 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/bowmsctrainer.cpp */ = {isa = PBXBuildFile; fileRef = D92968A504EB4775A7FCDEE4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/bowmsctrainer.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DE46DE854D7641D6BFE593EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chamfermatching.cpp */ = {isa = PBXBuildFile; fileRef = 8CDA8173DE4844FD94A00732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chamfermatching.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3167C8610D8A4E3E9EA3438C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chowliutree.cpp */ = {isa = PBXBuildFile; fileRef = D1EA5D90E5DD4C8B916CA683 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chowliutree.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+0D607E4F73914E65B8160FED /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colormap.cpp */ = {isa = PBXBuildFile; fileRef = AEB7112B15BC4C1BB647C869 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colormap.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4F199D6F02324E2F8D75D95C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colortracker.cpp */ = {isa = PBXBuildFile; fileRef = EF128B433F64445BAEB34923 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colortracker.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+193862B1A8AE46E280BD5462 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/contrib_init.cpp */ = {isa = PBXBuildFile; fileRef = C7CED12835FA460CA8EC414A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/contrib_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+80BD7BF22FCA4D91B4A7027B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/detection_based_tracker.cpp */ = {isa = PBXBuildFile; fileRef = E3004597B83D40AA8C57EB59 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/detection_based_tracker.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+702B13412B5245BA9AD053B3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/facerec.cpp */ = {isa = PBXBuildFile; fileRef = FBD083BD467A40B99F6CD62A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/facerec.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D7CE8A6B63BF4BBEA1BD7C15 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/featuretracker.cpp */ = {isa = PBXBuildFile; fileRef = 35759A4090E94CB59D8D03F5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/featuretracker.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5D8CA0932CEA49C1AFE3A6CF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp */ = {isa = PBXBuildFile; fileRef = 35C070DB1C584532B2276DB6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D23615FC79A54376BE99156B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/gencolors.cpp */ = {isa = PBXBuildFile; fileRef = 0C2ED931426A44BF93486180 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/gencolors.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+ABE84696327A4B24BC79431D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/hybridtracker.cpp */ = {isa = PBXBuildFile; fileRef = B282EE5CFDDF42DD85DEDF86 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/hybridtracker.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4B2AA007E0F049A89BBBF5BD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/inputoutput.cpp */ = {isa = PBXBuildFile; fileRef = 1DFE7BF179194B64BB487A11 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/inputoutput.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+BB4736582DA64B32AA693C46 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/lda.cpp */ = {isa = PBXBuildFile; fileRef = D24BEF652E3F4C58B68B8ACE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/lda.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6174515500F641E392E31911 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/logpolar_bsm.cpp */ = {isa = PBXBuildFile; fileRef = DF595BF72C314C31A6104F4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/logpolar_bsm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+06470A8BDEE7482BACB63127 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/octree.cpp */ = {isa = PBXBuildFile; fileRef = DBDC78A86E7F4C31B419F642 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/octree.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+65D11AC3E78E48358837DB91 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/openfabmap.cpp */ = {isa = PBXBuildFile; fileRef = 7C9CFAA1A2244A6A8E29C305 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/openfabmap.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6605DFF82FBC4C35B503A46D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/polyfit.cpp */ = {isa = PBXBuildFile; fileRef = C6FD03455FE147A8B3C11F99 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/polyfit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+282E5A0F48A5417482EE7D81 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 4F6E0AFEC02741ACA5B5286C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+2CBA497F7F6F4853A93BC03D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/rgbdodometry.cpp */ = {isa = PBXBuildFile; fileRef = 8C9045C152DA44C68A5716AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/rgbdodometry.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A6E7DB94D1F94EF5ADBA9B7A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/selfsimilarity.cpp */ = {isa = PBXBuildFile; fileRef = AFE20C38164842F08F60EDAC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/selfsimilarity.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FF20414B625D4CA9834C46E5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/spinimages.cpp */ = {isa = PBXBuildFile; fileRef = 6C03157378E74630A5B835FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/spinimages.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D05698671E394041AF7AE2F6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/stereovar.cpp */ = {isa = PBXBuildFile; fileRef = 154B076A4D8643BCA137B478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/stereovar.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              CFD8EB3BFD3D4AB28ADC0510 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              E8FA6C3F99A34F77A3659FF6 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              ADCBFF7606A944318338659D /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              C20450EBA14D4167A6F54D4C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D4066C59EA60450F8DCBFB82 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C325B88C35CB468B8317D50B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              343F80DF20954598A0A1DEB0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D4066C59EA60450F8DCBFB82 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = A04A6CB3F8C34B47B86877EE;
+                     remoteInfo = opencv_contrib;
+              };
+              74B0F4C9B968493394C5C37F /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D4066C59EA60450F8DCBFB82 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 536A665F368F4B68909C5510;
+                     remoteInfo = ALL_BUILD;
+              };
+              56ADED5636584B6BA290069E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D4066C59EA60450F8DCBFB82 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C325B88C35CB468B8317D50B;
+                     remoteInfo = ZERO_CHECK;
+              };
+              B895BFC9CCA945BF9994506B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = D4066C59EA60450F8DCBFB82 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 536A665F368F4B68909C5510;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+0DDC9EF9FFC64D77AE7613D5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+8062C7F9E57E4123B3663CFC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+2A2F166924A84EECBE3A94C6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+4CDF97813F00404595E63BC8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "contrib.hpp"; path = "include/opencv2/contrib.hpp"; sourceTree = SOURCE_ROOT; };
+07BE065C4C5A47CC8F03F56B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/compat.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "compat.hpp"; path = "include/opencv2/contrib/compat.hpp"; sourceTree = SOURCE_ROOT; };
+C2A08E9881544821B4DEA31E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "contrib.hpp"; path = "include/opencv2/contrib/contrib.hpp"; sourceTree = SOURCE_ROOT; };
+EF4BECFE39CE467AA5D5D440 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "detection_based_tracker.hpp"; path = "include/opencv2/contrib/detection_based_tracker.hpp"; sourceTree = SOURCE_ROOT; };
+556BD0FE14E84419B5A02C4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "hybridtracker.hpp"; path = "include/opencv2/contrib/hybridtracker.hpp"; sourceTree = SOURCE_ROOT; };
+563ED05E84594FA38202C0EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "openfabmap.hpp"; path = "include/opencv2/contrib/openfabmap.hpp"; sourceTree = SOURCE_ROOT; };
+2855EDD3BDB8461B9585146C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/adaptiveskindetector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "adaptiveskindetector.cpp"; path = "src/adaptiveskindetector.cpp"; sourceTree = SOURCE_ROOT; };
+AF371BB1D56E4D3F8D66FF0D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/ba.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ba.cpp"; path = "src/ba.cpp"; sourceTree = SOURCE_ROOT; };
+D92968A504EB4775A7FCDEE4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/bowmsctrainer.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bowmsctrainer.cpp"; path = "src/bowmsctrainer.cpp"; sourceTree = SOURCE_ROOT; };
+8CDA8173DE4844FD94A00732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chamfermatching.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "chamfermatching.cpp"; path = "src/chamfermatching.cpp"; sourceTree = SOURCE_ROOT; };
+D1EA5D90E5DD4C8B916CA683 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chowliutree.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "chowliutree.cpp"; path = "src/chowliutree.cpp"; sourceTree = SOURCE_ROOT; };
+AEB7112B15BC4C1BB647C869 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colormap.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "colormap.cpp"; path = "src/colormap.cpp"; sourceTree = SOURCE_ROOT; };
+EF128B433F64445BAEB34923 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colortracker.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "colortracker.cpp"; path = "src/colortracker.cpp"; sourceTree = SOURCE_ROOT; };
+C7CED12835FA460CA8EC414A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/contrib_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "contrib_init.cpp"; path = "src/contrib_init.cpp"; sourceTree = SOURCE_ROOT; };
+E3004597B83D40AA8C57EB59 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/detection_based_tracker.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detection_based_tracker.cpp"; path = "src/detection_based_tracker.cpp"; sourceTree = SOURCE_ROOT; };
+FBD083BD467A40B99F6CD62A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/facerec.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "facerec.cpp"; path = "src/facerec.cpp"; sourceTree = SOURCE_ROOT; };
+35759A4090E94CB59D8D03F5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/featuretracker.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "featuretracker.cpp"; path = "src/featuretracker.cpp"; sourceTree = SOURCE_ROOT; };
+35C070DB1C584532B2276DB6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fuzzymeanshifttracker.cpp"; path = "src/fuzzymeanshifttracker.cpp"; sourceTree = SOURCE_ROOT; };
+0C2ED931426A44BF93486180 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/gencolors.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "gencolors.cpp"; path = "src/gencolors.cpp"; sourceTree = SOURCE_ROOT; };
+B282EE5CFDDF42DD85DEDF86 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/hybridtracker.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "hybridtracker.cpp"; path = "src/hybridtracker.cpp"; sourceTree = SOURCE_ROOT; };
+1DFE7BF179194B64BB487A11 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/inputoutput.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "inputoutput.cpp"; path = "src/inputoutput.cpp"; sourceTree = SOURCE_ROOT; };
+D24BEF652E3F4C58B68B8ACE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/lda.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lda.cpp"; path = "src/lda.cpp"; sourceTree = SOURCE_ROOT; };
+DF595BF72C314C31A6104F4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/logpolar_bsm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "logpolar_bsm.cpp"; path = "src/logpolar_bsm.cpp"; sourceTree = SOURCE_ROOT; };
+DBDC78A86E7F4C31B419F642 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/octree.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "octree.cpp"; path = "src/octree.cpp"; sourceTree = SOURCE_ROOT; };
+7C9CFAA1A2244A6A8E29C305 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/openfabmap.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "openfabmap.cpp"; path = "src/openfabmap.cpp"; sourceTree = SOURCE_ROOT; };
+C6FD03455FE147A8B3C11F99 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/polyfit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "polyfit.cpp"; path = "src/polyfit.cpp"; sourceTree = SOURCE_ROOT; };
+4F6E0AFEC02741ACA5B5286C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+8C9045C152DA44C68A5716AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/rgbdodometry.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "rgbdodometry.cpp"; path = "src/rgbdodometry.cpp"; sourceTree = SOURCE_ROOT; };
+AFE20C38164842F08F60EDAC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/selfsimilarity.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "selfsimilarity.cpp"; path = "src/selfsimilarity.cpp"; sourceTree = SOURCE_ROOT; };
+6C03157378E74630A5B835FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/spinimages.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "spinimages.cpp"; path = "src/spinimages.cpp"; sourceTree = SOURCE_ROOT; };
+154B076A4D8643BCA137B478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/stereovar.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereovar.cpp"; path = "src/stereovar.cpp"; sourceTree = SOURCE_ROOT; };
+F6AA82B1847D4FDDA6A9A574 /* opencv_contrib */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_contrib.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              8B474FB1D547469AB21379C9  = {
+                     isa = PBXGroup;
+                     children = (
+                            114FA5545B4943BA969CC35C /* Sources */,
+                            A67C821259A248C1BD588599 /* Resources */,
+                            3C91ADEC9CB14EFA97181F91 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              114FA5545B4943BA969CC35C /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A2FFBB174B644E5BA9FF9E2B /* ALL_BUILD */,
+                            471BE28C106A4A0EAD6A3AA8 /* ZERO_CHECK */,
+                            BA8440AA78C94248A04F807E /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              A67C821259A248C1BD588599 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              A2FFBB174B644E5BA9FF9E2B /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8E5988A355E144228BD9B909 /* CMake Rules */,
+                            0DDC9EF9FFC64D77AE7613D5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              8E5988A355E144228BD9B909 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              471BE28C106A4A0EAD6A3AA8 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C93D34A491F84A1096B40AAE /* CMake Rules */,
+                            0DDC9EF9FFC64D77AE7613D5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              C93D34A491F84A1096B40AAE /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              BA8440AA78C94248A04F807E /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            06568C6D02714A1EB789DC45 /* opencv_contrib */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              06568C6D02714A1EB789DC45 /* opencv_contrib */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B21AECBD29AC4115A58E134B /* Include */,
+                            66999953F05042B3BFE8A72D /* Src */,
+                            61413F3D3D014127A7A5F558 /* Header Files */,
+                            0DDC9EF9FFC64D77AE7613D5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/CMakeLists.txt */,
+                     );
+                     name = opencv_contrib;
+                     sourceTree = "<group>";
+              };
+              B21AECBD29AC4115A58E134B /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F7CAC80AB29E4C25A7A568B7 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              F7CAC80AB29E4C25A7A568B7 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EBCFFE7F29824C7A90B1D6C8 /* contrib */,
+                            4CDF97813F00404595E63BC8 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              EBCFFE7F29824C7A90B1D6C8 /* contrib */ = {
+                     isa = PBXGroup;
+                     children = (
+                            07BE065C4C5A47CC8F03F56B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/compat.hpp */,
+                            C2A08E9881544821B4DEA31E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/contrib.hpp */,
+                            EF4BECFE39CE467AA5D5D440 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/detection_based_tracker.hpp */,
+                            556BD0FE14E84419B5A02C4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/hybridtracker.hpp */,
+                            563ED05E84594FA38202C0EC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp */,
+                     );
+                     name = contrib;
+                     sourceTree = "<group>";
+              };
+              66999953F05042B3BFE8A72D /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2855EDD3BDB8461B9585146C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/adaptiveskindetector.cpp */,
+                            AF371BB1D56E4D3F8D66FF0D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/ba.cpp */,
+                            D92968A504EB4775A7FCDEE4 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/bowmsctrainer.cpp */,
+                            8CDA8173DE4844FD94A00732 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chamfermatching.cpp */,
+                            D1EA5D90E5DD4C8B916CA683 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chowliutree.cpp */,
+                            AEB7112B15BC4C1BB647C869 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colormap.cpp */,
+                            EF128B433F64445BAEB34923 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colortracker.cpp */,
+                            C7CED12835FA460CA8EC414A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/contrib_init.cpp */,
+                            E3004597B83D40AA8C57EB59 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/detection_based_tracker.cpp */,
+                            FBD083BD467A40B99F6CD62A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/facerec.cpp */,
+                            35759A4090E94CB59D8D03F5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/featuretracker.cpp */,
+                            35C070DB1C584532B2276DB6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp */,
+                            0C2ED931426A44BF93486180 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/gencolors.cpp */,
+                            B282EE5CFDDF42DD85DEDF86 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/hybridtracker.cpp */,
+                            1DFE7BF179194B64BB487A11 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/inputoutput.cpp */,
+                            D24BEF652E3F4C58B68B8ACE /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/lda.cpp */,
+                            DF595BF72C314C31A6104F4F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/logpolar_bsm.cpp */,
+                            DBDC78A86E7F4C31B419F642 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/octree.cpp */,
+                            7C9CFAA1A2244A6A8E29C305 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/openfabmap.cpp */,
+                            C6FD03455FE147A8B3C11F99 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/polyfit.cpp */,
+                            4F6E0AFEC02741ACA5B5286C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/precomp.hpp */,
+                            8C9045C152DA44C68A5716AD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/rgbdodometry.cpp */,
+                            AFE20C38164842F08F60EDAC /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/selfsimilarity.cpp */,
+                            6C03157378E74630A5B835FF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/spinimages.cpp */,
+                            154B076A4D8643BCA137B478 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/stereovar.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              61413F3D3D014127A7A5F558 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8062C7F9E57E4123B3663CFC /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            2A2F166924A84EECBE3A94C6 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              3C91ADEC9CB14EFA97181F91 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F6AA82B1847D4FDDA6A9A574 /* opencv_contrib */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              A04A6CB3F8C34B47B86877EE /* opencv_contrib */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 2C17A98A92BE4713A6BB5E84 /* Build configuration list for PBXNativeTarget "opencv_contrib" */;
+                     buildPhases = (
+                            F49AEA10C0A9444D8AE2D980 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            0400426A8EC34CA5A8622B82 /* PBXTargetDependency */,
+                     );
+                     name = opencv_contrib;
+                     productName = opencv_contrib;
+                     productReference = F6AA82B1847D4FDDA6A9A574 /* opencv_contrib */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              D4066C59EA60450F8DCBFB82 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 34013872266E42F897C68070 /* Build configuration list for PBXProject  "opencv_contrib" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            E8FA6C3F99A34F77A3659FF6 /* Debug */,
+                            ADCBFF7606A944318338659D /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 8B474FB1D547469AB21379C9;
+                     projectDirPath = /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib;
+                     projectRoot = "";
+                     targets = (
+                            536A665F368F4B68909C5510 /* ALL_BUILD */,
+                            C325B88C35CB468B8317D50B /* ZERO_CHECK */,
+                            0C685EF297B84F09912A8C9A /* install */,
+                            A04A6CB3F8C34B47B86877EE /* opencv_contrib */,
+                            208F97B8C47942599D6C25D1 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              45AED618F6394422BC586E26 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              065E891ABD0E4448940CFA90 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              5F44B9D95F1D4DB9AE3328E5 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              6CFAE9B2C6744ABB8A86DEBC /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              4917612057BF478BAF8E57BB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B9C93B1C5A0744AFBAA36081 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              A3BFD7A850B847A79E1E8886 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              0151917EA0C84C4992F2950F /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              F49AEA10C0A9444D8AE2D980 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            E3984DBE06494C2DA6C1DCB2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/adaptiveskindetector.cpp */,
+                            56E605CD09DC459BA8CFD5E5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/ba.cpp */,
+                            EB8FC574CBFF45A7947D0089 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/bowmsctrainer.cpp */,
+                            DE46DE854D7641D6BFE593EA /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chamfermatching.cpp */,
+                            3167C8610D8A4E3E9EA3438C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/chowliutree.cpp */,
+                            0D607E4F73914E65B8160FED /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colormap.cpp */,
+                            4F199D6F02324E2F8D75D95C /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/colortracker.cpp */,
+                            193862B1A8AE46E280BD5462 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/contrib_init.cpp */,
+                            80BD7BF22FCA4D91B4A7027B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/detection_based_tracker.cpp */,
+                            702B13412B5245BA9AD053B3 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/facerec.cpp */,
+                            D7CE8A6B63BF4BBEA1BD7C15 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/featuretracker.cpp */,
+                            5D8CA0932CEA49C1AFE3A6CF /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/fuzzymeanshifttracker.cpp */,
+                            D23615FC79A54376BE99156B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/gencolors.cpp */,
+                            ABE84696327A4B24BC79431D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/hybridtracker.cpp */,
+                            4B2AA007E0F049A89BBBF5BD /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/inputoutput.cpp */,
+                            BB4736582DA64B32AA693C46 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/lda.cpp */,
+                            6174515500F641E392E31911 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/logpolar_bsm.cpp */,
+                            06470A8BDEE7482BACB63127 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/octree.cpp */,
+                            65D11AC3E78E48358837DB91 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/openfabmap.cpp */,
+                            6605DFF82FBC4C35B503A46D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/polyfit.cpp */,
+                            2CBA497F7F6F4853A93BC03D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/rgbdodometry.cpp */,
+                            A6E7DB94D1F94EF5ADBA9B7A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/selfsimilarity.cpp */,
+                            FF20414B625D4CA9834C46E5 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/spinimages.cpp */,
+                            D05698671E394041AF7AE2F6 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src/stereovar.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              1C7F133373BD4B7CB634F6C7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C325B88C35CB468B8317D50B /* ZERO_CHECK */;
+                     targetProxy = C20450EBA14D4167A6F54D4C /* PBXContainerItemProxy */;
+              };
+              B6BCC4898DAC4713AF79699B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = A04A6CB3F8C34B47B86877EE /* opencv_contrib */;
+                     targetProxy = 343F80DF20954598A0A1DEB0 /* PBXContainerItemProxy */;
+              };
+              94864424B6F6444880A37ADC /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 536A665F368F4B68909C5510 /* ALL_BUILD */;
+                     targetProxy = 74B0F4C9B968493394C5C37F /* PBXContainerItemProxy */;
+              };
+              0400426A8EC34CA5A8622B82 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C325B88C35CB468B8317D50B /* ZERO_CHECK */;
+                     targetProxy = 56ADED5636584B6BA290069E /* PBXContainerItemProxy */;
+              };
+              1863D011DFEB4752BF7FED03 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 536A665F368F4B68909C5510 /* ALL_BUILD */;
+                     targetProxy = B895BFC9CCA945BF9994506B /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              ACBC05D648A2497F95F0FB85 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/build";
+                     };
+                     name = Debug;
+              };
+              6998D264D96D42E881D6928C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib/build";
+                     };
+                     name = Release;
+              };
+              17CECAFEDB284B10B16DB513 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              FA073FD59E984D8F9FC7FB97 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              A864F159047D433A9DDB22A6 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              EE8E7E78FB474A3CB6F5328C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              C14F342AE31C465BA2EFE5A2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              98DAF2E7C5B04B2A802FF0F8 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              45F67F5C87A64F29B28CF140 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_contrib;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              BF75ABF3A4644B71919E192E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_contrib;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1C0998CD125B463BA8EA4583 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              80A2FA4C9FCF4389AEA8D886 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/video/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/objdetect/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib", /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/contrib/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-armv7s/modules/contrib";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              34013872266E42F897C68070 /* Build configuration list for PBXProject  "opencv_contrib" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            ACBC05D648A2497F95F0FB85 /* Debug */,
+                            6998D264D96D42E881D6928C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2710C0A6EA9646FEB4010BBB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            17CECAFEDB284B10B16DB513 /* Debug */,
+                            FA073FD59E984D8F9FC7FB97 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7C67B0E2B8F2411D8B8EBCC7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A864F159047D433A9DDB22A6 /* Debug */,
+                            EE8E7E78FB474A3CB6F5328C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              0993DA6CC320411EB33EBCA2 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C14F342AE31C465BA2EFE5A2 /* Debug */,
+                            98DAF2E7C5B04B2A802FF0F8 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2C17A98A92BE4713A6BB5E84 /* Build configuration list for PBXNativeTarget "opencv_contrib" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            45F67F5C87A64F29B28CF140 /* Debug */,
+                            BF75ABF3A4644B71919E192E /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              800F402703FA4A33A2D720CF /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1C0998CD125B463BA8EA4583 /* Debug */,
+                            80A2FA4C9FCF4389AEA8D886 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = D4066C59EA60450F8DCBFB82;
+}

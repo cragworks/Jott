@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              E2A84DB78DEE4FFD898DA281 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 63F99306D9B0438EBCFC2E44 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            2663259A578D4F46827D71FF /* CMake Rules */,
+                     );
+                     dependencies = (
+                            6002E4FD6F394ED687611E0F /* PBXTargetDependency */,
+                            A3F897A225A749E7AAC911EE /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              EE40029C441149A3AE28CC23 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B016641A676243EE80C3F640 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            0E457295944747E7ACA05403 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              03D96A81E3DB46C7B15409BA /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 40A986EF671247CBB767C949 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            0BDCD8E08B2D4CE09D77DB6E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            AA6E3426EDF34C0DB6459CAF /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              1D7AF2C44FAE485AA31F1587 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 2E6FB448B8974DCC9D9AD4FC /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            77761062DA264F3AAB82906B /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            BF74C4AA517846F08EEAC3FD /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+F66E51945FD74BB9B6A09595 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FA44DB58DAAB426EA25D7C4D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+F42F2FC8EE2841C99BFA9EB5 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c */ = {isa = PBXBuildFile; fileRef = E406500DC48045E68984FBEE /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c */; settings = { COMPILER_FLAGS = ""; }; };
+6B133656D25347F8850F76A8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h */ = {isa = PBXBuildFile; fileRef = F0688027D2F340BAB766040D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h */; settings = { COMPILER_FLAGS = ""; }; };
+164C560C001A42D1BB304FE5 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXBuildFile; fileRef = BA08DA70C1FC407DBAFDAEE8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+E1D85221AF2F4A47A02F2406 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXBuildFile; fileRef = A492947BE19646F3ABF3CB6B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h */; settings = { COMPILER_FLAGS = ""; }; };
+89F29EC25FF7451E8434793E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXBuildFile; fileRef = BE4D79E90C3646AE9B84D1BA /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+74D5E88BD28841A7851838D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXBuildFile; fileRef = CB69A8549ECA4DBDA6AFBE8E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c */; settings = { COMPILER_FLAGS = ""; }; };
+A610761B5FEC4C7B96BE633E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXBuildFile; fileRef = E528D7EF2BBD43E9B1D7167B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h */; settings = { COMPILER_FLAGS = ""; }; };
+71269E5AC9E24B83B330451B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXBuildFile; fileRef = 0E53C843C52A4F5EBBE27098 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h */; settings = { COMPILER_FLAGS = ""; }; };
+DE51750925E442209822F940 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXBuildFile; fileRef = 0534D53A878F432784F19724 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c */; settings = { COMPILER_FLAGS = ""; }; };
+BF76ED37D9DD44FDAA5B3C20 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXBuildFile; fileRef = D663083E26C342CCA21A68FD /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c */; settings = { COMPILER_FLAGS = ""; }; };
+CC9D7AD3C628450F82FE9491 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXBuildFile; fileRef = E1E4284DC54C43D88CE27149 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h */; settings = { COMPILER_FLAGS = ""; }; };
+CE32F0340304446096DB3402 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXBuildFile; fileRef = 0F93DB86245B4D7EA4B90B2F /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c */; settings = { COMPILER_FLAGS = ""; }; };
+871E8B2F549E4D5BA406BFDB /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXBuildFile; fileRef = 04533D9C95EC455DBE0D260D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c */; settings = { COMPILER_FLAGS = ""; }; };
+7E9A7EC200B049F3A4B43B65 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXBuildFile; fileRef = 193621B03AC9450584236D51 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+D3B1B4D96248467FBB0680B8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXBuildFile; fileRef = CF5BE19EAE804A8CBADA90C7 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+DB3C7F629D85419299187ECA /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXBuildFile; fileRef = BBC00E17709F41C5A054F209 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c */; settings = { COMPILER_FLAGS = ""; }; };
+870877ED8A1047C785D14F85 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXBuildFile; fileRef = 6C8331269DD841E49BDBA774 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h */; settings = { COMPILER_FLAGS = ""; }; };
+27EB338CEA5249768947A61F /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXBuildFile; fileRef = 4078001CDDF84C6E9C68CD91 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+391C0B3BE00246C5996F548E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXBuildFile; fileRef = 41D72EE9346847C2B8757B06 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c */; settings = { COMPILER_FLAGS = ""; }; };
+D8D411473051452A800C5EB2 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXBuildFile; fileRef = 01E6B7740470450DB31AA62B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c */; settings = { COMPILER_FLAGS = ""; }; };
+641D7FDD65404393B4718EA6 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXBuildFile; fileRef = D28573E6640D4C0881E3D7D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c */; settings = { COMPILER_FLAGS = ""; }; };
+37C2409D2E0540EFB904F657 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXBuildFile; fileRef = 6FB7F2D4479A4026A16248E1 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              0206BE2CB7D744458BA336D0 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              4B9DCE5DCF17470EAFCE7741 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              5A276286D10E4605B284B7D0 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              A2268F3EF105462880D2E958 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 4808CFD6E6A64EDB9CD98386 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6FC2DB05DD024F0AA13528AB;
+                     remoteInfo = libpng;
+              };
+              44B7509D695F4BAA8B8A7169 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 4808CFD6E6A64EDB9CD98386 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EE40029C441149A3AE28CC23;
+                     remoteInfo = ZERO_CHECK;
+              };
+              0C5BDD465D72402CA76F30E9 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 4808CFD6E6A64EDB9CD98386 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E2A84DB78DEE4FFD898DA281;
+                     remoteInfo = ALL_BUILD;
+              };
+              9AC2C525C55D4B9AA43A8F46 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 4808CFD6E6A64EDB9CD98386 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EE40029C441149A3AE28CC23;
+                     remoteInfo = ZERO_CHECK;
+              };
+              9642B420761F44A0937CA326 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 4808CFD6E6A64EDB9CD98386 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E2A84DB78DEE4FFD898DA281;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+FA44DB58DAAB426EA25D7C4D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+E406500DC48045E68984FBEE /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "png.c"; path = "png.c"; sourceTree = SOURCE_ROOT; };
+F0688027D2F340BAB766040D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "png.h"; path = "png.h"; sourceTree = SOURCE_ROOT; };
+BA08DA70C1FC407DBAFDAEE8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngconf.h"; path = "pngconf.h"; sourceTree = SOURCE_ROOT; };
+A492947BE19646F3ABF3CB6B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngdebug.h"; path = "pngdebug.h"; sourceTree = SOURCE_ROOT; };
+BE4D79E90C3646AE9B84D1BA /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngerror.c"; path = "pngerror.c"; sourceTree = SOURCE_ROOT; };
+CB69A8549ECA4DBDA6AFBE8E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngget.c"; path = "pngget.c"; sourceTree = SOURCE_ROOT; };
+E528D7EF2BBD43E9B1D7167B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnginfo.h"; path = "pnginfo.h"; sourceTree = SOURCE_ROOT; };
+0E53C843C52A4F5EBBE27098 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pnglibconf.h"; path = "pnglibconf.h"; sourceTree = SOURCE_ROOT; };
+0534D53A878F432784F19724 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngmem.c"; path = "pngmem.c"; sourceTree = SOURCE_ROOT; };
+D663083E26C342CCA21A68FD /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngpread.c"; path = "pngpread.c"; sourceTree = SOURCE_ROOT; };
+E1E4284DC54C43D88CE27149 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngpriv.h"; path = "pngpriv.h"; sourceTree = SOURCE_ROOT; };
+0F93DB86245B4D7EA4B90B2F /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngread.c"; path = "pngread.c"; sourceTree = SOURCE_ROOT; };
+04533D9C95EC455DBE0D260D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrio.c"; path = "pngrio.c"; sourceTree = SOURCE_ROOT; };
+193621B03AC9450584236D51 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrtran.c"; path = "pngrtran.c"; sourceTree = SOURCE_ROOT; };
+CF5BE19EAE804A8CBADA90C7 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngrutil.c"; path = "pngrutil.c"; sourceTree = SOURCE_ROOT; };
+BBC00E17709F41C5A054F209 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngset.c"; path = "pngset.c"; sourceTree = SOURCE_ROOT; };
+6C8331269DD841E49BDBA774 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "pngstruct.h"; path = "pngstruct.h"; sourceTree = SOURCE_ROOT; };
+4078001CDDF84C6E9C68CD91 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngtrans.c"; path = "pngtrans.c"; sourceTree = SOURCE_ROOT; };
+41D72EE9346847C2B8757B06 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwio.c"; path = "pngwio.c"; sourceTree = SOURCE_ROOT; };
+01E6B7740470450DB31AA62B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwrite.c"; path = "pngwrite.c"; sourceTree = SOURCE_ROOT; };
+D28573E6640D4C0881E3D7D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwtran.c"; path = "pngwtran.c"; sourceTree = SOURCE_ROOT; };
+6FB7F2D4479A4026A16248E1 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "pngwutil.c"; path = "pngwutil.c"; sourceTree = SOURCE_ROOT; };
+A0F04DBE69AA43BBBAC35C0C /* libpng */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibpng.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              28AFE72A4DC1491EA112D8BA  = {
+                     isa = PBXGroup;
+                     children = (
+                            709E2031B10D488CA418F707 /* Sources */,
+                            3D8419F5DB994943B93ABFE2 /* Resources */,
+                            23A1047DEAE946939746E401 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              709E2031B10D488CA418F707 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            ED10AFE198AC4705932DCABC /* ALL_BUILD */,
+                            9D3EB32DC8244B57ABCCDE5F /* ZERO_CHECK */,
+                            C7F01822BA274BBF94B34DCA /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              3D8419F5DB994943B93ABFE2 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              ED10AFE198AC4705932DCABC /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6848E4318E8E428189D46183 /* CMake Rules */,
+                            FA44DB58DAAB426EA25D7C4D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              6848E4318E8E428189D46183 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              9D3EB32DC8244B57ABCCDE5F /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            6F4CB6F5773242B3B9AF6FA6 /* CMake Rules */,
+                            FA44DB58DAAB426EA25D7C4D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              6F4CB6F5773242B3B9AF6FA6 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C7F01822BA274BBF94B34DCA /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            53E7DF9C1D8E49FF85570679 /* libpng */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              53E7DF9C1D8E49FF85570679 /* libpng */ = {
+                     isa = PBXGroup;
+                     children = (
+                            EBE2E8CFECF34B0186F54B1A /* Source Files */,
+                            ADBEECE31BC7493BAB7DA6AA /* Header Files */,
+                            FA44DB58DAAB426EA25D7C4D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/CMakeLists.txt */,
+                     );
+                     name = libpng;
+                     sourceTree = "<group>";
+              };
+              EBE2E8CFECF34B0186F54B1A /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E406500DC48045E68984FBEE /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c */,
+                            BE4D79E90C3646AE9B84D1BA /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c */,
+                            CB69A8549ECA4DBDA6AFBE8E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c */,
+                            0534D53A878F432784F19724 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c */,
+                            D663083E26C342CCA21A68FD /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c */,
+                            0F93DB86245B4D7EA4B90B2F /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c */,
+                            04533D9C95EC455DBE0D260D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c */,
+                            193621B03AC9450584236D51 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c */,
+                            CF5BE19EAE804A8CBADA90C7 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c */,
+                            BBC00E17709F41C5A054F209 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c */,
+                            4078001CDDF84C6E9C68CD91 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c */,
+                            41D72EE9346847C2B8757B06 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c */,
+                            01E6B7740470450DB31AA62B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c */,
+                            D28573E6640D4C0881E3D7D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c */,
+                            6FB7F2D4479A4026A16248E1 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              ADBEECE31BC7493BAB7DA6AA /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F0688027D2F340BAB766040D /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h */,
+                            BA08DA70C1FC407DBAFDAEE8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h */,
+                            A492947BE19646F3ABF3CB6B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h */,
+                            E528D7EF2BBD43E9B1D7167B /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h */,
+                            0E53C843C52A4F5EBBE27098 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h */,
+                            E1E4284DC54C43D88CE27149 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h */,
+                            6C8331269DD841E49BDBA774 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              23A1047DEAE946939746E401 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A0F04DBE69AA43BBBAC35C0C /* libpng */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              6FC2DB05DD024F0AA13528AB /* libpng */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = E337BE723DC94CF0B9B5E347 /* Build configuration list for PBXNativeTarget "libpng" */;
+                     buildPhases = (
+                            9F75CE66B74E4AE694FC513B /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            8868395515464537B425FD43 /* PBXTargetDependency */,
+                     );
+                     name = libpng;
+                     productName = libpng;
+                     productReference = A0F04DBE69AA43BBBAC35C0C /* libpng */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              4808CFD6E6A64EDB9CD98386 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 0580956A1A1B4636B3DAB7FA /* Build configuration list for PBXProject  "libpng" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            4B9DCE5DCF17470EAFCE7741 /* Debug */,
+                            5A276286D10E4605B284B7D0 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 28AFE72A4DC1491EA112D8BA;
+                     projectDirPath = /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng;
+                     projectRoot = "";
+                     targets = (
+                            E2A84DB78DEE4FFD898DA281 /* ALL_BUILD */,
+                            EE40029C441149A3AE28CC23 /* ZERO_CHECK */,
+                            03D96A81E3DB46C7B15409BA /* install */,
+                            6FC2DB05DD024F0AA13528AB /* libpng */,
+                            1D7AF2C44FAE485AA31F1587 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              E1D3A2B889A9421D9EDD2C0E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              2663259A578D4F46827D71FF /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              94C5BF9C8E29477583ADD514 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              0E457295944747E7ACA05403 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              17C0A6B73FEA4847B07E2C3E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              0BDCD8E08B2D4CE09D77DB6E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              29FA28E1232749878BCD8C9D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              77761062DA264F3AAB82906B /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              9F75CE66B74E4AE694FC513B /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            F42F2FC8EE2841C99BFA9EB5 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c */,
+                            89F29EC25FF7451E8434793E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c */,
+                            74D5E88BD28841A7851838D8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c */,
+                            DE51750925E442209822F940 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c */,
+                            BF76ED37D9DD44FDAA5B3C20 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c */,
+                            CE32F0340304446096DB3402 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c */,
+                            871E8B2F549E4D5BA406BFDB /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c */,
+                            7E9A7EC200B049F3A4B43B65 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c */,
+                            D3B1B4D96248467FBB0680B8 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c */,
+                            DB3C7F629D85419299187ECA /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c */,
+                            27EB338CEA5249768947A61F /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c */,
+                            391C0B3BE00246C5996F548E /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c */,
+                            D8D411473051452A800C5EB2 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c */,
+                            641D7FDD65404393B4718EA6 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c */,
+                            37C2409D2E0540EFB904F657 /* /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              6002E4FD6F394ED687611E0F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6FC2DB05DD024F0AA13528AB /* libpng */;
+                     targetProxy = A2268F3EF105462880D2E958 /* PBXContainerItemProxy */;
+              };
+              A3F897A225A749E7AAC911EE /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EE40029C441149A3AE28CC23 /* ZERO_CHECK */;
+                     targetProxy = 44B7509D695F4BAA8B8A7169 /* PBXContainerItemProxy */;
+              };
+              AA6E3426EDF34C0DB6459CAF /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E2A84DB78DEE4FFD898DA281 /* ALL_BUILD */;
+                     targetProxy = 0C5BDD465D72402CA76F30E9 /* PBXContainerItemProxy */;
+              };
+              8868395515464537B425FD43 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EE40029C441149A3AE28CC23 /* ZERO_CHECK */;
+                     targetProxy = 9AC2C525C55D4B9AA43A8F46 /* PBXContainerItemProxy */;
+              };
+              BF74C4AA517846F08EEAC3FD /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E2A84DB78DEE4FFD898DA281 /* ALL_BUILD */;
+                     targetProxy = 9642B420761F44A0937CA326 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              588FCECBDC9347F4B8D1C299 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/build";
+                     };
+                     name = Debug;
+              };
+              073A7BF49AF442CD9CBD3EA2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng/build";
+                     };
+                     name = Release;
+              };
+              7F603822DC32462B91AB07D9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              200ADA2DF589497FAF9F02D3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9268C9A863AB4C08925CFACF /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B37F0F4C47C74ADFA00C53FE /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              47E362F5D0DC4EFE9775FCA1 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              6D3F6160AE2E4C19A583819B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B903943567D744FEA27DA09C /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D2B10DCD5ED643DB84A4AA17 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", PNG_CONFIGURE_LIBPNG, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libpng;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              95D76D5D10954317864ABA4D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              AA440B532D594A82A67BAFB5 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = ("/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/zlib", /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib, /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/3rdparty/libpng";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              0580956A1A1B4636B3DAB7FA /* Build configuration list for PBXProject  "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            588FCECBDC9347F4B8D1C299 /* Debug */,
+                            073A7BF49AF442CD9CBD3EA2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              63F99306D9B0438EBCFC2E44 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7F603822DC32462B91AB07D9 /* Debug */,
+                            200ADA2DF589497FAF9F02D3 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B016641A676243EE80C3F640 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9268C9A863AB4C08925CFACF /* Debug */,
+                            B37F0F4C47C74ADFA00C53FE /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              40A986EF671247CBB767C949 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            47E362F5D0DC4EFE9775FCA1 /* Debug */,
+                            6D3F6160AE2E4C19A583819B /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E337BE723DC94CF0B9B5E347 /* Build configuration list for PBXNativeTarget "libpng" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B903943567D744FEA27DA09C /* Debug */,
+                            D2B10DCD5ED643DB84A4AA17 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2E6FB448B8974DCC9D9AD4FC /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            95D76D5D10954317864ABA4D /* Debug */,
+                            AA440B532D594A82A67BAFB5 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 4808CFD6E6A64EDB9CD98386;
+}

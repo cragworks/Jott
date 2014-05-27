@@ -11,9 +11,8 @@
 		45049FDC19266F7C00994960 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDB19266F7C00994960 /* CoreGraphics.framework */; };
 		45049FDE19266F7C00994960 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FDD19266F7C00994960 /* UIKit.framework */; };
 		45049FE419266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45049FE219266F7C00994960 /* InfoPlist.strings */; };
-		45049FE619266F7C00994960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE519266F7C00994960 /* main.m */; };
-		45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE919266F7C00994960 /* MFAppDelegate.m */; };
-		45049FF019266F7C00994960 /* MFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45049FEF19266F7C00994960 /* MFViewController.m */; };
+		45049FE619266F7C00994960 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE519266F7C00994960 /* main.mm */; };
+		45049FEA19266F7C00994960 /* MFAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45049FE919266F7C00994960 /* MFAppDelegate.mm */; };
 		45049FF219266F7C00994960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45049FF119266F7C00994960 /* Images.xcassets */; };
 		45049FF919266F7C00994960 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FF819266F7C00994960 /* XCTest.framework */; };
 		45049FFA19266F7C00994960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45049FD919266F7C00994960 /* Foundation.framework */; };
@@ -21,9 +20,6 @@
 		4504A00319266F7C00994960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4504A00119266F7C00994960 /* InfoPlist.strings */; };
 		4504A00519266F7C00994960 /* JottTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A00419266F7C00994960 /* JottTests.m */; };
 		4504A017192673D200994960 /* plus-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4504A016192673D200994960 /* plus-50.png */; };
-		4504A01E19269D2600994960 /* MFNotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A01D19269D2600994960 /* MFNotesModel.m */; };
-		4504A02119269D5400994960 /* MFNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A02019269D5400994960 /* MFNote.m */; };
-		4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504A0231928F02300994960 /* MFAddNoteViewController.m */; };
 		45215EAE192EF43A00739DCB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EAD192EF43A00739DCB /* Accelerate.framework */; };
 		45215EB0192EF44100739DCB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EAF192EF44100739DCB /* AVFoundation.framework */; };
 		45215EB2192EF44B00739DCB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EB1192EF44B00739DCB /* AssetsLibrary.framework */; };
@@ -34,15 +30,27 @@
 		45215EBC192EF48B00739DCB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EBB192EF48B00739DCB /* libsqlite3.dylib */; };
 		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
 		458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 458F5DD0192CFAB600E905A1 /* Jott.xcdatamodeld */; };
-		45C229C8192FC5960079777A /* MFKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C229C7192FC5960079777A /* MFKeychainWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		45A784BE1932F40700E8A34C /* MFNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A784BB1932F40700E8A34C /* MFNote.m */; };
+		45A784BF1932F40700E8A34C /* MFNotesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A784BD1932F40700E8A34C /* MFNotesModel.m */; };
+		45A784C21932F42600E8A34C /* MFKeychainWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784C11932F42600E8A34C /* MFKeychainWrapper.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		45A784C71932F44400E8A34C /* MFSetPasswordViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784C41932F44400E8A34C /* MFSetPasswordViewController.mm */; };
+		45A784C81932F44400E8A34C /* MFSettingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784C61932F44400E8A34C /* MFSettingsViewController.mm */; };
+		45A784CB1932F48A00E8A34C /* MFSetFaceViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784CA1932F48A00E8A34C /* MFSetFaceViewController.mm */; };
+		45A784CE1932F49E00E8A34C /* MFAddNoteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784CD1932F49E00E8A34C /* MFAddNoteViewController.mm */; };
+		45A784D11932F4A600E8A34C /* MFViewNoteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784D01932F4A600E8A34C /* MFViewNoteViewController.mm */; };
+		45A784D41932F4B000E8A34C /* MFViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784D31932F4B000E8A34C /* MFViewController.mm */; };
+		45A784FA193424A400E8A34C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A784F9193424A400E8A34C /* opencv2.framework */; };
+		45A785021934255600E8A34C /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A785011934255600E8A34C /* OpenCVData.mm */; };
 		45C229CA192FC5AB0079777A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C229C9192FC5AB0079777A /* Security.framework */; };
-		45C229D11930D2D00079777A /* MFSetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C229D01930D2D00079777A /* MFSetPasswordViewController.m */; };
-		45C229D5193199870079777A /* MFSetFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C229D4193199870079777A /* MFSetFaceViewController.m */; };
 		45E4A470192D9BFB00988E35 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A46D192D9BFB00988E35 /* NSData+AESCrypt.m */; };
 		45E4A471192D9BFB00988E35 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A46F192D9BFB00988E35 /* NSString+AESCrypt.m */; };
-		45E4A477192D9CAE00988E35 /* MFViewNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */; };
 		45E4A479192E391B00988E35 /* settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E4A478192E391B00988E35 /* settings-50.png */; };
-		45E4A47D192E3A1600988E35 /* MFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4A47C192E3A1600988E35 /* MFSettingsViewController.m */; };
+		45EDE95519342B7500624202 /* CustomFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45EDE95419342B7500624202 /* CustomFaceRecognizer.mm */; };
+		45EDE95719342D8E00624202 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EDE95619342D8E00624202 /* libc++.dylib */; };
+		45EDE95A1934326000624202 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45EDE9591934326000624202 /* FaceDetector.mm */; };
+		45EDE95C193437CE00624202 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 45EDE95B193437CE00624202 /* haarcascade_frontalface_alt2.xml */; };
+		45EDE95E19343D1A00624202 /* switch_camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45EDE95D19343D1A00624202 /* switch_camera-50.png */; };
+		45EDE9631934470A00624202 /* switch_camera-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 45EDE9621934470A00624202 /* switch_camera-32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +70,10 @@
 		45049FDD19266F7C00994960 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		45049FE119266F7C00994960 /* Jott-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jott-Info.plist"; sourceTree = "<group>"; };
 		45049FE319266F7C00994960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45049FE519266F7C00994960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45049FE519266F7C00994960 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		45049FE719266F7C00994960 /* Jott-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jott-Prefix.pch"; sourceTree = "<group>"; };
 		45049FE819266F7C00994960 /* MFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFAppDelegate.h; sourceTree = "<group>"; };
-		45049FE919266F7C00994960 /* MFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFAppDelegate.m; sourceTree = "<group>"; };
-		45049FEE19266F7C00994960 /* MFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFViewController.h; sourceTree = "<group>"; };
-		45049FEF19266F7C00994960 /* MFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFViewController.m; sourceTree = "<group>"; };
+		45049FE919266F7C00994960 /* MFAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MFAppDelegate.mm; sourceTree = "<group>"; };
 		45049FF119266F7C00994960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45049FF719266F7C00994960 /* JottTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JottTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45049FF819266F7C00994960 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -75,12 +81,6 @@
 		4504A00219266F7C00994960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4504A00419266F7C00994960 /* JottTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JottTests.m; sourceTree = "<group>"; };
 		4504A016192673D200994960 /* plus-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-50.png"; sourceTree = "<group>"; };
-		4504A01C19269D2600994960 /* MFNotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotesModel.h; sourceTree = "<group>"; };
-		4504A01D19269D2600994960 /* MFNotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotesModel.m; sourceTree = "<group>"; };
-		4504A01F19269D5400994960 /* MFNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNote.h; sourceTree = "<group>"; };
-		4504A02019269D5400994960 /* MFNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNote.m; sourceTree = "<group>"; };
-		4504A0221928F02300994960 /* MFAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFAddNoteViewController.h; sourceTree = "<group>"; };
-		4504A0231928F02300994960 /* MFAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFAddNoteViewController.m; sourceTree = "<group>"; };
 		45215EAD192EF43A00739DCB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		45215EAF192EF44100739DCB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		45215EB1192EF44B00739DCB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -91,22 +91,41 @@
 		45215EBB192EF48B00739DCB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		458F5DCE192CF9E600E905A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		458F5DD1192CFAB600E905A1 /* Jott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jott.xcdatamodel; sourceTree = "<group>"; };
-		45C229C6192FC5960079777A /* MFKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFKeychainWrapper.h; sourceTree = "<group>"; };
-		45C229C7192FC5960079777A /* MFKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFKeychainWrapper.m; sourceTree = "<group>"; };
+		45A784BA1932F40700E8A34C /* MFNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFNote.h; path = Model/MFNote.h; sourceTree = "<group>"; };
+		45A784BB1932F40700E8A34C /* MFNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFNote.m; path = Model/MFNote.m; sourceTree = "<group>"; };
+		45A784BC1932F40700E8A34C /* MFNotesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFNotesModel.h; path = Model/MFNotesModel.h; sourceTree = "<group>"; };
+		45A784BD1932F40700E8A34C /* MFNotesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFNotesModel.m; path = Model/MFNotesModel.m; sourceTree = "<group>"; };
+		45A784C01932F42600E8A34C /* MFKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFKeychainWrapper.h; path = KeychainWrapper/MFKeychainWrapper.h; sourceTree = "<group>"; };
+		45A784C11932F42600E8A34C /* MFKeychainWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFKeychainWrapper.mm; path = KeychainWrapper/MFKeychainWrapper.mm; sourceTree = "<group>"; };
+		45A784C31932F44400E8A34C /* MFSetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSetPasswordViewController.h; path = Settings/MFSetPasswordViewController.h; sourceTree = "<group>"; };
+		45A784C41932F44400E8A34C /* MFSetPasswordViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFSetPasswordViewController.mm; path = Settings/MFSetPasswordViewController.mm; sourceTree = "<group>"; };
+		45A784C51932F44400E8A34C /* MFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSettingsViewController.h; path = Settings/MFSettingsViewController.h; sourceTree = "<group>"; };
+		45A784C61932F44400E8A34C /* MFSettingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFSettingsViewController.mm; path = Settings/MFSettingsViewController.mm; sourceTree = "<group>"; };
+		45A784C91932F48A00E8A34C /* MFSetFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFSetFaceViewController.h; path = "Facial Recognition/MFSetFaceViewController.h"; sourceTree = "<group>"; };
+		45A784CA1932F48A00E8A34C /* MFSetFaceViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFSetFaceViewController.mm; path = "Facial Recognition/MFSetFaceViewController.mm"; sourceTree = "<group>"; };
+		45A784CC1932F49E00E8A34C /* MFAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFAddNoteViewController.h; path = "Add Note/MFAddNoteViewController.h"; sourceTree = "<group>"; };
+		45A784CD1932F49E00E8A34C /* MFAddNoteViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFAddNoteViewController.mm; path = "Add Note/MFAddNoteViewController.mm"; sourceTree = "<group>"; };
+		45A784CF1932F4A600E8A34C /* MFViewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFViewNoteViewController.h; path = "View Note/MFViewNoteViewController.h"; sourceTree = "<group>"; };
+		45A784D01932F4A600E8A34C /* MFViewNoteViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFViewNoteViewController.mm; path = "View Note/MFViewNoteViewController.mm"; sourceTree = "<group>"; };
+		45A784D21932F4B000E8A34C /* MFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFViewController.h; path = Main/MFViewController.h; sourceTree = "<group>"; };
+		45A784D31932F4B000E8A34C /* MFViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFViewController.mm; path = Main/MFViewController.mm; sourceTree = "<group>"; };
+		45A784F9193424A400E8A34C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
+		45A785001934255600E8A34C /* OpenCVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVData.h; sourceTree = "<group>"; };
+		45A785011934255600E8A34C /* OpenCVData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVData.mm; sourceTree = "<group>"; };
 		45C229C9192FC5AB0079777A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		45C229CF1930D2D00079777A /* MFSetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSetPasswordViewController.h; sourceTree = "<group>"; };
-		45C229D01930D2D00079777A /* MFSetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSetPasswordViewController.m; sourceTree = "<group>"; };
-		45C229D3193199870079777A /* MFSetFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSetFaceViewController.h; sourceTree = "<group>"; };
-		45C229D4193199870079777A /* MFSetFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSetFaceViewController.m; sourceTree = "<group>"; };
 		45E4A46C192D9BFB00988E35 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AESCrypt.h"; path = "../../Notes/Notes/NSData+AESCrypt.h"; sourceTree = "<group>"; };
 		45E4A46D192D9BFB00988E35 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AESCrypt.m"; path = "../../Notes/Notes/NSData+AESCrypt.m"; sourceTree = "<group>"; };
 		45E4A46E192D9BFB00988E35 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+AESCrypt.h"; path = "../../Notes/Notes/NSString+AESCrypt.h"; sourceTree = "<group>"; };
 		45E4A46F192D9BFB00988E35 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+AESCrypt.m"; path = "../../Notes/Notes/NSString+AESCrypt.m"; sourceTree = "<group>"; };
-		45E4A475192D9CAE00988E35 /* MFViewNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFViewNoteViewController.h; sourceTree = "<group>"; };
-		45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFViewNoteViewController.m; sourceTree = "<group>"; };
 		45E4A478192E391B00988E35 /* settings-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-50.png"; sourceTree = "<group>"; };
-		45E4A47B192E3A1600988E35 /* MFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSettingsViewController.h; sourceTree = "<group>"; };
-		45E4A47C192E3A1600988E35 /* MFSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSettingsViewController.m; sourceTree = "<group>"; };
+		45EDE95319342B7500624202 /* CustomFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFaceRecognizer.h; sourceTree = "<group>"; };
+		45EDE95419342B7500624202 /* CustomFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomFaceRecognizer.mm; sourceTree = "<group>"; };
+		45EDE95619342D8E00624202 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		45EDE9581934326000624202 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+		45EDE9591934326000624202 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
+		45EDE95B193437CE00624202 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		45EDE95D19343D1A00624202 /* switch_camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_camera-50.png"; sourceTree = "<group>"; };
+		45EDE9621934470A00624202 /* switch_camera-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_camera-32.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EDE95719342D8E00624202 /* libc++.dylib in Frameworks */,
+				45A784FA193424A400E8A34C /* opencv2.framework in Frameworks */,
 				45C229CA192FC5AB0079777A /* Security.framework in Frameworks */,
 				45215EBC192EF48B00739DCB /* libsqlite3.dylib in Frameworks */,
 				45215EB0192EF44100739DCB /* AVFoundation.framework in Frameworks */,
@@ -165,8 +186,10 @@
 		45049FD819266F7C00994960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45C229C9192FC5AB0079777A /* Security.framework */,
+				45EDE95619342D8E00624202 /* libc++.dylib */,
+				45A784F9193424A400E8A34C /* opencv2.framework */,
 				45215EBB192EF48B00739DCB /* libsqlite3.dylib */,
+				45C229C9192FC5AB0079777A /* Security.framework */,
 				45215EB9192EF47300739DCB /* QuartzCore.framework */,
 				45215EB7192EF46800739DCB /* CoreVideo.framework */,
 				45215EB5192EF45A00739DCB /* CoreMedia.framework */,
@@ -187,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				45049FE819266F7C00994960 /* MFAppDelegate.h */,
-				45049FE919266F7C00994960 /* MFAppDelegate.m */,
+				45049FE919266F7C00994960 /* MFAppDelegate.mm */,
 				45C229D2193199370079777A /* Facial Recognition */,
 				45C229CB1930CBCD0079777A /* Model */,
 				45C229C5192FC5780079777A /* KeychainWrapper */,
@@ -209,7 +232,7 @@
 				4504A015192673D200994960 /* Resources */,
 				45049FE119266F7C00994960 /* Jott-Info.plist */,
 				45049FE219266F7C00994960 /* InfoPlist.strings */,
-				45049FE519266F7C00994960 /* main.m */,
+				45049FE519266F7C00994960 /* main.mm */,
 				45049FE719266F7C00994960 /* Jott-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -236,8 +259,8 @@
 		4504A0111926701500994960 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				45049FEE19266F7C00994960 /* MFViewController.h */,
-				45049FEF19266F7C00994960 /* MFViewController.m */,
+				45A784D21932F4B000E8A34C /* MFViewController.h */,
+				45A784D31932F4B000E8A34C /* MFViewController.mm */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -245,6 +268,8 @@
 		4504A015192673D200994960 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45EDE9621934470A00624202 /* switch_camera-32.png */,
+				45EDE95D19343D1A00624202 /* switch_camera-50.png */,
 				45E4A478192E391B00988E35 /* settings-50.png */,
 				4504A016192673D200994960 /* plus-50.png */,
 			);
@@ -254,17 +279,26 @@
 		4504A0181926761800994960 /* Add Note */ = {
 			isa = PBXGroup;
 			children = (
-				4504A0221928F02300994960 /* MFAddNoteViewController.h */,
-				4504A0231928F02300994960 /* MFAddNoteViewController.m */,
+				45A784CC1932F49E00E8A34C /* MFAddNoteViewController.h */,
+				45A784CD1932F49E00E8A34C /* MFAddNoteViewController.mm */,
 			);
 			name = "Add Note";
+			sourceTree = "<group>";
+		};
+		45A784DD1934102100E8A34C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45A784C91932F48A00E8A34C /* MFSetFaceViewController.h */,
+				45A784CA1932F48A00E8A34C /* MFSetFaceViewController.mm */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		45C229C5192FC5780079777A /* KeychainWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				45C229C6192FC5960079777A /* MFKeychainWrapper.h */,
-				45C229C7192FC5960079777A /* MFKeychainWrapper.m */,
+				45A784C01932F42600E8A34C /* MFKeychainWrapper.h */,
+				45A784C11932F42600E8A34C /* MFKeychainWrapper.mm */,
 			);
 			name = KeychainWrapper;
 			sourceTree = "<group>";
@@ -272,10 +306,10 @@
 		45C229CB1930CBCD0079777A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4504A01C19269D2600994960 /* MFNotesModel.h */,
-				4504A01D19269D2600994960 /* MFNotesModel.m */,
-				4504A01F19269D5400994960 /* MFNote.h */,
-				4504A02019269D5400994960 /* MFNote.m */,
+				45A784BA1932F40700E8A34C /* MFNote.h */,
+				45A784BB1932F40700E8A34C /* MFNote.m */,
+				45A784BC1932F40700E8A34C /* MFNotesModel.h */,
+				45A784BD1932F40700E8A34C /* MFNotesModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,8 +317,14 @@
 		45C229D2193199370079777A /* Facial Recognition */ = {
 			isa = PBXGroup;
 			children = (
-				45C229D3193199870079777A /* MFSetFaceViewController.h */,
-				45C229D4193199870079777A /* MFSetFaceViewController.m */,
+				45EDE95B193437CE00624202 /* haarcascade_frontalface_alt2.xml */,
+				45EDE9581934326000624202 /* FaceDetector.h */,
+				45EDE9591934326000624202 /* FaceDetector.mm */,
+				45EDE95319342B7500624202 /* CustomFaceRecognizer.h */,
+				45EDE95419342B7500624202 /* CustomFaceRecognizer.mm */,
+				45A784DD1934102100E8A34C /* ViewControllers */,
+				45A785001934255600E8A34C /* OpenCVData.h */,
+				45A785011934255600E8A34C /* OpenCVData.mm */,
 			);
 			name = "Facial Recognition";
 			sourceTree = "<group>";
@@ -303,8 +343,8 @@
 		45E4A474192D9C7800988E35 /* View Note */ = {
 			isa = PBXGroup;
 			children = (
-				45E4A475192D9CAE00988E35 /* MFViewNoteViewController.h */,
-				45E4A476192D9CAE00988E35 /* MFViewNoteViewController.m */,
+				45A784CF1932F4A600E8A34C /* MFViewNoteViewController.h */,
+				45A784D01932F4A600E8A34C /* MFViewNoteViewController.mm */,
 			);
 			name = "View Note";
 			sourceTree = "<group>";
@@ -312,10 +352,10 @@
 		45E4A47A192E39FA00988E35 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				45E4A47B192E3A1600988E35 /* MFSettingsViewController.h */,
-				45E4A47C192E3A1600988E35 /* MFSettingsViewController.m */,
-				45C229CF1930D2D00079777A /* MFSetPasswordViewController.h */,
-				45C229D01930D2D00079777A /* MFSetPasswordViewController.m */,
+				45A784C31932F44400E8A34C /* MFSetPasswordViewController.h */,
+				45A784C41932F44400E8A34C /* MFSetPasswordViewController.mm */,
+				45A784C51932F44400E8A34C /* MFSettingsViewController.h */,
+				45A784C61932F44400E8A34C /* MFSettingsViewController.mm */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -398,8 +438,11 @@
 			files = (
 				4504A017192673D200994960 /* plus-50.png in Resources */,
 				45E4A479192E391B00988E35 /* settings-50.png in Resources */,
+				45EDE9631934470A00624202 /* switch_camera-32.png in Resources */,
+				45EDE95C193437CE00624202 /* haarcascade_frontalface_alt2.xml in Resources */,
 				45049FF219266F7C00994960 /* Images.xcassets in Resources */,
 				45049FE419266F7C00994960 /* InfoPlist.strings in Resources */,
+				45EDE95E19343D1A00624202 /* switch_camera-50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,20 +461,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4504A0241928F02300994960 /* MFAddNoteViewController.m in Sources */,
-				45049FE619266F7C00994960 /* main.m in Sources */,
-				45C229C8192FC5960079777A /* MFKeychainWrapper.m in Sources */,
-				45049FF019266F7C00994960 /* MFViewController.m in Sources */,
+				45A784CB1932F48A00E8A34C /* MFSetFaceViewController.mm in Sources */,
+				45EDE95519342B7500624202 /* CustomFaceRecognizer.mm in Sources */,
+				45EDE95A1934326000624202 /* FaceDetector.mm in Sources */,
+				45A784BE1932F40700E8A34C /* MFNote.m in Sources */,
+				45A785021934255600E8A34C /* OpenCVData.mm in Sources */,
+				45A784C71932F44400E8A34C /* MFSetPasswordViewController.mm in Sources */,
+				45A784D11932F4A600E8A34C /* MFViewNoteViewController.mm in Sources */,
+				45A784C81932F44400E8A34C /* MFSettingsViewController.mm in Sources */,
+				45049FE619266F7C00994960 /* main.mm in Sources */,
+				45A784BF1932F40700E8A34C /* MFNotesModel.m in Sources */,
 				45E4A471192D9BFB00988E35 /* NSString+AESCrypt.m in Sources */,
-				45E4A477192D9CAE00988E35 /* MFViewNoteViewController.m in Sources */,
+				45A784CE1932F49E00E8A34C /* MFAddNoteViewController.mm in Sources */,
 				458F5DD2192CFAB600E905A1 /* Jott.xcdatamodeld in Sources */,
-				45C229D5193199870079777A /* MFSetFaceViewController.m in Sources */,
-				4504A02119269D5400994960 /* MFNote.m in Sources */,
+				45A784D41932F4B000E8A34C /* MFViewController.mm in Sources */,
 				45E4A470192D9BFB00988E35 /* NSData+AESCrypt.m in Sources */,
-				45049FEA19266F7C00994960 /* MFAppDelegate.m in Sources */,
-				45C229D11930D2D00079777A /* MFSetPasswordViewController.m in Sources */,
-				4504A01E19269D2600994960 /* MFNotesModel.m in Sources */,
-				45E4A47D192E3A1600988E35 /* MFSettingsViewController.m in Sources */,
+				45049FEA19266F7C00994960 /* MFAppDelegate.mm in Sources */,
+				45A784C21932F42600E8A34C /* MFKeychainWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,15 +594,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Jott/Resources";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Jott/Resources",
+					/Users/mfathi/Desktop/FaceRecognition,
+					"$(PROJECT_DIR)/ios",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
 				INFOPLIST_FILE = "Jott/Jott-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -566,14 +619,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Jott/Resources";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Jott/Resources",
+					/Users/mfathi/Desktop/FaceRecognition,
+					"$(PROJECT_DIR)/ios",
+				);
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Jott/Jott-Prefix.pch";
 				INFOPLIST_FILE = "Jott/Jott-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

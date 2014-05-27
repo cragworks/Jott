@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              E6AEF74A308242C4AEF847E9 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 61A1ADD83F874E7F91F03DAB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            8DC6208EB7124C4BB1F85168 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            4BDEE1CE44CD47EBBF57955C /* PBXTargetDependency */,
+                            F47C0DCC9531452ABD8DFD33 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              EAC76B4C5B9E48AB8AE9CDBA /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 753DA34840EA4E0B9D34A4A7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            EEAE8F2674C642F0A8551E35 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              CC4D31D4C58F4E1EAD67F005 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 3A74E2E6588F4B6ABBE091AD /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            FD5E92803A2D44C6836BC49E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            17FE3B9D82A245FCB92CCD6C /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              AA79029A3D94442B9265A9B5 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 1019129BF5AD40E78B4163AD /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            2790CF37021243589367353B /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            3BA558E07B94482A9C988F2B /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+3D5DF6CDDE2040F192319858 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 05F19F102AE142DBA4E2FA64 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+F7E8661A67FD448C9EB11D59 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 8695C67217334136A3B2BE51 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+5D9B99EEE81A4A05973A1D30 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 965A79C65CE24F7CA70076FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+F45E94FB60314FE9BEF6F1C9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp */ = {isa = PBXBuildFile; fileRef = F1B3C32FDACD4CBA937CFB6A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+819129CFC07A45A7BB96BD5A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/channels.cu */ = {isa = PBXBuildFile; fileRef = F16058F2F3CD465791967B6E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/channels.cu */; settings = { COMPILER_FLAGS = ""; }; };
+0F486DF3D3DD4EC6B3758875 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/icf-sc.cu */ = {isa = PBXBuildFile; fileRef = 552131A764FD477F9CC128B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/icf-sc.cu */; settings = { COMPILER_FLAGS = ""; }; };
+F9C2793E468A4EE8943911E0 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda_invoker.hpp */ = {isa = PBXBuildFile; fileRef = E5F3DFBFED774A9581CD677E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda_invoker.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+67957ED1FD3F4607B82B80B2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp */ = {isa = PBXBuildFile; fileRef = 76BD983FE0064292A01EBB79 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+51D50F5111CF4ABF934ADDBB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp */ = {isa = PBXBuildFile; fileRef = 7285B39C2A6F4D5185BB223D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+71D6709695F748BB9D602D4B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp */ = {isa = PBXBuildFile; fileRef = BF9C4325123D449BBAC78460 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4636900F5B2548CFB8C99634 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp */ = {isa = PBXBuildFile; fileRef = E949F91A62754BCF83A6B881 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D3D2791FF41B41BC8D7C467F /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = ADE5C08351EC4365A2A3E041 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+4B54BBF8A1A14EF689533AF7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp */ = {isa = PBXBuildFile; fileRef = 08AD88AE62A44ED88F989458 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              EE8F457D3BA5486F9A1AA144 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              10960915EE1646C996CEE3F5 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              A21097EA604A40E6899552D3 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              27ADBEC08CC24B84A34B1C92 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 09281AF2E66740168DDF4329 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EAC76B4C5B9E48AB8AE9CDBA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              AA16D7436B4647728220F34E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 09281AF2E66740168DDF4329 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = B1CEFA3C5A104E718E697AA8;
+                     remoteInfo = opencv_softcascade;
+              };
+              87E0AE4A34BD409DBCBC87C1 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 09281AF2E66740168DDF4329 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E6AEF74A308242C4AEF847E9;
+                     remoteInfo = ALL_BUILD;
+              };
+              3920F80E1E3E4CAF9BB30510 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 09281AF2E66740168DDF4329 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = EAC76B4C5B9E48AB8AE9CDBA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              52594EDABE5B4D058BCA93F4 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 09281AF2E66740168DDF4329 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E6AEF74A308242C4AEF847E9;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+965A79C65CE24F7CA70076FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+05F19F102AE142DBA4E2FA64 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneSimulator-x86_64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+8695C67217334136A3B2BE51 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+F1B3C32FDACD4CBA937CFB6A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "softcascade.hpp"; path = "include/opencv2/softcascade.hpp"; sourceTree = SOURCE_ROOT; };
+F16058F2F3CD465791967B6E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/channels.cu */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "channels.cu"; path = "src/cuda/channels.cu"; sourceTree = SOURCE_ROOT; };
+552131A764FD477F9CC128B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/icf-sc.cu */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "icf-sc.cu"; path = "src/cuda/icf-sc.cu"; sourceTree = SOURCE_ROOT; };
+E5F3DFBFED774A9581CD677E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda_invoker.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "cuda_invoker.hpp"; path = "src/cuda_invoker.hpp"; sourceTree = SOURCE_ROOT; };
+76BD983FE0064292A01EBB79 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detector.cpp"; path = "src/detector.cpp"; sourceTree = SOURCE_ROOT; };
+7285B39C2A6F4D5185BB223D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detector_cuda.cpp"; path = "src/detector_cuda.cpp"; sourceTree = SOURCE_ROOT; };
+BF9C4325123D449BBAC78460 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "integral_channel_builder.cpp"; path = "src/integral_channel_builder.cpp"; sourceTree = SOURCE_ROOT; };
+E949F91A62754BCF83A6B881 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "octave.cpp"; path = "src/octave.cpp"; sourceTree = SOURCE_ROOT; };
+ADE5C08351EC4365A2A3E041 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+08AD88AE62A44ED88F989458 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "softcascade_init.cpp"; path = "src/softcascade_init.cpp"; sourceTree = SOURCE_ROOT; };
+120CFA66AA0D436296EE8400 /* opencv_softcascade */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_softcascade.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              39415C5AA07D42B38FB96306  = {
+                     isa = PBXGroup;
+                     children = (
+                            E353B856271B49ACBB401494 /* Sources */,
+                            8F9A65FC07AE47F7A0099DE7 /* Resources */,
+                            13F31A317F05456B9CA68261 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              E353B856271B49ACBB401494 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            476E5ACBB48047AFA7E87025 /* ALL_BUILD */,
+                            EFFEE9E26BB9443A8D18853F /* ZERO_CHECK */,
+                            C6912DA2B94E4C9AAD5466FC /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              8F9A65FC07AE47F7A0099DE7 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              476E5ACBB48047AFA7E87025 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8E10A5A9CE7B419CA8ACF8D3 /* CMake Rules */,
+                            965A79C65CE24F7CA70076FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              8E10A5A9CE7B419CA8ACF8D3 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              EFFEE9E26BB9443A8D18853F /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7264539884F64B2097F82BE5 /* CMake Rules */,
+                            965A79C65CE24F7CA70076FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              7264539884F64B2097F82BE5 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C6912DA2B94E4C9AAD5466FC /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            95308583DDDF44EC894CF38F /* opencv_softcascade */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              95308583DDDF44EC894CF38F /* opencv_softcascade */ = {
+                     isa = PBXGroup;
+                     children = (
+                            69E2DC2F01ED4B74886F00A3 /* Include */,
+                            BD80F0799D7349D5B989179A /* Src */,
+                            14B14A8EDCD64A76813E9FA2 /* Header Files */,
+                            965A79C65CE24F7CA70076FB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/CMakeLists.txt */,
+                            F16058F2F3CD465791967B6E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/channels.cu */,
+                            552131A764FD477F9CC128B9 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda/icf-sc.cu */,
+                     );
+                     name = opencv_softcascade;
+                     sourceTree = "<group>";
+              };
+              69E2DC2F01ED4B74886F00A3 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7BD7045531984F35990269ED /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              7BD7045531984F35990269ED /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F1B3C32FDACD4CBA937CFB6A /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include/opencv2/softcascade.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              BD80F0799D7349D5B989179A /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E5F3DFBFED774A9581CD677E /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/cuda_invoker.hpp */,
+                            76BD983FE0064292A01EBB79 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp */,
+                            7285B39C2A6F4D5185BB223D /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp */,
+                            BF9C4325123D449BBAC78460 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp */,
+                            E949F91A62754BCF83A6B881 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp */,
+                            ADE5C08351EC4365A2A3E041 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/precomp.hpp */,
+                            08AD88AE62A44ED88F989458 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              14B14A8EDCD64A76813E9FA2 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            05F19F102AE142DBA4E2FA64 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/cvconfig.h */,
+                            8695C67217334136A3B2BE51 /* /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              13F31A317F05456B9CA68261 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            120CFA66AA0D436296EE8400 /* opencv_softcascade */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              B1CEFA3C5A104E718E697AA8 /* opencv_softcascade */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 4A3228A0C8434C09AB3B5A5B /* Build configuration list for PBXNativeTarget "opencv_softcascade" */;
+                     buildPhases = (
+                            ACD1C2AA7CEE409EB05D596B /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            937D62DD6E7A44D6832A2B5C /* PBXTargetDependency */,
+                     );
+                     name = opencv_softcascade;
+                     productName = opencv_softcascade;
+                     productReference = 120CFA66AA0D436296EE8400 /* opencv_softcascade */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              09281AF2E66740168DDF4329 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = CEC4EA7596964B79809FE6F3 /* Build configuration list for PBXProject  "opencv_softcascade" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            10960915EE1646C996CEE3F5 /* Debug */,
+                            A21097EA604A40E6899552D3 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 39415C5AA07D42B38FB96306;
+                     projectDirPath = /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade;
+                     projectRoot = "";
+                     targets = (
+                            E6AEF74A308242C4AEF847E9 /* ALL_BUILD */,
+                            EAC76B4C5B9E48AB8AE9CDBA /* ZERO_CHECK */,
+                            CC4D31D4C58F4E1EAD67F005 /* install */,
+                            B1CEFA3C5A104E718E697AA8 /* opencv_softcascade */,
+                            AA79029A3D94442B9265A9B5 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              5B31F127087344AAABEBA548 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              8DC6208EB7124C4BB1F85168 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              906D56EF2E914C75B5CB49C8 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              EEAE8F2674C642F0A8551E35 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              083FC5C378C846AEAC9EA001 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              FD5E92803A2D44C6836BC49E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              8AC9A38CA8F84220A413E20D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              2790CF37021243589367353B /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              ACD1C2AA7CEE409EB05D596B /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            67957ED1FD3F4607B82B80B2 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector.cpp */,
+                            51D50F5111CF4ABF934ADDBB /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/detector_cuda.cpp */,
+                            71D6709695F748BB9D602D4B /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/integral_channel_builder.cpp */,
+                            4636900F5B2548CFB8C99634 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/octave.cpp */,
+                            4B54BBF8A1A14EF689533AF7 /* /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src/softcascade_init.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              4BDEE1CE44CD47EBBF57955C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EAC76B4C5B9E48AB8AE9CDBA /* ZERO_CHECK */;
+                     targetProxy = 27ADBEC08CC24B84A34B1C92 /* PBXContainerItemProxy */;
+              };
+              F47C0DCC9531452ABD8DFD33 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = B1CEFA3C5A104E718E697AA8 /* opencv_softcascade */;
+                     targetProxy = AA16D7436B4647728220F34E /* PBXContainerItemProxy */;
+              };
+              17FE3B9D82A245FCB92CCD6C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E6AEF74A308242C4AEF847E9 /* ALL_BUILD */;
+                     targetProxy = 87E0AE4A34BD409DBCBC87C1 /* PBXContainerItemProxy */;
+              };
+              937D62DD6E7A44D6832A2B5C /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = EAC76B4C5B9E48AB8AE9CDBA /* ZERO_CHECK */;
+                     targetProxy = 3920F80E1E3E4CAF9BB30510 /* PBXContainerItemProxy */;
+              };
+              3BA558E07B94482A9C988F2B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E6AEF74A308242C4AEF847E9 /* ALL_BUILD */;
+                     targetProxy = 52594EDABE5B4D058BCA93F4 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              F0F9463467C84212977B6F61 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/build";
+                     };
+                     name = Debug;
+              };
+              C70F99EE32934E5887A1F038 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade/build";
+                     };
+                     name = Release;
+              };
+              A7CC904AA60D478FAE50059D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              11F86E00556D4B03BDB48CEC /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              8A27A123399D465380E05EBD /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              37FB8678BFF74E90BD8141BD /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              8862C04FA74E40749AE44844 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D352BA3F5164406D9FC63E73 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              289322FA6EBE444B890F0A8B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_softcascade;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              ED5118CA8D3643708C953749 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_softcascade;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D6B11E7419754BEC9947A70E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              128DD9502A8042B999CCCAC3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/mfathi/Developer/iOS/Jott/opencv/modules/ml/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include, /Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/src, /Users/mfathi/Developer/iOS/Jott/opencv/modules/softcascade/include, "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              CEC4EA7596964B79809FE6F3 /* Build configuration list for PBXProject  "opencv_softcascade" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F0F9463467C84212977B6F61 /* Debug */,
+                            C70F99EE32934E5887A1F038 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              61A1ADD83F874E7F91F03DAB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            A7CC904AA60D478FAE50059D /* Debug */,
+                            11F86E00556D4B03BDB48CEC /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              753DA34840EA4E0B9D34A4A7 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8A27A123399D465380E05EBD /* Debug */,
+                            37FB8678BFF74E90BD8141BD /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3A74E2E6588F4B6ABBE091AD /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8862C04FA74E40749AE44844 /* Debug */,
+                            D352BA3F5164406D9FC63E73 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4A3228A0C8434C09AB3B5A5B /* Build configuration list for PBXNativeTarget "opencv_softcascade" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            289322FA6EBE444B890F0A8B /* Debug */,
+                            ED5118CA8D3643708C953749 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1019129BF5AD40E78B4163AD /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D6B11E7419754BEC9947A70E /* Debug */,
+                            128DD9502A8042B999CCCAC3 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 09281AF2E66740168DDF4329;
+}

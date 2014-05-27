@@ -1,0 +1,667 @@
+Topencv_nonfree
+v6
+r1
+cCheck dependencies
+cSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+cPhaseScriptExecution CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a normal i386
+cStrip /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+cSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+cSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c000000005348787000000000000003B4
+t1397258352
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053487873000000000000019E
+t1397258355
+s414
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+c000000005383E8C50000000000000E1D
+t1401153733
+s3613
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a
+t1401153782
+s212840
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o
+t1401153780
+s12516
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o
+t1401153779
+s43828
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencv_nonfree.LinkFileList
+c000000005383E8F200000000000003F9
+t1401153778
+s1017
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o
+t1401153781
+s42480
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o
+t1401153781
+s10536
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o
+t1401153782
+s64592
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o
+t1401153782
+s28804
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh
+c000000005383E8F2000000000000011A
+t1401153778
+s282
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+t1401153804
+s212840
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp
+c000000005383E8F2000000000000B66D
+t1401153778
+s46701
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.hpp
+c000000005383E8F20000000000000105
+t1401153778
+s261
+
+N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+c000000005383E8C500000000000002AA
+t1401153733
+s682
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+c000000005383E43C000000000000CB04
+t1401152572
+s51972
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+c000000005383E43C0000000000005484
+t1401152572
+s21636
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+c000000005383E43C00000000000002BA
+t1401152572
+s698
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+c000000005383E43C00000000000058E4
+t1401152572
+s22756
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+c000000005383E43C00000000000032EC
+t1401152572
+s13036
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+c000000005383E43C000000000000147B
+t1401152572
+s5243
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+c000000005383E43C0000000000003C8F
+t1401152572
+s15503
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+c000000005383E43C0000000000006376
+t1401152572
+s25462
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+c000000005383E43C0000000000001B43
+t1401152572
+s6979
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+c000000005383E43C0000000000016C7F
+t1401152572
+s93311
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+c000000005383E43C0000000000014618
+t1401152572
+s83480
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+c000000005383E43C000000000000A573
+t1401152572
+s42355
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+c000000005383E43C0000000000005957
+t1401152572
+s22871
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+c000000005383E43C000000000000090A
+t1401152572
+s2314
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+c000000005383E43C0000000000000928
+t1401152572
+s2344
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+c000000005383E43C0000000000004752
+t1401152572
+s18258
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+c000000005383E43C00000000000077C3
+t1401152572
+s30659
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+c000000005383E43C00000000000017EE
+t1401152572
+s6126
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+c000000005383E43C0000000000003187
+t1401152572
+s12679
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+c000000005383E43C000000000000208C
+t1401152572
+s8332
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+c000000005383E43C0000000000001F49
+t1401152572
+s8009
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+c000000005383E43C000000000000CCD2
+t1401152572
+s52434
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+c000000005383E43C0000000000003CD5
+t1401152572
+s15573
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+c000000005383E43C0000000000000B67
+t1401152572
+s2919
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+c000000005383E43C000000000000FACB
+t1401152572
+s64203
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+c000000005383E43C00000000000006FD
+t1401152572
+s1789
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+c000000005383E43C000000000000126C
+t1401152572
+s4716
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+c000000005383E43C0000000000001700
+t1401152572
+s5888
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+c000000005383E43C000000000000FED4
+t1401152572
+s65236
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+c000000005383E43C0000000000000931
+t1401152572
+s2353
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+c000000005383E43C0000000000001505
+t1401152572
+s5381
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+c000000005383E43C0000000000001775
+t1401152572
+s6005
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp
+c000000005383E43C0000000000000DDC
+t1401152572
+s3548
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+c000000005383E43C0000000000000A3B
+t1401152572
+s2619
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp
+c000000005383E43C0000000000007F36
+t1401152572
+s32566
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp
+c000000005383E43C0000000000009FF7
+t1401152572
+s40951
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp
+c000000005383E43C0000000000004145
+t1401152572
+s16709
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.hpp
+c000000005383E43C0000000000000E20
+t1401152572
+s3616
+
+N/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp
+c000000005383E43C0000000000003FB6
+t1401152572
+s16310
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies98c1f48c2034b941^addbf48c2034b941^---0#1#1#--18"Check dependencies36"2C728243-B404-47CB-B967-80A389625E5A-
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846579.705985
+e422846580.390108
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp294"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o [1mmodules/nonfree/src/nonfree_init.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler971eb5732034b941^cac263742034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@83"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp0000000000000000^3796"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o [1mmodules/nonfree/src/nonfree_init.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/nonfree_init.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/nonfree_init.o36"FBC1E94B-85D9-44D3-A6D4-7D1D025A107F-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846579.096383
+e422846579.705642
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp358"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler6dc718732034b941^399db4732034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@105"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp0000000000000000^3888"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.dia -c /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencl_kernels.o36"5AB933F8-B30D-4600-AD0D-AD0D5178ADE9-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846580.109531
+e422846581.652720
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp278"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o [1mmodules/nonfree/src/sift.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler03261c742034b941^24d6a6752034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@75"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp0000000000000000^3748"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o [1mmodules/nonfree/src/sift.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/sift.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/sift.o36"63E4E0DF-EC31-4F26-9EF5-6DDE604C23DC-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846580.726756
+e422846581.338923
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp288"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o [1mmodules/nonfree/src/surf.cuda.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilerb22aba742034b941^54c356752034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@80"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp0000000000000000^3778"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o [1mmodules/nonfree/src/surf.cuda.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cuda.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.cuda.o36"1B0DE2EB-B6F6-4EB8-A219-F22B5930BFF9-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846580.390588
+e422846582.030865
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp278"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o [1mmodules/nonfree/src/surf.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler151a64742034b941^82e607762034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@75"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp0000000000000000^3748"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o [1mmodules/nonfree/src/surf.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.o36"BFCF3E61-1F62-4E2F-8954-4DDC95E0A50B-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s422846581.423095
+e422846582.562906
+r1
+xCompileC
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o
+x/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/precomp.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include/opencv2/features2d.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/miniflann.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/defines.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include/opencv2/flann/config.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include/opencv2/imgproc.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/cvconfig.h
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include/opencv2/nonfree/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda_types.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cuda.inl.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/private.cuda.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.hpp
+d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/opencl_kernels.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp
+d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp
+oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp286"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o [1mmodules/nonfree/src/surf.ocl.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler6e6e6c752034b941^051a90762034b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@79"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp0000000000000000^3772"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o [1mmodules/nonfree/src/surf.ocl.cpp[0m normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/calib3d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/features2d/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/highgui/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/imgproc/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/flann/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/nonfree/src/surf.ocl.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/surf.ocl.o36"B48C0E46-E78C-48A2-A0BC-77FF6FD7E3D7-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a normal i386
+s422846582.698513
+e422846582.708465
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a normal i386123"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a normal i386e02ab3762034b941^d61bb5762034b941^---0#0#1#--1111"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a normal i386    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencv_nonfree.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a36"53B7608A-61F4-4D64-B1B3-A910275EF2B4-
+b86DA9C9B-CDDF-487F-A818-229437FD8BC8
+
+CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a normal i386
+s422846604.976468
+e422846604.981505
+r1
+xLibtool
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a normal i386147"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a normal i3865306fa8c2034b941^7044fb8c2034b941^---0#0#1#--1159"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a normal i386    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Objects-normal/i386/opencv_nonfree.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a36"78C3176E-B8C4-4D6E-A67F-9FCA94C82207-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
+CPhaseScriptExecution CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh
+s422846604.960392
+e422846604.974753
+r1
+xPhaseScriptExecution
+xCMake Rules
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh
+omake: Nothing to be done for `all'.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Run custom shell script 'CMake Rules'214"[1mPhaseScriptExecution[0m CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.shc217f68c2034b941^8b89f98c2034b941^-36"make: Nothing to be done for `all'.1(21%IDEActivityLogMessage2@36"make: Nothing to be done for `all'.-422846604#0#36#-0#-----0#0#1#--450"[1mPhaseScriptExecution[0m CMake\ Rules /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh    cd /Users/mfathi/Developer/iOS/Jott/opencv    /bin/sh -c /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/OpenCV.build/Release-iphonesimulator/opencv_nonfree.build/Script-64A33EBA338F456EBABD1B06.sh36"6BDD8954-FE8E-41A9-8E7A-3129E931AD71-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
+CSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+s422846605.013358
+e422846605.016283
+r1
+xSetMode
+xu+w,go-w,a+rX
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m157"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m7978038d2034b941^b62b048d2034b941^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a0000000000000000^632"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/chmod -RH u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a36"F5B2EE50-D09A-493A-BC62-26964403E4EE-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
+CSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+s422846605.009107
+e422846605.013092
+r1
+xSetOwnerAndGroup
+xmfathi:staff
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m165"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0mc460028d2034b941^c95a038d2034b941^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a0000000000000000^644"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /usr/sbin/chown -RH mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a36"9164DC38-22D3-4D64-9A31-7DDD8C236CFF-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
+CStrip /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+s422846604.981794
+e422846605.008850
+r1
+xStrip
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m141"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m4e63fb8c2034b941^d844028d2034b941^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a0000000000000000^683"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a36"948DD936-60E8-47C9-BE74-B3ABAA8A8FA5-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
+CSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+s422846604.956691
+e422846604.959715
+r1
+xSymLink
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a
+x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Process /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a231"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.ad8f4f48c2034b941^53b1f58c2034b941^---0#0#1#--785"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/ln -sf /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/modules/nonfree/UninstalledProducts/libopencv_nonfree.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/lib/Release/libopencv_nonfree.a36"FE7FB0AB-56B4-43BF-A78E-514F9E8866C2-
+b25925080-5D75-40D2-8F2E-ED676F7E13D6
+
