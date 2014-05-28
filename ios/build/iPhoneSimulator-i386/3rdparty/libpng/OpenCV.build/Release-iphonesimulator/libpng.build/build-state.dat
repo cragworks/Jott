@@ -1,658 +1,0 @@
-Tlibpng
-v6
-r1
-cCheck dependencies
-cSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a normal i386
-cStrip /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-cSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-cSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c0000000053119F8A0000000000000198
-t1393663882
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c000000005348787000000000000003B4
-t1397258352
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000053487873000000000000019E
-t1397258355
-s414
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a
-t1401153738
-s232344
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/libpng.LinkFileList
-c000000005383E8C7000000000000095F
-t1401153735
-s2399
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o
-t1401153736
-s30256
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o
-t1401153736
-s6664
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o
-t1401153736
-s9248
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o
-t1401153736
-s2880
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o
-t1401153736
-s13136
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o
-t1401153736
-s13040
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o
-t1401153736
-s1320
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o
-t1401153736
-s27848
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o
-t1401153736
-s39644
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o
-t1401153736
-s14344
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o
-t1401153737
-s4060
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o
-t1401153737
-s1596
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o
-t1401153737
-s16368
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o
-t1401153737
-s3328
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o
-t1401153738
-s36476
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-t1401153803
-s232344
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-c000000005383E8BF0000000000003CEA
-t1401153727
-s15594
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c
-c000000005383E43C0000000000016A66
-t1401152572
-s92774
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-c000000005383E43C000000000001C4C3
-t1401152572
-s115907
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-c000000005383E43C000000000000536A
-t1401152572
-s21354
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-c000000005383E43C000000000000151B
-t1401152572
-s5403
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c
-c000000005383E43C0000000000005007
-t1401152572
-s20487
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c
-c000000005383E43C00000000000077C2
-t1401152572
-s30658
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-c000000005383E43C0000000000003072
-t1401152572
-s12402
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-c000000005383E43C000000000000187C
-t1401152572
-s6268
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c
-c000000005383E43C000000000000450A
-t1401152572
-s17674
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c
-c000000005383E43C0000000000008F28
-t1401152572
-s36648
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-c000000005383E43C000000000000FBF7
-t1401152572
-s64503
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c
-c000000005383E43C000000000000980A
-t1401152572
-s38922
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c
-c000000005383E43C0000000000001466
-t1401152572
-s5222
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c
-c000000005383E43C00000000000290C7
-t1401152572
-s168135
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c
-c000000005383E43C000000000001DF77
-t1401152572
-s122743
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c
-c000000005383E43C0000000000009036
-t1401152572
-s36918
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-c000000005383E43C0000000000003C9B
-t1401152572
-s15515
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c
-c000000005383E43C0000000000005916
-t1401152572
-s22806
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c
-c000000005383E43C0000000000001DD3
-t1401152572
-s7635
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c
-c000000005383E43C000000000000C780
-t1401152572
-s51072
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c
-c000000005383E43C00000000000043C5
-t1401152572
-s17349
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c
-c000000005383E43C0000000000016687
-t1401152572
-s91783
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-c000000005383E43C000000000001574B
-t1401152572
-s87883
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesb3b2658b2034b941^a4c1658b2034b941^---0#1#1#--18"Check dependencies36"55739995-8D9A-4096-993E-562A5CC678A9-
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846535.961067
-e422846536.304026
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c260"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o [1m3rdparty/libpng/png.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler0f63f6472034b941^d8d44d482034b941^---0#0#1#-19%DVTDocumentLocation2@68"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c0000000000000000^3092"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o [1m3rdparty/libpng/png.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/png.o36"F3336056-4022-4349-93BA-586C562B07AB-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.001091
-e422846536.130464
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o [1m3rdparty/libpng/pngerror.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compilerc05f00482034b941^946c21482034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o [1m3rdparty/libpng/pngerror.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngerror.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngerror.o36"2670CFAB-8740-4E99-9B5D-2850F4C73E28-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.049935
-e422846536.203872
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c266"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o [1m3rdparty/libpng/pngget.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler3be20c482034b941^91ee33482034b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c0000000000000000^3110"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o [1m3rdparty/libpng/pngget.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngget.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngget.o36"CE2489F6-D035-4245-9647-B3A028711718-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.052502
-e422846536.122291
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c266"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o [1m3rdparty/libpng/pngmem.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler14cb0d482034b941^180b1f482034b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c0000000000000000^3110"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o [1m3rdparty/libpng/pngmem.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngmem.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngmem.o36"8F70C0AF-E42D-4BFB-8727-ECFB3F24278F-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.100965
-e422846536.268517
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o [1m3rdparty/libpng/pngpread.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler7cf119482034b941^fdbd44482034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o [1m3rdparty/libpng/pngpread.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpread.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngpread.o36"382A6104-8B30-4841-B9A1-2E30C3279A2C-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.131747
-e422846536.271179
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c268"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o [1m3rdparty/libpng/pngread.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler6bd221482034b941^172845482034b941^---0#0#1#-19%DVTDocumentLocation2@72"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c0000000000000000^3116"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o [1m3rdparty/libpng/pngread.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngread.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngread.o36"8A002287-9E3C-4F6A-B89E-ACE6012DDD43-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.270731
-e422846536.325665
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c266"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o [1m3rdparty/libpng/pngrio.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler836845482034b941^2d5f53482034b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c0000000000000000^3110"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o [1m3rdparty/libpng/pngrio.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrio.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrio.o36"4F625CBA-36FF-4EC6-8129-25754B5F4B95-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.320300
-e422846536.922464
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o [1m3rdparty/libpng/pngrtran.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler261852482034b941^dd26ec482034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o [1m3rdparty/libpng/pngrtran.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrtran.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrtran.o36"0860608D-E034-4F69-8BBF-3A02A08501C9-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.391859
-e422846536.881432
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o [1m3rdparty/libpng/pngrutil.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler5d6a64482034b941^8b6ee1482034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o [1m3rdparty/libpng/pngrutil.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngrutil.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngrutil.o36"A2612502-F01C-48F2-A095-8C5E0158FA61-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.810411
-e422846536.973694
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c266"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o [1m3rdparty/libpng/pngset.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compilerb092cf482034b941^4644f9482034b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c0000000000000000^3110"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o [1m3rdparty/libpng/pngset.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngset.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngset.o36"AB505A49-0616-4FFA-BFDA-1574CF1B5B04-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846536.974916
-e422846537.082797
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o [1m3rdparty/libpng/pngtrans.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler8aacf9482034b941^613215492034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o [1m3rdparty/libpng/pngtrans.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngtrans.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngtrans.o36"FD5DCFCE-9810-4880-AF7B-FE5061E29154-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846537.082991
-e422846537.138802
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c266"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o [1m3rdparty/libpng/pngwio.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler6d5615492034b941^ec8823492034b941^---0#0#1#-19%DVTDocumentLocation2@71"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c0000000000000000^3110"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o [1m3rdparty/libpng/pngwio.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwio.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwio.o36"17817F5F-9507-464F-B2AE-A7372F41259A-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846537.342143
-e422846537.522030
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o [1m3rdparty/libpng/pngwrite.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler18b157492034b941^f4a385492034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o [1m3rdparty/libpng/pngwrite.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwrite.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwrite.o36"AACEB8BC-7A7B-431A-933F-3C5088359C0D-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846537.657256
-e422846537.764366
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o [1m3rdparty/libpng/pngwtran.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler8e5ba8492034b941^c7d6c3492034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o [1m3rdparty/libpng/pngwtran.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwtran.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwtran.o36"D19F80C9-C73E-4AAA-B9FF-41EDE0DB986C-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
-s422846537.783460
-e422846538.244859
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c
-xnormal
-xi386
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngpriv.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/png.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnglibconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pnginfo.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngstruct.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib/zlib.h
-d/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib/zconf.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngdebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c270"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o [1m3rdparty/libpng/pngwutil.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compilerc5abc8492034b941^25af3e4a2034b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c0000000000000000^3122"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o [1m3rdparty/libpng/pngwutil.c[0m normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR=\"Release-iphonesimulator\" -DPNG_CONFIGURE_LIBPNG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -mios-simulator-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/zlib -I/Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources/i386 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -Wno-implicit-function-declaration -fPIC -fPIC -DNDEBUG -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/3rdparty/libpng/pngwutil.c -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/pngwutil.o36"4CB0170D-45B0-4413-9E85-B6EAFF022301-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a normal i386
-s422846538.376738
-e422846538.383865
-r1
-xLibtool
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a
-xnormal
-xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a normal i386124"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a normal i3865e85604a2034b941^9145624a2034b941^---0#0#1#--1106"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a normal i386    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/libpng.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a36"26FF9DE6-C21C-4B9A-BD34-1EE411E169DC-
-b934257FA-5A89-4E4F-9F44-2B637AC319CC
-
-CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a normal i386
-s422846603.402726
-e422846603.408410
-r1
-xLibtool
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-xnormal
-xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a normal i386139"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a normal i386c824678b2034b941^008f688b2034b941^---0#0#1#--1136"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a normal i386    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/OpenCV.build/Release-iphonesimulator/libpng.build/Objects-normal/i386/libpng.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a36"A86D34AF-4060-41E2-A847-2089338684D1-
-bF8A70116-E78E-4204-9A91-194E80006709
-
-CSetMode u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-s422846603.468602
-e422846603.471399
-r1
-xSetMode
-xu+w,go-w,a+rX
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m149"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m2e01788b2034b941^efad788b2034b941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a0000000000000000^616"[1mSetMode[0m u+w,go-w,a+rX [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/chmod -RH u+w,go-w,a+rX /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a36"C4ED553F-4E07-45E0-BC3B-1752A25A1A8E-
-bF8A70116-E78E-4204-9A91-194E80006709
-
-CSetOwnerAndGroup mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-s422846603.464367
-e422846603.468363
-r1
-xSetOwnerAndGroup
-xmfathi:staff
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m157"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m9eec768b2034b941^78ec778b2034b941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a0000000000000000^628"[1mSetOwnerAndGroup[0m mfathi:staff [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /usr/sbin/chown -RH mfathi:staff /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a36"21389642-7439-4330-8B7D-2D8BC7AB8DEC-
-bF8A70116-E78E-4204-9A91-194E80006709
-
-CStrip /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-s422846603.408751
-e422846603.464103
-r1
-xStrip
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m133"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0mb4af688b2034b941^b7cf768b2034b941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a0000000000000000^667"[1mStrip[0m [1m/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a[0m    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -S /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a36"A32DEA33-6B4F-4592-8C41-F3FCC082675B-
-bF8A70116-E78E-4204-9A91-194E80006709
-
-CSymLink /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-s422846603.397685
-e422846603.400465
-r1
-xSymLink
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Process /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a224"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a51d8658b2034b941^8885668b2034b941^---0#0#1#--771"[1mSymLink[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a    cd /Users/mfathi/Developer/iOS/Jott/opencv    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /bin/ln -sf /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/libpng/UninstalledProducts/liblibpng.a /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneSimulator-i386/3rdparty/lib/Release/liblibpng.a36"08067360-CAE5-459D-804D-2F6C73766406-
-bF8A70116-E78E-4204-9A91-194E80006709
-

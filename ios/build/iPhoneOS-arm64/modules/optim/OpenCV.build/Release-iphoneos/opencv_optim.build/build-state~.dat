@@ -1,224 +1,0 @@
-Topencv_optim
-v6
-r1
-cCheck dependencies
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a normal arm64
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
-c0000000053119F860000000000000132
-t1393663878
-s306
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
-c0000000053487867000000000000036B
-t1397258343
-s875
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c0000000053487867000000000000019E
-t1397258343
-s414
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a
-t2
-s0
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o
-t1401153642
-s18792
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o
-t1401153642
-s11400
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o
-t1401153642
-s21052
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/opencv_optim.LinkFileList
-c000000005383E8690000000000000271
-t1401153641
-s625
-
-N/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o
-t1401153643
-s25108
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp
-c000000005383E43C0000000000001C3D
-t1401152572
-s7229
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp
-c000000005383E43C0000000000001AD8
-t1401152572
-s6872
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp
-c000000005383E43C0000000000002EB1
-t1401152572
-s11953
-
-N/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp
-c000000005383E43C0000000000002C47
-t1401152572
-s11335
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescee047e91f34b941^9b3948e91f34b941^---0#1#1#--18"Check dependencies36"2DB17084-B8F1-445B-A5F3-5D13D3692EFF-
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422846441.282723
-e422846442.028215
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp
-xnormal
-xarm64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/precomp.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include/opencv2/optim.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/debug.hpp
-oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp289"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o [1mmodules/optim/src/conjugate_gradient.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler238748e91f34b941^2a3907ea1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@87"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp0000000000000000^3310"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o [1mmodules/optim/src/conjugate_gradient.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/conjugate_gradient.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/conjugate_gradient.o36"D94E0A41-63B4-49B5-AC83-DE988A9A3EB7-
-b62F1FF28-63BB-47B0-8F6D-4A86C876D62E
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422846441.284239
-e422846442.092465
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp
-xnormal
-xarm64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/precomp.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include/opencv2/optim.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/debug.hpp
-oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp277"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o [1mmodules/optim/src/denoise_tvl1.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler53e848e91f34b941^97ab17ea1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@81"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp0000000000000000^3274"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o [1mmodules/optim/src/denoise_tvl1.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/denoise_tvl1.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/denoise_tvl1.o36"CFEF9699-0950-43FC-9A4E-1B053B420C3C-
-b62F1FF28-63BB-47B0-8F6D-4A86C876D62E
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422846441.284864
-e422846442.290806
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp
-xnormal
-xarm64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/precomp.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include/opencv2/optim.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/debug.hpp
-oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp269"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o [1mmodules/optim/src/lpsolver.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compilerad4b49e91f34b941^01894aea1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@77"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp0000000000000000^3250"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o [1mmodules/optim/src/lpsolver.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/lpsolver.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/lpsolver.o36"6B32A23B-9B44-4583-9EEA-FFA8F5931746-
-b62F1FF28-63BB-47B0-8F6D-4A86C876D62E
-
-CCompileC /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s422846442.093145
-e422846443.033103
-r1
-xCompileC
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o
-x/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp
-xnormal
-xarm64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/precomp.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include/opencv2/optim.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvdef.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/version.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/base.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/ptr.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/traits.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/matx.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/bufferpool.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/mat.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/persistence.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/operations.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/debug.hpp
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/core_c.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/types_c.h
-d/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include/opencv2/core/utility.hpp
-oclang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp267"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o [1mmodules/optim/src/simplex.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler13f417ea1f34b941^fd6c08eb1f34b941^-104"clang: [0;1;35mwarning: [0m[1margument unused during compilation: '-headerpad_max_install_names'[0m-0#0#1#-19%DVTDocumentLocation2@76"file:///Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp0000000000000000^3244"[1mCompileC[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o [1mmodules/optim/src/simplex.cpp[0m normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mfathi/Developer/iOS/Jott/opencv    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch arm64 -fmessage-length=101 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR=\"Release-iphoneos\" -DOPENCV_NOSTL -D__OPENCV_BUILD=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -miphoneos-version-min=6.0 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/include -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/core/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src -I/Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/include -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources/arm64 -I/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/DerivedSources -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC -DNDEBUG -fomit-frame-pointer -ffast-math -DNDEBUG -MMD -MT dependencies -MF /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.d --serialize-diagnostics /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.dia -c /Users/mfathi/Developer/iOS/Jott/opencv/modules/optim/src/simplex.cpp -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/simplex.o36"E41D9583-632C-43C7-ADB8-19038531DC4A-
-b62F1FF28-63BB-47B0-8F6D-4A86C876D62E
-
-CLibtool /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a normal arm64
-s422846443.922128
-e422846443.927871
-r1
-xLibtool
-x/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a
-xnormal
-xarm64
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a normal arm64116"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a normal arm647024eceb1f34b941^aa99edeb1f34b941^---0#0#1#--1052"[1mLibtool[0m /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a normal arm64    cd /Users/mfathi/Developer/iOS/Jott/opencv    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/gvim:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release -filelist /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/modules/optim/OpenCV.build/Release-iphoneos/opencv_optim.build/Objects-normal/arm64/opencv_optim.LinkFileList -o /Users/mfathi/Developer/iOS/Jott/ios/build/iPhoneOS-arm64/lib/Release/libopencv_optim.a36"59D91A91-829E-4D01-AAFE-5C9B39A11548-
-b62F1FF28-63BB-47B0-8F6D-4A86C876D62E
-

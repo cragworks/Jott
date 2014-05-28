@@ -9,7 +9,7 @@
 #import "FaceDetector.h"
 
 NSString * const kFaceCascadeFilename = @"haarcascade_frontalface_alt2";
-const int kHaarOptions =  CV_HAAR_FIND_BIGGEST_OBJECT | CV_HAAR_DO_ROUGH_SEARCH;
+const int kHaarOptions =  cv::CASCADE_FIND_BIGGEST_OBJECT | cv::CASCADE_DO_ROUGH_SEARCH;
 
 @implementation FaceDetector
 

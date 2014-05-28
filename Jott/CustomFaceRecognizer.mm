@@ -8,6 +8,8 @@
 
 #import "CustomFaceRecognizer.h"
 #import "OpenCVData.h"
+#import <opencv2/imgproc/imgproc_c.h>
+
 
 @implementation CustomFaceRecognizer
 
@@ -61,7 +63,7 @@
     return [documentDirectory stringByAppendingPathComponent:@"training-data.sqlite"];
 }
 
-- (int)newPersonWithName:(NSString *)name
+- (long long)newPersonWithName:(NSString *)name
 {
     const char *newPersonSQL = "INSERT INTO people (name) VALUES (?)";
     sqlite3_stmt *statement;

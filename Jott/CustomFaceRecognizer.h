@@ -20,7 +20,7 @@
 - (id)initWithEigenFaceRecognizer;
 - (id)initWithFisherFaceRecognizer;
 - (id)initWithLBPHFaceRecognizer;
-- (int)newPersonWithName:(NSString *)name;
+- (long long)newPersonWithName:(NSString *)name;
 - (NSMutableArray *)getAllPeople;
 - (BOOL)trainModel;
 - (void)forgetAllFacesForPersonID:(int)personID;
