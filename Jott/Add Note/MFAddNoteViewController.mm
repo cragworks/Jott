@@ -22,6 +22,7 @@
     UITextField *titleField;
     UITextField *noteField;
     NSString *password;
+    MFViewController *presentingViewController;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -42,6 +43,7 @@
 - (void)initialSetup {
     MFAppDelegate *appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     password = appDelegate.password;
+    presentingViewController = appDelegate.root;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -69,11 +71,10 @@
 }
 
 - (void) cancelNote {
-    [(MFViewController *)self.presentingViewController dismissPresentedViewController];
+    [presentingViewController dismissPresentedViewController];
 }
 
 - (void) saveNote {
-    MFViewController *presentingViewController = (MFViewController *)self.presentingViewController;
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
     mfnote.title = titleField.text;
     mfnote.text = noteField.text;

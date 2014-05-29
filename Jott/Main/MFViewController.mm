@@ -14,9 +14,18 @@
 #import "MFSettingsViewController.h"
 #import "NSString+AESCrypt.h"
 #import "NSData+AESCrypt.h"
+#import "SWRevealViewController.h"
+#import "MFInfoViewController.h"
 
 @interface MFViewController ()
 
+@end
+
+@implementation UINavigationBar (customNav)
+- (CGSize)sizeThatFits:(CGSize)size {
+    CGSize newSize = CGSizeMake(self.frame.size.width,60);
+    return newSize;
+}
 @end
 
 @implementation MFViewController {
@@ -31,10 +40,18 @@
 }
 
 - (void)initialSetup {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
     
-    self.view.backgroundColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
+    SWRevealViewController *revealController = [self revealViewController];
+    [revealController panGestureRecognizer];
+    [revealController tapGestureRecognizer];
+    self.revealViewController.delegate = self;
+    
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"]style:UIBarButtonItemStyleBordered target:revealController action:@selector(revealToggle:)];
+    _addButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"plus-32.png"] style:UIBarButtonItemStylePlain target:self action:@selector(addNote)];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:_managedObjectContext];
@@ -42,28 +59,18 @@
     NSError *error;
     NSArray *notes = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
     [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
-
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*0.15, self.view.frame.size.width, self.view.frame.size.height*0.85) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     _tableView.rowHeight = 75.0;
-    
-    _settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _settingsButton.frame = CGRectMake(20, 40, 25, 25);
-    [_settingsButton setImage:[UIImage imageNamed:@"settings-50.png"] forState:UIControlStateNormal];
-    
-    _addButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _addButton.frame = CGRectMake(self.view.frame.size.width - 45, 35, 30, 30);
-    [_addButton setImage:[UIImage imageNamed:@"plus-50.png"] forState:UIControlStateNormal];
-    
-    [self.view addSubview:_settingsButton];
-    [self.view addSubview:_addButton];
+
+    [self.navigationItem.leftBarButtonItem setBackgroundVerticalPositionAdjustment:50 forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    self.navigationItem.rightBarButtonItem = _addButton;
     [self.view addSubview:_tableView];
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
-    [_settingsButton addTarget:self action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
-    [_addButton addTarget:self action:@selector(addNote) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword; {
@@ -82,10 +89,32 @@
     [self presentViewController:navController animated:YES completion:nil];
 }
 
+
+#pragma mark - Present View Controllers
+
 - (void)presentSettingsViewController {
     MFSettingsViewController *svc = [delegate settingsViewController];
     [svc.tableView setScrollEnabled:NO];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:svc];
+    navController.navigationBar.tintColor = [UIColor whiteColor];
+    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
+    navController.navigationBar.translucent = NO;
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)presentUserSettingsViewController {
+    MFSettingsViewController *svc = [delegate settingsViewController];
+    [svc.tableView setScrollEnabled:NO];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:svc];
+    navController.navigationBar.tintColor = [UIColor whiteColor];
+    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
+    navController.navigationBar.translucent = NO;
+    [self presentViewController:navController animated:YES completion:nil];
+}
+
+- (void)presentInfoViewController {
+    MFInfoViewController *ivc = [[MFInfoViewController alloc]init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:ivc];
     navController.navigationBar.tintColor = [UIColor whiteColor];
     navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
     navController.navigationBar.translucent = NO;
@@ -106,12 +135,6 @@
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
     [self.tableView reloadData];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 
 #pragma mark - Table view data source
 
@@ -159,6 +182,31 @@
     cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
     
     return cell;
+}
+
+
+#pragma mark - SWRevealViewController Delegate Methods
+
+- (void)revealController:(SWRevealViewController *)revealController willMoveToPosition:(FrontViewPosition)position {
+    if(position == FrontViewPositionLeft) {
+        self.view.userInteractionEnabled = YES;
+    } else {
+        self.view.userInteractionEnabled = NO;
+    }
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position {
+    if(position == FrontViewPositionLeft) {
+        self.view.userInteractionEnabled = YES;
+    } else {
+        self.view.userInteractionEnabled = NO;
+    }
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end

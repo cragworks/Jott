@@ -28,6 +28,4 @@
 + (NSString *)titleForSection:(NSInteger)section;
 + (id)secAttrForSection:(NSInteger)section;
 
-- (void)resetKeychain:(id)sender;
-
 @end

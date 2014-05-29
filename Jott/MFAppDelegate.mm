@@ -12,7 +12,9 @@
 #import "MFKeychainWrapper.h"
 #import "MFSettingsViewController.h"
 #import "MFViewNoteViewController.h"
+#import "MFMenuViewController.h"
 #import <CoreData/CoreData.h>
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MFAppDelegate
 
@@ -28,7 +30,6 @@
     
     _password = [_wrapper objectForKey:(__bridge id)kSecValueData];
     
-
     NSManagedObjectContext *context = [self managedObjectContext];
 
     NSError *error;
@@ -40,12 +41,30 @@
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:context];
     [fetchRequest setEntity:entity];
 
+    _menuViewController = [[MFMenuViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    MFViewController *root = [[MFViewController alloc] init];
-    [self.window setRootViewController:root];
+    _root = [[MFViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:_root];
+    navController.navigationBar.tintColor = [UIColor whiteColor];
+    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
+    navController.navigationBar.translucent = NO;
+    [navController.navigationBar setFrame:CGRectMake(0, 0, 320, 200)];
+    
+    SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:_menuViewController frontViewController:navController];
+    revealViewController.delegate = self;
+
+    self.viewController = revealViewController;
+    self.window.rootViewController = self.viewController;
+    //[self.window setRootViewController:navController];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [self.window.layer setCornerRadius:5.0];
+    [self.window.layer setMasksToBounds:YES];
+    self.window.layer.opaque = NO;
+    [self.window.layer setShouldRasterize:YES];
+    [self.window.layer setRasterizationScale:[UIScreen mainScreen].scale];
 
     return YES;
 }
@@ -139,5 +158,7 @@
 - (NSString *)applicationDocumentsDirectory {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
+
+
 
 @end

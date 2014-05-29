@@ -13,6 +13,7 @@
 #import "MFSetPasswordViewController.h"
 #import "MFViewController.h"
 #import "MFSetFaceViewController.h"
+#import "MFAppDelegate.h"
 
 enum {
 	kUsernameSection = 0,
@@ -39,7 +40,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *back = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 300)];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:255.0/255.0 alpha:1.0];
@@ -52,7 +53,8 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 }
 
 - (void) back {
-    [(MFViewController *)self.presentingViewController dismissPresentedViewController];
+    MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+    [appDelegate.root dismissPresentedViewController];
 }
 
 + (NSString *)titleForSection:(NSInteger)section
@@ -94,15 +96,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
         [passwordItem resetKeychainItem];
         [self.tableView reloadData];
     }
-}
-
-- (void)resetKeychain:(id)sender
-{
-    // open a dialog with an OK and cancel button
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Reset Generic Keychain Item?"
-                                                             delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"OK" otherButtonTitles:nil];
-    actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-    [actionSheet showInView:self.view];
 }
 
 - (void)viewWillAppear:(BOOL)animated

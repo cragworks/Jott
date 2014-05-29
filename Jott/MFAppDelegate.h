@@ -10,8 +10,13 @@
 #import "MFKeychainWrapper.h"
 #import "MFSettingsViewController.h"
 #import "MFViewNoteViewController.h"
+#import "MFViewController.h"
+#import "SWRevealViewController.h"
+#import "MFMenuViewController.h"
 
-@interface MFAppDelegate : UIResponder <UIApplicationDelegate> {
+@class SWRevealViewController;
+
+@interface MFAppDelegate : UIResponder <UIApplicationDelegate, SWRevealViewControllerDelegate> {
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -24,6 +29,10 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, strong) SWRevealViewController *viewController;
+@property (nonatomic, strong) MFMenuViewController *menuViewController;
+@property (nonatomic, strong) MFViewController *root;
 
 @property (nonatomic, retain) MFSettingsViewController *settingsViewController;
 @property (nonatomic, retain) MFKeychainWrapper *passwordItem;

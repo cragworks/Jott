@@ -16,6 +16,7 @@
 #import "MFKeychainWrapper.h"
 #import "MFAppDelegate.h"
 #import "OpenCVData.h"
+#import "SWRevealViewController.h"
 
 #define CAPTURE_FPS 30
 #define CONFIDENCE_THRESHHOLD 65
@@ -24,6 +25,8 @@
     BOOL shouldBeEncrypted;
     BOOL isBeingEdited;
     BOOL isEncrypted;
+    BOOL usingVision;
+    int totalSeconds;
     UIBarButtonItem *back;
     UIBarButtonItem *edit;
     UIButton *cryptButton;
@@ -31,6 +34,7 @@
     UIAlertView *enterPasswordAlert;
     UIAlertView *wrongPasswordAlert;
     NSString *password;
+    UIButton *timedDecryptButton;
 }
 @end
 
@@ -56,8 +60,9 @@
 - (void)initialSetup {
     
     MFAppDelegate *ad = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+    presentingViewController = ad.root;
     MFKeychainWrapper *wrapper = ad.wrapper;
-    password = [wrapper objectForKey:(__bridge id)(kSecValueData)];
+    password = [wrapper objectForKey:(__bridge id)(kSecValueData)];                   // Safe ?
     
     enterPasswordAlert = [[UIAlertView alloc] initWithTitle:@"Enter Password"
                                                         message:@"Enter the key to decrypt text:"
@@ -73,69 +78,91 @@
                                          cancelButtonTitle:@"Cancel"
                                          otherButtonTitles:@"Retry", nil];
     wrongPasswordAlert.tag = 1;
-
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    presentingViewController = (MFViewController *)self.presentingViewController;
-    isEncrypted = presentingViewController.currentNote.isEncrypted;
     
     back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
-    edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(edit)];
-    
-    cryptButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    cryptButton.frame = CGRectMake(0, 0, 100, 50);
-    [cryptButton setTitle:@"Decrypt" forState:UIControlStateNormal];
-    [cryptButton addTarget:self action:@selector(decryptButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-    UIView *cryptView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
-    [cryptView addSubview:cryptButton];
+    edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
     _titleField = [[UITextField alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width - 20, 50)];
     _titleField.layer.borderWidth = 1.0;
     _titleField.userInteractionEnabled = NO;
     _titleField.text = presentingViewController.currentNote.title;
+    [_titleField addTarget:self action:@selector(editTitle) forControlEvents:UIControlEventTouchUpInside];
     [_titleField becomeFirstResponder];
     
     _noteField = [[UITextField alloc] initWithFrame:CGRectMake(10, 75, self.view.frame.size.width - 20, 400)];
-    _noteField.layer.borderWidth = 1.0;
     _noteField.userInteractionEnabled = NO;
     _noteField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
+    [_noteField addTarget:self action:@selector(editText) forControlEvents:UIControlEventTouchUpInside];
     _noteField.text = presentingViewController.currentNote.text;
+    
+    timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 40, self.view.frame.size.height - 103, 30, 30);
+    UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
+    [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
+    [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    
     
     self.navigationItem.leftBarButtonItem = back;
     self.navigationItem.rightBarButtonItem = edit;
-    self.navigationItem.titleView = cryptView;
+    //self.navigationItem.titleView = cryptView;
     [self.view addSubview:_titleField];
     [self.view addSubview:_noteField];
-    
-    isEncrypted = YES;
-    shouldBeEncrypted = YES;
+    [self.view addSubview:timedDecryptButton];
     
     NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.25
                                                                      target: self
                                                                    selector:@selector(checkIfEncrypted:)
                                                                    userInfo: nil repeats:YES];
     [self checkIfEncrypted:encryptionCheckTimer];
+    
+    isEncrypted = YES;
+    shouldBeEncrypted = YES;
+    usingVision = YES;
 }
 
--(void)checkIfEncrypted:(NSTimer *)timer {
-    if (!shouldBeEncrypted) {
-        if (isEncrypted) {
-            presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256DecryptWithKey:password];
-            presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256DecryptWithKey:password];
-            _titleField.text = presentingViewController.currentNote.title;
-            _noteField.text = presentingViewController.currentNote.text;
-            isEncrypted = NO;
-        }
+
+#pragma mark - Timed Decryption
+
+- (void)timerButtonTapped {
+    NSTimer *decryptTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timedDecrypt:) userInfo:nil repeats:YES];
+    if (usingVision) {
+        totalSeconds = 10;
+        [timedDecryptButton setImage:[UIImage imageNamed:@"close-32.png"] forState:UIControlStateNormal];
+        [self.videoCamera stop];
+        [self.imageView setHidden:YES];
+        usingVision = NO;
+        [self timedDecrypt:decryptTimer];
     }
     else {
-        if (!isEncrypted) {
-            presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256EncryptWithKey:password];
-            presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256EncryptWithKey:password];
-            _titleField.text = presentingViewController.currentNote.title;
-            _noteField.text = presentingViewController.currentNote.text;
-            isEncrypted = YES;
-        }
+        [self encryptText];
+        [self.videoCamera start];
+        [self.imageView setHidden:NO];
+
+        usingVision = YES;
+        [timedDecryptButton setImage:[UIImage imageNamed:@"stopwatch-32.png"] forState:UIControlStateNormal];
+    }
+}
+
+- (void)timedDecrypt:(NSTimer *)timer {
+    NSLog(@"%d",totalSeconds);
+    if (!totalSeconds) {
+        [self changeTextEncryption];
+        [self timerButtonTapped];
+        [timer invalidate];
+        return;
+    }
+    totalSeconds--;
+}
+
+- (void)checkIfEncrypted:(NSTimer *)timer {
+    if (!shouldBeEncrypted) {
+        [self decryptText];
+    }
+    else {
+        [self encryptText];
     }
 }
 
@@ -154,18 +181,10 @@
     }
 }
 
-- (void)decryptButtonTapped {
-    if (!isEncrypted) {
-        isEncrypted = YES;
-//        [self changeTextEncryption];
-    }
-    else {
-        [enterPasswordAlert show];
-    }
-}
+
+#pragma mark - Encrypt/Decrypt
 
 - (void)changeTextEncryption {
-    
     if (!isBeingEdited) {
         if (isEncrypted) {
             [cryptButton setTitle:@"Encrypt" forState:UIControlStateNormal];
@@ -188,7 +207,6 @@
         _noteField.text = presentingViewController.currentNote.text;
         isEncrypted = NO;
     }
-   
 }
 
 - (void)encryptText {
@@ -201,6 +219,9 @@
     }
 }
 
+
+#pragma mark - Edit Notes
+
 - (void)cancel {
     shouldBeEncrypted = YES;
     [self encryptText];
@@ -208,53 +229,57 @@
     [presentingViewController dismissPresentedViewController];
 }
 
-- (void)edit {
+- (void)editTitle {
+    [self editStartingAtTitle:YES];
+}
+
+- (void)editText {
+    [self editStartingAtTitle:NO];
+}
+
+- (void)editStartingAtTitle: (BOOL)startAtTitle {
     if (!isEncrypted) {
         if (isBeingEdited) {
+            [self.videoCamera start];
             edit.title = @"Edit";
             back.title = @"Done";
             _titleField.userInteractionEnabled = NO;
             _noteField.userInteractionEnabled = NO;
             isBeingEdited = NO;
-            
-            presentingViewController.currentNote.title = _titleField.text;
-            presentingViewController.currentNote.text = _noteField.text;
+            [self save];
         }
         else {
+            [self.videoCamera stop];
             edit.title = @"Save";
             back.title = @"Cancel";
             _titleField.userInteractionEnabled = YES;
             _noteField.userInteractionEnabled = YES;
-            [_titleField becomeFirstResponder];
+            if (startAtTitle) [_titleField becomeFirstResponder];
+            else [_noteField becomeFirstResponder];
             isBeingEdited = YES;
         }
     }
 }
 
 - (void)save {
-    presentingViewController = (MFViewController *)self.presentingViewController;
-    MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
+
+    MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
     mfnote.title = _titleField.text;
     mfnote.text = _noteField.text;
+    
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
     
-    [[MFNotesModel sharedModel] addNote:mfnote];
+    shouldBeEncrypted = YES;
+    [self encryptText];
     [presentingViewController dismissPresentedViewController];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [self.videoCamera stop];
-}
 
 #pragma mark - Facial Recognition
-
 
 - (void)setupFacialRecognition {
     self.faceDetector = [[FaceDetector alloc] init];
@@ -392,6 +417,18 @@
     }
     
     [self.videoCamera start];
+}
+
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.videoCamera stop];
 }
 
 @end
