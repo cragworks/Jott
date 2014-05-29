@@ -19,7 +19,8 @@ enum {
 	kUsernameSection = 0,
 	kPasswordSection,
 	kShowCleartextSection,
-    faceRecognition
+    faceRecognition,
+    sensitivity
 };
 
 // Defined UI constants.
@@ -114,7 +115,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tv
 {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section

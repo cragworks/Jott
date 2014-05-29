@@ -46,10 +46,6 @@
     _root = [[MFViewController alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:_root];
-    navController.navigationBar.tintColor = [UIColor whiteColor];
-    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
-    navController.navigationBar.translucent = NO;
-    [navController.navigationBar setFrame:CGRectMake(0, 0, 320, 200)];
     
     SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:_menuViewController frontViewController:navController];
     revealViewController.delegate = self;
