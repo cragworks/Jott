@@ -17,6 +17,7 @@
 #import "SWRevealViewController.h"
 #import "MFInfoViewController.h"
 #import "MFUserSettingsViewController.h"
+#import "UIImage+ImageEffects.h"
 
 @interface MFViewController ()
 
@@ -32,6 +33,8 @@
 @implementation MFViewController {
     MFAddNoteViewController *anvc;
     MFAppDelegate *delegate;
+    UIImageView *cellBlur;
+    CGFloat scrollHeight;
 }
 
 - (void)viewDidLoad
@@ -41,20 +44,29 @@
 }
 
 - (void)initialSetup {
-    self.view.backgroundColor = [UIColor whiteColor];
+    
     NSShadow *shadow = [[NSShadow alloc] init];
+    
+    UIImage *blurBackground = [[UIImage imageNamed:@"bg10.jpg"] applyLightEffect];
+    blurBackground = [UIImage imageWithCGImage:[blurBackground CGImage]
+                        scale:(blurBackground.scale * 2.0)
+                  orientation:(blurBackground.imageOrientation)];
     
     self.navigationItem.title = @"Jott";
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
-    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+    self.navigationController.navigationBar.translucent = YES;
     [self.navigationController.navigationBar setFrame:CGRectMake(0, 0, 320, 200)];
     shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
     shadow.shadowOffset = CGSizeMake(0, 1);
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
                                                            shadow, NSShadowAttributeName,
-                                                           [UIFont fontWithName:@"HelveticaNeue" size:26.0], NSFontAttributeName, nil]];
+                                                           [UIFont fontWithName:@"HelveticaNeue" size:30.0], NSFontAttributeName, nil]];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
     
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
@@ -75,24 +87,20 @@
     [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
-    _tableView.rowHeight = 75.0;
-
-    [self.navigationItem.leftBarButtonItem setBackgroundVerticalPositionAdjustment:50 forBarMetrics:UIBarMetricsDefault];
-    self.navigationItem.leftBarButtonItem = revealButtonItem;
-    self.navigationItem.rightBarButtonItem = _addButton;
-    [self.view addSubview:_tableView];
-    
+    _tableView.rowHeight = 85.0;
+    _tableView.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
+    self.navigationItem.leftBarButtonItem = revealButtonItem;
+    self.navigationItem.rightBarButtonItem = _addButton;
+    [self.view addSubview:_tableView];
 }
 
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword; {
     for (MFNote *note in [[MFNotesModel sharedModel] notesList]) {
         note.text = [note.text AES256DecryptWithKey:oldPassword];
         note.text = [note.text AES256EncryptWithKey:newPassword];
-        note.title = [note.title AES256DecryptWithKey:oldPassword];
-        note.title = [note.title AES256EncryptWithKey:newPassword];
     }
     [self.tableView reloadData];
 }
@@ -102,7 +110,6 @@
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:anvc];
     [self presentViewController:navController animated:YES completion:nil];
 }
-
 
 #pragma mark - Present View Controllers
 
@@ -151,6 +158,21 @@
 
 #pragma mark - Table view data source
 
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    scrollHeight = scrollView.contentOffset.y;
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y > scrollHeight)
+    {
+        [scrollView setScrollEnabled:NO];
+        [scrollView setContentOffset:CGPointMake(0, scrollHeight)];
+    }
+    [scrollView setScrollEnabled:YES];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -190,6 +212,13 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
+    
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.15];
+    UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];
+    selectedView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    cell.selectedBackgroundView = selectedView;
     
     cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
     cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MFAddNoteViewController : UIViewController <UITextFieldDelegate>
+@interface MFAddNoteViewController : UIViewController <UITextViewDelegate, UITextFieldDelegate>
 
 @end

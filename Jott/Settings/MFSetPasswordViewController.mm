@@ -18,22 +18,17 @@
 
 @implementation MFSetPasswordViewController
 
-@synthesize textValue, editedFieldKey, textControl, keychainWrapper, confirmTextControl, setPassword;
+@synthesize textValue, editedFieldKey, textControl, keychainWrapper, confirmTextControl;
 
 - (void)viewDidLoad {
-   
-    self.view.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:255.0/255.0 alpha:1.0];
-    
-    (setPassword) ? [self passwordSetup] : [self userSetup];
-    
-    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
-    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(save)];
-    self.navigationItem.leftBarButtonItem = cancel;
-    self.navigationItem.rightBarButtonItem = save;
-    
+    [super viewDidLoad];
+    [self initislSetup];
 }
 
-- (void)passwordSetup {
+- (void)initislSetup {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
     UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 115, 200, 40)];
     [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]];
     [enterPasswordLabel setText:@"Enter New Password:"];
@@ -58,30 +53,15 @@
     confirmTextControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
     confirmTextControl.autocorrectionType = UITextAutocorrectionTypeNo;
     confirmTextControl.text = @"";
-    
+    UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
+    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(save)];
+   
+    self.navigationItem.leftBarButtonItem = cancel;
+    self.navigationItem.rightBarButtonItem = save;
     [self.view addSubview:textControl];
     [self.view addSubview:confirmTextControl];
     [self.view addSubview:enterPasswordLabel];
     [self.view addSubview:confirmPasswordLabel];
-}
-
-- (void)userSetup {
-    UILabel *enterUserLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 115, 200, 40)];
-    [enterUserLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]];
-    [enterUserLabel setText:@"Enter Username:"];
-    
-    textControl = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 150, 250, 40)];
-    [textControl setBackgroundColor:[UIColor whiteColor]];
-    [textControl setBorderStyle:UITextBorderStyleLine];
-    [textControl setTextAlignment:NSTextAlignmentCenter];
-    textControl.placeholder = nil;
-    textControl.delegate = self;
-    textControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    textControl.autocorrectionType = UITextAutocorrectionTypeNo;
-    textControl.secureTextEntry = NO;
-
-    [self.view addSubview:textControl];
-    [self.view addSubview:enterUserLabel];
 }
 
 - (void)awakeFromNib
@@ -108,19 +88,14 @@
 
 - (void)save
 {
-    if (setPassword) {
-        if (![[textControl text] isEqualToString:[confirmTextControl text]]) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Password Mismatch" message:@"Passwords do not match. Would you like to try again?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Retry", nil];
-            [alert show];
-            return;
-        }
-        if (![[textControl text] isEqualToString:@""]) {
-            MFViewController *viewController = [[MFViewController alloc]init];
-            [viewController changeEncryptionFromOldPassword:[keychainWrapper objectForKey:(__bridge id)(kSecValueData)] toNewPassword:[textControl text]];
-            [keychainWrapper setObject:[textControl text] forKey:editedFieldKey];
-        }
+    if (![[textControl text] isEqualToString:[confirmTextControl text]]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Password Mismatch" message:@"Passwords do not match. Would you like to try again?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Retry", nil];
+        [alert show];
+        return;
     }
-    else {
+    if (![[textControl text] isEqualToString:@""]) {
+        MFViewController *viewController = [[MFViewController alloc]init];
+        [viewController changeEncryptionFromOldPassword:[keychainWrapper objectForKey:(__bridge id)(kSecValueData)] toNewPassword:[textControl text]];
         [keychainWrapper setObject:[textControl text] forKey:editedFieldKey];
     }
     

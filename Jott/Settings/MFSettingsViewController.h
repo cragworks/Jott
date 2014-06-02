@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MFKeychainWrapper.h"
 #import "MFSetPasswordViewController.h"
+#import "MFSetUsernameViewController.h"
 
+@class MFSetUsernameViewController;
 @class MFSetPasswordViewController;
 @class MFKeychainWrapper;
 
@@ -22,7 +24,8 @@
 }
 
 @property (nonatomic, retain) UITableView *tableView;
-@property (nonatomic, retain) MFSetPasswordViewController *textFieldController;
+@property (nonatomic, retain) MFSetPasswordViewController *setPasswordViewController;
+@property (nonatomic, retain) MFSetUsernameViewController *setUsernameViewController;
 @property (nonatomic, retain) MFKeychainWrapper *passwordItem;
 
 + (NSString *)titleForSection:(NSInteger)section;

@@ -14,8 +14,8 @@
 
 @interface MFViewNoteViewController : UIViewController <UIAlertViewDelegate,CvVideoCameraDelegate>
 
-@property (nonatomic, strong) UITextField *titleField;
-@property (nonatomic, strong) UITextField *noteField;
+@property (nonatomic, strong) UITextField *titleView;
+@property (nonatomic, strong) UITextView *noteView;
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UILabel *instructionLabel;

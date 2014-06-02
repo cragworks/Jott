@@ -17,6 +17,7 @@
 #import "MFAppDelegate.h"
 #import "OpenCVData.h"
 #import "SWRevealViewController.h"
+#import "UIImage+ImageEffects.h"
 
 #define CAPTURE_FPS 30
 #define CONFIDENCE_THRESHHOLD 65
@@ -58,6 +59,16 @@
 }
 
 - (void)initialSetup {
+    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+    self.navigationController.navigationBar.translucent = YES;
+    
     
     MFAppDelegate *ad = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     presentingViewController = ad.root;
@@ -80,36 +91,40 @@
     wrongPasswordAlert.tag = 1;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = [UIColor whiteColor];
     
     back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
-    _titleField = [[UITextField alloc] initWithFrame:CGRectMake(10, 20, self.view.frame.size.width - 20, 50)];
-    _titleField.layer.borderWidth = 1.0;
-    _titleField.userInteractionEnabled = NO;
-    _titleField.text = presentingViewController.currentNote.title;
-    [_titleField addTarget:self action:@selector(editTitle) forControlEvents:UIControlEventTouchUpInside];
-    [_titleField becomeFirstResponder];
+    _titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
+    _titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    _titleView.layer.cornerRadius = 5.0;
+    _titleView.layer.borderWidth = 1.0;
+    _titleView.userInteractionEnabled = NO;
+    _titleView.textAlignment = NSTextAlignmentCenter;
+    _titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
+    _titleView.text = presentingViewController.currentNote.title;
     
-    _noteField = [[UITextField alloc] initWithFrame:CGRectMake(10, 75, self.view.frame.size.width - 20, 400)];
-    _noteField.userInteractionEnabled = NO;
-    _noteField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
-    [_noteField addTarget:self action:@selector(editText) forControlEvents:UIControlEventTouchUpInside];
-    _noteField.text = presentingViewController.currentNote.text;
+    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 128, self.view.frame.size.width - 20, 430)];
+    _noteView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    _noteView.layer.cornerRadius = 5.0;
+    _noteView.layer.borderWidth = 1.0;
+    _noteView.userInteractionEnabled = NO;
+    _noteView.text = presentingViewController.currentNote.text;
+    _noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
+    _noteView.alwaysBounceVertical = YES;
     
     timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 40, self.view.frame.size.height - 103, 30, 30);
+    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 40, self.view.frame.size.height - 43, 28, 28);
     UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
     [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
     [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didRecognizeTapGesture:)];
+    [self.view addGestureRecognizer:tapGesture];
     self.navigationItem.leftBarButtonItem = back;
     self.navigationItem.rightBarButtonItem = edit;
-    //self.navigationItem.titleView = cryptView;
-    [self.view addSubview:_titleField];
-    [self.view addSubview:_noteField];
+    [self.view addSubview:_titleView];
+    [self.view addSubview:_noteView];
     [self.view addSubview:timedDecryptButton];
     
     NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.25
@@ -121,6 +136,7 @@
     isEncrypted = YES;
     shouldBeEncrypted = YES;
     usingVision = YES;
+    
 }
 
 
@@ -201,26 +217,34 @@
 
 - (void)decryptText {
     if (isEncrypted) {
-        presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256DecryptWithKey:password];
         presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256DecryptWithKey:password];
-        _titleField.text = presentingViewController.currentNote.title;
-        _noteField.text = presentingViewController.currentNote.text;
+        _noteView.text = presentingViewController.currentNote.text;
         isEncrypted = NO;
     }
 }
 
 - (void)encryptText {
     if (!isEncrypted) {
-        presentingViewController.currentNote.title = [presentingViewController.currentNote.title AES256EncryptWithKey:password];
         presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256EncryptWithKey:password];
-        _titleField.text = presentingViewController.currentNote.title;
-        _noteField.text = presentingViewController.currentNote.text;
+        _noteView.text = presentingViewController.currentNote.text;
         isEncrypted = YES;
     }
 }
 
 
 #pragma mark - Edit Notes
+
+- (void)didRecognizeTapGesture:(UITapGestureRecognizer*)gesture
+{
+    CGPoint point = [gesture locationInView:gesture.view];
+
+    if (gesture.state == UIGestureRecognizerStateEnded)
+    {
+        
+        if (CGRectContainsPoint(_titleView.frame, point)) [self editTitle];
+        else if (CGRectContainsPoint(_noteView.frame, point)) [self editText];
+    }
+}
 
 - (void)cancel {
     shouldBeEncrypted = YES;
@@ -234,17 +258,19 @@
 }
 
 - (void)editText {
+    
     [self editStartingAtTitle:NO];
 }
 
 - (void)editStartingAtTitle: (BOOL)startAtTitle {
     if (!isEncrypted) {
-        if (isBeingEdited) {
+        if(isBeingEdited) {
             [self.videoCamera start];
             edit.title = @"Edit";
             back.title = @"Done";
-            _titleField.userInteractionEnabled = NO;
-            _noteField.userInteractionEnabled = NO;
+            _titleView.userInteractionEnabled = NO;
+            _noteView.userInteractionEnabled = NO;
+            [_noteView resignFirstResponder];
             isBeingEdited = NO;
             [self save];
         }
@@ -252,13 +278,25 @@
             [self.videoCamera stop];
             edit.title = @"Save";
             back.title = @"Cancel";
-            _titleField.userInteractionEnabled = YES;
-            _noteField.userInteractionEnabled = YES;
-            if (startAtTitle) [_titleField becomeFirstResponder];
-            else [_noteField becomeFirstResponder];
+            _titleView.userInteractionEnabled = YES;
+            _noteView.userInteractionEnabled = YES;
+            if (startAtTitle) [_titleView becomeFirstResponder];
+            else {
+                [_noteView becomeFirstResponder];
+                _noteView.frame = CGRectMake(10, 128, self.view.frame.size.width - 20, 220);
+                CGSize size = _noteView.contentSize;
+                size.width = size.width - 230;
+                [_noteView setContentSize:size];
+            }
             isBeingEdited = YES;
         }
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [_noteView becomeFirstResponder];
+    return NO;
 }
 
 - (void)save {
@@ -267,8 +305,8 @@
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
 
     MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
-    mfnote.title = _titleField.text;
-    mfnote.text = _noteField.text;
+    mfnote.title = _titleView.text;
+    mfnote.text = _noteView.text;
     
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
@@ -277,7 +315,6 @@
     [self encryptText];
     [presentingViewController dismissPresentedViewController];
 }
-
 
 #pragma mark - Facial Recognition
 
@@ -298,7 +335,7 @@
 - (void)setupCamera
 {
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, self.view.frame.size.height - 143, 75, 75)];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, self.view.frame.size.height - 90, 75, 75)];
     
     [self.imageView setUserInteractionEnabled:YES];
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraClicked)];

@@ -52,6 +52,7 @@
 
     self.viewController = revealViewController;
     self.window.rootViewController = self.viewController;
+    
     //[self.window setRootViewController:navController];
     
     self.window.backgroundColor = [UIColor whiteColor];

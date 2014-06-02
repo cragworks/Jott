@@ -28,7 +28,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 @implementation MFSettingsViewController
 
-@synthesize tableView, textFieldController, passwordItem;
+@synthesize tableView, passwordItem;
 
 - (void)viewDidLoad
 {
@@ -37,6 +37,9 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 }
 
 - (void) initialSetup {
+    _setUsernameViewController = [[MFSetUsernameViewController alloc] init];
+    _setPasswordViewController = [[MFSetPasswordViewController alloc] init];
+    
     self.title = @"Settings";
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -48,7 +51,8 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     tableView.scrollEnabled = NO;
     
     textFieldController = [[MFSetPasswordViewController alloc] init];
-
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
     [self.view addSubview:tableView];
     self.navigationItem.leftBarButtonItem = back;
 }
@@ -64,6 +68,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     {
         case kUsernameSection: return NSLocalizedString(@"Username", @"");
         case kPasswordSection: return NSLocalizedString(@"Password", @"");
+        case sensitivity: return NSLocalizedString(@"Recognition Sensitivity", @"");
     }
     return nil;
 }
@@ -131,7 +136,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-	return (section == 3) ? 60.0 : 0.0;;
+	return (section >= 3) ? 0.0 : 0.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -166,9 +171,10 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (UITableViewCell *)tableView:(UITableView *)aTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	static NSString *kUsernameCellIdentifier =  @"UsernameCell";
-	static NSString *kPasswordCellIdentifier =  @"PasswordCell";
-	static NSString *kSwitchCellIdentifier =    @"SwitchCell";
+	static NSString *kUsernameCellIdentifier =   @"UsernameCell";
+	static NSString *kPasswordCellIdentifier =   @"PasswordCell";
+	static NSString *kSwitchCellIdentifier =     @"SwitchCell";
+    static NSString *sensitivityCellIdentifier = @"Sensitivity";
 	
 	UITableViewCell *cell = nil;
 	
@@ -232,6 +238,23 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 			
 			break;
 		}
+        case sensitivity:
+		{
+			cell = [aTableView dequeueReusableCellWithIdentifier:kSwitchCellIdentifier];
+			if (cell == nil)
+			{
+				cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSwitchCellIdentifier];
+				
+				cell.textLabel.text = NSLocalizedString(@"Show Password", @"");
+				cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                
+				UISwitch *switchCtl = [[UISwitch alloc] initWithFrame:CGRectMake(240, 8, 94, 27)];
+				[switchCtl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+				[cell.contentView addSubview:switchCtl];
+			}
+			
+			break;
+		}
         default:
         {
             cell = [aTableView dequeueReusableCellWithIdentifier:kUsernameCellIdentifier];
@@ -248,29 +271,30 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (void)tableView:(UITableView *)aTableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (indexPath.section == kPasswordSection || indexPath.section == kUsernameSection)
+	if (indexPath.section == kPasswordSection)
 	{
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 		id secAttr = [MFSettingsViewController secAttrForSection:indexPath.section];
-		[textFieldController.textControl setPlaceholder:[MFSettingsViewController titleForSection:indexPath.section]];
-		[textFieldController.textControl setSecureTextEntry:(indexPath.section == kPasswordSection)];
-        textFieldController.keychainWrapper = passwordItem;
+		[_setPasswordViewController.textControl setPlaceholder:[MFSettingsViewController titleForSection:indexPath.section]];
+		[_setPasswordViewController.textControl setSecureTextEntry:(indexPath.section == kPasswordSection)];
+        _setPasswordViewController.keychainWrapper = passwordItem;
         
-		if (indexPath.section == kUsernameSection)  {
-            textFieldController.textValue = [textFieldController.keychainWrapper objectForKey:secAttr];
-            textFieldController.setPassword = NO;
-        }
-        else textFieldController.setPassword = YES;
-        
-		textFieldController.editedFieldKey = secAttr;
-		textFieldController.title = [MFSettingsViewController titleForSection:indexPath.section];
-        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
-        self.navigationController.navigationBar.translucent = NO;
+		_setPasswordViewController.editedFieldKey = secAttr;
+		_setPasswordViewController.title = [MFSettingsViewController titleForSection:indexPath.section];
 
-		[self.navigationController pushViewController:textFieldController animated:YES];
+		[self.navigationController pushViewController:_setPasswordViewController animated:YES];
 	}
+    else if (indexPath.section == kUsernameSection) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        id secAttr = [MFSettingsViewController secAttrForSection:indexPath.section];
+        _setUsernameViewController.textValue = [_setUsernameViewController.keychainWrapper objectForKey:secAttr];
+        _setUsernameViewController.textControl.text = secAttr;
+        
+        [self.navigationController pushViewController:_setUsernameViewController animated:YES];
+        
+    }
     else if (indexPath.section != kShowCleartextSection) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
         MFSetFaceViewController *setFaceViewController = [[MFSetFaceViewController alloc]init];
         [self.navigationController pushViewController:setFaceViewController animated:YES];
     }

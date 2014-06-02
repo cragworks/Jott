@@ -13,14 +13,15 @@
 #import "NSString+AESCrypt.h"
 #import "NSData+AESCrypt.h"
 #import "MFAppDelegate.h"
+#import "UIImage+ImageEffects.h"
 
 @interface MFAddNoteViewController ()
 
 @end
 
 @implementation MFAddNoteViewController {
-    UITextField *titleField;
-    UITextField *noteField;
+    UITextField *titleView;
+    UITextView *noteView;
     NSString *password;
     MFViewController *presentingViewController;
 }
@@ -41,33 +42,52 @@
 }
 
 - (void)initialSetup {
+    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+    self.navigationController.navigationBar.translucent = YES;
+    
     MFAppDelegate *appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     password = appDelegate.password;
     presentingViewController = appDelegate.root;
     
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = [UIColor whiteColor];
     
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
     
-    titleField = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
-    titleField.delegate = self;
-    titleField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
-    titleField.borderStyle = UITextBorderStyleBezel;
-    [titleField becomeFirstResponder];
+    titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
+    titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    titleView.layer.cornerRadius = 5.0;
+    titleView.delegate = self;
+    titleView.layer.borderWidth = 1.0;
+    titleView.textAlignment = NSTextAlignmentCenter;
+    titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
+    [titleView becomeFirstResponder];
     
-    noteField = [[UITextField alloc] initWithFrame:CGRectMake(10, 125, self.view.frame.size.width - 20, 400)];
-    noteField.delegate = self;
-    noteField.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:250.0/255.0 blue:240.0/255.0 alpha:1.0];
-    noteField.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
-    noteField.borderStyle = UITextBorderStyleBezel;
+    noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 125, self.view.frame.size.width - 20, 400)];
+    noteView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    noteView.layer.cornerRadius = 5.0;
+    noteView.delegate = self;
+    noteView.layer.borderWidth = 1.0;
+    noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     
     
     self.navigationItem.leftBarButtonItem = cancel;
     self.navigationItem.rightBarButtonItem = save;
-    [self.view addSubview:titleField];
-    [self.view addSubview:noteField];
+    [self.view addSubview:titleView];
+    [self.view addSubview:noteView];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [noteView becomeFirstResponder];
+    return NO;
 }
 
 - (void) cancelNote {
@@ -76,10 +96,9 @@
 
 - (void) saveNote {
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
-    mfnote.title = titleField.text;
-    mfnote.text = noteField.text;
-    mfnote.title = [self encryptText:titleField.text];
-    mfnote.text = [self encryptText:noteField.text];
+    mfnote.title = titleView.text;
+    mfnote.text = noteView.text;
+    mfnote.text = [self encryptText:noteView.text];
     mfnote.isEncrypted = YES;
 
     NSError *error = nil;
@@ -100,11 +119,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-}
-
--(BOOL) textFieldShouldReturn: (UITextField *) textField {
-    [textField resignFirstResponder];
-    return YES;
 }
 
 

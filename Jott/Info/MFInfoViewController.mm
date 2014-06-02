@@ -42,7 +42,8 @@
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
+
     [self addChildViewController:self.pageController];
     [self.view addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
