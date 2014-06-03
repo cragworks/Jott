@@ -12,7 +12,6 @@
 
 @dynamic title;
 @dynamic text;
-@dynamic canView;
 @dynamic isEncrypted;
 
 @end

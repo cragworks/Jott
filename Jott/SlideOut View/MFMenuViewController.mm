@@ -37,21 +37,28 @@
     MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     MFViewController *main = appDelegate.root;
 
+    UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    homeButton.frame = CGRectMake(18, 115, 30, 30);
+    [homeButton setImage:[UIImage imageNamed:@"home-white-128.png"] forState:UIControlStateNormal];
+    [homeButton setImage:[UIImage imageNamed:@"home-blue-128.png"] forState:UIControlStateSelected];
+    [homeButton addTarget:main action:@selector(presentHomeViewController) forControlEvents:UIControlEventTouchUpInside];
+    
     UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    settingsButton.frame = CGRectMake(18, 150, 30, 30);
+    settingsButton.frame = CGRectMake(18, 215, 30, 30);
     [settingsButton setImage:[UIImage imageNamed:@"settings-white-128.png"] forState:UIControlStateNormal];
     [settingsButton addTarget:main action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
 
     UIButton *userSetingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    userSetingsButton.frame = CGRectMake(18, 250, 30, 30);
+    userSetingsButton.frame = CGRectMake(18, 315, 30, 30);
     [userSetingsButton setImage:[UIImage imageNamed:@"user_male2-white-128.png"] forState:UIControlStateNormal];
     [userSetingsButton addTarget:main action:@selector(presentUserSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    infoButton.frame = CGRectMake(18, 350, 30, 30);
+    infoButton.frame = CGRectMake(18, 415, 30, 30);
     [infoButton setImage:[UIImage imageNamed:@"info-white-128.png"] forState:UIControlStateNormal];
     [infoButton addTarget:main action:@selector(presentInfoViewController) forControlEvents:UIControlEventTouchUpInside];
 
+    [self.view addSubview:homeButton];
     [self.view addSubview:infoButton];
     [self.view addSubview:userSetingsButton];
     [self.view addSubview:settingsButton];

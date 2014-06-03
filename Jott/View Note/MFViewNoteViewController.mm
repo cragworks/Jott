@@ -36,6 +36,7 @@
     UIAlertView *wrongPasswordAlert;
     NSString *password;
     UIButton *timedDecryptButton;
+    NSInteger confidenceThreshhold;
 }
 @end
 
@@ -69,6 +70,9 @@
     self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
     self.navigationController.navigationBar.translucent = YES;
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    confidenceThreshhold = [defaults integerForKey:@"sensitivity"];
+    NSLog(@"%d",confidenceThreshhold);
     
     MFAppDelegate *ad = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     presentingViewController = ad.root;
@@ -395,9 +399,9 @@
             [confidenceFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
             confidenceFormatter.maximumFractionDigits = 2;
             
-            confidence = [NSString stringWithFormat:@"Confidence: %@",
-                          [confidenceFormatter stringFromNumber:[match objectForKey:@"confidence"]]];
-            if ([confidence doubleValue] < CONFIDENCE_THRESHHOLD) {
+            float confidence = [[match objectForKey:@"confidence"] floatValue];
+            
+            if (confidence  < confidenceThreshhold) {
                 shouldBeEncrypted = NO;
             }
             else {

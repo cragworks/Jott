@@ -28,7 +28,6 @@
 		45215EB8192EF46800739DCB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EB7192EF46800739DCB /* CoreVideo.framework */; };
 		45215EBA192EF47300739DCB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EB9192EF47300739DCB /* QuartzCore.framework */; };
 		45215EBC192EF48B00739DCB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EBB192EF48B00739DCB /* libsqlite3.dylib */; };
-		454685D81936E8FB00F666BF /* MFUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454685D71936E8FB00F666BF /* MFUserViewController.m */; };
 		454685DB1936EB0300F666BF /* MFInfoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 454685DA1936EB0300F666BF /* MFInfoViewController.mm */; };
 		454685DE1936EBF900F666BF /* MFInfoChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454685DD1936EBF900F666BF /* MFInfoChildViewController.m */; };
 		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
@@ -57,6 +56,9 @@
 		4598B81B1938E77D00BFF319 /* bg10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4598B8181938E77D00BFF319 /* bg10.jpg */; };
 		4598B81D1938E93600BFF319 /* bg11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4598B81C1938E93600BFF319 /* bg11.jpg */; };
 		4598B81F1938EACD00BFF319 /* bg12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4598B81E1938EACD00BFF319 /* bg12.jpg */; };
+		4598B821193CF13000BFF319 /* bga.png in Resources */ = {isa = PBXBuildFile; fileRef = 4598B820193CF13000BFF319 /* bga.png */; };
+		4598B823193D577C00BFF319 /* home-white-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 4598B822193D577C00BFF319 /* home-white-128.png */; };
+		4598B825193D594700BFF319 /* home-blue-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 4598B824193D594700BFF319 /* home-blue-128.png */; };
 		459B7AEC193630F200CB8444 /* stopwatch-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 459B7AEB193630F200CB8444 /* stopwatch-32.png */; };
 		459B7AEE1936386F00CB8444 /* close-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 459B7AED1936386F00CB8444 /* close-32.png */; };
 		45A5818A1936605B00589231 /* plus-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 45A581891936605B00589231 /* plus-25.png */; };
@@ -121,8 +123,6 @@
 		45215EB7192EF46800739DCB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		45215EB9192EF47300739DCB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		45215EBB192EF48B00739DCB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		454685D61936E8FB00F666BF /* MFUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFUserViewController.h; path = Settings/MFUserViewController.h; sourceTree = "<group>"; };
-		454685D71936E8FB00F666BF /* MFUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFUserViewController.m; path = Settings/MFUserViewController.m; sourceTree = "<group>"; };
 		454685D91936EB0300F666BF /* MFInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFInfoViewController.h; path = Info/MFInfoViewController.h; sourceTree = "<group>"; };
 		454685DA1936EB0300F666BF /* MFInfoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFInfoViewController.mm; path = Info/MFInfoViewController.mm; sourceTree = "<group>"; };
 		454685DC1936EBF900F666BF /* MFInfoChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFInfoChildViewController.h; path = Info/MFInfoChildViewController.h; sourceTree = "<group>"; };
@@ -163,6 +163,9 @@
 		4598B8181938E77D00BFF319 /* bg10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg10.jpg; sourceTree = "<group>"; };
 		4598B81C1938E93600BFF319 /* bg11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg11.jpg; sourceTree = "<group>"; };
 		4598B81E1938EACD00BFF319 /* bg12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg12.jpg; sourceTree = "<group>"; };
+		4598B820193CF13000BFF319 /* bga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bga.png; path = backgrounds/bga.png; sourceTree = "<group>"; };
+		4598B822193D577C00BFF319 /* home-white-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-white-128.png"; sourceTree = "<group>"; };
+		4598B824193D594700BFF319 /* home-blue-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-blue-128.png"; sourceTree = "<group>"; };
 		459B7AEB193630F200CB8444 /* stopwatch-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatch-32.png"; sourceTree = "<group>"; };
 		459B7AED1936386F00CB8444 /* close-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-32.png"; sourceTree = "<group>"; };
 		45A581891936605B00589231 /* plus-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-25.png"; sourceTree = "<group>"; };
@@ -344,6 +347,9 @@
 		4504A015192673D200994960 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4598B824193D594700BFF319 /* home-blue-128.png */,
+				4598B822193D577C00BFF319 /* home-white-128.png */,
+				4598B820193CF13000BFF319 /* bga.png */,
 				4598B8071938CDF000BFF319 /* backgrounds */,
 				4598B8051938CBF800BFF319 /* cellBlur.png */,
 				45FAACE71936D2A300513053 /* info-white-128.png */,
@@ -482,8 +488,6 @@
 			children = (
 				45A784C51932F44400E8A34C /* MFSettingsViewController.h */,
 				45A784C61932F44400E8A34C /* MFSettingsViewController.mm */,
-				454685D61936E8FB00F666BF /* MFUserViewController.h */,
-				454685D71936E8FB00F666BF /* MFUserViewController.m */,
 				45A784C31932F44400E8A34C /* MFSetPasswordViewController.h */,
 				45A784C41932F44400E8A34C /* MFSetPasswordViewController.mm */,
 				4598B7FE19381E9500BFF319 /* MFSetUsernameViewController.h */,
@@ -592,6 +596,8 @@
 				45DB7838193664F600C78C47 /* menu.png in Resources */,
 				4598B80E1938D41B00BFF319 /* bg3.jpg in Resources */,
 				4598B81B1938E77D00BFF319 /* bg10.jpg in Resources */,
+				4598B821193CF13000BFF319 /* bga.png in Resources */,
+				4598B823193D577C00BFF319 /* home-white-128.png in Resources */,
 				459B7AEE1936386F00CB8444 /* close-32.png in Resources */,
 				4504A017192673D200994960 /* plus-50.png in Resources */,
 				45A5818C1936607300589231 /* plus-32.png in Resources */,
@@ -616,6 +622,7 @@
 				4598B80F1938D41B00BFF319 /* bg4.jpg in Resources */,
 				45FAACE81936D2A300513053 /* info-white-128.png in Resources */,
 				4598B81A1938E77D00BFF319 /* bg9.jpg in Resources */,
+				4598B825193D594700BFF319 /* home-blue-128.png in Resources */,
 				45EDE95E19343D1A00624202 /* switch_camera-50.png in Resources */,
 				4598B8061938CBF800BFF319 /* cellBlur.png in Resources */,
 				4598B8151938DC7B00BFF319 /* bg7.jpg in Resources */,
@@ -649,7 +656,6 @@
 				45A784C81932F44400E8A34C /* MFSettingsViewController.mm in Sources */,
 				45F292B919379F0100CA208E /* MFUserSettingsViewController.mm in Sources */,
 				45049FE619266F7C00994960 /* main.mm in Sources */,
-				454685D81936E8FB00F666BF /* MFUserViewController.m in Sources */,
 				4598B7F31937E7CE00BFF319 /* CustomFaceRecognizer.mm in Sources */,
 				45A784BF1932F40700E8A34C /* MFNotesModel.m in Sources */,
 				4598B7FA1937E7F400BFF319 /* OpenCVData.mm in Sources */,

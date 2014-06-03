@@ -11,6 +11,7 @@
 #import "MFKeychainWrapper.h"
 #import "MFViewController.h"
 #import "MFAppDelegate.h"
+#import "MFNotesModel.h"
 
 @interface MFSetPasswordViewController ()
 
@@ -22,12 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initislSetup];
+    [self initialSetup];
 }
 
-- (void)initislSetup {
+- (void)initialSetup {
     self.view.backgroundColor = [UIColor whiteColor];
-    
     
     UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 115, 200, 40)];
     [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]];
@@ -88,6 +88,9 @@
 
 - (void)save
 {
+    
+    /*   If problems saving, use [keychainWrapper resetKeychainItem] to erase all entries in keychain   */
+    
     if (![[textControl text] isEqualToString:[confirmTextControl text]]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Password Mismatch" message:@"Passwords do not match. Would you like to try again?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Retry", nil];
         [alert show];
@@ -95,7 +98,7 @@
     }
     if (![[textControl text] isEqualToString:@""]) {
         MFViewController *viewController = [[MFViewController alloc]init];
-        [viewController changeEncryptionFromOldPassword:[keychainWrapper objectForKey:(__bridge id)(kSecValueData)] toNewPassword:[textControl text]];
+        [viewController changeEncryptionFromOldPassword:[keychainWrapper objectForKey:editedFieldKey] toNewPassword:[textControl text]];
         [keychainWrapper setObject:[textControl text] forKey:editedFieldKey];
     }
     

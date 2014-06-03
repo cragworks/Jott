@@ -74,7 +74,7 @@
 
 - (void)save
 {
-    [keychainWrapper setObject:[textControl text] forKey:editedFieldKey];
+    [keychainWrapper setObject:[textControl text] forKey:(__bridge id)kSecAttrAccount];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

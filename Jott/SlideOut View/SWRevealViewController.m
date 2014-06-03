@@ -369,6 +369,13 @@ static CGFloat scaledValue( CGFloat v1, CGFloat min2, CGFloat max2, CGFloat min1
     void (^_completion)(void);
 }
 
+////////////////////////////////////////////////////
+- (UIView *)viewForKey:(NSString *)key {
+    
+    UIView *view;
+    return view;
+}
+////////////////////////////////////////////////////
 
 - (id)initWithRevealController:(SWRevealViewController*)revealVC containerView:(UIView*)view fromVC:(UIViewController*)fromVC
     toVC:(UIViewController*)toVC completion:(void (^)(void))completion
@@ -576,8 +583,8 @@ const int FrontViewPositionNone = 0xff;
     _rightViewRevealWidth = 260.0f;
     _rightViewRevealOverdraw = 60.0f;
     _rightViewRevealDisplacement = 40.0f;
-    _bounceBackOnOverdraw = YES;
-    _bounceBackOnLeftOverdraw = YES;
+    _bounceBackOnOverdraw = NO;
+    _bounceBackOnLeftOverdraw = NO;
     _stableDragOnOverdraw = NO;
     _stableDragOnLeftOverdraw = NO;
     _presentFrontViewHierarchically = NO;

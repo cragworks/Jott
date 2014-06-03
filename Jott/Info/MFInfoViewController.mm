@@ -28,30 +28,31 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor whiteColor];
-    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(close)];
+    [self initialSetup];
     
+}
+
+- (void)initialSetup {    
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
     self.pageController.view.frame = self.view.bounds;
     
     MFInfoChildViewController *initialViewController = [self viewControllerAtIndex:0];
+    initialViewController.view.backgroundColor = [UIColor grayColor];
     
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
-
+    
     [self addChildViewController:self.pageController];
     [self.view addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
-    self.navigationItem.leftBarButtonItem = closeButton;
-    
 }
 
-- (void)initialSetup {
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 }
 
 - (void)close {

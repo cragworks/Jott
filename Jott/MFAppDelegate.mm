@@ -13,6 +13,9 @@
 #import "MFSettingsViewController.h"
 #import "MFViewNoteViewController.h"
 #import "MFMenuViewController.h"
+#import "MFNote.h"
+#import "MFNotesModel.h"
+#import "NSString+AESCrypt.h"
 #import <CoreData/CoreData.h>
 #import <QuartzCore/QuartzCore.h>
 
@@ -91,8 +94,24 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
 }
 
+
+- (void) encryptAllNotes {
+    for (MFNote *note in [[MFNotesModel sharedModel] notesList]) {
+        if (!note.isEncrypted) {
+            note.text = [note.text AES256EncryptWithKey:_password];
+            NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+            [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:[self managedObjectContext]]];
+            [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",note.text]];
+            
+            MFNote *mfnote = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:nil] lastObject];
+            mfnote.text = note.text;
+            note.isEncrypted = YES;
+        }
+    }
+}
 
 - (void)saveContext
 {

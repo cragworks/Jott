@@ -21,6 +21,7 @@
 
 - (void)addNote;
 - (void)dismissPresentedViewController;
+- (void)presentHomeViewController;
 - (void)presentSettingsViewController;
 - (void)presentInfoViewController;
 - (void)presentUserSettingsViewController;

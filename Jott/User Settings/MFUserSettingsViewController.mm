@@ -32,12 +32,11 @@
 
 - (void)initialSetup {
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    UIBarButtonItem *closeButton = [[UIBarButtonItem alloc]initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(close)];
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+}
 
-    self.navigationItem.leftBarButtonItem = closeButton;
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
-
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 }
 
 - (void)didReceiveMemoryWarning
