@@ -254,7 +254,7 @@
     shouldBeEncrypted = YES;
     [self encryptText];
     presentingViewController.currentNote.isEncrypted = YES;
-    [presentingViewController dismissPresentedViewController];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)editTitle {

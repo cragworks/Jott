@@ -50,7 +50,7 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 150, 50, 300, 400)];
+    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 150, 90, 300, 400)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -60,10 +60,15 @@
     self.videoCamera.grayscaleMode = NO;
     self.videoCamera.imageHeight = 300;
     self.videoCamera.imageWidth = 300;
+
+    _picsLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 500, 250, 50)];
+    _picsLabel.text = @"10 more pictures remaining.";
+    _picsLabel.textAlignment = NSTextAlignmentCenter;
     
     self.numPicsTaken = 0;
     [self.videoCamera start];
     
+    [self.view addSubview:_picsLabel];
     [self.view addSubview:self.previewImage];
 
 }
@@ -87,6 +92,9 @@
     };
     
     self.numPicsTaken++;
+    NSLog(@"%@",_picsLabel.text);
+    [_picsLabel setText:[NSString stringWithFormat:@"%d more pictures remaining.", 10 - _numPicsTaken]];
+    [_picsLabel setNeedsDisplay];
     
     dispatch_sync(dispatch_get_main_queue(), ^{
         [self highlightFace:[OpenCVData faceToCGRect:faces[0]]];

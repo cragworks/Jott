@@ -158,13 +158,16 @@
 }
 
 - (void)presentViewNoteViewController {
-    MFViewNoteViewController *viewNoteController = [[MFViewNoteViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
-    navController.navigationBar.tintColor = [UIColor whiteColor];
-    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
-    navController.navigationBar.translucent = NO;
-    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [self presentViewController:navController animated:YES completion:nil];
+    MFViewNoteViewController *vnc = [[MFViewNoteViewController alloc] init];
+    [self.navigationController pushViewController:vnc animated:YES];
+
+    
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
+//    navController.navigationBar.tintColor = [UIColor whiteColor];
+//    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
+//    navController.navigationBar.translucent = NO;
+//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)dismissPresentedViewController {

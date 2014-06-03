@@ -32,14 +32,14 @@
     
 }
 
-- (void)initialSetup {    
+- (void)initialSetup {
+    
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
     self.pageController.view.frame = self.view.bounds;
     
     MFInfoChildViewController *initialViewController = [self viewControllerAtIndex:0];
-    initialViewController.view.backgroundColor = [UIColor grayColor];
     
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
