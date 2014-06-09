@@ -316,15 +316,15 @@
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
 
+    shouldBeEncrypted = YES;
+    [self encryptText];
+    
     MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
     mfnote.title = _titleView.text;
     mfnote.text = _noteView.text;
     
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
-    
-    shouldBeEncrypted = YES;
-    [self encryptText];
     
     [presentingViewController dismissPresentedViewController];
 }
