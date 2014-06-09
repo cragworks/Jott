@@ -323,7 +323,10 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
-    
+
+    shouldBeEncrypted = YES;
+    [self encryptText];
+
     MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
     //NSLog(@"Before: %@",mfnote.text);
     mfnote.title = _titleView.text;
@@ -334,8 +337,11 @@
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
     
+<<<<<<< HEAD
     [self encryptText];
     shouldBeEncrypted = YES;
+=======
+>>>>>>> FETCH_HEAD
     [presentingViewController dismissPresentedViewController];
     
 }
