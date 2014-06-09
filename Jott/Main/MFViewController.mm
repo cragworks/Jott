@@ -18,6 +18,7 @@
 #import "MFInfoViewController.h"
 #import "MFUserSettingsViewController.h"
 #import "UIImage+ImageEffects.h"
+#import "JCRBlurView.h"
 
 @interface MFViewController ()
 
@@ -36,7 +37,8 @@
     UIImageView *cellBlur;
     CGFloat scrollHeight;
     SWRevealViewController *revealController;
-    UIImage *blurBackground;
+    UIImage *navBarBackground;
+    UIImage *listBackground;
 }
 
 - (void)viewDidLoad
@@ -51,23 +53,24 @@
     if ([defaults boolForKey:@"firstTime"] != NO) {
         [defaults setBool:NO forKey:@"firstTime"];
         [defaults setInteger:100 forKey:@"sensitivity"];
+        [self presentFirstTimeView];
     }
     
+    //listBackground = [UIImage imageNamed:@"bg6.jpg"];
+    listBackground = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
+    listBackground = [UIImage imageWithCGImage:[listBackground CGImage]
+                        scale:(listBackground.scale * 2.0)
+                  orientation:(listBackground.imageOrientation)];
     
-    blurBackground = [[UIImage imageNamed:@"bg10.jpg"] applyLightEffect];
-    blurBackground = [UIImage imageWithCGImage:[blurBackground CGImage]
-                        scale:(blurBackground.scale * 2.0)
-                  orientation:(blurBackground.imageOrientation)];
-    
-    self.navigationItem.title = @"Jott";
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-    self.navigationController.navigationBar.translucent = YES;
+    navBarBackground = [UIImage imageNamed:@"2-.png"];
+    navBarBackground = [UIImage imageWithCGImage:[navBarBackground CGImage]
+                                         scale:(navBarBackground.scale * 2.5)
+                                   orientation:(navBarBackground.imageOrientation)];
+
     [self.navigationController.navigationBar setFrame:CGRectMake(0, 0, 320, 100)];
     
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-4 forBarMetrics:UIBarMetricsDefault];
     
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
@@ -87,9 +90,11 @@
     NSArray *notes = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
     [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
     
+//    JCRBlurView *blur = [JCRBlurView new];
+//    _tableView.backgroundView = blur;
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     _tableView.rowHeight = 84.5;
-    _tableView.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
+    _tableView.backgroundColor = [UIColor colorWithPatternImage:listBackground];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
@@ -100,14 +105,28 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    [revealController panGestureRecognizer].enabled = YES;
+    
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    if ([defaults boolForKey:@"firstTime"] == NO) {
+//        [self presentFirstTimeView];
+//    }
+    
+    self.navigationItem.title = @"Jott";
+    [self.navigationController.navigationBar setBackgroundImage:navBarBackground
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
     
     NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowColor = [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:0.5];
     shadow.shadowOffset = CGSizeMake(0, 1);
     [self.navigationController.navigationBar setTitleTextAttributes:@{
-                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],
-                                                                      NSShadowAttributeName : shadow,
+                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                                      // [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],
+                                                                       NSShadowAttributeName : shadow,
                                                                       NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:30.0]
                                                                       }];
 }
@@ -138,8 +157,6 @@
 - (void)presentSettingsViewController {
     MFSettingsViewController *svc = [delegate settingsViewController];
     [svc.tableView setScrollEnabled:NO];
-
-    svc.navigationController.navigationBar.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
     
     [self.navigationController pushViewController:svc animated:YES];
     [revealController revealToggle:self];
@@ -152,6 +169,7 @@
 }
 
 - (void)presentInfoViewController {
+    [revealController panGestureRecognizer].enabled = NO;
     MFInfoViewController *ivc = [[MFInfoViewController alloc] init];
     [self.navigationController pushViewController:ivc animated:YES];
     [revealController revealToggle:self];
@@ -160,20 +178,72 @@
 - (void)presentViewNoteViewController {
     MFViewNoteViewController *vnc = [[MFViewNoteViewController alloc] init];
     [self.navigationController pushViewController:vnc animated:YES];
-
-    
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewNoteController];
-//    navController.navigationBar.tintColor = [UIColor whiteColor];
-//    navController.navigationBar.barTintColor = [UIColor colorWithRed:5.0/255.0 green:155.0/255.0 blue:250.0/255.0 alpha:1.0];
-//    navController.navigationBar.translucent = NO;
-//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)dismissPresentedViewController {
-    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController.presentedViewController dismissViewControllerAnimated:YES completion:nil];
     [self.tableView reloadData];
 }
+
+- (void)presentFirstTimeView {
+    
+    UIView *firstTimeView = [[UIView alloc] initWithFrame:CGRectMake(35, self.view.frame.size.height + 100, self.view.frame.size.width - 70, 130)];
+    firstTimeView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.95];
+    JCRBlurView *blur = [JCRBlurView new];
+    [firstTimeView addSubview:blur];
+    
+    
+    UIButton *setupButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    setupButton.frame = CGRectMake(30, 240, 200, 50);
+    setupButton.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
+    [setupButton setTitle:@"Setup Profile" forState:UIControlStateNormal];
+    [setupButton addTarget:self action:@selector(setupButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 25, 250, 50)];
+    welcomeLabel.text = @"Welcome to Jott!\n\n";
+    welcomeLabel.backgroundColor = [UIColor clearColor];
+    welcomeLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:22.0];
+    welcomeLabel.textAlignment = NSTextAlignmentCenter;
+    
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 85, 245, 350)];
+    textView.backgroundColor = [UIColor clearColor];
+    textView.text = @"It looks this is your first time. \n Before you can add any notes, you will need to set up your profile.\n\n Tap the button below to get started.";
+    textView.font = [UIFont fontWithName:@"Helvetica Neue" size:15.0];
+    textView.textAlignment = NSTextAlignmentCenter;
+    
+    [firstTimeView addSubview:welcomeLabel];
+    [firstTimeView addSubview:textView];
+    [firstTimeView addSubview:setupButton];
+    [self.navigationController.view addSubview:firstTimeView];
+
+    [UIView animateWithDuration:0.4
+                          delay: 4.0
+                        options: UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         firstTimeView.frame = CGRectMake(30, 150, self.view.frame.size.width - 60, 310);
+                     }
+                     completion:nil];
+
+}
+
+- (void)setupButtonTapped:(id)sender {
+    UIView *view = (UIView *)[sender superview];
+    
+    [UIView animateWithDuration:0.4
+                          delay: 0.0
+                        options: UIViewAnimationOptionCurveEaseOut
+                     animations:^{
+                         view.frame = CGRectMake(30, self.view.frame.size.height +150, self.view.frame.size.width - 60, self.view.frame.size.height - 150);
+                     }
+                     completion:^(BOOL finished) {
+                         MFSettingsViewController *svc = [delegate settingsViewController];
+                         [svc.tableView setScrollEnabled:NO];
+                         
+                         [self.navigationController pushViewController:svc animated:YES];
+                         [view removeFromSuperview];
+                     }];
+}
+
 
 #pragma mark - Table view data source
 
@@ -245,9 +315,20 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor colorWithRed:60.0/255.0 green:125.0/255.0 blue:125.0/255.0 alpha:1.0];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];
+    cell.detailTextLabel.textColor = [UIColor blackColor];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:14.0];
+    
+//    JCRBlurView *blurView = [JCRBlurView new];
+//    blurView.frame = cell.frame;
+//    cell.backgroundView = blurView;
+//   [cell.backgroundView addSubview:blurView];
+    //cell.backgroundColor = [UIColor clearColor];
+    
+    
     cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.15];
+    
     UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];
     selectedView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
     cell.selectedBackgroundView = selectedView;

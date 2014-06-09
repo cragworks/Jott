@@ -37,6 +37,7 @@
     NSString *password;
     UIButton *timedDecryptButton;
     NSInteger confidenceThreshhold;
+    dispatch_queue_t cameraQueue;
 }
 @end
 
@@ -60,19 +61,23 @@
 }
 
 - (void)initialSetup {
-    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
     
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-    self.navigationController.navigationBar.translucent = YES;
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidEnterBackground:)
+                                                 name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+    
+    UIImage *background = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
+    background = [UIImage imageWithCGImage:[background CGImage]
+                                         scale:(background.scale * 1.0)
+                                   orientation:(background.imageOrientation)];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:background];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     confidenceThreshhold = [defaults integerForKey:@"sensitivity"];
-    NSLog(@"%d",confidenceThreshhold);
     
     MFAppDelegate *ad = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     presentingViewController = ad.root;
@@ -99,26 +104,29 @@
     back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
-    _titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
-    _titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    _titleView.layer.cornerRadius = 5.0;
-    _titleView.layer.borderWidth = 1.0;
+    //self.navigationItem.title = presentingViewController.currentNote.title;
+    
+    _titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 50)];
+    _titleView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.1];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+//    _titleView.layer.cornerRadius = 5.0;
+//    _titleView.layer.borderWidth = 1.0;
     _titleView.userInteractionEnabled = NO;
     _titleView.textAlignment = NSTextAlignmentCenter;
     _titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
     _titleView.text = presentingViewController.currentNote.title;
     
-    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 128, self.view.frame.size.width - 20, 430)];
-    _noteView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    _noteView.layer.cornerRadius = 5.0;
-    _noteView.layer.borderWidth = 1.0;
-    _noteView.userInteractionEnabled = NO;
+    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 350)];
+    _noteView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.1];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+//    _noteView.layer.cornerRadius = 5.0;
+//    _noteView.layer.borderWidth = 1.0;
+    _noteView.editable = NO;
+    //    _noteView.userInteractionEnabled = NO;
     _noteView.text = presentingViewController.currentNote.text;
     _noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     _noteView.alwaysBounceVertical = YES;
     
     timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 40, self.view.frame.size.height - 43, 28, 28);
+    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 30, self.view.frame.size.height - 3, 28, 28);
     UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
     [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
     [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
@@ -136,6 +144,8 @@
                                                                    selector:@selector(checkIfEncrypted:)
                                                                    userInfo: nil repeats:YES];
     [self checkIfEncrypted:encryptionCheckTimer];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+
     
     isEncrypted = YES;
     shouldBeEncrypted = YES;
@@ -151,17 +161,16 @@
     if (usingVision) {
         totalSeconds = 10;
         [timedDecryptButton setImage:[UIImage imageNamed:@"close-32.png"] forState:UIControlStateNormal];
-        [self.videoCamera stop];
+        [self stopCamera];
         [self.imageView setHidden:YES];
         usingVision = NO;
         [self timedDecrypt:decryptTimer];
     }
     else {
+        [self startCamera];
         [self encryptText];
-        [self.videoCamera start];
         [self.imageView setHidden:NO];
-
-        usingVision = YES;
+        //usingVision = YES;
         [timedDecryptButton setImage:[UIImage imageNamed:@"stopwatch-32.png"] forState:UIControlStateNormal];
     }
 }
@@ -269,30 +278,25 @@
 - (void)editStartingAtTitle: (BOOL)startAtTitle {
     if (!isEncrypted) {
         if(isBeingEdited) {
-            [self.videoCamera start];
+            [self startCamera];
             edit.title = @"Edit";
             back.title = @"Done";
             _titleView.userInteractionEnabled = NO;
-            _noteView.userInteractionEnabled = NO;
+            _noteView.editable = NO;
             [_noteView resignFirstResponder];
             isBeingEdited = NO;
             [self save];
         }
         else {
-            [self.videoCamera stop];
+            [self stopCamera];
             edit.title = @"Save";
             back.title = @"Cancel";
             _titleView.userInteractionEnabled = YES;
-            _noteView.userInteractionEnabled = YES;
+            _noteView.editable = YES;
             if (startAtTitle) [_titleView becomeFirstResponder];
-            else {
-                [_noteView becomeFirstResponder];
-                _noteView.frame = CGRectMake(10, 128, self.view.frame.size.width - 20, 220);
-                CGSize size = _noteView.contentSize;
-                size.width = size.width - 230;
-                [_noteView setContentSize:size];
-            }
+            else [_noteView becomeFirstResponder];
             isBeingEdited = YES;
+            //[self save];
         }
     }
 }
@@ -301,6 +305,10 @@
     [textField resignFirstResponder];
     [_noteView becomeFirstResponder];
     return NO;
+}
+
+- (void)keyboardWillHide:(id)sender {
+    _noteView.frame = CGRectMake(10, 70, self.view.frame.size.width - 20, 350);
 }
 
 - (void)save {
@@ -323,24 +331,27 @@
 #pragma mark - Facial Recognition
 
 - (void)setupFacialRecognition {
+    _frameNum = 0;
+    _totalConfidence = 0.0;
+    
     self.faceDetector = [[FaceDetector alloc] init];
     self.faceRecognizer = [[CustomFaceRecognizer alloc] initWithLBPHFaceRecognizer];
     [self setupCamera];
     
-    self.modelAvailable = [self.faceRecognizer trainModel];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.modelAvailable = [self.faceRecognizer trainModel];
+        });
+    });
     
-    if (!self.modelAvailable) {
-        self.instructionLabel.text = @"Add people in the database first";
-    }
-    
-    [self.videoCamera start];
+    [self startCamera];
 }
 
 - (void)setupCamera
 {
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(15, self.view.frame.size.height - 90, 75, 75)];
-    
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 142, 75, 75)];
+
     [self.imageView setUserInteractionEnabled:YES];
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraClicked)];
     [self.imageView addGestureRecognizer:singleTap];
@@ -357,6 +368,7 @@
     self.videoCamera.grayscaleMode = NO;
     
     [self.view addSubview:self.imageView];
+    [self.view bringSubviewToFront:self.imageView];
 }
 
 - (void)processImage:(cv::Mat&)image
@@ -386,7 +398,6 @@
     
     CGColor *highlightColor = [[UIColor redColor] CGColor];
     NSString *message = @"No match found";
-    NSString *confidence = @"";
     
     if (self.modelAvailable) {
         NSDictionary *match = [self.faceRecognizer recognizeFace:face inImage:image];
@@ -400,9 +411,16 @@
             confidenceFormatter.maximumFractionDigits = 2;
             
             float confidence = [[match objectForKey:@"confidence"] floatValue];
+            NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
             
-            if (confidence  < confidenceThreshhold) {
+            if (confidence  < confidenceThreshhold || (confidence - confidenceThreshhold) < 3) {
                 shouldBeEncrypted = NO;
+                
+                _numPics++;
+                _totalConfidence += confidence;
+                _averageConfidence = _totalConfidence/_numPics;
+                
+//                NSLog(@"Average = %f",_averageConfidence);
             }
             else {
                 shouldBeEncrypted = YES;
@@ -412,8 +430,6 @@
     }
     
     dispatch_sync(dispatch_get_main_queue(), ^{
-        self.instructionLabel.text = message;
-        self.confidenceLabel.text = confidence;
         [self highlightFace:[OpenCVData faceToCGRect:face] withColor:highlightColor];
     });
 }
@@ -422,8 +438,6 @@
 {
     shouldBeEncrypted = YES;
     dispatch_sync(dispatch_get_main_queue(), ^{
-        self.instructionLabel.text = @"No face in image";
-        self.confidenceLabel.text = @"";
         self.featureLayer.hidden = YES;
     });
 }
@@ -449,7 +463,7 @@
 }
 
 - (void)switchCameraClicked {
-    [self.videoCamera stop];
+    [self stopCamera];
     
     if (self.videoCamera.defaultAVCaptureDevicePosition == AVCaptureDevicePositionFront) {
         self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
@@ -457,10 +471,60 @@
         self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     }
     
-    [self.videoCamera start];
+    [self startCamera];
 }
 
+- (void)adjustThreshold {
+    if (abs(confidenceThreshhold - _averageConfidence) > 10) {
+        _averageConfidence += 5;
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setInteger:(NSUInteger)_averageConfidence forKey:@"sensitivity"];
+        NSLog(@"1: Reset Threshold to: %d",(NSUInteger)_averageConfidence);
+    }
+    else if ((confidenceThreshhold - _averageConfidence) > 5) {
+        confidenceThreshhold += 5;
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
+        NSLog(@"2: Reset Threshold to: %d",(NSUInteger)confidenceThreshhold);
+    }
+    else if (confidenceThreshhold < _averageConfidence) {
+        confidenceThreshhold = _averageConfidence + 5;
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
+        NSLog(@"3: Reset Threshold to: %d",(NSUInteger)confidenceThreshhold);
 
+    }
+}
+
+- (void)startCamera {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.videoCamera start];
+        });
+    });
+}
+
+- (void)stopCamera {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.videoCamera stop];
+        });
+    });
+}
+
+- (void)applicationDidEnterBackground:(NSNotification *)notification
+{
+    // Your server calls
+    NSLog(@"applicationDidEnterBackground - start");
+    [self stopCamera];
+}
+
+- (void)applicationDidBecomeActive:(NSNotification *)notification
+{
+    // Your server calls
+    NSLog(@"applicationDidBecomeActive - start");
+    [self startCamera];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -469,6 +533,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    if (_numPics) [self adjustThreshold];
     [self.videoCamera stop];
 }
 

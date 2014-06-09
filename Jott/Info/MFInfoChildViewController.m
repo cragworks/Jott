@@ -29,7 +29,7 @@
         
     _screenNumber = [[UILabel alloc]initWithFrame:CGRectMake(120, 200, 200, 50)];
     _screenNumber.text = [NSString stringWithFormat:@"Screen #%d", self.index];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor clearColor];
     
     [self.view addSubview:_screenNumber];
 }

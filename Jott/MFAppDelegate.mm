@@ -19,12 +19,16 @@
 #import <CoreData/CoreData.h>
 #import <QuartzCore/QuartzCore.h>
 
-@implementation MFAppDelegate
+@implementation MFAppDelegate {
+    UIView *launchAnimationView;
+    UIImageView *jImageView;
+}
 
 @synthesize passwordItem, accountNumberItem, settingsViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     _wrapper = [[MFKeychainWrapper alloc] initWithIdentifier:@"Password" accessGroup:nil];
 	self.passwordItem = _wrapper;
     
@@ -49,6 +53,7 @@
     _root = [[MFViewController alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:_root];
+    //[[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-4 forBarMetrics:UIBarMetricsDefault];
     
     SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:_menuViewController frontViewController:navController];
     revealViewController.delegate = self;
@@ -56,19 +61,128 @@
     self.viewController = revealViewController;
     self.window.rootViewController = self.viewController;
     
-    //[self.window setRootViewController:navController];
-    
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
     [self.window.layer setCornerRadius:5.0];
     [self.window.layer setMasksToBounds:YES];
     self.window.layer.opaque = NO;
     [self.window.layer setShouldRasterize:YES];
     [self.window.layer setRasterizationScale:[UIScreen mainScreen].scale];
+    
+    [self.window makeKeyAndVisible];
+    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 
+    if (orientation == UIInterfaceOrientationPortrait) {
+        [self launchAnimationPortrait];
+    }
+    else if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
+        [self launchAnimationLandscape];
+    }
+    
+    
     return YES;
 }
-							
+
+- (void)launchAnimationPortrait {
+    launchAnimationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width,  self.window.frame.size.height)];
+    launchAnimationView.backgroundColor = [UIColor whiteColor];
+    
+    jImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jImage.png"]];
+    jImageView.frame = CGRectMake(222, 257, 55, 55);
+    [launchAnimationView addSubview:jImageView];
+    
+    UIImageView *ottImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ottImage.png"]];
+    ottImage.frame = CGRectMake(133, 259, 100, 50);
+    [launchAnimationView addSubview:ottImage];
+    ottImage.alpha = 0.0;
+    
+    for(int i = 0; i < 17; i++) {
+        [self rotateImage];
+    }
+    [UIView animateWithDuration:3.0
+                          delay: 0.0
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
+                         jImageView.frame = CGRectMake(95, 257, 55, 55);
+                     }
+                     completion:nil];
+    
+    [UIView animateWithDuration:1.0
+                          delay: 1.95
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         ottImage.alpha = 1.0;
+                     }
+                     completion:nil];
+    
+    ottImage.alpha = 1.0;
+    [self performSelector:@selector(animationDidFinish) withObject:nil afterDelay:3.0];
+    [self.window addSubview:launchAnimationView];
+}
+
+- (void)launchAnimationLandscape {
+    launchAnimationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width,  self.window.frame.size.height)];
+    launchAnimationView.backgroundColor = [UIColor whiteColor];
+    
+    jImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jImage.png"]];
+    jImageView.frame = CGRectMake(112, 77, 95, 95);
+    [launchAnimationView addSubview:jImageView];
+    jImageView.transform = CGAffineTransformRotate(jImageView.transform, -M_PI_2);
+    
+    UIImageView *ottImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ottImage.png"]];
+    ottImage.frame = CGRectMake(60, 205, 200, 100);
+    [launchAnimationView addSubview:ottImage];
+    ottImage.transform = CGAffineTransformRotate(ottImage.transform, -M_PI_2);
+    ottImage.alpha = 0.0;
+    
+    for(int i = 0; i < 13; i++) {
+        [self rotateImage];
+    }
+    [UIView animateWithDuration:3.0
+                          delay: 0.0
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
+                         jImageView.frame = CGRectMake(113, 325, 95, 95);
+                     }
+                     completion:nil];
+    
+    [UIView animateWithDuration:1.0
+                          delay: 1.95
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         ottImage.alpha = 1.0;
+                     }
+                     completion:nil];
+ 
+    ottImage.alpha = 1.0;
+    [self performSelector:@selector(animationDidFinish) withObject:nil afterDelay:3.0];
+    [self.window addSubview:launchAnimationView];
+}
+
+- (void)rotateImage {
+    [UIView animateWithDuration:2.0
+                          delay: 0.0
+                        options: UIViewAnimationCurveEaseOut
+                     animations:^{
+                         jImageView.transform = CGAffineTransformRotate(jImageView.transform, -M_PI_2);
+                     }
+                     completion:nil];
+}
+
+- (void)animationDidFinish {
+    [UIView animateWithDuration:0.25
+                          delay: 0.75
+                        options: UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         launchAnimationView.alpha = 0.0;
+                     }
+                     completion: ^(BOOL finished){
+                         [launchAnimationView removeFromSuperview];
+                     }];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -77,8 +191,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [self encryptCurrentNote];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -93,10 +206,22 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    
+    [self encryptCurrentNote];
 }
 
+- (void) encryptCurrentNote {
+    if (!_root.currentNote.isEncrypted) {
+        _root.currentNote.text = [_root.currentNote.text AES256EncryptWithKey:_password];
+    
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:[self managedObjectContext]]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",_root.currentNote.text]];
+        
+        MFNote *mfnote = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:nil] lastObject];
+        mfnote.text = _root.currentNote.text;
+        _root.currentNote.isEncrypted = YES;
+    }
+}
 
 - (void) encryptAllNotes {
     for (MFNote *note in [[MFNotesModel sharedModel] notesList]) {

@@ -56,17 +56,21 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     
-    NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
-    shadow.shadowOffset = CGSizeMake(0, 1);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [self calibrateSlider:[defaults integerForKey:@"sensitivity"]];
     
-    [self.navigationController.navigationBar setTitleTextAttributes:@{
-                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:1.0],
-                                                                      //NSShadowAttributeName : shadow,
-                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:22.0]
-                                                                      }];
+//    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+//
+//    NSShadow *shadow = [[NSShadow alloc] init];
+//    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+//    shadow.shadowOffset = CGSizeMake(0, 1);
+//    
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{
+//                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:1.0],
+//                                                                      //NSShadowAttributeName : shadow,
+//                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:22.0]
+//                                                                      }];
     
     [tableView reloadData];
 }
@@ -255,19 +259,16 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 
 				cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:sensitivityCellIdentifier];
                 
-				UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-125, cell.frame.size.height/2-10, 250, 20)];
-                [slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+				_slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-125, cell.frame.size.height/2-10, 250, 20)];
+                [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
                 
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                float val = (float)[defaults integerForKey:@"sensitivity"];
-                
-                slider.minimumValue = 50;
-                slider.maximumValue = 150;
-                [slider setValue:val];
+                int val = [defaults integerForKey:@"sensitivity"];
+                [self calibrateSlider:val];
 
 				cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
-                [cell.contentView addSubview:slider];
+                [cell.contentView addSubview:_slider];
 			}
 			
 			break;
@@ -306,7 +307,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
         [_setUsernameViewController.textControl setPlaceholder:[MFSettingsViewController titleForSection:indexPath.section]];
         _setUsernameViewController.keychainWrapper = passwordItem;
         _setUsernameViewController.editedFieldKey = secAttr;
-       // _setUsernameViewController.textControl.text = secAttr;
         
         [self.navigationController pushViewController:_setUsernameViewController animated:YES];
     }
@@ -328,7 +328,20 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setInteger:val forKey:@"sensitivity"];
-    [defaults synchronize];
+}
+
+- (void)calibrateSlider:(int)val {
+ 
+    int max = (val + 10) + 5;
+    if (max > 100) max = 100;
+    
+    int min = (val + 10) - 5;
+    if (max < 60) max = 60;
+    
+    _slider.minimumValue = min;
+    _slider.maximumValue = max;
+    [_slider setValue:val];
+    
 }
 
 @end

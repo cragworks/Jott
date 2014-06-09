@@ -22,10 +22,9 @@
 @property (nonatomic, strong) CALayer *featureLayer;
 @property (nonatomic) NSInteger frameNum;
 @property (nonatomic) NSInteger numPicsTaken;
+@property (nonatomic) float totalConfidence;
 @property (nonatomic, retain) UILabel *picsLabel;
 
 - (void)switchCameraButtonClicked;
-
-
 
 @end

@@ -27,6 +27,8 @@
 @property (nonatomic, retain) MFSetPasswordViewController *setPasswordViewController;
 @property (nonatomic, retain) MFSetUsernameViewController *setUsernameViewController;
 @property (nonatomic, retain) MFKeychainWrapper *passwordItem;
+@property (nonatomic, retain) UISlider *slider;
+@property (nonatomic, assign) BOOL firstTime;
 
 + (NSString *)titleForSection:(NSInteger)section;
 + (id)secAttrForSection:(NSInteger)section;

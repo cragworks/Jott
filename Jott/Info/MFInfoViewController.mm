@@ -33,6 +33,10 @@
 }
 
 - (void)initialSetup {
+    UIImage *background = [UIImage imageNamed:@"bgz.jpg"];
+    background = [UIImage imageWithCGImage:[background CGImage]
+                                         scale:(background.scale * 3.0)
+                                   orientation:(background.imageOrientation)];
     
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
@@ -45,6 +49,7 @@
     
     [self.pageController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:background];
     [self addChildViewController:self.pageController];
     [self.view addSubview:[self.pageController view]];
     [self.pageController didMoveToParentViewController:self];
@@ -52,7 +57,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)close {

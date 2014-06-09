@@ -36,7 +36,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    //self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 }
 
 - (void)didReceiveMemoryWarning

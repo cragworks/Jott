@@ -18,13 +18,16 @@
 @property (nonatomic, strong) UITextView *noteView;
 
 @property (nonatomic, strong) UIImageView *imageView;
-@property (nonatomic, strong) UILabel *instructionLabel;
-@property (nonatomic, strong) UILabel *confidenceLabel;
 @property (nonatomic, strong) FaceDetector *faceDetector;
 @property (nonatomic, strong) CustomFaceRecognizer *faceRecognizer;
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (nonatomic, strong) CALayer *featureLayer;
 @property (nonatomic) NSInteger frameNum;
+
+@property (nonatomic) float totalConfidence;
+@property (nonatomic) float averageConfidence;
+@property (nonatomic) int numPics;
+
 @property (nonatomic) BOOL modelAvailable;
 
 - (void)changeTextEncryption;

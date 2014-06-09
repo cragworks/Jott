@@ -50,7 +50,7 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 150, 90, 300, 400)];
+    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, 400)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -61,11 +61,13 @@
     self.videoCamera.imageHeight = 300;
     self.videoCamera.imageWidth = 300;
 
-    _picsLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 500, 250, 50)];
+    _picsLabel = [[UILabel alloc] init];
+    _picsLabel.frame = CGRectMake(self.view.frame.size.width/2 - 125, 530, 250, 50);
     _picsLabel.text = @"10 more pictures remaining.";
     _picsLabel.textAlignment = NSTextAlignmentCenter;
     
     self.numPicsTaken = 0;
+    self.totalConfidence = 0;
     [self.videoCamera start];
     
     [self.view addSubview:_picsLabel];
@@ -90,30 +92,22 @@
     if (![self learnFace:faces forImage:image]) {
         return;
     };
-    
     self.numPicsTaken++;
-    NSLog(@"%@",_picsLabel.text);
-    [_picsLabel setText:[NSString stringWithFormat:@"%d more pictures remaining.", 10 - _numPicsTaken]];
-    [_picsLabel setNeedsDisplay];
     
     dispatch_sync(dispatch_get_main_queue(), ^{
+        [_picsLabel setText:[NSString stringWithFormat:@"%d more pictures remaining.", 10 - _numPicsTaken]];
         [self highlightFace:[OpenCVData faceToCGRect:faces[0]]];
         
         if (self.numPicsTaken == 10) {
             self.featureLayer.hidden = YES;
             [self.videoCamera stop];
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done"
-                                                            message:@"10 pictures have been taken."
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
             [self.navigationController popViewControllerAnimated:YES];
         }
-        
     });
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:100 forKey:@"sensitivity"];
+    [defaults synchronize];
 }
 
 - (bool)learnFace:(const std::vector<cv::Rect> &)faces forImage:(cv::Mat&)image
@@ -123,12 +117,8 @@
         return NO;
     }
     
-    // We only care about the first face
-    cv::Rect face = faces[0];
-    
-    // Learn it
+    cv::Rect face = faces[0]; 
     [self.faceRecognizer learnFace:face ofPersonID:[self.personID intValue] fromImage:image];
-    
     
     return YES;
 }
@@ -171,8 +161,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
 
 @end
