@@ -18,6 +18,7 @@
 @property (nonatomic, strong) MFNote *currentNote;
 @property (nonatomic, strong) UIBarButtonItem *addButton;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, assign) BOOL currentlyViewingNote;
 
 - (void)addNote;
 - (void)dismissPresentedViewController;

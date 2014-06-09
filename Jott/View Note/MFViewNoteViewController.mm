@@ -37,7 +37,6 @@
     NSString *password;
     UIButton *timedDecryptButton;
     NSInteger confidenceThreshhold;
-    dispatch_queue_t cameraQueue;
 }
 @end
 
@@ -244,6 +243,14 @@
     }
 }
 
+- (NSString *)encryptText:(NSString *)text {
+    MFAppDelegate *ad = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+    MFKeychainWrapper *wrapper = ad.wrapper;
+    NSString *encryptedText = [text AES256EncryptWithKey:[wrapper objectForKey:(__bridge id)(kSecValueData)]];
+    
+    return encryptedText;
+}
+
 
 #pragma mark - Edit Notes
 
@@ -271,7 +278,6 @@
 }
 
 - (void)editText {
-    
     [self editStartingAtTitle:NO];
 }
 
@@ -281,7 +287,7 @@
             [self startCamera];
             edit.title = @"Edit";
             back.title = @"Done";
-            _titleView.userInteractionEnabled = NO;
+            _titleView.userInteractionEnabled = NO;   //////////////////
             _noteView.editable = NO;
             [_noteView resignFirstResponder];
             isBeingEdited = NO;
@@ -296,7 +302,6 @@
             if (startAtTitle) [_titleView becomeFirstResponder];
             else [_noteView becomeFirstResponder];
             isBeingEdited = YES;
-            //[self save];
         }
     }
 }
@@ -312,20 +317,26 @@
 }
 
 - (void)save {
+    
+//    [self encryptText];
+    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
-
+    
     MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
+    //NSLog(@"Before: %@",mfnote.text);
     mfnote.title = _titleView.text;
     mfnote.text = _noteView.text;
+    
+    //NSLog(@"After: %@",mfnote.text);
     
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
     
     shouldBeEncrypted = YES;
-    [self encryptText];
     [presentingViewController dismissPresentedViewController];
+    
 }
 
 #pragma mark - Facial Recognition
@@ -353,7 +364,7 @@
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 142, 75, 75)];
 
     [self.imageView setUserInteractionEnabled:YES];
-    UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraClicked)];
+    UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraTapped)];
     [self.imageView addGestureRecognizer:singleTap];
     
     self.imageView.layer.masksToBounds = YES;
@@ -368,7 +379,6 @@
     self.videoCamera.grayscaleMode = NO;
     
     [self.view addSubview:self.imageView];
-    [self.view bringSubviewToFront:self.imageView];
 }
 
 - (void)processImage:(cv::Mat&)image
@@ -411,7 +421,7 @@
             confidenceFormatter.maximumFractionDigits = 2;
             
             float confidence = [[match objectForKey:@"confidence"] floatValue];
-            NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
+            //NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
             
             if (confidence  < confidenceThreshhold || (confidence - confidenceThreshhold) < 3) {
                 shouldBeEncrypted = NO;
@@ -462,13 +472,32 @@
     self.featureLayer.frame = faceRect;
 }
 
-- (void)switchCameraClicked {
+- (void)switchCameraTapped {
     [self stopCamera];
     
     if (self.videoCamera.defaultAVCaptureDevicePosition == AVCaptureDevicePositionFront) {
+        [UIView transitionWithView:self.imageView
+                          duration:0.3
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        animations:^(void){
+                            [self.imageView removeFromSuperview];
+                            [self.view addSubview:self.imageView];
+                        }
+                        completion:nil];
         self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
+
+        
     } else {
+        [UIView transitionWithView:self.imageView
+                          duration:0.3
+                           options:UIViewAnimationOptionTransitionFlipFromRight
+                        animations:^(void){
+                            [self.imageView removeFromSuperview];
+                            [self.view addSubview:self.imageView];
+                        }
+                        completion:nil];
         self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
+
     }
     
     [self startCamera];
@@ -535,6 +564,25 @@
 {
     if (_numPics) [self adjustThreshold];
     [self.videoCamera stop];
+    [self saveOnClose];
+    
+}
+
+- (void) saveOnClose {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+
+    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
+    
+    MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];    mfnote.title = _titleView.text;
+    mfnote.text = [self encryptText:_noteView.text];
+    mfnote.isEncrypted = YES;
+    
+    NSError *error = nil;
+    [presentingViewController.managedObjectContext save:&error];
+    
+    [[MFNotesModel sharedModel] addNote:mfnote];
+    [presentingViewController dismissPresentedViewController];
 }
 
 @end
