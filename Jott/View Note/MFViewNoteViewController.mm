@@ -334,6 +334,7 @@
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
     
+    [self encryptText];
     shouldBeEncrypted = YES;
     [presentingViewController dismissPresentedViewController];
     
@@ -564,25 +565,25 @@
 {
     if (_numPics) [self adjustThreshold];
     [self.videoCamera stop];
-    [self saveOnClose];
+//    [self saveOnClose];
     
 }
-
-- (void) saveOnClose {
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-
-    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
-    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
-    
-    MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];    mfnote.title = _titleView.text;
-    mfnote.text = [self encryptText:_noteView.text];
-    mfnote.isEncrypted = YES;
-    
-    NSError *error = nil;
-    [presentingViewController.managedObjectContext save:&error];
-    
-    [[MFNotesModel sharedModel] addNote:mfnote];
-    [presentingViewController dismissPresentedViewController];
-}
+//
+//- (void) saveOnClose {
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//
+//    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
+//    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
+//    
+//    MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];    mfnote.title = _titleView.text;
+//    mfnote.text = [self encryptText:_noteView.text];
+//    mfnote.isEncrypted = YES;
+//    
+//    NSError *error = nil;
+//    [presentingViewController.managedObjectContext save:&error];
+//    
+//    [[MFNotesModel sharedModel] addNote:mfnote];
+//    [presentingViewController dismissPresentedViewController];
+//}
 
 @end
