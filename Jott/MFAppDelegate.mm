@@ -191,7 +191,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [self encryptCurrentNote];
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -206,7 +206,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [self encryptCurrentNote];
+
 }
 
 - (void) encryptCurrentNote {

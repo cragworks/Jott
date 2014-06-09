@@ -106,6 +106,9 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    _currentlyViewingNote = NO;
+    
+    [self.tableView reloadData];
     [revealController panGestureRecognizer].enabled = YES;
     
 //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -288,6 +291,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    _currentlyViewingNote = YES;
     _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row];
     [self presentViewNoteViewController];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -319,14 +323,6 @@
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];
     cell.detailTextLabel.textColor = [UIColor blackColor];
     cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:14.0];
-    
-//    JCRBlurView *blurView = [JCRBlurView new];
-//    blurView.frame = cell.frame;
-//    cell.backgroundView = blurView;
-//   [cell.backgroundView addSubview:blurView];
-    //cell.backgroundColor = [UIColor clearColor];
-    
-    
     cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.15];
     
     UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];

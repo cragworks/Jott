@@ -97,7 +97,6 @@
 - (void) saveNote {
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
     mfnote.title = titleView.text;
-    mfnote.text = noteView.text;
     mfnote.text = [self encryptText:noteView.text];
     mfnote.isEncrypted = YES;
 
