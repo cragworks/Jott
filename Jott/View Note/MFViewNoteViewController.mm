@@ -318,30 +318,20 @@
 
 - (void)save {
     
-//    [self encryptText];
-    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
-
-    shouldBeEncrypted = YES;
-    [self encryptText];
-
+    
     MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];
-    //NSLog(@"Before: %@",mfnote.text);
     mfnote.title = _titleView.text;
     mfnote.text = _noteView.text;
     
-    //NSLog(@"After: %@",mfnote.text);
+    [self encryptText];
     
     NSError *error = nil;
-    [presentingViewController.managedObjectContext save:&error];
     
-<<<<<<< HEAD
-    [self encryptText];
+    [presentingViewController.managedObjectContext save:&error];
     shouldBeEncrypted = YES;
-=======
->>>>>>> FETCH_HEAD
     [presentingViewController dismissPresentedViewController];
     
 }
@@ -571,25 +561,6 @@
 {
     if (_numPics) [self adjustThreshold];
     [self.videoCamera stop];
-//    [self saveOnClose];
-    
 }
-//
-//- (void) saveOnClose {
-//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-//
-//    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext]];
-//    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"text=%@",presentingViewController.currentNote.text]];
-//    
-//    MFNote *mfnote = [[presentingViewController.managedObjectContext executeFetchRequest:fetchRequest error:nil] lastObject];    mfnote.title = _titleView.text;
-//    mfnote.text = [self encryptText:_noteView.text];
-//    mfnote.isEncrypted = YES;
-//    
-//    NSError *error = nil;
-//    [presentingViewController.managedObjectContext save:&error];
-//    
-//    [[MFNotesModel sharedModel] addNote:mfnote];
-//    [presentingViewController dismissPresentedViewController];
-//}
 
 @end
