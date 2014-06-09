@@ -320,11 +320,11 @@
     mfnote.title = _titleView.text;
     mfnote.text = _noteView.text;
     
-    shouldBeEncrypted = YES;
-    [self encryptText];
-    
     NSError *error = nil;
     [presentingViewController.managedObjectContext save:&error];
+    
+    shouldBeEncrypted = YES;
+    [self encryptText];
     
     [presentingViewController dismissPresentedViewController];
 }
