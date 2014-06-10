@@ -10,7 +10,7 @@
 #import "FaceDetector.h"
 #import "CustomFaceRecognizer.h"
 
-@interface MFSetFaceViewController : UIViewController <CvVideoCameraDelegate>
+@interface MFSetFaceViewController : UIViewController <CvVideoCameraDelegate, UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIButton *switchCameraButton;
 @property (nonatomic, strong) UIImageView *previewImage;
@@ -24,6 +24,7 @@
 @property (nonatomic) int numPicsTaken;
 @property (nonatomic) float totalConfidence;
 @property (nonatomic, retain) UILabel *picsLabel;
+@property (nonatomic, strong) UITextField *nameInput;
 
 - (void)switchCameraButtonClicked;
 

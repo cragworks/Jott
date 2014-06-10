@@ -27,5 +27,6 @@
 - (void)learnFace:(cv::Rect)face ofPersonID:(int)personID fromImage:(cv::Mat&)image;
 - (cv::Mat)pullStandardizedFace:(cv::Rect)face fromImage:(cv::Mat&)image;
 - (NSDictionary *)recognizeFace:(cv::Rect)face inImage:(cv::Mat&)image;
+- (void)removePersonForName:(NSString *)name;
 
 @end

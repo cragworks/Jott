@@ -418,7 +418,7 @@
             confidenceFormatter.maximumFractionDigits = 2;
             
             float confidence = [[match objectForKey:@"confidence"] floatValue];
-            //NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
+            NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
             
             if (confidence  < confidenceThreshhold || (confidence - confidenceThreshhold) < 3) {
                 shouldBeEncrypted = NO;
@@ -505,20 +505,19 @@
         _averageConfidence += 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)_averageConfidence forKey:@"sensitivity"];
-        NSLog(@"1: Reset Threshold to: %lu",(unsigned long)_averageConfidence);
+//        NSLog(@"1: Reset Threshold to: %lu",(unsigned long)_averageConfidence);
     }
     else if ((confidenceThreshhold - _averageConfidence) > 5) {
         confidenceThreshhold += 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
-        NSLog(@"2: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
+//        NSLog(@"2: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
     }
     else if (confidenceThreshhold < _averageConfidence) {
         confidenceThreshhold = _averageConfidence + 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
-        NSLog(@"3: Reset Threshold to: %lu",(unsigned long)
-              confidenceThreshhold);
+//        NSLog(@"3: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
 
     }
 }
@@ -541,15 +540,11 @@
 
 - (void)applicationDidEnterBackground:(NSNotification *)notification
 {
-    // Your server calls
-    NSLog(@"applicationDidEnterBackground - start");
     [self stopCamera];
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)notification
 {
-    // Your server calls
-    NSLog(@"applicationDidBecomeActive - start");
     [self startCamera];
 }
 

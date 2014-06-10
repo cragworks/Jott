@@ -13,6 +13,7 @@
 #import "MFSetPasswordViewController.h"
 #import "MFViewController.h"
 #import "MFSetFaceViewController.h"
+#import "MFFacesListTableViewController.h"
 #import "MFAppDelegate.h"
 
 enum {
@@ -316,8 +317,9 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     }
     else if (indexPath.section == faceRecognitionSection) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        MFSetFaceViewController *setFaceViewController = [[MFSetFaceViewController alloc]init];
-        [self.navigationController pushViewController:setFaceViewController animated:YES];
+        MFFacesListTableViewController *facesList = [[MFFacesListTableViewController alloc] init];
+        //MFSetFaceViewController *setFaceViewController = [[MFSetFaceViewController alloc]init];
+        [self.navigationController pushViewController:facesList animated:YES];
     }
 }
 

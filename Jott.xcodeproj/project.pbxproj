@@ -31,6 +31,7 @@
 		454685DB1936EB0300F666BF /* MFInfoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 454685DA1936EB0300F666BF /* MFInfoViewController.mm */; };
 		454685DE1936EBF900F666BF /* MFInfoChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454685DD1936EBF900F666BF /* MFInfoChildViewController.m */; };
 		457483651946581000BB4BDE /* launchImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 457483641946581000BB4BDE /* launchImage2.png */; };
+		457A9367194761780056CFFE /* MFFacesListTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 457A9366194761780056CFFE /* MFFacesListTableViewController.mm */; };
 		458DCC0E1944E080006E4E99 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 458DCC0D1944E080006E4E99 /* Default-Landscape.png */; };
 		458DCC101944E887006E4E99 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 458DCC0F1944E887006E4E99 /* Default-Portrait.png */; };
 		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
@@ -146,6 +147,8 @@
 		454685DC1936EBF900F666BF /* MFInfoChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFInfoChildViewController.h; path = Info/MFInfoChildViewController.h; sourceTree = "<group>"; };
 		454685DD1936EBF900F666BF /* MFInfoChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFInfoChildViewController.m; path = Info/MFInfoChildViewController.m; sourceTree = "<group>"; };
 		457483641946581000BB4BDE /* launchImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage2.png; sourceTree = "<group>"; };
+		457A9365194761780056CFFE /* MFFacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFFacesListTableViewController.h; path = "Facial Recognition/ViewControllers/MFFacesListTableViewController.h"; sourceTree = "<group>"; };
+		457A9366194761780056CFFE /* MFFacesListTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFFacesListTableViewController.mm; path = "Facial Recognition/ViewControllers/MFFacesListTableViewController.mm"; sourceTree = "<group>"; };
 		458DCC0D1944E080006E4E99 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		458DCC0F1944E887006E4E99 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		458F5DCE192CF9E600E905A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -502,6 +505,8 @@
 				4598B7F01937E7CE00BFF319 /* FaceDetector.mm */,
 				4598B7F11937E7CE00BFF319 /* MFSetFaceViewController.h */,
 				4598B7F21937E7CE00BFF319 /* MFSetFaceViewController.mm */,
+				457A9365194761780056CFFE /* MFFacesListTableViewController.h */,
+				457A9366194761780056CFFE /* MFFacesListTableViewController.mm */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 				4598B8041938CA9D00BFF319 /* UIImage+ImageEffects.m in Sources */,
 				45A784D11932F4A600E8A34C /* MFViewNoteViewController.mm in Sources */,
 				454685DE1936EBF900F666BF /* MFInfoChildViewController.m in Sources */,
+				457A9367194761780056CFFE /* MFFacesListTableViewController.mm in Sources */,
 				45A784C81932F44400E8A34C /* MFSettingsViewController.mm in Sources */,
 				45F292B919379F0100CA208E /* MFUserSettingsViewController.mm in Sources */,
 				45049FE619266F7C00994960 /* main.mm in Sources */,

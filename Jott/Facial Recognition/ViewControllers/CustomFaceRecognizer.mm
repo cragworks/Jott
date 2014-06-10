@@ -9,7 +9,7 @@
 #import "CustomFaceRecognizer.h"
 #import "OpenCVData.h"
 #import <opencv2/imgproc/imgproc_c.h>
-
+#include <stdio.h>
 
 @implementation CustomFaceRecognizer
 
@@ -95,7 +95,6 @@
     }
     
     sqlite3_finalize(statement);
-    
     return results;
 }
 
@@ -137,6 +136,21 @@
     }
 }
 
+- (void)removePersonForName:(NSString *)name
+{
+    NSString *string = [NSString stringWithFormat:@"DELETE FROM people WHERE name='%@'",name];
+    const char *removePersonSQL = [string UTF8String];
+    sqlite3_stmt *statement;
+    
+    
+    if (sqlite3_prepare_v2(_db, removePersonSQL, -1, &statement, nil) == SQLITE_OK) {
+        sqlite3_bind_text(statement, 1, removePersonSQL, -1, SQLITE_TRANSIENT);
+        sqlite3_step(statement);
+    }
+    
+    sqlite3_finalize(statement);
+}
+
 - (void)forgetAllFacesForPersonID:(int)personID
 {
     const char* deleteSQL = "DELETE FROM images WHERE person_id = ?";
@@ -149,6 +163,24 @@
     
     sqlite3_finalize(statement);
 }
+
+//
+//- (void)removeFaceForPersonID:(int)personID
+//{
+//   // NSString* deleteString = [NSString stringWithFormat: @"DELETE FROM images WHERE person_id = %d", personID];
+//    char deleteSQL[100];
+//    sprintf(deleteSQL, "DELETE FROM images WHERE person_id = %d",personID);
+//    NSLog(@"Delete = %s",deleteSQL);
+//
+//    sqlite3_stmt *statement;
+//    
+//    if (sqlite3_prepare_v2(_db, deleteSQL, -1, &statement, nil) == SQLITE_OK) {
+//        sqlite3_bind_int(statement, 1, personID);
+//        sqlite3_step(statement);
+//    }
+//    
+//    sqlite3_finalize(statement);
+//}
 
 - (void)learnFace:(cv::Rect)face ofPersonID:(int)personID fromImage:(cv::Mat&)image
 {

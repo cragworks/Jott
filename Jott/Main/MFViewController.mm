@@ -58,9 +58,9 @@
     
     //listBackground = [UIImage imageNamed:@"bg6.jpg"];
     listBackground = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
-    listBackground = [UIImage imageWithCGImage:[listBackground CGImage]
-                        scale:(listBackground.scale * 2.0)
-                  orientation:(listBackground.imageOrientation)];
+//    listBackground = [UIImage imageWithCGImage:[listBackground CGImage]
+//                        scale:(listBackground.scale * 1.73)
+//                  orientation:(listBackground.imageOrientation)];
     
     navBarBackground = [UIImage imageNamed:@"2-.png"];
     navBarBackground = [UIImage imageWithCGImage:[navBarBackground CGImage]
@@ -68,8 +68,6 @@
                                    orientation:(navBarBackground.imageOrientation)];
 
     [self.navigationController.navigationBar setFrame:CGRectMake(0, 0, 320, 100)];
-    
-    
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-4 forBarMetrics:UIBarMetricsDefault];
     
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -81,7 +79,7 @@
     self.revealViewController.delegate = self;
     
     UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"]style:UIBarButtonItemStyleBordered target:revealController action:@selector(revealToggle:)];
-    _addButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"plus-32.png"] style:UIBarButtonItemStylePlain target:self action:@selector(addNote)];
+    _addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNote)];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:_managedObjectContext];
@@ -90,9 +88,7 @@
     NSArray *notes = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
     [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
     
-//    JCRBlurView *blur = [JCRBlurView new];
-//    _tableView.backgroundView = blur;
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60) style:UITableViewStylePlain];
     _tableView.rowHeight = 84.5;
     _tableView.backgroundColor = [UIColor colorWithPatternImage:listBackground];
     _tableView.delegate = self;
@@ -266,16 +262,26 @@
         }
         [scrollView setScrollEnabled:YES];
     }
-    else {
-        if (scrollView.contentOffset.y >= 0.0)
-        {
-            self.navigationController.navigationBar.alpha = 0.5;
-        }
-        if (scrollView.contentOffset.y < 0.0)
-        {
-            self.navigationController.navigationBar.alpha = 1.0;
-        }
-    }
+//    else if (scrollView.contentOffset.y > 0) {
+//        self.navigationController.navigationBar.translucent = YES;
+//        self.navigationController.navigationBar.alpha = 0.25;
+//    }
+//    else if (scrollView.contentOffset.y < 0) {
+//        self.navigationController.navigationBar.translucent = NO;
+//        self.navigationController.navigationBar.alpha = 1.0;
+//    }
+    
+    
+//    else {
+//        if (scrollView.contentOffset.y >= 0.0)
+//        {
+//            self.navigationController.navigationBar.alpha = 0.5;
+//        }
+//        if (scrollView.contentOffset.y < 0.0)
+//        {
+//            self.navigationController.navigationBar.alpha = 1.0;
+//        }
+//    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
