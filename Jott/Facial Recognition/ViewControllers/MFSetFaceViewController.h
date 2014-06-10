@@ -21,7 +21,7 @@
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (nonatomic, strong) CALayer *featureLayer;
 @property (nonatomic) NSInteger frameNum;
-@property (nonatomic) NSInteger numPicsTaken;
+@property (nonatomic) int numPicsTaken;
 @property (nonatomic) float totalConfidence;
 @property (nonatomic, retain) UILabel *picsLabel;
 

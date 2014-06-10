@@ -69,15 +69,15 @@
     [self.window.layer setRasterizationScale:[UIScreen mainScreen].scale];
     
     [self.window makeKeyAndVisible];
-    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    //UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 
-    if (orientation == UIInterfaceOrientationPortrait) {
-        [self launchAnimationPortrait];
-    }
-    else if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
-        [self launchAnimationLandscape];
-    }
-    
+    [self launchAnimationPortrait];
+//    if (orientation == UIInterfaceOrientationPortrait) {
+//        
+//    }
+//    else if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
+//        [self launchAnimationLandscape];
+//    }
     
     return YES;
 }
@@ -95,20 +95,33 @@
     [launchAnimationView addSubview:ottImage];
     ottImage.alpha = 0.0;
     
-    for(int i = 0; i < 17; i++) {
-        [self rotateImage];
-    }
+    [self runSpinAnimationOnView:jImageView duration:2.5 rotations:2.0 repeat:1.0];
+    
+
     [UIView animateWithDuration:3.0
                           delay: 0.0
                         options: UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
                          jImageView.frame = CGRectMake(95, 257, 55, 55);
                      }
-                     completion:nil];
+                     completion:^(BOOL finished) {
+//                         [self runSpinAnimationOnView:jImageView duration:0.5 rotations:-0.1 repeat:2.0];
+                     }];
+    
+//    [UIView animateWithDuration:3.0
+//                          delay:0.0
+//         usingSpringWithDamping:0.8
+//          initialSpringVelocity:-30
+//                        options:UIViewAnimationOptionCurveEaseInOut
+//                     animations:^{
+//                        // jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
+//                         jImageView.frame = CGRectMake(95, 257, 55, 55); //CGRectMake(95, 257, 55, 55);
+//                     }
+//                     completion:nil];
+
     
     [UIView animateWithDuration:1.0
-                          delay: 1.95
+                          delay: 2.1
                         options: UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          ottImage.alpha = 1.0;
@@ -120,7 +133,7 @@
     [self.window addSubview:launchAnimationView];
 }
 
-- (void)launchAnimationLandscape {
+/* - (void)launchAnimationLandscape {
     launchAnimationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width,  self.window.frame.size.height)];
     launchAnimationView.backgroundColor = [UIColor whiteColor];
     
@@ -139,13 +152,24 @@
         [self rotateImage];
     }
     [UIView animateWithDuration:3.0
-                          delay: 0.0
-                        options: UIViewAnimationOptionCurveEaseInOut
+                          delay:0.0
+         usingSpringWithDamping:0.8
+          initialSpringVelocity:100
+                        options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
                          jImageView.frame = CGRectMake(113, 325, 95, 95);
                      }
                      completion:nil];
+    
+//    [UIView animateWithDuration:3.0
+//                          delay: 0.0
+//                        options: UIViewAnimationOptionCurveEaseInOut
+//                     animations:^{
+//                         //jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
+//                         jImageView.frame = CGRectMake(113, 325, 95, 95);
+//                     }
+//                     completion:nil];
     
     [UIView animateWithDuration:1.0
                           delay: 1.95
@@ -158,16 +182,19 @@
     ottImage.alpha = 1.0;
     [self performSelector:@selector(animationDidFinish) withObject:nil afterDelay:3.0];
     [self.window addSubview:launchAnimationView];
-}
+} */
 
-- (void)rotateImage {
-    [UIView animateWithDuration:2.0
-                          delay: 0.0
-                        options: UIViewAnimationCurveEaseOut
-                     animations:^{
-                         jImageView.transform = CGAffineTransformRotate(jImageView.transform, -M_PI_2);
-                     }
-                     completion:nil];
+- (void) runSpinAnimationOnView:(UIView*)view duration:(CGFloat)duration rotations:(CGFloat)rotations repeat:(float)repeat;
+{
+    CABasicAnimation* rotationAnimation;
+    rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    rotationAnimation.toValue = [NSNumber numberWithFloat: -M_PI * 2.0 /* full rotation*/ * rotations * duration ];
+    rotationAnimation.duration = duration;
+    rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    rotationAnimation.cumulative = YES;
+    rotationAnimation.repeatCount = repeat;
+    
+    [view.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
 
 - (void)animationDidFinish {

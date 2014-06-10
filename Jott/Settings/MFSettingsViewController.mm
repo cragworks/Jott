@@ -263,7 +263,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
                 
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                int val = [defaults integerForKey:@"sensitivity"];
+                NSInteger val = [defaults integerForKey:@"sensitivity"];
                 [self calibrateSlider:val];
 
 				cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -330,12 +330,12 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     [defaults setInteger:val forKey:@"sensitivity"];
 }
 
-- (void)calibrateSlider:(int)val {
+- (void)calibrateSlider:(NSInteger)val {
  
-    int max = (val + 10) + 5;
+    NSInteger max = (val + 10) + 5;
     if (max > 100) max = 100;
     
-    int min = (val + 10) - 5;
+    NSInteger min = (val + 10) - 5;
     if (max < 60) max = 60;
     
     _slider.minimumValue = min;

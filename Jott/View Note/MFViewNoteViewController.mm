@@ -505,19 +505,20 @@
         _averageConfidence += 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)_averageConfidence forKey:@"sensitivity"];
-        NSLog(@"1: Reset Threshold to: %d",(NSUInteger)_averageConfidence);
+        NSLog(@"1: Reset Threshold to: %lu",(unsigned long)_averageConfidence);
     }
     else if ((confidenceThreshhold - _averageConfidence) > 5) {
         confidenceThreshhold += 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
-        NSLog(@"2: Reset Threshold to: %d",(NSUInteger)confidenceThreshhold);
+        NSLog(@"2: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
     }
     else if (confidenceThreshhold < _averageConfidence) {
         confidenceThreshhold = _averageConfidence + 5;
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setInteger:(NSUInteger)confidenceThreshhold forKey:@"sensitivity"];
-        NSLog(@"3: Reset Threshold to: %d",(NSUInteger)confidenceThreshhold);
+        NSLog(@"3: Reset Threshold to: %lu",(unsigned long)
+              confidenceThreshhold);
 
     }
 }

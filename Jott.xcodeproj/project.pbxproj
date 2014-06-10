@@ -30,6 +30,7 @@
 		45215EBC192EF48B00739DCB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45215EBB192EF48B00739DCB /* libsqlite3.dylib */; };
 		454685DB1936EB0300F666BF /* MFInfoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 454685DA1936EB0300F666BF /* MFInfoViewController.mm */; };
 		454685DE1936EBF900F666BF /* MFInfoChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454685DD1936EBF900F666BF /* MFInfoChildViewController.m */; };
+		457483651946581000BB4BDE /* launchImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 457483641946581000BB4BDE /* launchImage2.png */; };
 		458DCC0E1944E080006E4E99 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 458DCC0D1944E080006E4E99 /* Default-Landscape.png */; };
 		458DCC101944E887006E4E99 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 458DCC0F1944E887006E4E99 /* Default-Portrait.png */; };
 		458F5DCF192CF9E600E905A1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458F5DCE192CF9E600E905A1 /* CoreData.framework */; };
@@ -144,6 +145,7 @@
 		454685DA1936EB0300F666BF /* MFInfoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFInfoViewController.mm; path = Info/MFInfoViewController.mm; sourceTree = "<group>"; };
 		454685DC1936EBF900F666BF /* MFInfoChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFInfoChildViewController.h; path = Info/MFInfoChildViewController.h; sourceTree = "<group>"; };
 		454685DD1936EBF900F666BF /* MFInfoChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFInfoChildViewController.m; path = Info/MFInfoChildViewController.m; sourceTree = "<group>"; };
+		457483641946581000BB4BDE /* launchImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImage2.png; sourceTree = "<group>"; };
 		458DCC0D1944E080006E4E99 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		458DCC0F1944E887006E4E99 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 		458F5DCE192CF9E600E905A1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -463,6 +465,7 @@
 		45A223EC1941983A00F3AF4A /* Launch Images */ = {
 			isa = PBXGroup;
 			children = (
+				457483641946581000BB4BDE /* launchImage2.png */,
 				458DCC0F1944E887006E4E99 /* Default-Portrait.png */,
 				458DCC0D1944E080006E4E99 /* Default-Landscape.png */,
 			);
@@ -678,6 +681,7 @@
 				45E4A479192E391B00988E35 /* settings-50.png in Resources */,
 				45DB78431936A46200C78C47 /* settings-white-128.png in Resources */,
 				45DB78361936641A00C78C47 /* user_male2-50.png in Resources */,
+				457483651946581000BB4BDE /* launchImage2.png in Resources */,
 				4598B8131938DC7B00BFF319 /* bg5.jpg in Resources */,
 				45C49DB9193F70C90003096A /* bgd.jpg in Resources */,
 				459B7AEC193630F200CB8444 /* stopwatch-32.png in Resources */,
@@ -886,7 +890,8 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -909,7 +914,8 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/system";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s x86_64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
