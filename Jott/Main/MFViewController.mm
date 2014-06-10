@@ -147,9 +147,7 @@
 #pragma mark - Present View Controllers
 
 - (void)presentHomeViewController {
-    if (self.presentedViewController) {
-        [self dismissPresentedViewController];
-    }
+    [self.navigationController popToRootViewControllerAnimated:YES];
     [revealController revealToggle:self];
 }
 

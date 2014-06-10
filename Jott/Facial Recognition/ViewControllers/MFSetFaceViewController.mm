@@ -43,7 +43,7 @@
 //    _nameInput.delegate = self;
     
     _picsLabel = [[UILabel alloc] init];
-    _picsLabel.frame = CGRectMake(self.view.frame.size.width/2 - 125, 450, 250, 50);
+    _picsLabel.frame = CGRectMake(self.view.frame.size.width/2 - 125, 455, 250, 50);
     _picsLabel.text = @"10 more pictures remaining.";
     _picsLabel.textAlignment = NSTextAlignmentCenter;
     
@@ -66,7 +66,7 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 60, self.view.frame.size.width, 380)];
+    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 450)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -74,7 +74,7 @@
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
     self.videoCamera.grayscaleMode = NO;
-    self.videoCamera.imageHeight = 300;
+    self.videoCamera.imageHeight = 430;
     self.videoCamera.imageWidth = 300;
     
     self.numPicsTaken = 0;

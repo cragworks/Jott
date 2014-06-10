@@ -19,7 +19,6 @@
 enum {
 	kUsernameSection = 0,
 	kPasswordSection,
-	kShowCleartextSection,
     faceRecognitionSection,
     sensitivitySection
 };
@@ -50,7 +49,18 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     tableView.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:255.0/255.0 alpha:1.0];
     tableView.scrollEnabled = NO;
     
+    _enterPasswordAlertView = [[UIAlertView alloc] init];
+    _enterPasswordAlertView.alertViewStyle = UIAlertViewStyleSecureTextInput;
+    _enterPasswordAlertView.title = @"Enter Password";
+    _enterPasswordAlertView.message = @"Enter master password to add a new face";
+    _enterPasswordAlertView.delegate = self;
+    [_enterPasswordAlertView textFieldAtIndex:0].clearsOnBeginEditing = YES;
+    _enterPasswordAlertView.tag = 1;
+    [_enterPasswordAlertView addButtonWithTitle:@"Enter"];
+    
     textFieldController = [[MFSetPasswordViewController alloc] init];
+    
+    _needsAuthentication = YES;
     
     [self.view addSubview:tableView];
 }
@@ -60,6 +70,10 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [self calibrateSlider:[defaults integerForKey:@"sensitivity"]];
+    
+    _slider.maximumValue = _slider.value + 5;
+    _slider.minimumValue = _slider.value - 5;
+    _slider.userInteractionEnabled = YES;
     
 //    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 //
@@ -74,6 +88,22 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 //                                                                      }];
     
     [tableView reloadData];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 1) {
+        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+
+        if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
+            _needsAuthentication = NO;
+            NSIndexPath *path = [[NSIndexPath alloc] initWithIndex:1];
+            [self tableView:self.tableView didSelectRowAtIndexPath:path];
+        }
+    }
+    else if (alertView.tag == 2) {
+        MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
+        [self.navigationController pushViewController:sfvc animated:YES];
+    }
 }
 
 - (void) back {
@@ -133,7 +163,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tv
 {
-    return 5;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section
@@ -143,13 +173,12 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    
-    return (section == kShowCleartextSection) ? 0.0 : 60.0;
+    return (section == faceRecognitionSection) ? 20.0 : 60.0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-	return (section >= 3) ? 0.0 : 0.0;
+	return (section == sensitivitySection) ? 100.0 : 0.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -157,17 +186,16 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     return [MFSettingsViewController titleForSection:section];
 }
 
-//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-//{
-//    NSString *title = nil;
-//	
-//	if (section == kAccountNumberSection)
-//	{
-//		title = NSLocalizedString(@"AccountNumberShared", @"");
-//	}
-//	
-//	return title;
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == faceRecognitionSection) return 60.0;
+    return 45.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableview viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableview.bounds.size.width, 60)];
+    view.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:255.0/255.0 alpha:1.0];
+    return view;
+}
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     
@@ -186,7 +214,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 {
 	static NSString *kUsernameCellIdentifier =       @"UsernameCell";
 	static NSString *kPasswordCellIdentifier =       @"PasswordCell";
-	static NSString *kSwitchCellIdentifier =         @"SwitchCell";
     static NSString *sensitivityCellIdentifier =     @"Sensitivity";
     static NSString *faceRecognitionCellIdentifier = @"faceRecognition";
 	
@@ -222,6 +249,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 				textField.font = [UIFont systemFontOfSize:17.0];
 				textField.enabled = NO;
 				textField.secureTextEntry = YES;
+                textField.clearsOnBeginEditing = YES;
 				
 				[cell.contentView addSubview:textField];
 			}
@@ -235,23 +263,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
             
 			break;
 		}
-        case kShowCleartextSection:
-		{
-			cell = [aTableView dequeueReusableCellWithIdentifier:kSwitchCellIdentifier];
-			if (cell == nil)
-			{
-				cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kSwitchCellIdentifier];
-				
-				cell.textLabel.text = NSLocalizedString(@"Show Password", @"");
-				cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                
-				UISwitch *switchCtl = [[UISwitch alloc] initWithFrame:CGRectMake(240, 8, 94, 27)];
-				[switchCtl addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
-				[cell.contentView addSubview:switchCtl];
-			}
-			
-			break;
-		}
         case sensitivitySection:
 		{
 			cell = [aTableView dequeueReusableCellWithIdentifier:sensitivityCellIdentifier];
@@ -262,13 +273,17 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 
 				_slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-125, cell.frame.size.height/2-10, 250, 20)];
                 [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
-                
+
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                 NSInteger val = [defaults integerForKey:@"sensitivity"];
                 [self calibrateSlider:val];
-
-				cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 
+                _slider.maximumValue = _slider.value + 5;
+                _slider.minimumValue = _slider.value - 5;
+                _slider.userInteractionEnabled = YES;
+                
+				cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
                 [cell.contentView addSubview:_slider];
 			}
 			
@@ -282,6 +297,11 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:faceRecognitionCellIdentifier];
             }
             cell.textLabel.text = @"Set Face Recognition";
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        }
+        default:
+        {
+            
         }
 	}
     
@@ -292,15 +312,18 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 {
 	if (indexPath.section == kPasswordSection)
 	{
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-		id secAttr = [MFSettingsViewController secAttrForSection:indexPath.section];
-		[_setPasswordViewController.textControl setPlaceholder:[MFSettingsViewController titleForSection:indexPath.section]];
-		[_setPasswordViewController.textControl setSecureTextEntry:(indexPath.section == kPasswordSection)];
-        _setPasswordViewController.keychainWrapper = passwordItem;
-		_setPasswordViewController.editedFieldKey = secAttr;
-		_setPasswordViewController.title = [MFSettingsViewController titleForSection:indexPath.section];
-
-		[self.navigationController pushViewController:_setPasswordViewController animated:YES];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        if (_needsAuthentication) [_enterPasswordAlertView show];
+        else {
+            _needsAuthentication = YES;
+            id secAttr = [MFSettingsViewController secAttrForSection:indexPath.section];
+            [_setPasswordViewController.textControl setSecureTextEntry:(indexPath.section == kPasswordSection)];
+            _setPasswordViewController.keychainWrapper = passwordItem;
+            _setPasswordViewController.editedFieldKey = secAttr;
+            _setPasswordViewController.title = [MFSettingsViewController titleForSection:indexPath.section];
+            
+            [self.navigationController pushViewController:_setPasswordViewController animated:YES];
+        }
 	}
     else if (indexPath.section == kUsernameSection) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -318,7 +341,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     else if (indexPath.section == faceRecognitionSection) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         MFFacesListTableViewController *facesList = [[MFFacesListTableViewController alloc] init];
-        //MFSetFaceViewController *setFaceViewController = [[MFSetFaceViewController alloc]init];
         [self.navigationController pushViewController:facesList animated:YES];
     }
 }
@@ -343,7 +365,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     _slider.minimumValue = min;
     _slider.maximumValue = max;
     [_slider setValue:val];
-    
 }
 
 @end

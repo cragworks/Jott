@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "CustomFaceRecognizer.h"
 
-@interface MFFacesListTableViewController : UITableViewController
+@interface MFFacesListTableViewController : UITableViewController <UIAlertViewDelegate>
 
 @property (nonatomic, strong) CustomFaceRecognizer *faceRecognizer;
 @property (nonatomic, strong) NSMutableArray *faces;
 @property (nonatomic, strong) NSDictionary *selectedFace;
+@property (nonatomic, strong) UIAlertView *addFaceAlertView;
+@property (nonatomic, strong) UIAlertView *deleteFaceAlertView;
 
 @end

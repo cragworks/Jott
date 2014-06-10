@@ -35,7 +35,7 @@
     settingsViewController = [[MFSettingsViewController alloc] init];
     settingsViewController.passwordItem = _wrapper;
     
-    _password = [_wrapper objectForKey:(__bridge id)kSecValueData];
+    [self refreshPassword];
     
     NSManagedObjectContext *context = [self managedObjectContext];
 
@@ -80,6 +80,10 @@
 //    }
     
     return YES;
+}
+
+- (void) refreshPassword {
+    _password = [_wrapper objectForKey:(__bridge id)kSecValueData];
 }
 
 - (void)launchAnimationPortrait {

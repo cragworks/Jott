@@ -380,23 +380,21 @@
 
 - (void)processImage:(cv::Mat&)image
 {
-    // Only process every CAPTURE_FPS'th frame (every 1s)
     if (self.frameNum == CAPTURE_FPS) {
         [self parseFaces:[self.faceDetector facesFromImage:image] forImage:image];
         self.frameNum = 0;
     }
-    
     self.frameNum++;
 }
 
 - (void)parseFaces:(const std::vector<cv::Rect> &)faces forImage:(cv::Mat&)image
 {
     
-    // Too many faces found
-    if (faces.size() > 1) {
-        NSLog(@"A Spy!");
-    }
-    else if (faces.size() < 1) { // No faces found
+//    // Too many faces found
+//    if (faces.size() > 1) {
+//        NSLog(@"A Spy!");
+//    }
+    if (faces.size() < 1) { // No faces found
         [self noFaceToDisplay];
         return;
     }
@@ -427,13 +425,12 @@
                 _totalConfidence += confidence;
                 _averageConfidence = _totalConfidence/_numPics;
                 
-//                NSLog(@"Average = %f",_averageConfidence);
+                NSLog(@"Average = %f",_averageConfidence);
             }
             else {
                 shouldBeEncrypted = YES;
             }
         }
-        
     }
     
     dispatch_sync(dispatch_get_main_queue(), ^{

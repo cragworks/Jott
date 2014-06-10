@@ -40,6 +40,7 @@
 @property (nonatomic, retain) MFKeychainWrapper *wrapper;
 @property (nonatomic, strong) NSString *password;
 
+- (void) refreshPassword;
 - (void)saveContext;
 - (NSString *)applicationDocumentsDirectory;
 

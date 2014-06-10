@@ -9,7 +9,7 @@
 #import "MFFacesListTableViewController.h"
 #import "MFSetFaceViewController.h"
 #import "CustomFaceRecognizer.h"
-
+#import "MFAppDelegate.h"
 
 @interface MFFacesListTableViewController ()
 
@@ -40,6 +40,22 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    _addFaceAlertView = [[UIAlertView alloc] init];
+    _addFaceAlertView.alertViewStyle = UIAlertViewStyleSecureTextInput;
+    _addFaceAlertView.title = @"Enter Password";
+    _addFaceAlertView.message = @"Enter master password to add a new face";
+    _addFaceAlertView.delegate = self;
+    _addFaceAlertView.tag = 1;
+    [_addFaceAlertView addButtonWithTitle:@"Enter"];
+    
+    _deleteFaceAlertView = [[UIAlertView alloc] init];
+    _deleteFaceAlertView.alertViewStyle = UIAlertViewStyleSecureTextInput;
+    _deleteFaceAlertView.title = @"Enter Password";
+    _deleteFaceAlertView.message = @"Enter master password to delete a face";
+    _deleteFaceAlertView.delegate = self;
+    _deleteFaceAlertView.tag = 2;
+    [_deleteFaceAlertView addButtonWithTitle:@"Enter"];
+    
     _faces = [[NSMutableArray alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -62,9 +78,25 @@
 }
 
 - (void)addFace {
-    MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
-    [self.navigationController pushViewController:sfvc animated:YES];
+    [_addFaceAlertView show];
 }
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 1) {
+        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+        //NSLog(@"1: %@ \n\n 2: %@", [alertView textFieldAtIndex:0].text, appDelegate.password);
+        if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
+            MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
+            [self.navigationController pushViewController:sfvc animated:YES];
+        }
+    }
+    else if (alertView.tag == 2) {
+        MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
+        [self.navigationController pushViewController:sfvc animated:YES];
+    }
+}
+
+
 
 #pragma mark - Table view data source
 
@@ -88,13 +120,12 @@
     
     _selectedFace = [_faces objectAtIndex:indexPath.row];
     cell.textLabel.text = [_selectedFace objectForKey:@"name"];
-
-   // [self performSegueWithIdentifier:@"CaptureImages" sender:self];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -110,17 +141,15 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    _selectedFace = [_faces objectAtIndex:indexPath.row];
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-      //  [_faceRecognizer removeFaceForPersonID:indexPath.row+1];
-//         NSLog(@"Before Selected = %@\n\n\n\n",_selectedFace);
-//        NSLog(@"Before Faces = %@\n\n\n\n",_faces);
+        
+        //[_deleteFaceAlertView show];
+        
+        _selectedFace = [_faces objectAtIndex:indexPath.row];
         [_faceRecognizer removePersonForName:[_selectedFace objectForKey:@"name"]];
-        //[_faceRecognizer forgetAllFacesForPersonID:indexPath.row+1];
         [_faces removeObjectAtIndex:indexPath.row];
-//         NSLog(@"After Selected = %@",_selectedFace);
-//        NSLog(@"After Faces = %@\n\n\n\n",_faces);
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   

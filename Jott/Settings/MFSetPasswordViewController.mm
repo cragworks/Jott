@@ -29,30 +29,33 @@
 - (void)initialSetup {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 115, 200, 40)];
-    [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]];
+    UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 85, 200, 40)];
+    [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16.0]];
     [enterPasswordLabel setText:@"Enter New Password:"];
-    UILabel *confirmPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 215, 200, 40)];
-    [confirmPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14.0]];
+    UILabel *confirmPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 185, 200, 40)];
+    [confirmPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16.0]];
     [confirmPasswordLabel setText:@"Confirm Password:"];
     
-    textControl = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 150, 250, 40)];
+    textControl = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 120, 250, 40)];
     [textControl setBackgroundColor:[UIColor whiteColor]];
     [textControl setBorderStyle:UITextBorderStyleLine];
     [textControl setTextAlignment:NSTextAlignmentCenter];
     textControl.placeholder = nil;
     textControl.delegate = self;
+    textControl.secureTextEntry = YES;
     textControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
     textControl.autocorrectionType = UITextAutocorrectionTypeNo;
-    textControl.secureTextEntry = NO;
+    textControl.clearsOnBeginEditing = YES;
     
-    confirmTextControl = [[UITextField alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 250, 250, 40)];
+    confirmTextControl = [[UITextField alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 220, 250, 40)];
     [confirmTextControl setBackgroundColor:[UIColor whiteColor]];
     [confirmTextControl setBorderStyle:UITextBorderStyleLine];
     [confirmTextControl setTextAlignment:NSTextAlignmentCenter];
+    confirmTextControl.secureTextEntry = YES;
     confirmTextControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
     confirmTextControl.autocorrectionType = UITextAutocorrectionTypeNo;
-    confirmTextControl.text = @"";
+    confirmTextControl.clearsOnBeginEditing = YES;
+    
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(save)];
    
@@ -100,6 +103,9 @@
         MFViewController *viewController = [[MFViewController alloc]init];
         [viewController changeEncryptionFromOldPassword:[keychainWrapper objectForKey:editedFieldKey] toNewPassword:[textControl text]];
         [keychainWrapper setObject:[textControl text] forKey:editedFieldKey];
+        
+        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+        [appDelegate refreshPassword];
     }
     
     [self.navigationController popViewControllerAnimated:YES];

@@ -29,6 +29,8 @@
 @property (nonatomic, retain) MFKeychainWrapper *passwordItem;
 @property (nonatomic, retain) UISlider *slider;
 @property (nonatomic, assign) BOOL firstTime;
+@property (nonatomic, strong) UIAlertView *enterPasswordAlertView;
+@property (nonatomic, assign) BOOL needsAuthentication;
 
 + (NSString *)titleForSection:(NSInteger)section;
 + (id)secAttrForSection:(NSInteger)section;
