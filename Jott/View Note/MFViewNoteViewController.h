@@ -23,7 +23,7 @@
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (nonatomic, strong) CALayer *featureLayer;
 @property (nonatomic) NSInteger frameNum;
-
+@property (nonatomic, strong) UIButton *decryptButton;
 @property (nonatomic) float totalConfidence;
 @property (nonatomic) float averageConfidence;
 @property (nonatomic) int numPics;

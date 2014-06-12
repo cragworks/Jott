@@ -37,6 +37,7 @@
     NSString *password;
     UIButton *timedDecryptButton;
     NSInteger confidenceThreshhold;
+    BOOL isLockDecrypted;
 }
 @end
 
@@ -56,7 +57,6 @@
     [super viewDidLoad];
     [self initialSetup];
     [self setupFacialRecognition];
-    
 }
 
 - (void)initialSetup {
@@ -100,35 +100,37 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    _decryptButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_decryptButton setBackgroundImage:[UIImage imageNamed:@"lock-50.png"] forState:UIControlStateNormal];
+    _decryptButton.frame = CGRectMake(255, 445, 35, 35);
+    [_decryptButton addTarget:self action:@selector(decryptButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    
     back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
-    //self.navigationItem.title = presentingViewController.currentNote.title;
-    
     _titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 50)];
-    _titleView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.1];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-//    _titleView.layer.cornerRadius = 5.0;
-//    _titleView.layer.borderWidth = 1.0;
+    _titleView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    _titleView.layer.cornerRadius = 5.0;
+    _titleView.layer.borderWidth = 1.0;
     _titleView.userInteractionEnabled = NO;
     _titleView.textAlignment = NSTextAlignmentCenter;
-    _titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
+    _titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:22.0];
     _titleView.text = presentingViewController.currentNote.title;
     
-    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 350)];
-    _noteView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.1];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-//    _noteView.layer.cornerRadius = 5.0;
-//    _noteView.layer.borderWidth = 1.0;
+    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 348)];
+    _noteView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    _noteView.layer.cornerRadius = 5.0;
+    _noteView.layer.borderWidth = 1.0;
     _noteView.editable = NO;
-    //    _noteView.userInteractionEnabled = NO;
     _noteView.text = presentingViewController.currentNote.text;
     _noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     _noteView.alwaysBounceVertical = YES;
     
-    timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 30, self.view.frame.size.height - 3, 28, 28);
-    UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
-    [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
-    [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+//    timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 30, self.view.frame.size.height - 3, 28, 28);
+//    UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
+//    [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
+//    [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didRecognizeTapGesture:)];
     [self.view addGestureRecognizer:tapGesture];
@@ -136,7 +138,8 @@
     self.navigationItem.rightBarButtonItem = edit;
     [self.view addSubview:_titleView];
     [self.view addSubview:_noteView];
-    [self.view addSubview:timedDecryptButton];
+    [self.view addSubview:_decryptButton];
+//    [self.view addSubview:timedDecryptButton];
     
     NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.25
                                                                      target: self
@@ -145,7 +148,7 @@
     [self checkIfEncrypted:encryptionCheckTimer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 
-    
+    isLockDecrypted = NO;
     isEncrypted = YES;
     shouldBeEncrypted = YES;
     usingVision = YES;
@@ -154,6 +157,38 @@
 
 
 #pragma mark - Timed Decryption
+
+- (void)decryptButtonTapped {
+    if (isLockDecrypted) {  //
+        [self lockDecrypt];
+    }
+    else {
+        UIAlertView *lockAlert = [[UIAlertView alloc] init];
+        lockAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        lockAlert.title = @"Enter Password";
+        [lockAlert textFieldAtIndex:0].textAlignment = NSTextAlignmentCenter;
+        //lockAlert.message = @"Blah Blah Blah";
+        [lockAlert textFieldAtIndex:0].placeholder = @"Password";
+        [lockAlert textFieldAtIndex:0].frame = CGRectMake(10, 10, 200, 30);
+        lockAlert.delegate = self;
+        lockAlert.tag = 3;
+        [lockAlert addButtonWithTitle:@"Unlock"];
+        [lockAlert show];
+    }
+}
+
+- (void)lockDecrypt {
+    if (isLockDecrypted) {
+        [self startCamera];
+        isLockDecrypted = NO;
+        [_decryptButton setBackgroundImage:[UIImage imageNamed:@"lock-50.png"] forState:UIControlStateNormal];
+    }
+    else {
+        [self stopCamera];
+        isLockDecrypted = YES;
+        [_decryptButton setBackgroundImage:[UIImage imageNamed:@"unlock-50.png"] forState:UIControlStateNormal];
+    }
+}
 
 - (void)timerButtonTapped {
     NSTimer *decryptTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timedDecrypt:) userInfo:nil repeats:YES];
@@ -175,7 +210,7 @@
 }
 
 - (void)timedDecrypt:(NSTimer *)timer {
-    NSLog(@"%d",totalSeconds);
+   // NSLog(@"%d",totalSeconds);
     if (!totalSeconds) {
         [self changeTextEncryption];
         [self timerButtonTapped];
@@ -186,11 +221,16 @@
 }
 
 - (void)checkIfEncrypted:(NSTimer *)timer {
-    if (!shouldBeEncrypted) {
+    if (isLockDecrypted) {
         [self decryptText];
     }
     else {
-        [self encryptText];
+        if (!shouldBeEncrypted) {
+            [self decryptText];
+        }
+        else {
+            [self encryptText];
+        }
     }
 }
 
@@ -206,6 +246,19 @@
     }
     else if (alertView.tag == 1 && buttonIndex == 1) {  // Retry button of incorrect password alert view
         [enterPasswordAlert show];
+    }
+    if (alertView.tag == 3) {
+        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+        if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
+            [self lockDecrypt];
+        }
+        else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong Password"
+                                                                         message:nil
+                                                                        delegate:self
+                                                               cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [alert show];
+        }
     }
 }
 
@@ -358,7 +411,7 @@
 - (void)setupCamera
 {
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 142, 75, 75)];
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 145, 75, 75)];
 
     [self.imageView setUserInteractionEnabled:YES];
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraTapped)];
@@ -366,7 +419,7 @@
     
     self.imageView.layer.masksToBounds = YES;
     self.imageView.layer.cornerRadius = 5;
-    self.imageView.layer.opacity = 0.65;
+    self.imageView.layer.opacity = 0.8;
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.imageView];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -416,7 +469,7 @@
             confidenceFormatter.maximumFractionDigits = 2;
             
             float confidence = [[match objectForKey:@"confidence"] floatValue];
-            NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
+           // NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)confidenceThreshhold);
             
             if (confidence  < confidenceThreshhold || (confidence - confidenceThreshhold) < 3) {
                 shouldBeEncrypted = NO;
@@ -425,7 +478,7 @@
                 _totalConfidence += confidence;
                 _averageConfidence = _totalConfidence/_numPics;
                 
-                NSLog(@"Average = %f",_averageConfidence);
+               // NSLog(@"Average = %f",_averageConfidence);
             }
             else {
                 shouldBeEncrypted = YES;

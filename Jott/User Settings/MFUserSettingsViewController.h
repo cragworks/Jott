@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MFUserSettingsViewController : UIViewController
+@interface MFUserSettingsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

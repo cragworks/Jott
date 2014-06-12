@@ -42,26 +42,25 @@
 }
 
 - (void)initialSetup {
-    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:blurBackground];
-    
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                  forBarMetrics:UIBarMetricsDefault];
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-    self.navigationController.navigationBar.translucent = YES;
+//    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
+//
+//    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+//                                                  forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.view.backgroundColor = [UIColor clearColor];
+//    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
+//    self.navigationController.navigationBar.translucent = YES;
     
     MFAppDelegate *appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     password = appDelegate.password;
     presentingViewController = appDelegate.root;
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:appDelegate.root.background];
     
-    UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
+    //UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
     
-    titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 50)];
+    titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 50)];
     titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
     titleView.layer.cornerRadius = 5.0;
     titleView.delegate = self;
@@ -70,15 +69,13 @@
     titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
     [titleView becomeFirstResponder];
     
-    noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 125, self.view.frame.size.width - 20, 400)];
+    noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 65, self.view.frame.size.width - 20, 400)];
     noteView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
     noteView.layer.cornerRadius = 5.0;
     noteView.delegate = self;
     noteView.layer.borderWidth = 1.0;
     noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     
-    
-    self.navigationItem.leftBarButtonItem = cancel;
     self.navigationItem.rightBarButtonItem = save;
     [self.view addSubview:titleView];
     [self.view addSubview:noteView];
@@ -88,10 +85,6 @@
     [textField resignFirstResponder];
     [noteView becomeFirstResponder];
     return NO;
-}
-
-- (void) cancelNote {
-    [presentingViewController dismissPresentedViewController];
 }
 
 - (void) saveNote {
@@ -104,7 +97,8 @@
     [presentingViewController.managedObjectContext save:&error];
     
     [[MFNotesModel sharedModel] addNote:mfnote];
-    [presentingViewController dismissPresentedViewController];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (NSString *)encryptText:(NSString *)text {

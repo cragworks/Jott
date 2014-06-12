@@ -30,8 +30,6 @@
 {
     [super viewDidLoad];
     
-    _faceRecognizer = [[CustomFaceRecognizer alloc] init];
-    
     self.tableView.rowHeight = 75;
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFace)];
@@ -67,7 +65,10 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+   
+    _faceRecognizer = [[CustomFaceRecognizer alloc] init];
     _faces = [_faceRecognizer getAllPeople];
+
     [self.tableView reloadData];
 }
 
@@ -84,7 +85,6 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (alertView.tag == 1) {
         MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
-        //NSLog(@"1: %@ \n\n 2: %@", [alertView textFieldAtIndex:0].text, appDelegate.password);
         if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
             MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
             [self.navigationController pushViewController:sfvc animated:YES];
@@ -142,9 +142,11 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+ 
+        _faceRecognizer = [[CustomFaceRecognizer alloc] init];
+        _faces = [_faceRecognizer getAllPeople];
         
         //[_deleteFaceAlertView show];
-        
         _selectedFace = [_faces objectAtIndex:indexPath.row];
         [_faceRecognizer removePersonForName:[_selectedFace objectForKey:@"name"]];
         [_faces removeObjectAtIndex:indexPath.row];
@@ -153,6 +155,20 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
+}
+
+
+- (void)removeAllFacesFromFaceRecognizer:(CustomFaceRecognizer *)faceRecognizer {
+
+    NSMutableArray *faces = [faceRecognizer getAllPeople];
+    
+    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [faces count]; i++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+        
+        [indexPaths addObject:indexPath];
+        [self tableView:self.tableView commitEditingStyle:UITableViewCellEditingStyleDelete forRowAtIndexPath:indexPath];
+    }
 }
 
 /*

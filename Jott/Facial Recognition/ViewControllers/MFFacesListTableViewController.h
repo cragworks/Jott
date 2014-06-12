@@ -17,4 +17,6 @@
 @property (nonatomic, strong) UIAlertView *addFaceAlertView;
 @property (nonatomic, strong) UIAlertView *deleteFaceAlertView;
 
+- (void)removeAllFacesFromFaceRecognizer:(CustomFaceRecognizer *)faceRecognizer;
+
 @end

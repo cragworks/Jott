@@ -45,12 +45,12 @@
     
     UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
     settingsButton.frame = CGRectMake(18, 215, 30, 30);
-    [settingsButton setImage:[UIImage imageNamed:@"settings-white-128.png"] forState:UIControlStateNormal];
+    [settingsButton setImage:[UIImage imageNamed:@"user_male2-white-128.png"] forState:UIControlStateNormal];
     [settingsButton addTarget:main action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
 
     UIButton *userSetingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
     userSetingsButton.frame = CGRectMake(18, 315, 30, 30);
-    [userSetingsButton setImage:[UIImage imageNamed:@"user_male2-white-128.png"] forState:UIControlStateNormal];
+    [userSetingsButton setImage:[UIImage imageNamed:@"settings-white-128.png"] forState:UIControlStateNormal];
     [userSetingsButton addTarget:main action:@selector(presentUserSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeCustom];

@@ -26,12 +26,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        
-    _screenNumber = [[UILabel alloc]initWithFrame:CGRectMake(120, 200, 200, 50)];
-    _screenNumber.text = [NSString stringWithFormat:@"Screen #%ldl", (long)self.index];
-    self.view.backgroundColor = [UIColor clearColor];
     
-    [self.view addSubview:_screenNumber];
+    [self loadBackground];
+//    _screenNumber = [[UILabel alloc]initWithFrame:CGRectMake(120, 200, 200, 50)];
+//    _screenNumber.text = [NSString stringWithFormat:@"Screen #%ld", (long)self.index];
+//    self.view.backgroundColor = [UIColor clearColor];
+//    
+//    [self.view addSubview:_screenNumber];
+}
+
+- (void)loadBackground {
+    switch (self.index) {
+        case 0:
+        {
+            UIImage *backgroundImage = [UIImage imageNamed:@"info1.png"];
+            backgroundImage = [UIImage imageWithCGImage:[backgroundImage CGImage]
+                                                   scale:(backgroundImage.scale * 2.0)
+                                             orientation:(backgroundImage.imageOrientation)];
+            UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:backgroundImage];
+            [self.view addSubview:backgroundImageView];
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
 }
 
 - (void)close {

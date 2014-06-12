@@ -15,7 +15,7 @@
 @class MFSetPasswordViewController;
 @class MFKeychainWrapper;
 
-@interface MFSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
+@interface MFSettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate, UIAlertViewDelegate>
 {
     UITableView *tableView;
     MFSetPasswordViewController *textFieldController;

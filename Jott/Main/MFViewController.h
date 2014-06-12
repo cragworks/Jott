@@ -19,13 +19,15 @@
 @property (nonatomic, strong) UIBarButtonItem *addButton;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) BOOL currentlyViewingNote;
+@property (nonatomic, strong) UIImage *background;
+@property (nonatomic, strong) SWRevealViewController *revealController;
 
-- (void)addNote;
 - (void)dismissPresentedViewController;
 - (void)presentHomeViewController;
 - (void)presentSettingsViewController;
 - (void)presentInfoViewController;
 - (void)presentUserSettingsViewController;
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword;
+- (void)deleteAllNotes;
 
 @end

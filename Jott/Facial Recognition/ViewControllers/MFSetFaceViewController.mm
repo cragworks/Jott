@@ -43,9 +43,12 @@
 //    _nameInput.delegate = self;
     
     _picsLabel = [[UILabel alloc] init];
-    _picsLabel.frame = CGRectMake(self.view.frame.size.width/2 - 125, 455, 250, 50);
+    _picsLabel.frame = CGRectMake(0, 445, self.view.frame.size.width, 50);
+    _picsLabel.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
+    _picsLabel.textColor = [UIColor whiteColor];
     _picsLabel.text = @"10 more pictures remaining.";
     _picsLabel.textAlignment = NSTextAlignmentCenter;
+    _picsLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:18.0];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Instructions"
                                                     message:@"When the camera starts, move it around to show different angles of your face."
@@ -66,7 +69,7 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 450)];
+    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 430)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;

@@ -15,15 +15,16 @@
 #import "MFSetFaceViewController.h"
 #import "MFFacesListTableViewController.h"
 #import "MFAppDelegate.h"
+#import "MFNotesModel.h"
 
 enum {
 	kUsernameSection = 0,
 	kPasswordSection,
     faceRecognitionSection,
-    sensitivitySection
+    sensitivitySection,
+    resetPasswordSection
 };
 
-// Defined UI constants.
 static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text field to support secure text entry.
 
 @implementation MFSettingsViewController
@@ -68,6 +69,8 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    //[[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-20 forBarMetrics:UIBarMetricsDefault];
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [self calibrateSlider:[defaults integerForKey:@"sensitivity"]];
     
@@ -90,22 +93,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     [tableView reloadData];
 }
 
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if (alertView.tag == 1) {
-        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
-
-        if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
-            _needsAuthentication = NO;
-            NSIndexPath *path = [[NSIndexPath alloc] initWithIndex:1];
-            [self tableView:self.tableView didSelectRowAtIndexPath:path];
-        }
-    }
-    else if (alertView.tag == 2) {
-        MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
-        [self.navigationController pushViewController:sfvc animated:YES];
-    }
-}
-
 - (void) back {
     MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     [appDelegate.root dismissPresentedViewController];
@@ -115,7 +102,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 {
     switch (section)
     {
-        case kUsernameSection: return NSLocalizedString(@"Username", @"");
+        case kUsernameSection: return NSLocalizedString(@"Name", @"");
         case kPasswordSection: return NSLocalizedString(@"Password", @"");
         case sensitivitySection: return NSLocalizedString(@"Recognition Sensitivity", @"");
     }
@@ -163,7 +150,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tv
 {
-    return 4;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section
@@ -173,12 +160,12 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return (section == faceRecognitionSection) ? 20.0 : 60.0;
+    return (section == faceRecognitionSection || section == resetPasswordSection) ? 30.0 : 55.0;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-	return (section == sensitivitySection) ? 100.0 : 0.0;
+	return (section == resetPasswordSection) ? 100.0 : 0.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
@@ -187,7 +174,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == faceRecognitionSection) return 60.0;
+    if (indexPath.section == faceRecognitionSection || indexPath.section == resetPasswordSection) return 50.0;
     return 45.0;
 }
 
@@ -216,7 +203,8 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 	static NSString *kPasswordCellIdentifier =       @"PasswordCell";
     static NSString *sensitivityCellIdentifier =     @"Sensitivity";
     static NSString *faceRecognitionCellIdentifier = @"faceRecognition";
-	
+	static NSString *resetEverythingCellIdentifier = @"resetEverything";
+    
 	UITableViewCell *cell = nil;
 	
 	switch (indexPath.section)
@@ -271,7 +259,7 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 
 				cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:sensitivityCellIdentifier];
                 
-				_slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-125, cell.frame.size.height/2-10, 250, 20)];
+				_slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-100, cell.frame.size.height/2-10, 200, 20)];
                 [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
 
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -284,6 +272,16 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 
 				cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
+                UILabel *less = [[UILabel alloc] initWithFrame:CGRectMake(25, cell.frame.size.height/2 - 10, 100, 20)];
+                less.text = @"LESS";
+                less.font = [UIFont fontWithName:@"Helvetica Neue" size:10.0];
+                
+                UILabel *more = [[UILabel alloc] initWithFrame:CGRectMake(270, cell.frame.size.height/2 - 10, 100, 20)];
+                more.text = @"MORE";
+                more.font = [UIFont fontWithName:@"Helvetica Neue" size:10.0];
+                
+                [cell.contentView addSubview:more];
+                [cell.contentView addSubview:less];
                 [cell.contentView addSubview:_slider];
 			}
 			
@@ -298,6 +296,19 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
             }
             cell.textLabel.text = @"Set Face Recognition";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            
+            break;
+        }
+        case resetPasswordSection:
+        {
+            cell = [aTableView dequeueReusableCellWithIdentifier:resetEverythingCellIdentifier];
+            if (cell == nil)
+            {
+                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:resetEverythingCellIdentifier];
+            }
+            cell.textLabel.text = @"Reset Password";
+            
+            break;
         }
         default:
         {
@@ -313,6 +324,11 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 	if (indexPath.section == kPasswordSection)
 	{
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        if ([[passwordItem objectForKey:(__bridge id)kSecValueData] isEqualToString:@""]) {
+            _needsAuthentication = NO;
+        }
+        
         if (_needsAuthentication) [_enterPasswordAlertView show];
         else {
             _needsAuthentication = YES;
@@ -340,9 +356,66 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     }
     else if (indexPath.section == faceRecognitionSection) {
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+        if ([[passwordItem objectForKey:(__bridge id)kSecValueData] isEqualToString:@""]) {
+            UIAlertView *noPasswordAlertView = [[UIAlertView alloc] initWithTitle:@"No Password"
+                                                                          message:@"Please set a password first"
+                                                                         delegate:self
+                                                                cancelButtonTitle:@"OK"
+                                                                otherButtonTitles:nil, nil];
+            [noPasswordAlertView show];
+            return;
+        }
+        
         MFFacesListTableViewController *facesList = [[MFFacesListTableViewController alloc] init];
         [self.navigationController pushViewController:facesList animated:YES];
+        
     }
+    else if (indexPath.section == resetPasswordSection) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        UIAlertView *resetAlert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                             message:@"Reseting will erase the username, password, and all of the current notes and faces.\nAre you sure you want to do this?"
+                                                            delegate:self
+                                                   cancelButtonTitle:@"No"
+                                                   otherButtonTitles:@"Yes", nil];
+        resetAlert.tag = 3;
+        [resetAlert show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 1) {
+        MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+        
+        if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
+            _needsAuthentication = NO;
+            NSIndexPath *path = [[NSIndexPath alloc] initWithIndex:1];
+            [self tableView:self.tableView didSelectRowAtIndexPath:path];
+        }
+    }
+    else if (alertView.tag == 2) {
+        MFSetFaceViewController *sfvc = [[MFSetFaceViewController alloc] init];
+        [self.navigationController pushViewController:sfvc animated:YES];
+    }
+    else if (alertView.tag == 3) {
+        if (buttonIndex == 1) [self resetEverything];
+    }
+}
+
+- (void)resetEverything {
+    [passwordItem setObject:@"" forKey:(__bridge id)kSecValueData];
+    [passwordItem setObject:@"" forKey:(__bridge id)kSecAttrAccount];
+    
+    MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+    [appDelegate refreshPassword];
+    
+    [appDelegate.root deleteAllNotes];
+    
+    CustomFaceRecognizer *faceRecognizer = [[CustomFaceRecognizer alloc] init];
+    MFFacesListTableViewController *flvc = [[MFFacesListTableViewController alloc] init];
+    [flvc removeAllFacesFromFaceRecognizer:faceRecognizer];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)sliderValueChanged:(id)sender

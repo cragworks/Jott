@@ -53,7 +53,11 @@
     _root = [[MFViewController alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:_root];
-    //[[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-4 forBarMetrics:UIBarMetricsDefault];
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+//    [[[UINavigationBar appearance] ]
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -5) forBarMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -6) forBarMetrics:UIBarMetricsDefault];
     
     SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:_menuViewController frontViewController:navController];
     revealViewController.delegate = self;
@@ -84,6 +88,11 @@
 
 - (void) refreshPassword {
     _password = [_wrapper objectForKey:(__bridge id)kSecValueData];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)launchAnimationPortrait {

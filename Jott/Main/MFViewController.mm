@@ -19,6 +19,8 @@
 #import "MFUserSettingsViewController.h"
 #import "UIImage+ImageEffects.h"
 #import "JCRBlurView.h"
+#import "FXBlurView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface MFViewController ()
 
@@ -26,19 +28,15 @@
 
 @implementation UINavigationBar (customNav)
 - (CGSize)sizeThatFits:(CGSize)size {
-    CGSize newSize = CGSizeMake(self.frame.size.width,60);
+    CGSize newSize = CGSizeMake(self.frame.size.width,45);
     return newSize;
 }
 @end
 
 @implementation MFViewController {
-    MFAddNoteViewController *anvc;
     MFAppDelegate *delegate;
-    UIImageView *cellBlur;
     CGFloat scrollHeight;
-    SWRevealViewController *revealController;
     UIImage *navBarBackground;
-    UIImage *listBackground;
 }
 
 - (void)viewDidLoad
@@ -48,7 +46,7 @@
 }
 
 - (void)initialSetup {
-    
+
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults boolForKey:@"firstTime"] != NO) {
         [defaults setBool:NO forKey:@"firstTime"];
@@ -56,30 +54,37 @@
         [self presentFirstTimeView];
     }
     
-    //listBackground = [UIImage imageNamed:@"bg6.jpg"];
-    listBackground = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
-//    listBackground = [UIImage imageWithCGImage:[listBackground CGImage]
-//                        scale:(listBackground.scale * 1.73)
-//                  orientation:(listBackground.imageOrientation)];
+//    listBackground = [[UIImage imageNamed:@"bg3.jpg"] applySubtleEffect];                       // 3-subtle, 7-subtle, 8-subtle
+//    listBackground = [self imageWithImage:listBackground scaledToSize:CGSizeMake(320, 640)];
+
+    _background = [[UIImage imageNamed:@"bg8.jpg"] applyBlurWithRadius:8.0
+                                                            tintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.66]
+                                                saturationDeltaFactor:1.0
+                                                            maskImage:nil];
+    _background = [UIImage imageWithCGImage: [_background CGImage]
+                        scale:(_background.scale * 1.5)
+                  orientation:(_background.imageOrientation)];
     
-    navBarBackground = [UIImage imageNamed:@"2-.png"];
+    navBarBackground = [UIImage imageNamed:@"navBar.png"];
     navBarBackground = [UIImage imageWithCGImage:[navBarBackground CGImage]
                                          scale:(navBarBackground.scale * 2.5)
                                    orientation:(navBarBackground.imageOrientation)];
-
-    [self.navigationController.navigationBar setFrame:CGRectMake(0, 0, 320, 100)];
-    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-4 forBarMetrics:UIBarMetricsDefault];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:_background];
+    
+//    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitlePositionAdjustment:UIOffsetMake(0, -6) forBarMetrics:UIBarMetricsDefault];
+//     setBackgroundVerticalPositionAdjustment:-6 forBarMetrics:UIBarMetricsDefault];
     
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
     
-    revealController = [self revealViewController];
-    [revealController panGestureRecognizer];
-    [revealController tapGestureRecognizer];
+    _revealController = [self revealViewController];
+    [_revealController panGestureRecognizer];
+    [_revealController tapGestureRecognizer];
     self.revealViewController.delegate = self;
     
-    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"]style:UIBarButtonItemStyleBordered target:revealController action:@selector(revealToggle:)];
-    _addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNote)];
+    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"]style:UIBarButtonItemStyleBordered target:_revealController action:@selector(revealToggle:)];
+    _addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(presentAddNoteViewController)];
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MFNote" inManagedObjectContext:_managedObjectContext];
@@ -90,7 +95,7 @@
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60) style:UITableViewStylePlain];
     _tableView.rowHeight = 84.5;
-    _tableView.backgroundColor = [UIColor colorWithPatternImage:listBackground];
+    _tableView.backgroundColor = [UIColor clearColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     
@@ -99,35 +104,45 @@
     [self.view addSubview:_tableView];
 }
 
+- (UIImage*)imageWithImage:(UIImage*)image
+              scaledToSize:(CGSize)newSize
+{
+    UIGraphicsBeginImageContext( newSize );
+    [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     _currentlyViewingNote = NO;
     
     [self.tableView reloadData];
-    [revealController panGestureRecognizer].enabled = YES;
+    [_revealController panGestureRecognizer].enabled = YES;
     
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    if ([defaults boolForKey:@"firstTime"] == NO) {
-//        [self presentFirstTimeView];
-//    }
-    
-    self.navigationItem.title = @"Jott";
-    [self.navigationController.navigationBar setBackgroundImage:navBarBackground
-                                                  forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:navBarBackground forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0];
     
+    
+    self.navigationItem.title = @"Jott";
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:0.5];
     shadow.shadowOffset = CGSizeMake(0, 1);
     [self.navigationController.navigationBar setTitleTextAttributes:@{
                                                                       NSForegroundColorAttributeName : [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
                                                                       // [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],
-                                                                       NSShadowAttributeName : shadow,
-                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:30.0]
+                                                                      NSShadowAttributeName : shadow,
+                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:28.0]
                                                                       }];
+    
+    
+   
+
 }
 
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword; {
@@ -138,43 +153,86 @@
     [self.tableView reloadData];
 }
 
-- (void)addNote {
-    anvc = [[MFAddNoteViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:anvc];
-    [self presentViewController:navController animated:YES completion:nil];
-}
-
 #pragma mark - Present View Controllers
 
 - (void)presentHomeViewController {
     [self.navigationController popToRootViewControllerAnimated:YES];
-    [revealController revealToggle:self];
+    [_revealController revealToggle:self];
 }
 
 - (void)presentSettingsViewController {
+    
+    NSArray *viewControllers = [[self navigationController] viewControllers];
+    for( int i = 0; i < [viewControllers count]; i++){
+        id vc = [viewControllers objectAtIndex:i];
+        if([vc isKindOfClass:[MFSettingsViewController class]]){
+            [[self navigationController] popToViewController:vc animated:YES];
+            [_revealController revealToggle:self];
+            return;
+        }
+    }
+    
     MFSettingsViewController *svc = [delegate settingsViewController];
     [svc.tableView setScrollEnabled:NO];
-    
     [self.navigationController pushViewController:svc animated:YES];
-    [revealController revealToggle:self];
+    [_revealController revealToggle:self];
 }
 
 - (void)presentUserSettingsViewController {
+    
+    NSArray *viewControllers = [[self navigationController] viewControllers];
+    for( int i = 0; i < [viewControllers count]; i++){
+        id vc = [viewControllers objectAtIndex:i];
+        if([vc isKindOfClass:[MFUserSettingsViewController class]]){
+            [[self navigationController] popToViewController:vc animated:YES];
+            [_revealController revealToggle:self];
+            return;
+        }
+    }
+    
     MFUserSettingsViewController *usvc = [[MFUserSettingsViewController alloc]init];
     [self.navigationController pushViewController:usvc animated:YES];
-    [revealController revealToggle:self];
+    [_revealController revealToggle:self];
 }
 
 - (void)presentInfoViewController {
-    [revealController panGestureRecognizer].enabled = NO;
+
+    NSArray *viewControllers = [[self navigationController] viewControllers];
+    for( int i = 0; i < [viewControllers count]; i++){
+        id vc = [viewControllers objectAtIndex:i];
+        if([vc isKindOfClass:[MFInfoViewController class]]){
+            [[self navigationController] popToViewController:vc animated:YES];
+            [_revealController revealToggle:self];
+            return;
+        }
+    }
+    
     MFInfoViewController *ivc = [[MFInfoViewController alloc] init];
     [self.navigationController pushViewController:ivc animated:YES];
-    [revealController revealToggle:self];
+    [_revealController revealToggle:self];
 }
 
 - (void)presentViewNoteViewController {
-    MFViewNoteViewController *vnc = [[MFViewNoteViewController alloc] init];
-    [self.navigationController pushViewController:vnc animated:YES];
+    [_revealController panGestureRecognizer].enabled = NO;
+    MFViewNoteViewController *vnvc = [[MFViewNoteViewController alloc] init];
+    [self.navigationController pushViewController:vnvc animated:YES];
+}
+
+- (void)presentAddNoteViewController {
+    
+    if ([delegate.password isEqualToString:@""]) {
+        UIAlertView *noPasswordAlertView = [[UIAlertView alloc] initWithTitle:@"No Password"
+                                                                      message:@"Please set a password first"
+                                                                     delegate:self
+                                                            cancelButtonTitle:@"OK"
+                                                            otherButtonTitles:nil, nil];
+        [noPasswordAlertView show];
+        return;
+    }
+    
+    [_revealController panGestureRecognizer].enabled = NO;
+    MFAddNoteViewController *anvc = [[MFAddNoteViewController alloc] init];
+    [self.navigationController pushViewController:anvc animated:YES];
 }
 
 - (void)dismissPresentedViewController {
@@ -242,7 +300,7 @@
 }
 
 
-#pragma mark - Table view data source
+#pragma mark - TableView Delegate Methods
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
@@ -327,10 +385,10 @@
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];
     cell.detailTextLabel.textColor = [UIColor blackColor];
     cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:14.0];
-    cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.15];
+    cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.6];
     
     UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];
-    selectedView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
+    selectedView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.6];
     cell.selectedBackgroundView = selectedView;
     
     cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
@@ -339,6 +397,15 @@
     return cell;
 }
 
+- (void)deleteAllNotes {
+    
+    for (MFNote *note in [MFNotesModel sharedModel].notesList) {
+        [_managedObjectContext deleteObject:note];
+    }
+    [_managedObjectContext save:nil];    
+    
+    [[MFNotesModel sharedModel].notesList removeAllObjects];
+}
 
 #pragma mark - SWRevealViewController Delegate Methods
 
@@ -357,7 +424,6 @@
         self.view.userInteractionEnabled = NO;
     }
 }
-
 
 - (void)didReceiveMemoryWarning
 {
