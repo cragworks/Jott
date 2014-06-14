@@ -13,6 +13,7 @@
 #import "MFViewController.h"
 #import "SWRevealViewController.h"
 #import "MFMenuViewController.h"
+#import "CustomFaceRecognizer.h"
 
 @class SWRevealViewController;
 

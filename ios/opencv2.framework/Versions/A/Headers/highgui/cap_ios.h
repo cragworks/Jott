@@ -80,6 +80,8 @@
 
 - (void)start;
 - (void)stop;
+- (void)pause;
+- (void)unpause;
 - (void)switchCameras;
 
 - (id)initWithParentView:(UIView*)parent;

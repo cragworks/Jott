@@ -107,6 +107,13 @@
     _decryptButton.frame = CGRectMake(270, 455, 35, 35);
     [_decryptButton addTarget:self action:@selector(decryptButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
+    _holdButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [_holdButton setBackgroundImage:[UIImage imageNamed:@"hand-50.png"] forState:UIControlStateNormal];
+    _holdButton.frame = CGRectMake(145, 455, 35, 35);
+    [_holdButton addTarget:self action:@selector(holdButtonPressed) forControlEvents:UIControlEventTouchDown];
+    [_holdButton addTarget:self action:@selector(holdButtonReleased) forControlEvents:UIControlEventTouchUpInside];
+    [self holdButton:NO];
+    
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
     _titleView = [[UITextField alloc] initWithFrame:CGRectMake(0, 10, self.view.frame.size.width - 20, 35)];
@@ -143,6 +150,7 @@
     [self.view addSubview:_titleView];
     [self.view addSubview:_noteView];
     [self.view addSubview:_decryptButton];
+    [self.view addSubview:_holdButton];
     [self.view addSubview:line];
     
     NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1
@@ -159,6 +167,35 @@
 }
 
 #pragma mark - Timed Decryption
+
+- (void)holdButtonPressed {
+    if(!isEncrypted) isLockDecrypted = YES;
+}
+
+- (void)holdButtonReleased {
+    isLockDecrypted = NO;
+}
+
+- (void)holdButton:(BOOL)active {
+    if (!active) {
+        [UIView animateWithDuration:0.25
+                         animations:^{
+                             _holdButton.alpha = 0.5;
+                         }
+                         completion:^(BOOL finished) {
+                             _holdButton.userInteractionEnabled = NO;
+                         }];
+    }
+    else {
+        [UIView animateWithDuration:0.25
+                         animations:^{
+                             _holdButton.alpha = 1.0;
+                         }
+                         completion:^(BOOL finished) {
+                             _holdButton.userInteractionEnabled = YES;
+                         }];
+    }
+}
 
 - (void)decryptButtonTapped {
     if (isLockDecrypted) {
@@ -181,11 +218,13 @@
     if (isLockDecrypted) {
         [self startCamera];
         isLockDecrypted = NO;
+        _holdButton.hidden = NO;
         [_decryptButton setBackgroundImage:[UIImage imageNamed:@"lock-50.png"] forState:UIControlStateNormal];
     }
     else {
         [self stopCamera];
         isLockDecrypted = YES;
+        _holdButton.hidden = YES;
         [_decryptButton setBackgroundImage:[UIImage imageNamed:@"unlock-50.png"] forState:UIControlStateNormal];
     }
 }
@@ -236,7 +275,7 @@
     if (alertView.tag == 3) {
         MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
         if ([[alertView textFieldAtIndex:0].text isEqualToString: appDelegate.password]) {
-            [self lockDecrypt];
+            [self lockDecrypt];;
         }
         else {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Wrong Password"
@@ -270,6 +309,7 @@
     if (isEncrypted) {
         presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256DecryptWithKey:password];
         _noteView.text = presentingViewController.currentNote.text;
+        [self holdButton:YES];
         isEncrypted = NO;
     }
 }
@@ -278,6 +318,7 @@
     if (!isEncrypted) {
         presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256EncryptWithKey:password];
         _noteView.text = presentingViewController.currentNote.text;
+        [self holdButton:NO];
         isEncrypted = YES;
         isLockDecrypted = NO;
     }
@@ -372,7 +413,7 @@
 }
 
 - (void)keyboardWillHide:(id)sender {
-    _noteView.frame = CGRectMake(10, 70, self.view.frame.size.width - 20, 350);
+    _noteView.frame = CGRectMake(10, 55, self.view.frame.size.width - 20, 350);
 }
 
 - (void)save {

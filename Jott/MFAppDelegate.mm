@@ -24,6 +24,8 @@
     UIImageView *jImageView;
 }
 
+#define CAPTURE_FPS 30
+
 @synthesize passwordItem, accountNumberItem, settingsViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -332,7 +334,6 @@
     
     return persistentStoreCoordinator;
 }
-
 
 #pragma mark - Application's Documents directory
 

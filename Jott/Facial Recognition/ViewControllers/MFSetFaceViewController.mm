@@ -8,6 +8,7 @@
 
 #import "MFSetFaceViewController.h"
 #import "OpenCVData.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface MFSetFaceViewController ()
 
@@ -133,6 +134,8 @@
         return;
     };
     self.numPicsTaken++;
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     
     dispatch_sync(dispatch_get_main_queue(), ^{
         [_picsLabel setText:[NSString stringWithFormat:@"%d more pictures remaining.", 10 - _numPicsTaken]];

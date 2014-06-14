@@ -83,7 +83,6 @@
 		45A784CE1932F49E00E8A34C /* MFAddNoteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784CD1932F49E00E8A34C /* MFAddNoteViewController.mm */; };
 		45A784D11932F4A600E8A34C /* MFViewNoteViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784D01932F4A600E8A34C /* MFViewNoteViewController.mm */; };
 		45A784D41932F4B000E8A34C /* MFViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45A784D31932F4B000E8A34C /* MFViewController.mm */; };
-		45A784FA193424A400E8A34C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A784F9193424A400E8A34C /* opencv2.framework */; };
 		45C229CA192FC5AB0079777A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C229C9192FC5AB0079777A /* Security.framework */; };
 		45C49DB5193F69DE0003096A /* bgb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45C49DB4193F69DE0003096A /* bgb.jpg */; };
 		45C49DB7193F6A8F0003096A /* bgc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45C49DB6193F6A8F0003096A /* bgc.jpg */; };
@@ -112,6 +111,9 @@
 		45F73649194BEF50004957DC /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73648194BEF50004957DC /* paper.png */; };
 		45F7364B194BF05C004957DC /* paper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F7364A194BF05C004957DC /* paper2.png */; };
 		45F73651194BFA3E004957DC /* face-recognition-white-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73650194BFA3E004957DC /* face-recognition-white-128.png */; };
+		45F73656194CE6B5004957DC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F73655194CE6B5004957DC /* AudioToolbox.framework */; };
+		45F73658194CEB06004957DC /* hand-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73657194CEB06004957DC /* hand-50.png */; };
+		45F7365C194CFE24004957DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F73653194C0C87004957DC /* opencv2.framework */; };
 		45FAACE81936D2A300513053 /* info-white-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FAACE71936D2A300513053 /* info-white-128.png */; };
 /* End PBXBuildFile section */
 
@@ -228,7 +230,6 @@
 		45A784D01932F4A600E8A34C /* MFViewNoteViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFViewNoteViewController.mm; path = "View Note/MFViewNoteViewController.mm"; sourceTree = "<group>"; };
 		45A784D21932F4B000E8A34C /* MFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFViewController.h; path = Main/MFViewController.h; sourceTree = "<group>"; };
 		45A784D31932F4B000E8A34C /* MFViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFViewController.mm; path = Main/MFViewController.mm; sourceTree = "<group>"; };
-		45A784F9193424A400E8A34C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
 		45C229C9192FC5AB0079777A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		45C49DB4193F69DE0003096A /* bgb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgb.jpg; sourceTree = "<group>"; };
 		45C49DB6193F6A8F0003096A /* bgc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgc.jpg; sourceTree = "<group>"; };
@@ -260,6 +261,9 @@
 		45F73648194BEF50004957DC /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
 		45F7364A194BF05C004957DC /* paper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper2.png; sourceTree = "<group>"; };
 		45F73650194BFA3E004957DC /* face-recognition-white-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "face-recognition-white-128.png"; sourceTree = "<group>"; };
+		45F73653194C0C87004957DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
+		45F73655194CE6B5004957DC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		45F73657194CEB06004957DC /* hand-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-50.png"; sourceTree = "<group>"; };
 		45FAACE71936D2A300513053 /* info-white-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-white-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -268,8 +272,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F7365C194CFE24004957DC /* opencv2.framework in Frameworks */,
+				45F73656194CE6B5004957DC /* AudioToolbox.framework in Frameworks */,
 				45EDE95719342D8E00624202 /* libc++.dylib in Frameworks */,
-				45A784FA193424A400E8A34C /* opencv2.framework in Frameworks */,
 				45C229CA192FC5AB0079777A /* Security.framework in Frameworks */,
 				45215EBC192EF48B00739DCB /* libsqlite3.dylib in Frameworks */,
 				45215EB0192EF44100739DCB /* AVFoundation.framework in Frameworks */,
@@ -321,9 +326,10 @@
 		45049FD819266F7C00994960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45F73655194CE6B5004957DC /* AudioToolbox.framework */,
+				45F73653194C0C87004957DC /* opencv2.framework */,
 				45CDDEC119423665007560B9 /* CoreLocation.framework */,
 				45EDE95619342D8E00624202 /* libc++.dylib */,
-				45A784F9193424A400E8A34C /* opencv2.framework */,
 				45215EBB192EF48B00739DCB /* libsqlite3.dylib */,
 				45C229C9192FC5AB0079777A /* Security.framework */,
 				45215EB9192EF47300739DCB /* QuartzCore.framework */,
@@ -408,6 +414,7 @@
 		4504A015192673D200994960 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45F73657194CEB06004957DC /* hand-50.png */,
 				45F73650194BFA3E004957DC /* face-recognition-white-128.png */,
 				45F7364A194BF05C004957DC /* paper2.png */,
 				45F73648194BEF50004957DC /* paper.png */,
@@ -723,6 +730,7 @@
 				4504A017192673D200994960 /* plus-50.png in Resources */,
 				45CDDEC4194295B8007560B9 /* 2-.png in Resources */,
 				45A5818C1936607300589231 /* plus-32.png in Resources */,
+				45F73658194CEB06004957DC /* hand-50.png in Resources */,
 				45E4A479192E391B00988E35 /* settings-50.png in Resources */,
 				45CB453D1949FBB200754E37 /* info1.png in Resources */,
 				45DB78431936A46200C78C47 /* settings-white-128.png in Resources */,

@@ -16,6 +16,9 @@
 
 @property (nonatomic, strong) UITextField *titleView;
 @property (nonatomic, strong) UITextView *noteView;
+@property (nonatomic, strong) UIButton *decryptButton;
+@property (nonatomic, strong) UIButton *holdButton;
+
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) FaceDetector *faceDetector;
@@ -23,7 +26,6 @@
 @property (nonatomic, strong) CvVideoCamera* videoCamera;
 @property (nonatomic, strong) CALayer *featureLayer;
 @property (nonatomic) NSInteger frameNum;
-@property (nonatomic, strong) UIButton *decryptButton;
 @property (nonatomic) float totalConfidence;
 @property (nonatomic) float averageConfidence;
 @property (nonatomic) int numPics;
