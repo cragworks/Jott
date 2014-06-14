@@ -26,6 +26,7 @@
 - (void)presentHomeViewController;
 - (void)presentSettingsViewController;
 - (void)presentInfoViewController;
+- (void)presentFacesListViewController;
 - (void)presentUserSettingsViewController;
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword;
 - (void)deleteAllNotes;

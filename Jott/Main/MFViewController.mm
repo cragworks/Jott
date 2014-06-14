@@ -20,7 +20,7 @@
 #import "UIImage+ImageEffects.h"
 #import "JCRBlurView.h"
 #import "FXBlurView.h"
-#import <QuartzCore/QuartzCore.h>
+#import "MFFacesListTableViewController.h"
 
 @interface MFViewController ()
 
@@ -37,6 +37,8 @@
     MFAppDelegate *delegate;
     CGFloat scrollHeight;
     UIImage *navBarBackground;
+    UIView *dim;
+    NSUserDefaults *defaults;
 }
 
 - (void)viewDidLoad
@@ -46,23 +48,26 @@
 }
 
 - (void)initialSetup {
-
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults boolForKey:@"firstTime"] != NO) {
         [defaults setBool:NO forKey:@"firstTime"];
         [defaults setInteger:100 forKey:@"sensitivity"];
+//        [defaults setInteger:0 forKey:@"textEncryption"];
+//        [defaults setInteger:3 forKey:@"decryptTimer"];
         [self presentFirstTimeView];
     }
     
 //    listBackground = [[UIImage imageNamed:@"bg3.jpg"] applySubtleEffect];                       // 3-subtle, 7-subtle, 8-subtle
 //    listBackground = [self imageWithImage:listBackground scaledToSize:CGSizeMake(320, 640)];
-
-    _background = [[UIImage imageNamed:@"bg8.jpg"] applyBlurWithRadius:8.0
-                                                            tintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.66]
-                                                saturationDeltaFactor:1.0
-                                                            maskImage:nil];
+    
+//    _background = [[UIImage imageNamed:@"bg8.jpg"] applyBlurWithRadius:8.0
+//                                                            tintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.66]
+//                                                saturationDeltaFactor:1.0
+//                                                            maskImage:nil];
+    _background = [UIImage imageNamed:@"paper2.png"];
     _background = [UIImage imageWithCGImage: [_background CGImage]
-                        scale:(_background.scale * 1.5)
+                        scale:(_background.scale * 2.1)
                   orientation:(_background.imageOrientation)];
     
     navBarBackground = [UIImage imageNamed:@"navBar.png"];
@@ -72,8 +77,7 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:_background];
     
-//    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitlePositionAdjustment:UIOffsetMake(0, -6) forBarMetrics:UIBarMetricsDefault];
-//     setBackgroundVerticalPositionAdjustment:-6 forBarMetrics:UIBarMetricsDefault];
+    
     
     delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     _managedObjectContext = delegate.managedObjectContext;
@@ -139,9 +143,6 @@
                                                                       NSShadowAttributeName : shadow,
                                                                       NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:28.0]
                                                                       }];
-    
-    
-   
 
 }
 
@@ -218,6 +219,22 @@
     [self.navigationController pushViewController:vnvc animated:YES];
 }
 
+- (void)presentFacesListViewController {
+    NSArray *viewControllers = [[self navigationController] viewControllers];
+    for( int i = 0; i < [viewControllers count]; i++){
+        id vc = [viewControllers objectAtIndex:i];
+        if([vc isKindOfClass:[MFFacesListTableViewController class]]){
+            [[self navigationController] popToViewController:vc animated:YES];
+            [_revealController revealToggle:self];
+            return;
+        }
+    }
+    
+    MFFacesListTableViewController *flvc = [[MFFacesListTableViewController alloc] init];
+    [self.navigationController pushViewController:flvc animated:YES];
+    [_revealController revealToggle:self];
+}
+
 - (void)presentAddNoteViewController {
     
     if ([delegate.password isEqualToString:@""]) {
@@ -241,11 +258,12 @@
 }
 
 - (void)presentFirstTimeView {
-    
-    UIView *firstTimeView = [[UIView alloc] initWithFrame:CGRectMake(35, self.view.frame.size.height + 100, self.view.frame.size.width - 70, 130)];
+
+    UIView *firstTimeView = [[UIView alloc] initWithFrame:CGRectMake(35, self.view.frame.size.height + 100, self.view.frame.size.width - 50, 160)];
     firstTimeView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.95];
-    JCRBlurView *blur = [JCRBlurView new];
-    [firstTimeView addSubview:blur];
+    
+    //    JCRBlurView *blur = [JCRBlurView new];
+//    [firstTimeView addSubview:blur];
     
     
     UIButton *setupButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -265,6 +283,7 @@
     textView.text = @"It looks this is your first time. \n Before you can add any notes, you will need to set up your profile.\n\n Tap the button below to get started.";
     textView.font = [UIFont fontWithName:@"Helvetica Neue" size:15.0];
     textView.textAlignment = NSTextAlignmentCenter;
+    textView.editable = NO;
     
     [firstTimeView addSubview:welcomeLabel];
     [firstTimeView addSubview:textView];
@@ -275,10 +294,31 @@
                           delay: 4.0
                         options: UIViewAnimationOptionCurveEaseOut
                      animations:^{
-                         firstTimeView.frame = CGRectMake(30, 150, self.view.frame.size.width - 60, 310);
+                         firstTimeView.frame = CGRectMake(30, 130, self.view.frame.size.width - 60, 310);
                      }
-                     completion:nil];
+                     completion:^(BOOL finished) {
+                         [self animateDim];
+                         [self.view bringSubviewToFront:firstTimeView];
+                     }];
 
+}
+
+- (void)animateDim {
+    dim = [[UIView alloc] initWithFrame:self.view.bounds];
+    dim.backgroundColor = [UIColor blackColor];
+    dim.alpha = 0.0;
+    [self.view addSubview:dim];
+    
+    [UIView animateWithDuration:0.5
+                          delay: 0
+                        options: UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         dim.alpha = 0.5;
+                     }
+                     completion:^(BOOL finished) {
+                         
+                     }];
+    
 }
 
 - (void)setupButtonTapped:(id)sender {
@@ -296,6 +336,7 @@
                          
                          [self.navigationController pushViewController:svc animated:YES];
                          [view removeFromSuperview];
+                         [dim removeFromSuperview];
                      }];
 }
 
@@ -391,8 +432,24 @@
     selectedView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.6];
     cell.selectedBackgroundView = selectedView;
     
+    
     cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
-    cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
+
+    if ([defaults integerForKey:@"textEncryption"] == 0) {
+        cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
+    }
+    else if ([defaults integerForKey:@"textEncryption"] == 1) {
+        cell.detailTextLabel.text = [[[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text] AES256DecryptWithKey:delegate.password];
+        
+//        UIView *blur = [[UIView alloc] initWithFrame:CGRectMake(15, 43, 290, 30)];
+//        blur.backgroundColor = [UIColor whiteColor];
+//        blur.alpha = 0.9;
+//        [cell.contentView addSubview:blur];
+//        [cell.contentView addSubview:blur];
+    }
+    else if ([defaults integerForKey:@"textEncryption"] == 2) {
+        cell.detailTextLabel.text = @"";
+    }
     
     return cell;
 }

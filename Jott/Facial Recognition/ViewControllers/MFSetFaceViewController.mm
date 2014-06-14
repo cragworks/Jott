@@ -43,7 +43,7 @@
 //    _nameInput.delegate = self;
     
     _picsLabel = [[UILabel alloc] init];
-    _picsLabel.frame = CGRectMake(0, 445, self.view.frame.size.width, 50);
+    _picsLabel.frame = CGRectMake(0, 441, self.view.frame.size.width, 50);
     _picsLabel.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
     _picsLabel.textColor = [UIColor whiteColor];
     _picsLabel.text = @"10 more pictures remaining.";
@@ -69,7 +69,7 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 430)];
+    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 15, self.view.frame.size.width, 415)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;

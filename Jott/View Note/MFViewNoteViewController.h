@@ -12,7 +12,7 @@
 #import "CustomFaceRecognizer.h"
 #import "FaceDetector.h"
 
-@interface MFViewNoteViewController : UIViewController <UIAlertViewDelegate,CvVideoCameraDelegate>
+@interface MFViewNoteViewController : UIViewController <UIAlertViewDelegate,CvVideoCameraDelegate, UITextViewDelegate>
 
 @property (nonatomic, strong) UITextField *titleView;
 @property (nonatomic, strong) UITextView *noteView;

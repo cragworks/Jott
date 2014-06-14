@@ -69,6 +69,17 @@
     _faceRecognizer = [[CustomFaceRecognizer alloc] init];
     _faces = [_faceRecognizer getAllPeople];
 
+    self.navigationItem.title = @"Faces";
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:0.5];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [self.navigationController.navigationBar setTitleTextAttributes:@{
+                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                                      // [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0],
+                                                                      NSShadowAttributeName : shadow,
+                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:28.0]
+                                                                      }];
+    
     [self.tableView reloadData];
 }
 

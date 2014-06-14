@@ -13,7 +13,10 @@
 
 @end
 
-@implementation MFUserSettingsViewController
+@implementation MFUserSettingsViewController {
+    long currentTimer;
+    long currentTextDecrypt;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,11 +46,13 @@
     _tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     
-   // self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    // self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    //self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+    currentTextDecrypt = [defaults integerForKey:@"textEncryption"];
+    currentTimer = [defaults integerForKey:@"decryptTimer"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,8 +72,6 @@
 {
     return 55.0;
 }
-
-
 
 - (UIView *)tableView:(UITableView *)tableview viewForFooterInSection:(NSInteger)section {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableview.bounds.size.width, 60)];
@@ -111,13 +114,25 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-       [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    if (indexPath.section == 1) {
-        if (cell.accessoryType == UITableViewCellAccessoryNone) cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        else cell.accessoryType = UITableViewCellAccessoryNone;
+    if (indexPath.section == 0) {
+        NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+        [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:currentTimer inSection:0]].accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [defaults setInteger:indexPath.row forKey:@"decryptTimer"];
+        currentTimer = indexPath.row;
+    }
+    else if (indexPath.section == 1) {
+        NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
+        [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:currentTextDecrypt inSection:1]].accessoryType = UITableViewCellAccessoryNone;
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [defaults setInteger:indexPath.row forKey:@"textEncryption"];
+        currentTextDecrypt = indexPath.row;
+        
     }
 }
 
@@ -128,6 +143,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    
+    if(indexPath.row == currentTimer && indexPath.section == 0) cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    if(indexPath.row == currentTextDecrypt && indexPath.section == 1) cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {

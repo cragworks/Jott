@@ -54,10 +54,6 @@
     }
 }
 
-- (void)close {
-
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -90,8 +90,6 @@
 		45C49DB9193F70C90003096A /* bgd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45C49DB8193F70C90003096A /* bgd.jpg */; };
 		45C49DBB193F735A0003096A /* bge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45C49DBA193F735A0003096A /* bge.jpg */; };
 		45CB453D1949FBB200754E37 /* info1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB453A1949FBB200754E37 /* info1.png */; };
-		45CB453E1949FBB200754E37 /* info1.psd in Resources */ = {isa = PBXBuildFile; fileRef = 45CB453B1949FBB200754E37 /* info1.psd */; };
-		45CB453F1949FBB200754E37 /* info2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 45CB453C1949FBB200754E37 /* info2.psd */; };
 		45CB4541194A071200754E37 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4540194A071200754E37 /* navBar.png */; };
 		45CB4544194A209900754E37 /* unlock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4542194A209900754E37 /* unlock-50.png */; };
 		45CB4545194A209900754E37 /* lock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4543194A209900754E37 /* lock-50.png */; };
@@ -110,6 +108,10 @@
 		45EDE95E19343D1A00624202 /* switch_camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45EDE95D19343D1A00624202 /* switch_camera-50.png */; };
 		45EDE9631934470A00624202 /* switch_camera-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 45EDE9621934470A00624202 /* switch_camera-32.png */; };
 		45F292B919379F0100CA208E /* MFUserSettingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45F292B819379F0100CA208E /* MFUserSettingsViewController.mm */; };
+		45F73647194BE3B8004957DC /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73646194BE3B8004957DC /* line.png */; };
+		45F73649194BEF50004957DC /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73648194BEF50004957DC /* paper.png */; };
+		45F7364B194BF05C004957DC /* paper2.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F7364A194BF05C004957DC /* paper2.png */; };
+		45F73651194BFA3E004957DC /* face-recognition-white-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 45F73650194BFA3E004957DC /* face-recognition-white-128.png */; };
 		45FAACE81936D2A300513053 /* info-white-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 45FAACE71936D2A300513053 /* info-white-128.png */; };
 /* End PBXBuildFile section */
 
@@ -233,8 +235,6 @@
 		45C49DB8193F70C90003096A /* bgd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgd.jpg; sourceTree = "<group>"; };
 		45C49DBA193F735A0003096A /* bge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bge.jpg; sourceTree = "<group>"; };
 		45CB453A1949FBB200754E37 /* info1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info1.png; sourceTree = "<group>"; };
-		45CB453B1949FBB200754E37 /* info1.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = info1.psd; sourceTree = "<group>"; };
-		45CB453C1949FBB200754E37 /* info2.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = info2.psd; sourceTree = "<group>"; };
 		45CB4540194A071200754E37 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
 		45CB4542194A209900754E37 /* unlock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock-50.png"; sourceTree = "<group>"; };
 		45CB4543194A209900754E37 /* lock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-50.png"; sourceTree = "<group>"; };
@@ -256,6 +256,10 @@
 		45EDE9621934470A00624202 /* switch_camera-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch_camera-32.png"; sourceTree = "<group>"; };
 		45F292B719379F0100CA208E /* MFUserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFUserSettingsViewController.h; path = "User Settings/MFUserSettingsViewController.h"; sourceTree = "<group>"; };
 		45F292B819379F0100CA208E /* MFUserSettingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFUserSettingsViewController.mm; path = "User Settings/MFUserSettingsViewController.mm"; sourceTree = "<group>"; };
+		45F73646194BE3B8004957DC /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		45F73648194BEF50004957DC /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		45F7364A194BF05C004957DC /* paper2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper2.png; sourceTree = "<group>"; };
+		45F73650194BFA3E004957DC /* face-recognition-white-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "face-recognition-white-128.png"; sourceTree = "<group>"; };
 		45FAACE71936D2A300513053 /* info-white-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-white-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,9 +353,9 @@
 				4598B8011938CA8400BFF319 /* Blur */,
 				45C229C5192FC5780079777A /* KeychainWrapper */,
 				45A581791936451400589231 /* SlideOut View */,
-				45F292B619379EDF00CA208E /* Settings */,
+				45F292B619379EDF00CA208E /* User Settings */,
 				45FAACE91936D2FF00513053 /* Info */,
-				45E4A47A192E39FA00988E35 /* User Settings */,
+				45E4A47A192E39FA00988E35 /* Settings */,
 				45E4A474192D9C7800988E35 /* View Note */,
 				4504A0181926761800994960 /* Add Note */,
 				4504A0111926701500994960 /* Main */,
@@ -404,6 +408,10 @@
 		4504A015192673D200994960 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				45F73650194BFA3E004957DC /* face-recognition-white-128.png */,
+				45F7364A194BF05C004957DC /* paper2.png */,
+				45F73648194BEF50004957DC /* paper.png */,
+				45F73646194BE3B8004957DC /* line.png */,
 				45CB4542194A209900754E37 /* unlock-50.png */,
 				45CB4543194A209900754E37 /* lock-50.png */,
 				45CB45391949FBB200754E37 /* Info */,
@@ -567,8 +575,6 @@
 			isa = PBXGroup;
 			children = (
 				45CB453A1949FBB200754E37 /* info1.png */,
-				45CB453B1949FBB200754E37 /* info1.psd */,
-				45CB453C1949FBB200754E37 /* info2.psd */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -593,7 +599,7 @@
 			name = "View Note";
 			sourceTree = "<group>";
 		};
-		45E4A47A192E39FA00988E35 /* User Settings */ = {
+		45E4A47A192E39FA00988E35 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				45A784C51932F44400E8A34C /* MFSettingsViewController.h */,
@@ -603,16 +609,16 @@
 				4598B7FE19381E9500BFF319 /* MFSetUsernameViewController.h */,
 				4598B7FF19381E9500BFF319 /* MFSetUsernameViewController.m */,
 			);
-			name = "User Settings";
+			name = Settings;
 			sourceTree = "<group>";
 		};
-		45F292B619379EDF00CA208E /* Settings */ = {
+		45F292B619379EDF00CA208E /* User Settings */ = {
 			isa = PBXGroup;
 			children = (
 				45F292B719379F0100CA208E /* MFUserSettingsViewController.h */,
 				45F292B819379F0100CA208E /* MFUserSettingsViewController.mm */,
 			);
-			name = Settings;
+			name = "User Settings";
 			sourceTree = "<group>";
 		};
 		45FAACE91936D2FF00513053 /* Info */ = {
@@ -703,6 +709,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DB78441936A46200C78C47 /* user_male2-white-128.png in Resources */,
+				45F73651194BFA3E004957DC /* face-recognition-white-128.png in Resources */,
+				45F7364B194BF05C004957DC /* paper2.png in Resources */,
 				45DB7838193664F600C78C47 /* menu.png in Resources */,
 				45A3A8F61940C22A0007591E /* 2.png in Resources */,
 				4598B80E1938D41B00BFF319 /* bg3.jpg in Resources */,
@@ -718,7 +726,6 @@
 				45E4A479192E391B00988E35 /* settings-50.png in Resources */,
 				45CB453D1949FBB200754E37 /* info1.png in Resources */,
 				45DB78431936A46200C78C47 /* settings-white-128.png in Resources */,
-				45CB453E1949FBB200754E37 /* info1.psd in Resources */,
 				45DB78361936641A00C78C47 /* user_male2-50.png in Resources */,
 				457483651946581000BB4BDE /* launchImage2.png in Resources */,
 				4598B8131938DC7B00BFF319 /* bg5.jpg in Resources */,
@@ -735,6 +742,7 @@
 				45C49DBB193F735A0003096A /* bge.jpg in Resources */,
 				45DB783B1936A28C00C78C47 /* settings-white-50.png in Resources */,
 				458DCC0E1944E080006E4E99 /* Default-Landscape.png in Resources */,
+				45F73649194BEF50004957DC /* paper.png in Resources */,
 				45A223EB19418EEF00F3AF4A /* jImage.png in Resources */,
 				45049FF219266F7C00994960 /* Images.xcassets in Resources */,
 				4598B8191938E77D00BFF319 /* bg8.jpg in Resources */,
@@ -746,8 +754,8 @@
 				45CDDEBB1941A2F3007560B9 /* bgz.jpg in Resources */,
 				45A223F219419AAE00F3AF4A /* ottImage.png in Resources */,
 				4598B80F1938D41B00BFF319 /* bg4.jpg in Resources */,
+				45F73647194BE3B8004957DC /* line.png in Resources */,
 				45CDDEB71941A167007560B9 /* bg11.png in Resources */,
-				45CB453F1949FBB200754E37 /* info2.psd in Resources */,
 				45CB4544194A209900754E37 /* unlock-50.png in Resources */,
 				45FAACE81936D2A300513053 /* info-white-128.png in Resources */,
 				45A3A9001940CEA90007591E /* icon@120px.png in Resources */,

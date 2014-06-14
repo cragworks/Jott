@@ -42,14 +42,18 @@
 }
 
 - (void)initialSetup {
-//    UIImage *blurBackground = [[UIImage imageNamed:@"bg1.jpg"] applyLightEffect];
-//
-//    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-//                                                  forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.view.backgroundColor = [UIColor clearColor];
-//    self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-//    self.navigationController.navigationBar.translucent = YES;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHeight:) name:UIKeyboardDidShowNotification object:nil];
+
+    UIImage *background = [UIImage imageNamed:@"paper2.png"];
+    background = [UIImage imageWithCGImage:[background CGImage]
+                                     scale:(background.scale * 2.0)
+                               orientation:(background.imageOrientation)];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:background];
+    
+    UIImage *lineImage = [UIImage imageNamed:@"line.png"];
+    UIImageView *line = [[UIImageView alloc] initWithImage:lineImage];
+    line.frame = CGRectMake(self.view.frame.size.width/2 - 135, 50, 270, 1);
     
     MFAppDelegate *appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
     password = appDelegate.password;
@@ -60,25 +64,43 @@
     //UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
     
-    titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 50)];
-    titleView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    titleView.layer.cornerRadius = 5.0;
+    titleView = [[UITextField alloc] initWithFrame:CGRectMake(0, 10, self.view.frame.size.width - 20, 35)];
+    titleView.backgroundColor = [UIColor clearColor];
+    titleView.placeholder = @"Title";
     titleView.delegate = self;
-    titleView.layer.borderWidth = 1.0;
     titleView.textAlignment = NSTextAlignmentCenter;
     titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:26.0];
     [titleView becomeFirstResponder];
     
-    noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 65, self.view.frame.size.width - 20, 400)];
-    noteView.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    noteView.layer.cornerRadius = 5.0;
+    noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 55, self.view.frame.size.width - 20, 363)];
+    noteView.backgroundColor = [UIColor clearColor];
     noteView.delegate = self;
-    noteView.layer.borderWidth = 1.0;
     noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     
     self.navigationItem.rightBarButtonItem = save;
     [self.view addSubview:titleView];
     [self.view addSubview:noteView];
+    [self.view addSubview:line];
+}
+
+- (void)keyboardHeight:(NSNotification*)notification
+{
+    int h;
+    NSDictionary* keyboardInfo = [notification userInfo];
+    NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
+    CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
+    if (keyboardFrameBeginRect.size.height > 225.0) {
+        h = 223;
+    }
+    else if (keyboardFrameBeginRect.size.height < 225.0) {
+        h = 193;
+    };
+    noteView.frame = CGRectMake(10, 55, self.view.frame.size.width - 20, h);
+    NSLog(@"%f", keyboardFrameBeginRect.size.height);
+}
+
+- (void)keyboardWillHide:(id)sender {
+    noteView.frame = CGRectMake(10, 70, self.view.frame.size.width - 20, 350);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

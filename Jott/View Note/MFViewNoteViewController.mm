@@ -38,6 +38,7 @@
     UIButton *timedDecryptButton;
     NSInteger confidenceThreshhold;
     BOOL isLockDecrypted;
+    UIDeviceOrientation currentDeviceOrientation;
 }
 @end
 
@@ -61,19 +62,20 @@
 
 - (void)initialSetup {
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationDidEnterBackground:)
-                                                 name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHeight:) name:UIKeyboardDidShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(applicationDidBecomeActive:)
-                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
-    
-    UIImage *background = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
+//    UIImage *background = [[UIImage imageNamed:@"bg6.jpg"] applyLightEffect];
+    UIImage *background = [UIImage imageNamed:@"paper2.png"];
     background = [UIImage imageWithCGImage:[background CGImage]
-                                         scale:(background.scale * 1.0)
+                                         scale:(background.scale * 2.0)
                                    orientation:(background.imageOrientation)];
     self.view.backgroundColor = [UIColor colorWithPatternImage:background];
+    
+    UIImage *lineImage = [UIImage imageNamed:@"line.png"];
+    UIImageView *line = [[UIImageView alloc] initWithImage:lineImage];
+    line.frame = CGRectMake(self.view.frame.size.width/2 - 135, 50, 270, 1);
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     confidenceThreshhold = [defaults integerForKey:@"sensitivity"];
@@ -102,46 +104,48 @@
     
     _decryptButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [_decryptButton setBackgroundImage:[UIImage imageNamed:@"lock-50.png"] forState:UIControlStateNormal];
-    _decryptButton.frame = CGRectMake(255, 445, 35, 35);
+    _decryptButton.frame = CGRectMake(270, 455, 35, 35);
     [_decryptButton addTarget:self action:@selector(decryptButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
-    back = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     edit = [[UIBarButtonItem alloc]initWithTitle: @"Edit" style:UIBarButtonItemStylePlain target:self action:@selector(editTitle)];
     
-    _titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 50)];
-    _titleView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    _titleView.layer.cornerRadius = 5.0;
-    _titleView.layer.borderWidth = 1.0;
+    _titleView = [[UITextField alloc] initWithFrame:CGRectMake(0, 10, self.view.frame.size.width - 20, 35)];
+    _titleView.backgroundColor = [UIColor clearColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
     _titleView.userInteractionEnabled = NO;
     _titleView.textAlignment = NSTextAlignmentCenter;
     _titleView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:22.0];
     _titleView.text = presentingViewController.currentNote.title;
     
-    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 70, self.view.frame.size.width - 20, 348)];
-    _noteView.backgroundColor = [UIColor whiteColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
-    _noteView.layer.cornerRadius = 5.0;
-    _noteView.layer.borderWidth = 1.0;
+    _noteView = [[UITextView alloc] initWithFrame:CGRectMake(10, 55, self.view.frame.size.width - 20, 363)];
+    _noteView.backgroundColor = [UIColor clearColor];//[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.5];
     _noteView.editable = NO;
+    _noteView.delegate = self;
+    
+//    if ([defaults integerForKey:@"textEncryption"] == 0) {
+//        _noteView.text = presentingViewController.currentNote.text;
+//    }
+//    else if ([defaults integerForKey:@"textEncryption"] == 1) {
+//        _noteView.text = presentingViewController.currentNote.text;   // Change later
+//    }
+//    else if ([defaults integerForKey:@"textEncryption"] == 2) {
+//        _noteView.text = @"";
+//    }
+    
     _noteView.text = presentingViewController.currentNote.text;
     _noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     _noteView.alwaysBounceVertical = YES;
     
-//    timedDecryptButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    timedDecryptButton.frame = CGRectMake(self.view.frame.size.width - 30, self.view.frame.size.height - 3, 28, 28);
-//    UIImage *timerImage = [UIImage imageNamed:@"stopwatch-32.png"];
-//    [timedDecryptButton setImage:timerImage forState:UIControlStateNormal];
-//    [timedDecryptButton addTarget:self action:@selector(timerButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-    
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didRecognizeTapGesture:)];
     [self.view addGestureRecognizer:tapGesture];
-    self.navigationItem.leftBarButtonItem = back;
     self.navigationItem.rightBarButtonItem = edit;
+    
+    
     [self.view addSubview:_titleView];
     [self.view addSubview:_noteView];
     [self.view addSubview:_decryptButton];
-//    [self.view addSubview:timedDecryptButton];
+    [self.view addSubview:line];
     
-    NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.25
+    NSTimer *encryptionCheckTimer = [NSTimer scheduledTimerWithTimeInterval: 0.1
                                                                      target: self
                                                                    selector:@selector(checkIfEncrypted:)
                                                                    userInfo: nil repeats:YES];
@@ -152,14 +156,12 @@
     isEncrypted = YES;
     shouldBeEncrypted = YES;
     usingVision = YES;
-    
 }
-
 
 #pragma mark - Timed Decryption
 
 - (void)decryptButtonTapped {
-    if (isLockDecrypted) {  //
+    if (isLockDecrypted) {
         [self lockDecrypt];
     }
     else {
@@ -167,9 +169,7 @@
         lockAlert.alertViewStyle = UIAlertViewStyleSecureTextInput;
         lockAlert.title = @"Enter Password";
         [lockAlert textFieldAtIndex:0].textAlignment = NSTextAlignmentCenter;
-        //lockAlert.message = @"Blah Blah Blah";
         [lockAlert textFieldAtIndex:0].placeholder = @"Password";
-        [lockAlert textFieldAtIndex:0].frame = CGRectMake(10, 10, 200, 30);
         lockAlert.delegate = self;
         lockAlert.tag = 3;
         [lockAlert addButtonWithTitle:@"Unlock"];
@@ -191,33 +191,19 @@
 }
 
 - (void)timerButtonTapped {
-    NSTimer *decryptTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timedDecrypt:) userInfo:nil repeats:YES];
     if (usingVision) {
         totalSeconds = 10;
         [timedDecryptButton setImage:[UIImage imageNamed:@"close-32.png"] forState:UIControlStateNormal];
         [self stopCamera];
         [self.imageView setHidden:YES];
         usingVision = NO;
-        [self timedDecrypt:decryptTimer];
     }
     else {
         [self startCamera];
         [self encryptText];
         [self.imageView setHidden:NO];
-        //usingVision = YES;
         [timedDecryptButton setImage:[UIImage imageNamed:@"stopwatch-32.png"] forState:UIControlStateNormal];
     }
-}
-
-- (void)timedDecrypt:(NSTimer *)timer {
-   // NSLog(@"%d",totalSeconds);
-    if (!totalSeconds) {
-        [self changeTextEncryption];
-        [self timerButtonTapped];
-        [timer invalidate];
-        return;
-    }
-    totalSeconds--;
 }
 
 - (void)checkIfEncrypted:(NSTimer *)timer {
@@ -293,6 +279,7 @@
         presentingViewController.currentNote.text = [presentingViewController.currentNote.text AES256EncryptWithKey:password];
         _noteView.text = presentingViewController.currentNote.text;
         isEncrypted = YES;
+        isLockDecrypted = NO;
     }
 }
 
@@ -321,8 +308,10 @@
 
 - (void)cancel {
     shouldBeEncrypted = YES;
+    isLockDecrypted = NO;
     [self encryptText];
     presentingViewController.currentNote.isEncrypted = YES;
+    [_noteView resignFirstResponder];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -335,12 +324,13 @@
 }
 
 - (void)editStartingAtTitle: (BOOL)startAtTitle {
+    
     if (!isEncrypted) {
         if(isBeingEdited) {
-            [self startCamera];
+            if (!isLockDecrypted) [self startCamera];
             edit.title = @"Edit";
             back.title = @"Done";
-            _titleView.userInteractionEnabled = NO;   //////////////////
+            _titleView.userInteractionEnabled = NO;
             _noteView.editable = NO;
             [_noteView resignFirstResponder];
             isBeingEdited = NO;
@@ -357,6 +347,22 @@
             isBeingEdited = YES;
         }
     }
+}
+
+- (void)keyboardHeight:(NSNotification*)notification
+{
+    int h;
+    NSDictionary* keyboardInfo = [notification userInfo];
+    NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
+    CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
+    if (keyboardFrameBeginRect.size.height > 225.0) {
+        h = 223;
+    }
+    else if (keyboardFrameBeginRect.size.height < 225.0) {
+        h = 193;
+    };
+    _noteView.frame = CGRectMake(10, 55, self.view.frame.size.width - 20, h);
+    NSLog(@"%f", keyboardFrameBeginRect.size.height);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -379,14 +385,12 @@
     mfnote.title = _titleView.text;
     mfnote.text = _noteView.text;
     
-    [self encryptText];
+    if (!isLockDecrypted) [self encryptText];
     
     NSError *error = nil;
     
     [presentingViewController.managedObjectContext save:&error];
     shouldBeEncrypted = YES;
-    [presentingViewController dismissPresentedViewController];
-    
 }
 
 #pragma mark - Facial Recognition
@@ -410,9 +414,13 @@
 
 - (void)setupCamera
 {
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(deviceOrientationDidChange:)
+//                                                 name:UIDeviceOrientationDidChangeNotification
+//                                               object:nil];
     
-    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, self.view.frame.size.height - 145, 75, 75)];
-
+    self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(8, self.view.frame.size.height - 147, 75, 75)];
+    
     [self.imageView setUserInteractionEnabled:YES];
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraTapped)];
     [self.imageView addGestureRecognizer:singleTap];
@@ -424,12 +432,62 @@
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
     self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
+   
+    //[self updateCameraOrientation];
+    
+
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = CAPTURE_FPS;
     self.videoCamera.grayscaleMode = NO;
     
     [self.view addSubview:self.imageView];
 }
+
+
+//- (void)deviceOrientationDidChange:(NSNotification*)notification
+//{
+//    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+//    
+//    switch (orientation)
+//    {
+//        case UIDeviceOrientationPortrait:
+//        case UIDeviceOrientationPortraitUpsideDown:
+//        case UIDeviceOrientationLandscapeLeft:
+//        case UIDeviceOrientationLandscapeRight:
+//            currentDeviceOrientation = orientation;
+//            break;
+//            
+//        case UIDeviceOrientationFaceUp:
+//        case UIDeviceOrientationFaceDown:
+//        default:
+//            break;
+//    }
+//    //NSLog(@"Orientation: %d", orientation);
+//    
+//    [self updateCameraOrientation];
+//}
+//
+//- (void)updateCameraOrientation {
+//
+//    if (currentDeviceOrientation == 4) {
+//        NSLog(@"LANDSCAPE RIGHT\n\n\n");
+//        self.imageView.transform = CGAffineTransformRotate(self.imageView.transform, -M_PI_2);
+//    }
+//    if (currentDeviceOrientation == 3) {
+//        NSLog(@"LANDSCAPE LEFT\n\n\n");
+//        self.imageView.transform = CGAffineTransformRotate(self.imageView.transform, M_PI_2);
+//    }
+//    
+//    //    if (currentDeviceOrientation == 4) {
+////        self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
+////    }
+////    if (currentDeviceOrientation == 3) {
+////        self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeLeft;
+////    }
+////    if (currentDeviceOrientation == 1) {
+////        self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
+////    }
+//}
 
 - (void)processImage:(cv::Mat&)image
 {
@@ -442,11 +500,6 @@
 
 - (void)parseFaces:(const std::vector<cv::Rect> &)faces forImage:(cv::Mat&)image
 {
-    
-//    // Too many faces found
-//    if (faces.size() > 1) {
-//        NSLog(@"A Spy!");
-//    }
     if (faces.size() < 1) { // No faces found
         [self noFaceToDisplay];
         return;
@@ -573,6 +626,7 @@
 }
 
 - (void)startCamera {
+    self.imageView.userInteractionEnabled = YES;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.videoCamera start];
@@ -581,6 +635,7 @@
 }
 
 - (void)stopCamera {
+    self.imageView.userInteractionEnabled = NO;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.videoCamera stop];
@@ -605,8 +660,18 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    //if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        if (!isEncrypted) {
+            if (isBeingEdited) [_noteView resignFirstResponder];
+            shouldBeEncrypted = YES;
+            [self encryptText];
+            [self save];
+            presentingViewController.currentNote.isEncrypted = YES;
+        }
+   // }
+    
     if (_numPics) [self adjustThreshold];
-    [self.videoCamera stop];
+    if(self.videoCamera.running) [self.videoCamera stop];
 }
 
 @end
