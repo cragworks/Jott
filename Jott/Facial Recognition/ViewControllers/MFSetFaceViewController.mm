@@ -9,6 +9,7 @@
 #import "MFSetFaceViewController.h"
 #import "OpenCVData.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "MFCamera.h"
 
 @interface MFSetFaceViewController ()
 
@@ -28,20 +29,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[MFCamera sharedCamera].videoCamera stop];
     [self initialSetup];
 }
 
 - (void)initialSetup {
+
     self.view.backgroundColor = [UIColor whiteColor];
     self.faceDetector = [[FaceDetector alloc] init];
     self.faceRecognizer = [[CustomFaceRecognizer alloc] init];
     [self setupCamera];
-    
-//    _nameInput = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 150, 10, 300, 40)];
-//    _nameInput.placeholder = @"ex. Glasses, Dark, ...";
-//    _nameInput.textAlignment = NSTextAlignmentCenter;
-//    _nameInput.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.1];
-//    _nameInput.delegate = self;
     
     _picsLabel = [[UILabel alloc] init];
     _picsLabel.frame = CGRectMake(0, 441, self.view.frame.size.width, 50);
@@ -145,8 +142,6 @@
             self.featureLayer.hidden = YES;
             [self.videoCamera stop];
             
-//            UIAlertView *finishedAlert = [[UIAlertView alloc] initWithTitle:@"Finished" message:@"10 Imaged have been taken" delegate:self cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-            
             UIAlertView *finishedAlert = [[UIAlertView alloc] init];
             finishedAlert.alertViewStyle = UIAlertViewStylePlainTextInput;
             finishedAlert.title = @"Name";
@@ -215,10 +210,10 @@
     [self.videoCamera start];
 }
 
-//- (void)viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:YES];
-//    [self.videoCamera stop];
-//}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [[MFCamera sharedCamera].videoCamera start];
+}
 
 - (void)didReceiveMemoryWarning
 {

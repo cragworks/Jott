@@ -92,6 +92,8 @@
 		45CB4541194A071200754E37 /* navBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4540194A071200754E37 /* navBar.png */; };
 		45CB4544194A209900754E37 /* unlock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4542194A209900754E37 /* unlock-50.png */; };
 		45CB4545194A209900754E37 /* lock-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CB4543194A209900754E37 /* lock-50.png */; };
+		45CC0F46194DF0C6003F9D5D /* MFCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F45194DF0C6003F9D5D /* MFCamera.mm */; };
+		45CC0F4C194EA2E6003F9D5D /* UIView+Glow.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC0F4A194EA2E6003F9D5D /* UIView+Glow.m */; };
 		45CDDEB71941A167007560B9 /* bg11.png in Resources */ = {isa = PBXBuildFile; fileRef = 45CDDEB61941A167007560B9 /* bg11.png */; };
 		45CDDEBB1941A2F3007560B9 /* bgz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45CDDEBA1941A2F3007560B9 /* bgz.jpg */; };
 		45CDDEC019420913007560B9 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CDDEBF19420913007560B9 /* JCRBlurView.m */; };
@@ -239,6 +241,10 @@
 		45CB4540194A071200754E37 /* navBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navBar.png; sourceTree = "<group>"; };
 		45CB4542194A209900754E37 /* unlock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unlock-50.png"; sourceTree = "<group>"; };
 		45CB4543194A209900754E37 /* lock-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-50.png"; sourceTree = "<group>"; };
+		45CC0F44194DF0C6003F9D5D /* MFCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFCamera.h; path = "Facial Recognition/MFCamera.h"; sourceTree = "<group>"; };
+		45CC0F45194DF0C6003F9D5D /* MFCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MFCamera.mm; path = "Facial Recognition/MFCamera.mm"; sourceTree = "<group>"; };
+		45CC0F4A194EA2E6003F9D5D /* UIView+Glow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Glow.m"; sourceTree = "<group>"; };
+		45CC0F4B194EA2E6003F9D5D /* UIView+Glow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Glow.h"; sourceTree = "<group>"; };
 		45CDDEB61941A167007560B9 /* bg11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg11.png; sourceTree = "<group>"; };
 		45CDDEBA1941A2F3007560B9 /* bgz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgz.jpg; sourceTree = "<group>"; };
 		45CDDEBE19420913007560B9 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
@@ -461,6 +467,8 @@
 		4598B8011938CA8400BFF319 /* Blur */ = {
 			isa = PBXGroup;
 			children = (
+				45CC0F4B194EA2E6003F9D5D /* UIView+Glow.h */,
+				45CC0F4A194EA2E6003F9D5D /* UIView+Glow.m */,
 				4530D8021947E4AD00185798 /* FXBlurView.m */,
 				4530D8031947E4AD00185798 /* FXBlurView.h */,
 				45CDDEBE19420913007560B9 /* JCRBlurView.h */,
@@ -570,6 +578,8 @@
 		45C229D2193199370079777A /* Facial Recognition */ = {
 			isa = PBXGroup;
 			children = (
+				45CC0F44194DF0C6003F9D5D /* MFCamera.h */,
+				45CC0F45194DF0C6003F9D5D /* MFCamera.mm */,
 				4598B7F81937E7F400BFF319 /* OpenCVData.h */,
 				4598B7F91937E7F400BFF319 /* OpenCVData.mm */,
 				4598B7F61937E7D500BFF319 /* haarcascade_frontalface_alt2.xml */,
@@ -795,6 +805,7 @@
 			files = (
 				4598B7E51937E6F700BFF319 /* NSData+AESCrypt.m in Sources */,
 				4598B7EB1937E77500BFF319 /* MFMenuViewController.mm in Sources */,
+				45CC0F4C194EA2E6003F9D5D /* UIView+Glow.m in Sources */,
 				4598B7EC1937E77500BFF319 /* SWRevealViewController.m in Sources */,
 				4598B7F51937E7CE00BFF319 /* MFSetFaceViewController.mm in Sources */,
 				45CDDEC019420913007560B9 /* JCRBlurView.m in Sources */,
@@ -818,6 +829,7 @@
 				4598B7E61937E6F700BFF319 /* NSString+AESCrypt.m in Sources */,
 				45049FEA19266F7C00994960 /* MFAppDelegate.mm in Sources */,
 				4598B80019381E9500BFF319 /* MFSetUsernameViewController.m in Sources */,
+				45CC0F46194DF0C6003F9D5D /* MFCamera.mm in Sources */,
 				45A784C21932F42600E8A34C /* MFKeychainWrapper.mm in Sources */,
 				4530D8041947E4AD00185798 /* FXBlurView.m in Sources */,
 			);

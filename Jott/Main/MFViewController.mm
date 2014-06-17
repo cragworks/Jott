@@ -45,6 +45,8 @@
 {
     [super viewDidLoad];
     [self initialSetup];
+    [self.view addSubview:[MFCamera sharedCamera]];
+//    [[MFCamera sharedCamera] pause];
 }
 
 - (void)initialSetup {
@@ -57,14 +59,9 @@
 //        [defaults setInteger:3 forKey:@"decryptTimer"];
         [self presentFirstTimeView];
     }
-    
-//    listBackground = [[UIImage imageNamed:@"bg3.jpg"] applySubtleEffect];                       // 3-subtle, 7-subtle, 8-subtle
-//    listBackground = [self imageWithImage:listBackground scaledToSize:CGSizeMake(320, 640)];
-    
-//    _background = [[UIImage imageNamed:@"bg8.jpg"] applyBlurWithRadius:8.0
-//                                                            tintColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.66]
-//                                                saturationDeltaFactor:1.0
-//                                                            maskImage:nil];
+    [defaults setInteger:100 forKey:@"sensitivity"];
+
+
     _background = [UIImage imageNamed:@"paper2.png"];
     _background = [UIImage imageWithCGImage: [_background CGImage]
                         scale:(_background.scale * 2.1)
@@ -216,6 +213,7 @@
 - (void)presentViewNoteViewController {
     [_revealController panGestureRecognizer].enabled = NO;
     MFViewNoteViewController *vnvc = [[MFViewNoteViewController alloc] init];
+    vnvc.currentNote = _currentNote;
     [self.navigationController pushViewController:vnvc animated:YES];
 }
 

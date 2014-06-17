@@ -15,6 +15,7 @@
 #import "MFMenuViewController.h"
 #import "MFNote.h"
 #import "MFNotesModel.h"
+#import "MFCamera.h"
 #import "NSString+AESCrypt.h"
 #import <CoreData/CoreData.h>
 #import <QuartzCore/QuartzCore.h>
@@ -25,6 +26,8 @@
 }
 
 #define CAPTURE_FPS 30
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+dispatch_group_t group = dispatch_group_create();
 
 @synthesize passwordItem, accountNumberItem, settingsViewController;
 
@@ -55,10 +58,6 @@
     _root = [[MFViewController alloc] init];
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:_root];
-//    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-//    [[[UINavigationBar appearance] ]
-//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -5) forBarMetrics:UIBarMetricsDefault];
-//    [[UIBarButtonItem appearance] setBackButtonBackgroundVerticalPositionAdjustment:-5 forBarMetrics:UIBarMetricsDefault];
     [[UIBarButtonItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -6) forBarMetrics:UIBarMetricsDefault];
     
     SWRevealViewController *revealViewController = [[SWRevealViewController alloc] initWithRearViewController:_menuViewController frontViewController:navController];
@@ -78,6 +77,8 @@
     //UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 
     [self launchAnimationPortrait];
+    
+    
 //    if (orientation == UIInterfaceOrientationPortrait) {
 //        
 //    }
@@ -111,8 +112,6 @@
     ottImage.alpha = 0.0;
     
     [self runSpinAnimationOnView:jImageView duration:2.5 rotations:2.0 repeat:1.0];
-    
-
     [UIView animateWithDuration:3.0
                           delay: 0.0
                         options: UIViewAnimationOptionCurveEaseInOut
@@ -134,14 +133,15 @@
 //                     }
 //                     completion:nil];
 
-    
     [UIView animateWithDuration:1.0
                           delay: 2.1
                         options: UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          ottImage.alpha = 1.0;
                      }
-                     completion:nil];
+                     completion:^(BOOL finished){
+                         [[MFCamera sharedCamera] pause];
+                     }];
     
     ottImage.alpha = 1.0;
     [self performSelector:@selector(animationDidFinish) withObject:nil afterDelay:3.0];
