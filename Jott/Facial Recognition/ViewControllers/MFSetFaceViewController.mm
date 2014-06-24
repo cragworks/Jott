@@ -10,6 +10,9 @@
 #import "OpenCVData.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "MFCamera.h"
+#import "MFAppDelegate.h"
+
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 @interface MFSetFaceViewController ()
 
@@ -40,23 +43,33 @@
     self.faceRecognizer = [[CustomFaceRecognizer alloc] init];
     [self setupCamera];
     
+    MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults boolForKey:@"HasLaunchedOnce"]) {
+        [self.navigationItem setHidesBackButton:YES];
+        
+        NSString *string = [NSString stringWithFormat:@"Welcome %@",[appDelegate.passwordItem objectForKey:(__bridge id)kSecAttrAccount]];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:string
+                                                        message:@"The camera will now take 10 pictures of your face. Look at the camera how you normally would to view a note."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Start"
+                                              otherButtonTitles:nil];
+        alert.delegate = self;
+        alert.tag = 0;
+        [alert show];
+    }
+    
     _picsLabel = [[UILabel alloc] init];
-    _picsLabel.frame = CGRectMake(0, 441, self.view.frame.size.width, 50);
+    _picsLabel.frame = CGRectMake(0, self.view.frame.size.height - 130, self.view.frame.size.width, 50);
     _picsLabel.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
     _picsLabel.textColor = [UIColor whiteColor];
     _picsLabel.text = @"10 more pictures remaining.";
     _picsLabel.textAlignment = NSTextAlignmentCenter;
-    _picsLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:18.0];
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Instructions"
-                                                    message:@"When the camera starts, move it around to show different angles of your face."
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    _picsLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
     
     [self.view addSubview:_picsLabel];
-//    [self.view addSubview:_nameInput];
 
 }
 
@@ -67,7 +80,8 @@
     UIBarButtonItem *switchCameraBarButtonItem = [[UIBarButtonItem alloc] initWithImage:switchCameraImage style:UIBarButtonItemStylePlain target:self action:@selector(switchCameraButtonClicked)];
     self.navigationItem.rightBarButtonItem = switchCameraBarButtonItem;
     
-    self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 15, self.view.frame.size.width, 415)];
+    if (IS_IPHONE_5) self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 16, self.view.frame.size.width, 407)];
+    else self.previewImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 18, self.view.frame.size.width, 315)];
     self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.previewImage];
     self.videoCamera.delegate = self;
     self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
@@ -75,22 +89,33 @@
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = 30;
     self.videoCamera.grayscaleMode = NO;
-    self.videoCamera.imageHeight = 430;
+    if (IS_IPHONE_5) self.videoCamera.imageHeight = 430;
+    else self.videoCamera.imageHeight = 380;
     self.videoCamera.imageWidth = 300;
-    
     self.numPicsTaken = 0;
     self.totalConfidence = 0;
-    [self.videoCamera start];
     
     [self.view addSubview:self.previewImage];
     [self.view sendSubviewToBack:self.previewImage];
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"HasLaunchedOnce"]) [self.videoCamera start];
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 0) {
+        [self.videoCamera start];
+    }
     if (alertView.tag == 1) {
         [self savePerson:[alertView textFieldAtIndex:0].text];
-        [self.navigationController popViewControllerAnimated:YES];
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if (![defaults boolForKey:@"HasLaunchedOnce"]) {
+            [defaults setBool:YES forKey:@"HasLaunchedOnce"];
+            [defaults synchronize];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        }
+        else [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -156,10 +181,6 @@
             [self learnFace:faces forImage:image];
         }
     });
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:100 forKey:@"sensitivity"];
-    [defaults synchronize];
 }
 
 
@@ -212,7 +233,16 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:YES];
+    [self.videoCamera stop];
+    [[MFCamera sharedCamera] trainModel];
     [[MFCamera sharedCamera].videoCamera start];
+    [[MFCamera sharedCamera] pause];
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:120 forKey:@"confidenceThreshold"];
+    [defaults synchronize];
+    [MFCamera sharedCamera].confidenceThreshhold = 120;
 }
 
 - (void)didReceiveMemoryWarning

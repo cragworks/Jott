@@ -15,6 +15,8 @@
 #import "MFAppDelegate.h"
 #import "UIImage+ImageEffects.h"
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 @interface MFAddNoteViewController ()
 
 @end
@@ -61,10 +63,9 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:appDelegate.root.background];
     
-    //UIBarButtonItem *cancel = [[UIBarButtonItem alloc]initWithTitle: @"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancelNote)];
-    UIBarButtonItem *save = [[UIBarButtonItem alloc]initWithTitle: @"Save" style:UIBarButtonItemStylePlain target:self action:@selector(saveNote)];
+    UIBarButtonItem *done = [[UIBarButtonItem alloc]initWithTitle: @"Done" style:UIBarButtonItemStylePlain target:self action:@selector(done)];
     
-    titleView = [[UITextField alloc] initWithFrame:CGRectMake(0, 10, self.view.frame.size.width - 20, 35)];
+    titleView = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width - 20, 35)];
     titleView.backgroundColor = [UIColor clearColor];
     titleView.placeholder = @"Title";
     titleView.delegate = self;
@@ -77,10 +78,18 @@
     noteView.delegate = self;
     noteView.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20.0];
     
-    self.navigationItem.rightBarButtonItem = save;
+    self.navigationItem.rightBarButtonItem = done;
     [self.view addSubview:titleView];
     [self.view addSubview:noteView];
     [self.view addSubview:line];
+}
+
+
+#pragma mark - Manage Keyboard
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [noteView becomeFirstResponder];
+    return NO;
 }
 
 - (void)keyboardHeight:(NSNotification*)notification
@@ -90,28 +99,35 @@
     NSValue* keyboardFrameBegin = [keyboardInfo valueForKey:UIKeyboardFrameBeginUserInfoKey];
     CGRect keyboardFrameBeginRect = [keyboardFrameBegin CGRectValue];
     if (keyboardFrameBeginRect.size.height > 225.0) {
-        h = 223;
+        if(IS_IPHONE_5) h = self.view.frame.size.height*0.4; //223;
+        else h = self.view.frame.size.height*0.37;
     }
     else if (keyboardFrameBeginRect.size.height < 225.0) {
-        h = 193;
+        if(IS_IPHONE_5) h = self.view.frame.size.height*0.35; //193;
+        else h = self.view.frame.size.height*0.35;
     };
-    noteView.frame = CGRectMake(10, 55, self.view.frame.size.width - 20, h);
-    NSLog(@"%f", keyboardFrameBeginRect.size.height);
+    noteView.frame = CGRectMake(10, 50, self.view.frame.size.width - 20, h);
 }
 
-- (void)keyboardWillHide:(id)sender {
-    noteView.frame = CGRectMake(10, 70, self.view.frame.size.width - 20, 350);
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
-    [noteView becomeFirstResponder];
-    return NO;
+- (void)done {
+    if (noteView.isFirstResponder) [noteView resignFirstResponder];
+    if (titleView.isFirstResponder) [titleView resignFirstResponder];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void) saveNote {
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
-    mfnote.title = titleView.text;
+    
+    
+    
+    if ([titleView.text isEqualToString:@""]) {
+        NSDate *date = [NSDate date];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];
+        [dateFormat setDateFormat:@"MMM dd, yyyy - hh:mm a"];
+        NSString *dateString = [dateFormat stringFromDate:date];
+        mfnote.title = dateString;
+    }
+    else mfnote.title = titleView.text;
     mfnote.text = [self encryptText:noteView.text];
     mfnote.isEncrypted = YES;
 
@@ -119,8 +135,6 @@
     [presentingViewController.managedObjectContext save:&error];
     
     [[MFNotesModel sharedModel] addNote:mfnote];
-    
-    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (NSString *)encryptText:(NSString *)text {
@@ -134,6 +148,14 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+
+    if (![noteView.text isEqualToString:@""] || ![titleView.text isEqualToString:@""]) {
+        [self saveNote];
+    }
 }
 
 

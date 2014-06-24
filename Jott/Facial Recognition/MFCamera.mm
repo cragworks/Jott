@@ -22,14 +22,10 @@
 }
 
 static MFCamera *sharedCamera = nil;
-+ (MFCamera *)sharedCamera {   ///////////////// If problem, look here /////////////////////
++ (MFCamera *)sharedCamera {
     if (sharedCamera == nil) {
         sharedCamera = [[super allocWithZone:NULL] init];
-        
-        NSUserDefaults *defaults = [[NSUserDefaults alloc] init];
-        sharedCamera.confidenceThreshhold = [defaults integerForKey:@"sensitivity"];
-        
-        sharedCamera.frame = CGRectMake(160-(75/2), 421, 75, 75);
+        sharedCamera.frame = CGRectMake(160-(75/2), [UIScreen mainScreen].bounds.size.height - 148, 75, 75);
         sharedCamera.defaults = [NSUserDefaults standardUserDefaults];
         [sharedCamera initialSetup];
     }
@@ -40,22 +36,20 @@ static MFCamera *sharedCamera = nil;
     
     _frameNum = 0;
     _totalConfidence = 0.0;
-    _confidenceThreshhold = [_defaults integerForKey:@"sensitivity"];
+    _confidenceThreshhold = [_defaults integerForKey:@"confidenceThreshold"];
     
     self.faceDetector = [[FaceDetector alloc] init];
     self.faceRecognizer = [[CustomFaceRecognizer alloc] initWithLBPHFaceRecognizer];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            self.modelAvailable = [self.faceRecognizer trainModel];
-        });
-    });
+    [self trainModel];
     
     [self startCamera];
     
     [self setUserInteractionEnabled:YES];
+    
     UITapGestureRecognizer *singleTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(switchCameraTapped)];
     [self addGestureRecognizer:singleTap];
+
     self.layer.masksToBounds = YES;
     self.layer.cornerRadius = 5;
     self.layer.opacity = 1.0;//0.8;
@@ -68,6 +62,14 @@ static MFCamera *sharedCamera = nil;
     self.videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationPortrait;
     self.videoCamera.defaultFPS = CAPTURE_FPS;
     self.videoCamera.grayscaleMode = NO;
+}
+
+- (void)trainModel {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.modelAvailable = [self.faceRecognizer trainModel];
+        });
+    });
 }
 
 - (void)startCamera {
@@ -89,7 +91,6 @@ static MFCamera *sharedCamera = nil;
 }
 
 - (void)pause {
-//    NSLog(@"Camera Paused");
     [self.videoCamera pause];
     
     [UIView animateWithDuration:0.3
@@ -104,7 +105,6 @@ static MFCamera *sharedCamera = nil;
 }
 
 - (void)unpause {
-//    NSLog(@"Camera Unpaused");
     [self.videoCamera unpause];
 
     [UIView animateWithDuration:0.3
@@ -118,29 +118,20 @@ static MFCamera *sharedCamera = nil;
 }
 
 - (void)refreshConfidenceThreshold {
-//    NSLog(@"Refreshing");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(_averageConfidence) {
-        if (abs(_confidenceThreshhold - _averageConfidence) > 10) {
-            _averageConfidence += 5;
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setInteger:(NSUInteger)_averageConfidence forKey:@"sensitivity"];
-            //        NSLog(@"1: Reset Threshold to: %lu",(unsigned long)_averageConfidence);
+        if (((_confidenceThreshhold-_averageConfidence) > 10) || ((_confidenceThreshhold - _averageConfidence) < 10)) {
+            _confidenceThreshhold = _averageConfidence + [defaults integerForKey:@"sensitivity"];
+            [defaults setInteger:_confidenceThreshhold forKey:@"confidenceThreshold"];
+            [defaults synchronize];
         }
-        else if ((_confidenceThreshhold - _averageConfidence) > 5) {
-            _confidenceThreshhold += 5;
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setInteger:(NSUInteger)_confidenceThreshhold forKey:@"sensitivity"];
-            //        NSLog(@"2: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
-        }
-        else if (_confidenceThreshhold < _averageConfidence) {
-            _confidenceThreshhold = _averageConfidence + 5;
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setInteger:(NSUInteger)_confidenceThreshhold forKey:@"sensitivity"];
-            //        NSLog(@"3: Reset Threshold to: %lu",(unsigned long)confidenceThreshhold);
-            
-        }
-        _confidenceThreshhold = [_defaults integerForKey:@"sensitivity"];
     }
+
+//    NSLog(@"Average Confidence = %f \nThreshold = %ld \nSensitivity = %ld",_averageConfidence, (long)_confidenceThreshhold, (long)[defaults integerForKey:@"sensitivity"]);
+
+    _totalConfidence = 0;
+    _averageConfidence = 0;
+    _numPics = 0;
 }
 
 #pragma mark - Video Camera Delegate Methods
@@ -149,7 +140,6 @@ static MFCamera *sharedCamera = nil;
 {
     if (self.frameNum == CAPTURE_FPS) {
         _faceRecognized = [self parseFaces:[self.faceDetector facesFromImage:image] forImage:image];
-//        NSLog(@"Face Recognized = %d",_faceRecognized);
         self.frameNum = 0;
     }
     self.frameNum++;
@@ -181,9 +171,8 @@ static MFCamera *sharedCamera = nil;
             confidenceFormatter.maximumFractionDigits = 2;
             
             float confidence = [[match objectForKey:@"confidence"] floatValue];
-//             NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)_confidenceThreshhold);
+             NSLog(@"Confidence = %f  -  Threshold = %ld",confidence,(long)_confidenceThreshhold);
 
-            
             if (confidence < _confidenceThreshhold || (confidence - _confidenceThreshhold) < 3) {
                 shouldBeEncrypted = NO;
                 _numPics++;
@@ -220,8 +209,8 @@ static MFCamera *sharedCamera = nil;
     
     faceRect.size.width *= 0.2;
     faceRect.size.height *= 0.2;
-    faceRect.origin.x *= 0.25;
-    faceRect.origin.y *= 0.25;
+    faceRect.origin.x *= 0.35;
+    faceRect.origin.y *= 0.28;
     
     if (self.featureLayer == nil) {
         self.featureLayer = [[CALayer alloc] init];
@@ -236,49 +225,16 @@ static MFCamera *sharedCamera = nil;
 }
 
 - (void)switchCameraTapped {
-    // Temporary//
-    
-    if (self.alpha == 1.0)  self.alpha = 0.5;
-    else self.alpha = 1.0;
-    
-    
-//    [self stopCamera];
-//    
-//    if (self.videoCamera.defaultAVCaptureDevicePosition == AVCaptureDevicePositionFront) {
-//        [UIView transitionWithView:self.imageView
-//                          duration:0.3
-//                           options:UIViewAnimationOptionTransitionFlipFromLeft
-//                        animations:^(void){
-//                            [self.imageView removeFromSuperview];
-//                            [self addSubview:self.imageView];
-//                        }
-//                        completion:nil];
-//        self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
-//        
-//        
-//    } else {
-//        [UIView transitionWithView:self.imageView
-//                          duration:0.3
-//                           options:UIViewAnimationOptionTransitionFlipFromRight
-//                        animations:^(void){
-//                            [self.imageView removeFromSuperview];
-//                            [self addSubview:self.imageView];
-//                        }
-//                        completion:nil];
-//        self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
-//        
-//    }
-//    
-//    [self startCamera];
-}
+    [self stopCamera];
+    if (self.videoCamera.defaultAVCaptureDevicePosition == AVCaptureDevicePositionBack) self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
+    else self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
+    [self startCamera];
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+    [UIView transitionWithView:self
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:nil
+                    completion:nil];
 }
-*/
 
 @end

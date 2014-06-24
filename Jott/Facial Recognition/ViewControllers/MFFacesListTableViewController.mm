@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     
-    self.tableView.rowHeight = 75;
+    self.tableView.rowHeight = 56;
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFace)];
     self.navigationItem.rightBarButtonItem = addButton;
@@ -131,6 +131,8 @@
     
     _selectedFace = [_faces objectAtIndex:indexPath.row];
     cell.textLabel.text = [_selectedFace objectForKey:@"name"];
+    cell.textLabel.textColor = [UIColor colorWithRed:65.0/255.0 green:155.0/255.0 blue:155.0/255.0 alpha:1.0];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];
     
     return cell;
 }

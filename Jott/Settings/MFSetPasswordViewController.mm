@@ -29,16 +29,8 @@
 - (void)initialSetup {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 85, 200, 40)];
-    [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16.0]];
-    [enterPasswordLabel setText:@"Enter New Password:"];
-    UILabel *confirmPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(40, 185, 200, 40)];
-    [confirmPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16.0]];
-    [confirmPasswordLabel setText:@"Confirm Password:"];
-    
-    textControl = [[UITextField alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 120, 250, 40)];
-    [textControl setBackgroundColor:[UIColor whiteColor]];
-    [textControl setBorderStyle:UITextBorderStyleLine];
+    textControl = [[UITextField alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height*0.12, self.view.frame.size.width, 50)];
+    [textControl setBackgroundColor:[UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0]];
     [textControl setTextAlignment:NSTextAlignmentCenter];
     textControl.placeholder = nil;
     textControl.delegate = self;
@@ -46,15 +38,30 @@
     textControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
     textControl.autocorrectionType = UITextAutocorrectionTypeNo;
     textControl.clearsOnBeginEditing = YES;
+    textControl.textColor = [UIColor whiteColor];
+    textControl.tintColor = [UIColor whiteColor];
+    [textControl setFont:[UIFont fontWithName:@"HelveticaNeue" size:20.0]];
     
-    confirmTextControl = [[UITextField alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 125, 220, 250, 40)];
-    [confirmTextControl setBackgroundColor:[UIColor whiteColor]];
-    [confirmTextControl setBorderStyle:UITextBorderStyleLine];
+    confirmTextControl = [[UITextField alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height*0.3, self.view.frame.size.width, 50)];
+    [confirmTextControl setBackgroundColor:[UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0]];
     [confirmTextControl setTextAlignment:NSTextAlignmentCenter];
     confirmTextControl.secureTextEntry = YES;
     confirmTextControl.autocapitalizationType = UITextAutocapitalizationTypeNone;
     confirmTextControl.autocorrectionType = UITextAutocorrectionTypeNo;
     confirmTextControl.clearsOnBeginEditing = YES;
+    confirmTextControl.textColor = [UIColor whiteColor];
+    confirmTextControl.tintColor = [UIColor whiteColor];
+    [confirmTextControl setFont:[UIFont fontWithName:@"HelveticaNeue" size:20.0]];
+    
+    UILabel *enterPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, textControl.frame.origin.y - 35, 200, 40)];
+    [enterPasswordLabel setText:@"Enter New Password:"];
+    enterPasswordLabel.textColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
+    [enterPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:18.0]];
+    
+    UILabel *confirmPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, confirmTextControl.frame.origin.y - 35, 200, 40)];
+    [confirmPasswordLabel setText:@"Confirm New Password:"];
+    confirmPasswordLabel.textColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
+    [confirmPasswordLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:18.0]];
     
     UIBarButtonItem *cancel = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStylePlain target:self action:@selector(cancel)];
     UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStylePlain target:self action:@selector(save)];

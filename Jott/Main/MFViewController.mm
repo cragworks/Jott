@@ -17,10 +17,9 @@
 #import "SWRevealViewController.h"
 #import "MFInfoViewController.h"
 #import "MFUserSettingsViewController.h"
-#import "UIImage+ImageEffects.h"
 #import "JCRBlurView.h"
-#import "FXBlurView.h"
 #import "MFFacesListTableViewController.h"
+#import "MFSetupViewController.h"
 
 @interface MFViewController ()
 
@@ -34,7 +33,7 @@
 @end
 
 @implementation MFViewController {
-    MFAppDelegate *delegate;
+    MFAppDelegate *appDelegate;
     CGFloat scrollHeight;
     UIImage *navBarBackground;
     UIView *dim;
@@ -46,25 +45,13 @@
     [super viewDidLoad];
     [self initialSetup];
     [self.view addSubview:[MFCamera sharedCamera]];
-//    [[MFCamera sharedCamera] pause];
 }
 
 - (void)initialSetup {
     
-    defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults boolForKey:@"firstTime"] != NO) {
-        [defaults setBool:NO forKey:@"firstTime"];
-        [defaults setInteger:100 forKey:@"sensitivity"];
-//        [defaults setInteger:0 forKey:@"textEncryption"];
-//        [defaults setInteger:3 forKey:@"decryptTimer"];
-        [self presentFirstTimeView];
-    }
-    [defaults setInteger:100 forKey:@"sensitivity"];
-
-
     _background = [UIImage imageNamed:@"paper2.png"];
     _background = [UIImage imageWithCGImage: [_background CGImage]
-                        scale:(_background.scale * 2.1)
+                        scale:(_background.scale * 2.0)
                   orientation:(_background.imageOrientation)];
     
     navBarBackground = [UIImage imageNamed:@"navBar.png"];
@@ -74,10 +61,8 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:_background];
     
-    
-    
-    delegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
-    _managedObjectContext = delegate.managedObjectContext;
+    appDelegate = (MFAppDelegate *)[[UIApplication sharedApplication] delegate];
+    _managedObjectContext = appDelegate.managedObjectContext;
     
     _revealController = [self revealViewController];
     [_revealController panGestureRecognizer];
@@ -95,7 +80,7 @@
     [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60) style:UITableViewStylePlain];
-    _tableView.rowHeight = 84.5;
+    _tableView.rowHeight = 56;
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -141,6 +126,9 @@
                                                                       NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:28.0]
                                                                       }];
 
+    CustomFaceRecognizer *cfr = [[CustomFaceRecognizer alloc] init];
+    defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults boolForKey:@"HasLaunchedOnce"] && ([[appDelegate.passwordItem objectForKey:(__bridge id)kSecValueData] isEqualToString:@""] && ![cfr getAllPeople].count)) [self presentFirstTimeView];
 }
 
 - (void)changeEncryptionFromOldPassword:(NSString *)oldPassword toNewPassword:(NSString *)newPassword; {
@@ -170,7 +158,7 @@
         }
     }
     
-    MFSettingsViewController *svc = [delegate settingsViewController];
+    MFSettingsViewController *svc = [appDelegate settingsViewController];
     [svc.tableView setScrollEnabled:NO];
     [self.navigationController pushViewController:svc animated:YES];
     [_revealController revealToggle:self];
@@ -217,7 +205,7 @@
     [self.navigationController pushViewController:vnvc animated:YES];
 }
 
-- (void)presentFacesListViewController {
+- (void)presentFacesListViewController:(BOOL)closeMenu {
     NSArray *viewControllers = [[self navigationController] viewControllers];
     for( int i = 0; i < [viewControllers count]; i++){
         id vc = [viewControllers objectAtIndex:i];
@@ -230,24 +218,37 @@
     
     MFFacesListTableViewController *flvc = [[MFFacesListTableViewController alloc] init];
     [self.navigationController pushViewController:flvc animated:YES];
-    [_revealController revealToggle:self];
+    if (closeMenu) [_revealController revealToggle:self];
 }
 
 - (void)presentAddNoteViewController {
-    
-    if ([delegate.password isEqualToString:@""]) {
+    CustomFaceRecognizer *cfr = [[CustomFaceRecognizer alloc] init];
+
+    if ([appDelegate.password isEqualToString:@""]) {
         UIAlertView *noPasswordAlertView = [[UIAlertView alloc] initWithTitle:@"No Password"
                                                                       message:@"Please set a password first"
                                                                      delegate:self
                                                             cancelButtonTitle:@"OK"
                                                             otherButtonTitles:nil, nil];
+        noPasswordAlertView.tag = 1;
         [noPasswordAlertView show];
         return;
     }
-    
-    [_revealController panGestureRecognizer].enabled = NO;
-    MFAddNoteViewController *anvc = [[MFAddNoteViewController alloc] init];
-    [self.navigationController pushViewController:anvc animated:YES];
+    else if (![cfr getAllPeople].count) {  
+        UIAlertView *noFaceAlert = [[UIAlertView alloc] initWithTitle:@"No Faces Stored"
+                                                                      message:@"Please add a face first"
+                                                                     delegate:self
+                                                            cancelButtonTitle:@"OK"
+                                                            otherButtonTitles:nil, nil];
+        noFaceAlert.tag = 0;
+        [noFaceAlert show];
+        return;
+    }
+    else {
+        [_revealController panGestureRecognizer].enabled = NO;
+        MFAddNoteViewController *anvc = [[MFAddNoteViewController alloc] init];
+        [self.navigationController pushViewController:anvc animated:YES];
+    }
 }
 
 - (void)dismissPresentedViewController {
@@ -257,12 +258,10 @@
 
 - (void)presentFirstTimeView {
 
+    [_revealController panGestureRecognizer].enabled = NO;
+    
     UIView *firstTimeView = [[UIView alloc] initWithFrame:CGRectMake(35, self.view.frame.size.height + 100, self.view.frame.size.width - 50, 160)];
     firstTimeView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:0.95];
-    
-    //    JCRBlurView *blur = [JCRBlurView new];
-//    [firstTimeView addSubview:blur];
-    
     
     UIButton *setupButton = [UIButton buttonWithType:UIButtonTypeCustom];
     setupButton.frame = CGRectMake(30, 240, 200, 50);
@@ -273,12 +272,13 @@
     UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 25, 250, 50)];
     welcomeLabel.text = @"Welcome to Jott!\n\n";
     welcomeLabel.backgroundColor = [UIColor clearColor];
-    welcomeLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:22.0];
+    welcomeLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:24.0];
+    welcomeLabel.textColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
     welcomeLabel.textAlignment = NSTextAlignmentCenter;
     
     UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 85, 245, 350)];
     textView.backgroundColor = [UIColor clearColor];
-    textView.text = @"It looks this is your first time. \n Before you can add any notes, you will need to set up your profile.\n\n Tap the button below to get started.";
+    textView.text = @"It looks like this is your first time. \n Before you can add any notes, you will need to set up your profile.\n\n Tap the button below to get started.";
     textView.font = [UIFont fontWithName:@"Helvetica Neue" size:15.0];
     textView.textAlignment = NSTextAlignmentCenter;
     textView.editable = NO;
@@ -301,14 +301,23 @@
 
 }
 
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 0) {
+        [self presentFacesListViewController:NO];
+    }
+    if (alertView.tag == 1) {
+        //push Set pass VC
+    }
+}
+
 - (void)animateDim {
     dim = [[UIView alloc] initWithFrame:self.view.bounds];
     dim.backgroundColor = [UIColor blackColor];
     dim.alpha = 0.0;
     [self.view addSubview:dim];
     
-    [UIView animateWithDuration:0.5
-                          delay: 0
+    [UIView animateWithDuration:0.4
+                          delay: 0.0
                         options: UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          dim.alpha = 0.5;
@@ -329,10 +338,9 @@
                          view.frame = CGRectMake(30, self.view.frame.size.height +150, self.view.frame.size.width - 60, self.view.frame.size.height - 150);
                      }
                      completion:^(BOOL finished) {
-                         MFSettingsViewController *svc = [delegate settingsViewController];
-                         [svc.tableView setScrollEnabled:NO];
+                         MFSetupViewController *setupViewController = [[MFSetupViewController alloc] init];
                          
-                         [self.navigationController pushViewController:svc animated:YES];
+                         [self.navigationController pushViewController:setupViewController animated:YES];
                          [view removeFromSuperview];
                          [dim removeFromSuperview];
                      }];
@@ -348,7 +356,7 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if ([[MFNotesModel sharedModel].notesList count] < 7) {
+    if ([[MFNotesModel sharedModel].notesList count] < 10) {
         self.navigationController.navigationBar.alpha = 1.0;
         if (scrollView.contentOffset.y > scrollHeight)
         {
@@ -392,8 +400,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CustomFaceRecognizer *cfr = [[CustomFaceRecognizer alloc] init];
+    if (![cfr getAllPeople]) {
+        UIAlertView *noFaceWarningAlert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                                     message:@"It seems there are no faces stored.\nYou will still be able to view your note, but facial recognition may not work." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [noFaceWarningAlert show];
+    }
+    
     _currentlyViewingNote = YES;
-    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row];
+    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1];
     [self presentViewNoteViewController];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -417,37 +432,36 @@
     NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.textColor = [UIColor colorWithRed:60.0/255.0 green:125.0/255.0 blue:125.0/255.0 alpha:1.0];
+    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1] title];
+    
+    cell.textLabel.textColor = [UIColor colorWithRed:65.0/255.0 green:155.0/255.0 blue:155.0/255.0 alpha:1.0];
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];
     cell.detailTextLabel.textColor = [UIColor blackColor];
     cell.detailTextLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:14.0];
-    cell.backgroundColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.6];
+    cell.backgroundColor = [UIColor clearColor];
     
     UIView *selectedView = [[UIView alloc] initWithFrame:cell.frame];
-    selectedView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.6];
+    selectedView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:0.3];
     cell.selectedBackgroundView = selectedView;
     
-    
-    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] title];
-
     if ([defaults integerForKey:@"textEncryption"] == 0) {
-        cell.detailTextLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text];
+        cell.detailTextLabel.text = [[[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text] AES256EncryptWithKey:appDelegate.password];
     }
-    else if ([defaults integerForKey:@"textEncryption"] == 1) {
-        cell.detailTextLabel.text = [[[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text] AES256DecryptWithKey:delegate.password];
-        
-//        UIView *blur = [[UIView alloc] initWithFrame:CGRectMake(15, 43, 290, 30)];
-//        blur.backgroundColor = [UIColor whiteColor];
-//        blur.alpha = 0.9;
-//        [cell.contentView addSubview:blur];
-//        [cell.contentView addSubview:blur];
-    }
-    else if ([defaults integerForKey:@"textEncryption"] == 2) {
-        cell.detailTextLabel.text = @"";
-    }
+//    else if ([defaults integerForKey:@"textEncryption"] == 1) {
+//        cell.detailTextLabel.text = [[[[MFNotesModel sharedModel].notesList objectAtIndex:[indexPath row]] text] AES256DecryptWithKey:delegate.password];
+//        
+////        UIView *blur = [[UIView alloc] initWithFrame:CGRectMake(15, 43, 290, 30)];
+////        blur.backgroundColor = [UIColor whiteColor];
+////        blur.alpha = 0.9;
+////        [cell.contentView addSubview:blur];
+////        [cell.contentView addSubview:blur];
+//    }
+//    else if ([defaults integerForKey:@"textEncryption"] == 2) {
+//        cell.detailTextLabel.text = @"";
+//    }
     
     return cell;
 }

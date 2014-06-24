@@ -33,6 +33,8 @@
 - (void)stopCamera;
 - (void)pause;
 - (void)unpause;
+- (void)trainModel;
+- (void)switchCameraTapped;
 + (MFCamera *)sharedCamera;
 
 @end

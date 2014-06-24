@@ -19,9 +19,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    if (self) { }
     return self;
 }
 
@@ -36,25 +34,24 @@
 
     MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     MFViewController *main = appDelegate.root;
-
-    UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    homeButton.frame = CGRectMake(18, 115, 30, 30);
-    [homeButton setImage:[UIImage imageNamed:@"home-white-128.png"] forState:UIControlStateNormal];
-    [homeButton setImage:[UIImage imageNamed:@"home-blue-128.png"] forState:UIControlStateSelected];
-    [homeButton addTarget:main action:@selector(presentHomeViewController) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    settingsButton.frame = CGRectMake(18, 315, 30, 30);
-    [settingsButton setImage:[UIImage imageNamed:@"settings-white-128.png"] forState:UIControlStateNormal];
-    [settingsButton addTarget:main action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    homeButton.frame = CGRectMake(20, self.view.frame.size.height*0.26 - 15, 30, 30);
+    [homeButton setImage:[UIImage imageNamed:@"home-white-128.png"] forState:UIControlStateNormal];
+    [homeButton addTarget:main action:@selector(presentHomeViewController) forControlEvents:UIControlEventTouchUpInside];
 
     UIButton *faceButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    faceButton.frame = CGRectMake(18, 215, 30, 30);
+    faceButton.frame = CGRectMake(20, self.view.frame.size.height*0.42 - 15, 30, 30);
     [faceButton setImage:[UIImage imageNamed:@"face-recognition-white-128.png"] forState:UIControlStateNormal];
-    [faceButton addTarget:main action:@selector(presentFacesListViewController) forControlEvents:UIControlEventTouchUpInside];
+    [faceButton addTarget:main action:@selector(presentFacesListViewController:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    settingsButton.frame = CGRectMake(20, self.view.frame.size.height*0.58 - 15, 30, 30);
+    [settingsButton setImage:[UIImage imageNamed:@"settings-white-128.png"] forState:UIControlStateNormal];
+    [settingsButton addTarget:main action:@selector(presentSettingsViewController) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    infoButton.frame = CGRectMake(18, 415, 30, 30);
+    infoButton.frame = CGRectMake(20, self.view.frame.size.height*0.74 - 15, 30, 30);
     [infoButton setImage:[UIImage imageNamed:@"info-white-128.png"] forState:UIControlStateNormal];
     [infoButton addTarget:main action:@selector(presentInfoViewController) forControlEvents:UIControlEventTouchUpInside];
 
@@ -64,21 +61,13 @@
     [self.view addSubview:settingsButton];
 }
 
+- (void)setupViewConstraints {
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

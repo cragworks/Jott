@@ -26,6 +26,8 @@
 }
 
 #define CAPTURE_FPS 30
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 dispatch_group_t group = dispatch_group_create();
 
@@ -74,17 +76,7 @@ dispatch_group_t group = dispatch_group_create();
     [self.window.layer setRasterizationScale:[UIScreen mainScreen].scale];
     
     [self.window makeKeyAndVisible];
-    //UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-
     [self launchAnimationPortrait];
-    
-    
-//    if (orientation == UIInterfaceOrientationPortrait) {
-//        
-//    }
-//    else if (orientation == UIInterfaceOrientationLandscapeLeft || orientation == UIInterfaceOrientationLandscapeRight) {
-//        [self launchAnimationLandscape];
-//    }
     
     return YES;
 }
@@ -100,41 +92,49 @@ dispatch_group_t group = dispatch_group_create();
 
 - (void)launchAnimationPortrait {
     launchAnimationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width,  self.window.frame.size.height)];
-    launchAnimationView.backgroundColor = [UIColor whiteColor];
+    launchAnimationView.backgroundColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
+    
+    UIView *bg1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, launchAnimationView.frame.size.width, 224)];
+    UIView *bg2 = [[UIView alloc] initWithFrame:CGRectMake(0, launchAnimationView.frame.size.height - 224, launchAnimationView.frame.size.width, 224)];
+    if (!IS_IPHONE_5) {
+        bg1.frame = CGRectMake(0, 0, launchAnimationView.frame.size.width, 180);
+        bg2.frame = CGRectMake(0, launchAnimationView.frame.size.height - 180, launchAnimationView.frame.size.width, 180);
+    }
+    bg1.backgroundColor = [UIColor whiteColor];
+    bg2.backgroundColor = [UIColor whiteColor];
+    [launchAnimationView addSubview:bg1];
+    [launchAnimationView addSubview:bg2];
     
     jImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jImage.png"]];
     jImageView.frame = CGRectMake(222, 257, 55, 55);
     [launchAnimationView addSubview:jImageView];
     
     UIImageView *ottImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ottImage.png"]];
-    ottImage.frame = CGRectMake(133, 259, 100, 50);
+    ottImage.frame = CGRectMake(135, 259, 100, 50);
     [launchAnimationView addSubview:ottImage];
     ottImage.alpha = 0.0;
     
-    [self runSpinAnimationOnView:jImageView duration:2.5 rotations:2.0 repeat:1.0];
-    [UIView animateWithDuration:3.0
-                          delay: 0.0
-                        options: UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         jImageView.frame = CGRectMake(95, 257, 55, 55);
-                     }
-                     completion:^(BOOL finished) {
-//                         [self runSpinAnimationOnView:jImageView duration:0.5 rotations:-0.1 repeat:2.0];
-                     }];
+    if (!IS_IPHONE_5) {
+        bg1.frame = CGRectMake(0, 0, launchAnimationView.frame.size.width, 180);
+        bg2.frame = CGRectMake(0, launchAnimationView.frame.size.height - 180, launchAnimationView.frame.size.width, 180);
+        jImageView.frame = CGRectMake(222, 217, 55, 55);
+        ottImage.frame = CGRectMake(135, 219, 100, 50);
+    }
     
-//    [UIView animateWithDuration:3.0
-//                          delay:0.0
-//         usingSpringWithDamping:0.8
-//          initialSpringVelocity:-30
-//                        options:UIViewAnimationOptionCurveEaseInOut
-//                     animations:^{
-//                        // jImageView.transform = CGAffineTransformRotate(jImageView.transform, M_PI_2);
-//                         jImageView.frame = CGRectMake(95, 257, 55, 55); //CGRectMake(95, 257, 55, 55);
-//                     }
-//                     completion:nil];
+    [self runSpinAnimationOnView:jImageView duration:2.0 rotations:2.0 repeat:1.0];
+    [UIView animateWithDuration:3.0
+                          delay:0.0
+         usingSpringWithDamping:0.8
+          initialSpringVelocity:-30
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         if (!IS_IPHONE_5) jImageView.frame = CGRectMake(95, 217, 55, 55);
+                         else jImageView.frame = CGRectMake(95, 257, 55, 55);
+                     }
+                     completion:nil];
 
     [UIView animateWithDuration:1.0
-                          delay: 2.1
+                          delay: 1.9
                         options: UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          ottImage.alpha = 1.0;
@@ -294,8 +294,8 @@ dispatch_group_t group = dispatch_group_create();
     }
 }
 
-#pragma mark - Core Data stack
 
+#pragma mark - Core Data stack
 - (NSManagedObjectContext *) managedObjectContext {
     if (managedObjectContext != nil) {
         return managedObjectContext;

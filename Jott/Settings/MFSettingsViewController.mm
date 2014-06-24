@@ -17,6 +17,8 @@
 #import "MFAppDelegate.h"
 #import "MFNotesModel.h"
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 enum {
 	kUsernameSection = 0,
 	kPasswordSection,
@@ -42,18 +44,17 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     _setUsernameViewController = [[MFSetUsernameViewController alloc] init];
     _setPasswordViewController = [[MFSetPasswordViewController alloc] init];
     
-    self.title = @"Settings";;
+    self.title = @"Settings";
     
     tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:255.0/255.0 alpha:1.0];
-    tableView.scrollEnabled = NO;
     
     _enterPasswordAlertView = [[UIAlertView alloc] init];
     _enterPasswordAlertView.alertViewStyle = UIAlertViewStyleSecureTextInput;
     _enterPasswordAlertView.title = @"Enter Password";
-    _enterPasswordAlertView.message = @"Enter master password to add a new face";
+    _enterPasswordAlertView.message = @"Enter your current password to change to a new password.";
     _enterPasswordAlertView.delegate = self;
     [_enterPasswordAlertView textFieldAtIndex:0].clearsOnBeginEditing = YES;
     _enterPasswordAlertView.tag = 1;
@@ -63,34 +64,28 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     
     _needsAuthentication = YES;
     
+    [self sliderSetup];
+    
     [self.view addSubview:tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    //[[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setBackgroundVerticalPositionAdjustment:-20 forBarMetrics:UIBarMetricsDefault];
+    if (!IS_IPHONE_5) [tableView setScrollEnabled:YES];
+    else tableView.scrollEnabled = NO;
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [self calibrateSlider:[defaults integerForKey:@"sensitivity"]];
-    
-    _slider.maximumValue = _slider.value + 5;
-    _slider.minimumValue = _slider.value - 5;
-    _slider.userInteractionEnabled = YES;
-    
-//    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-//
-//    NSShadow *shadow = [[NSShadow alloc] init];
-//    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
-//    shadow.shadowOffset = CGSizeMake(0, 1);
-//    
-//    [self.navigationController.navigationBar setTitleTextAttributes:@{
-//                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:39.0/255.0 green:39.0/255.0 blue:39.0/255.0 alpha:1.0],
-//                                                                      //NSShadowAttributeName : shadow,
-//                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:22.0]
-//                                                                      }];
+    [self sliderSetup];
     
     [tableView reloadData];
+}
+
+- (void)sliderSetup {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults integerForKey:@"sensitivity"] == 0) _slider.value = 10;
+    else _slider.value = [defaults integerForKey:@"sensitivity"];
+    _slider.userInteractionEnabled = YES;
+    currentThreshold = [MFCamera sharedCamera].confidenceThreshhold - _slider.value;
 }
 
 - (void) back {
@@ -147,6 +142,15 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 }
 
 #pragma mark <UITableViewDelegate, UITableViewDataSource> Methods
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat sectionHeaderHeight = 60;
+    if (scrollView.contentOffset.y <= sectionHeaderHeight && scrollView.contentOffset.y >= 0) {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    } else if (scrollView.contentOffset.y >= sectionHeaderHeight) {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tv
 {
@@ -261,13 +265,9 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
                 
 				_slider = [[UISlider alloc] initWithFrame:CGRectMake(cell.frame.size.width/2-100, cell.frame.size.height/2-10, 200, 20)];
                 [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
-
-                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-                NSInteger val = [defaults integerForKey:@"sensitivity"];
-                [self calibrateSlider:val];
                 
-                _slider.maximumValue = _slider.value + 5;
-                _slider.minimumValue = _slider.value - 5;
+                _slider.maximumValue = 15;
+                _slider.minimumValue = 5;
                 _slider.userInteractionEnabled = YES;
                 
 				cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -408,7 +408,6 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
     
     MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     [appDelegate refreshPassword];
-    
     [appDelegate.root deleteAllNotes];
     
     CustomFaceRecognizer *faceRecognizer = [[CustomFaceRecognizer alloc] init];
@@ -421,23 +420,27 @@ static NSInteger kPasswordTag	= 2;	// Tag table view cells that contain a text f
 - (void)sliderValueChanged:(id)sender
 {
     UISlider *slider = (UISlider *)sender;
-    NSInteger val = lround(slider.value);
-
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setInteger:val forKey:@"sensitivity"];
+    [defaults setInteger:slider.value forKey:@"sensitivity"];
 }
 
-- (void)calibrateSlider:(NSInteger)val {
- 
-    NSInteger max = (val + 10) + 5;
-    if (max > 100) max = 100;
+//- (void)calibrateSlider:(NSInteger)val {
+// 
+//    NSInteger max = (val + 10) + 5;
+//    if (max > 100) max = 100;
+//    
+//    NSInteger min = (val + 10) - 5;
+//    if (max < 60) max = 60;
+//    
+//    _slider.minimumValue = min;
+//    _slider.maximumValue = max;
+//    [_slider setValue:val];
+//}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [MFCamera sharedCamera].confidenceThreshhold = currentThreshold + _slider.value;
     
-    NSInteger min = (val + 10) - 5;
-    if (max < 60) max = 60;
-    
-    _slider.minimumValue = min;
-    _slider.maximumValue = max;
-    [_slider setValue:val];
 }
 
 @end

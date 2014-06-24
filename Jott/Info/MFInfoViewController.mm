@@ -34,17 +34,13 @@
 
 - (void)initialSetup {
     
-//    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-//    swipe.direction = UISwipeGestureRecognizerDirectionLeft;
-//    swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-//    swipe.direction = UISwipeGestureRecognizerDirectionRight;
-//    [self.view addGestureRecognizer:swipe];
-//    [self.view addGestureRecognizer:swipe];
-    
     self.pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     self.pageController.dataSource = self;
+    self.pageController.delegate = self;
     self.pageController.view.frame = self.view.bounds;
+    
+    self.navigationItem.title = @"Welcome to Jott!";
     
     UIPageControl *pageControl = [UIPageControl appearance];
     pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:75.0/255.0 green:175.0/255.0 blue:175.0/255.0 alpha:1.0];
@@ -66,6 +62,11 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{
+                                                                      NSForegroundColorAttributeName : [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
+                                                                      NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue" size:24.0]
+                                                                      }];
     
     MFAppDelegate *appDelegate = (MFAppDelegate *)[UIApplication sharedApplication].delegate;
     [appDelegate.root.revealController panGestureRecognizer].enabled = NO;
@@ -139,6 +140,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed {
+    
+    UIViewController* vc = self.pageController.viewControllers[0];
+    self.navigationItem.title = vc.navigationItem.title;
+}
+
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     
     NSUInteger index = [(MFInfoChildViewController *)viewController index];
@@ -161,12 +168,11 @@
     
     MFInfoChildViewController *childViewController = [[MFInfoChildViewController alloc] init];
     childViewController.index = index;
+//    self.navigationItem.title = [NSString stringWithFormat:@"%lu",(unsigned long)index+1];
     
     return childViewController;
     
 }
-
-
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
     return 5;

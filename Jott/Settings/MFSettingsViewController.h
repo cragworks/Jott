@@ -21,6 +21,7 @@
     MFSetPasswordViewController *textFieldController;
     MFKeychainWrapper *passwordItem;
     MFKeychainWrapper *accountNumberItem;
+    NSUInteger currentThreshold;
 }
 
 @property (nonatomic, retain) UITableView *tableView;

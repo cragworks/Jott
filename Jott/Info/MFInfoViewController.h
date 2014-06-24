@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MFInfoViewController : UIPageViewController <UIPageViewControllerDataSource>
+@interface MFInfoViewController : UIPageViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageController;
 
