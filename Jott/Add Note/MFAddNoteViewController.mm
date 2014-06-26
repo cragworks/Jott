@@ -118,8 +118,6 @@
 - (void) saveNote {
     MFNote *mfnote = [NSEntityDescription insertNewObjectForEntityForName:@"MFNote" inManagedObjectContext:presentingViewController.managedObjectContext];
     
-    
-    
     if ([titleView.text isEqualToString:@""]) {
         NSDate *date = [NSDate date];
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc]init];

@@ -32,6 +32,17 @@
 }
 @end
 
+@implementation NSArray (Reverse)
+- (NSArray *)reversedArray {
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
+    NSEnumerator *enumerator = [self reverseObjectEnumerator];
+    for (id element in enumerator) {
+        [array addObject:element];
+    }
+    return array;
+}
+@end
+
 @implementation MFViewController {
     MFAppDelegate *appDelegate;
     CGFloat scrollHeight;
@@ -77,7 +88,7 @@
     [fetchRequest setEntity:entity];
     NSError *error;
     NSArray *notes = [_managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    [MFNotesModel sharedModel].notesList = [notes mutableCopy];;
+    [MFNotesModel sharedModel].notesList = [[notes reversedArray] mutableCopy];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 60) style:UITableViewStylePlain];
     _tableView.rowHeight = 56;
@@ -234,7 +245,7 @@
         [noPasswordAlertView show];
         return;
     }
-    else if (![cfr getAllPeople].count) {  
+    else if ([cfr getAllPeople].count) {  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         UIAlertView *noFaceAlert = [[UIAlertView alloc] initWithTitle:@"No Faces Stored"
                                                                       message:@"Please add a face first"
                                                                      delegate:self
@@ -408,7 +419,8 @@
     }
     
     _currentlyViewingNote = YES;
-    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1];
+    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row];
+//    _currentNote = [[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1];
     [self presentViewNoteViewController];
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -435,7 +447,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1] title];
+    cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:indexPath.row] title];
+    //cell.textLabel.text = [[[MFNotesModel sharedModel].notesList objectAtIndex:[MFNotesModel sharedModel].notesList.count - indexPath.row - 1] title];
     
     cell.textLabel.textColor = [UIColor colorWithRed:65.0/255.0 green:155.0/255.0 blue:155.0/255.0 alpha:1.0];
     cell.textLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:20.0];

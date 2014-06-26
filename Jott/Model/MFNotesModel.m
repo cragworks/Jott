@@ -22,7 +22,7 @@ static MFNotesModel *sharedNotesModel = nil;
 }
 
 - (void) addNote:(MFNote *)note {
-    [_notesList addObject:note];
+    [_notesList insertObject:note atIndex:0];
 }
 
 @end
